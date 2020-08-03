@@ -3,74 +3,61 @@
 
 ## Table of Contents
 * [Version](#version)
-* [CentOS](#centos)
-* [Apache](#apache)
-* [MariaDB](#mariadb)
-* [PHP](#php)
-* [PostgreSQL](#postgresql)
-* [Memcached](#memcached)
-* [ifconfig](#ifconfig)
-* [Vim](#vim)
-* [Python](#python)
-* [Image Magick](#image-magick)
-* [Zip](#zip)
-* [Unzip](#unzip)
-* [Dos2Unix](#dos2unix)
-* [UnixODBC](#unixodbc)
-* [FreeTDS](#freetds)
-* [Samba](#samba)
-* [SSH](#ssh)
+* [System](#system)
+* [Web Server](#web-server)
+* [Database](#database)
+* [Server-side](#server-side)
+* [Client Server Protocol](#client-server-protocol)
+* [Additional Language](#additional-language)
+* [Additional Package](#additional-package)
+* [System Share](#system-share)
 
 ### Version
 * 0.0.1
 
-### CentOS
-* 8.2.2004
+### System
+* CentOS 8.2.2004
+* DNF 4.2.17
+* Remi 8.1-2
+* Ifconfig 2.10-alpha
+* TZData 2020a-1
+* SendMail
 
-### Apache
-* 2.4.37
+### Web Server
+* Apache 2.4.37-21
 
-### MariaDB
-* 10.5.4
+### Database
+* MariaDB 10.5.4
+* PostgreSQL 12.1-2
+* UnixODBC 2.3.7
+* FreeTDS 1.1.20-1
+* pgAdmin 4.22-1
 
-### PHP
-* 7.4.8
+### Server-side
+* PHP 7.4.8-2
+* Logrotate 3.14.0-3
+* Memcached 1.5.9
 
-### PostgreSQL
-* 12.1
+### Client Server Protocol
+* SSH 8.0p1-4
+* Telnet 0.17-73
 
-### Memcached
-* 1.5.9
+### Additional Language
+* Python 3.8.5
 
-### ifconfig
-* 2.10-alpha
+### Additional Package
+* Vim 8.0.1763-13
+* p7Zip 16.02-16
+* Zip 3.0-23
+* Unzip 6.0-43
+* Rar 5.4.0-1
+* UnRar 5.4.0-1
+* Dos2Unix 7.4.0-3
+* Image Magick 6.9.10-86
+* Git 2.18.4-2
+* Nodejs 10.21.0-3
+* NPM 6.14.4-1.10.21.0.3
 
-### Vim
-* 8.0.1763
-
-### Python
-* 3.8.5
-
-### Image Magick
-* 6.9.10-86
-
-### Zip
-* 3.0
-
-### Unzip
-* 6.00
-
-### Dos2Unix
-* 7.4.0
-
-### UnixODBC
-* 2.3.7
-
-### FreeTDS
-* 1.1.20
-
-### Samba
-* 4.11.2
-
-### SSH
-* 8.0p1
+### System Share
+* Samba 4.11.2-13
+* CIFS 6.8-3
