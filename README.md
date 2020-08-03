@@ -44,6 +44,11 @@
 
 ### Additional Language
 * Python 3.8.5
+* Ruby 2.7.1p83
+* Rails 6.0.3.2
+* Angular CLI 10.0.5
+* React
+* Vue 2.9.6
 
 ### Additional Package
 * Vim 8.0.1763-13
