@@ -23,10 +23,10 @@
   * `curl -i -X TRACE 127.0.0.1`
 
 * `sudo vim /etc/httpd/conf/httpd.conf`
-  * \# ServerName www.example.com:80 * Optional since already working<br />
-  * \# Deny access to the entirety of your server's filesystem. You must explicitly permit access to web content directories in other <Directory> blocks below.
-      <Directory />
-        Options FollowSymLinks
+  * \# ServerName www.example.com:80 * Optional since already working
+  * \# Deny access to the entirety of your server's filesystem. You must explicitly permit access to web content directories in other <Directory> blocks below.<br />
+      <Directory /><br />
+        Options FollowSymLinks<br />
         AllowOverride none
       </Directory>
   * DocumentRoot "/var/www/html/"
