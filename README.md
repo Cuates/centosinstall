@@ -19,12 +19,7 @@
 
 ### [Web Server](https://github.com/Cuates/lampcentosinstall/tree/master/webserver)
 
-### Database
-* MariaDB 10.5.4
-* PostgreSQL 12.1-2
-* UnixODBC 2.3.7
-* FreeTDS 1.1.20-1
-* pgAdmin 4.22-1
+### [Database](https://github.com/Cuates/lampcentosinstall/tree/master/database)
 
 ### Server-side
 * PHP 7.4.9-1
