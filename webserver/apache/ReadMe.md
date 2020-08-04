@@ -17,16 +17,14 @@
   * `curl -i -X TRACE 127.0.0.1`
   * `vim /etc/httpd/conf/httpd.conf`
     * Go to the end of the file and type the following
-    * # Disable Trace
+    * \# Disable Trace
     * TraceEnable off
   * `sudo systemctl restart httpd`
   * `curl -i -X TRACE 127.0.0.1`
 
 * `sudo vim /etc/httpd/conf/httpd.conf`
-  * \# ServerName www.example.com:80 * Optional since already working
-  * \# Deny access to the entirety of your server's filesystem. You must
-    \# explicitly permit access to web content directories in other
-    \# <Directory> blocks below.
+  * \# ServerName www.example.com:80 * Optional since already working<br />
+  * \# Deny access to the entirety of your server's filesystem. You must explicitly permit access to web content directories in other <Directory> blocks below.
       <Directory />
         Options FollowSymLinks
         AllowOverride none
