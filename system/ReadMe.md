@@ -1,5 +1,5 @@
 # System Install and Configuration
-> Packages installed and their configurations
+> Installed and configured Packages
 
 ## Table of Contents
 * [CentOS](#centos)
