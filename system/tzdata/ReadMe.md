@@ -1,10 +1,10 @@
 * `sudo tzselect`
-*Please identify a location so that time zone rules can be set correctly.*
-*Please select a continent or ocean.*
+Please identify a location so that time zone rules can be set correctly.
+Please select a continent or ocean.
 #? 9) Pacific Ocean
-*_Please select a country._*
+Please select a country.
 #? 26) United States
-*_Please select one of the following time zone regions._*
+Please select one of the following time zone regions.
 #? 21) Pacific
 
 The following information has been given:
@@ -14,7 +14,7 @@ The following information has been given:
 Therefore TZ='America/Los_Angeles' will be used.
 Local time is now:      Wed Jun 15 13:11:13 PDT 2016.
 Universal Time is now:  Wed Jun 15 20:11:13 UTC 2016.
-*_Is the above information OK?_*
+Is the above information OK?
 #? 1) Yes
 
 Make the time zone permanent through the bashrc
