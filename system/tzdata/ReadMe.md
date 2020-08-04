@@ -9,8 +9,8 @@ Please select one of the following time zone regions.
 #? 21) Pacific
 
 The following information has been given:
-        United States
-        Pacific
+  United States
+  Pacific
 
 Therefore TZ='America/Los_Angeles' will be used.
 Local time is now:      Wed Jun 15 13:11:13 PDT 2016.
