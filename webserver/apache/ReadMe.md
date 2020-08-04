@@ -25,39 +25,39 @@
 * `sudo vim /etc/httpd/conf/httpd.conf`
   * \# ServerName www.example.com:80 * Optional since already working
   * \# Deny access to the entirety of your server's filesystem. You must explicitly permit access to web content directories in other <Directory> blocks below.<br />
-      <Directory \/>
-        Options FollowSymLinks
-        AllowOverride none
+      <Directory \/><br />
+        Options FollowSymLinks<br />
+        AllowOverride none<br />
       <\/Directory>
   * DocumentRoot "/var/www/html/"
   * \# Relax access to content within /var/www.
-      <Directory "/var/www">
-        AllowOverride None
-        Require all granted
-      </Directory>
+      <Directory "/var/www"><br />
+        AllowOverride None<br />
+        Require all granted<br />
+      <\/Directory>
   * \# Further relax access to the default document root:
-      <Directory "/var/www/html">
-        Options FollowSymLinks
-        AllowOverride None
-        Order allow,deny
-        Allow from all
-      </Directory>
+      <Directory "/var/www/html"><br />
+        Options FollowSymLinks<br />
+        AllowOverride None<br />
+        Order allow,deny<br />
+        Allow from all<br />
+      <\/Directory>
   * \# DirectoryIndex: sets the file that Apache will serve if a directory is requested.
-      <IfModule dir_module>
-        DirectoryIndex index.html index.php
-      </IfModule>
+      <IfModule dir_module><br />
+        DirectoryIndex index.html index.php<br />
+      <\/IfModule>
   * \# The following lines prevent .htaccess and .htpasswd files from being viewed by Web clients.
-      <Files ~ "^\.ht">
-        Order allow,deny
-        Deny from all
-      </Files>
+      <Files ~ "^\.ht"><br />
+        Order allow,deny<br />
+        Deny from all<br />
+      <\/Files>
   * \# "/var/www/cgi-bin" should be changed to whatever your ScriptAliased CGI directory exists, if you have that configured.
-      <Directory "/var/www/cgi-bin">
-        AllowOverride None
-        Options None
-        Order allow,deny
-        Allow from all
-      </Directory>
+      <Directory "/var/www/cgi-bin"><br />
+        AllowOverride None<br />
+        Options None<br />
+        Order allow,deny<br />
+        Allow from all<br />
+      <\/Directory>
 
 * `sudo systemctl restart httpd`
 * `sudo apachectl configtest`
