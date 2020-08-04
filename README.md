@@ -15,13 +15,7 @@
 ### Version
 * 0.0.1
 
-### System
-* CentOS 8.2.2004
-* DNF 4.2.17
-* Remi 8.1-2
-* Ifconfig 2.10-alpha
-* TZData 2020a-1
-* SendMail
+### [System](https://github.com/Cuates/lampcentosinstall/blob/master/system)
 
 ### Web Server
 * Apache 2.4.37-21
