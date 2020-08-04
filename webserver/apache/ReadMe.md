@@ -47,7 +47,7 @@
         DirectoryIndex index.html index.php<br />
       <\/IfModule>
   * \# The following lines prevent .htaccess and .htpasswd files from being viewed by Web clients.<br />
-      <Files ~ "^\.ht"><br />
+      <Files ~ "^\\.ht"><br />
         Order allow,deny<br />
         Deny from all<br />
       <\/Files>
