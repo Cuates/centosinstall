@@ -1,6 +1,6 @@
 * `sudo tzselect`
-_*Please identify a location so that time zone rules can be set correctly.*_
-_*Please select a continent or ocean.*_
+*Please identify a location so that time zone rules can be set correctly.*
+*Please select a continent or ocean.*
 #? 9) Pacific Ocean
 *_Please select a country._*
 #? 26) United States
