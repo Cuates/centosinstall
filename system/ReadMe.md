@@ -7,22 +7,18 @@
 * [Remi](#remi)
 * [Ifconfig](#ifconfig)
 * [TZData](#tzdata)
-* [SendMail](#sendmail)
 
 ### CentOS
-* [8.2.2004](https://github.com/Cuates/lampcentosinstall/tree/master/system/centos)
+* [8.2.2004](https://github.com/Cuates/lampcentosinstall/blob/master/system/centos)
 
 ### DNF
-* [4.2.17](#)
+* [4.2.17](https://github.com/Cuates/lampcentosinstall/tree/master/system/dnf)
 
 ### Remi
-* [8.1-2](#)
+* [8.1-2](https://github.com/Cuates/lampcentosinstall/tree/master/system/remi)
 
 ### Ifconfig
-* [2.10-alpha](#)
+* [2.10-alpha](https://github.com/Cuates/lampcentosinstall/tree/master/system/ifconfig)
 
 ### TZData
-* [2020a-1](#)
-
-### SendMail
-* [](#)
+* [2020a-1](https://github.com/Cuates/lampcentosinstall/tree/master/system/tzdata)
