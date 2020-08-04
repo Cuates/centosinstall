@@ -34,7 +34,7 @@
 * pgAdmin 4.22-1
 
 ### Server-side
-* PHP 7.4.8-2
+* PHP 7.4.9-1
 * Logrotate 3.14.0-3
 * Memcached 1.5.9
 
