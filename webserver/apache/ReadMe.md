@@ -10,7 +10,7 @@
 * `sudo vim /etc/httpd/conf.d/servername.conf`
   * Add the following line in this file.
     * ServerName localhost
-  * sudo systemctl reload httpd`
+  * `sudo systemctl reload httpd`
 * `sudo apachectl configtest`
 
 * Disable Trace
