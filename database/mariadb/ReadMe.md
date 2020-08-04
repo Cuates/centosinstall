@@ -1,8 +1,8 @@
-[How To Install MariaDB On CentOS 8](https://www.linode.com/docs/databases/mariadb/how-to-install-mariadb-on-centos-8/)
-[MariaDB Install](https://www.server-world.info/en/note?os=CentOS_8&p=mariadb&f=1)
-[MySQL Remote Access](https://linuxize.com/post/mysql-remote-access/)
-[Beekeeper Studio](https://www.beekeeperstudio.io/)
-[Install LAMP Stack CentOS 8 rhel 8](https://www.linuxbabe.com/redhat/install-lamp-stack-centos-8-rhel-8)
+[How To Install MariaDB On CentOS 8](https://www.linode.com/docs/databases/mariadb/how-to-install-mariadb-on-centos-8/)<br />
+[MariaDB Install](https://www.server-world.info/en/note?os=CentOS_8&p=mariadb&f=1)<br />
+[MySQL Remote Access](https://linuxize.com/post/mysql-remote-access/)<br />
+[Beekeeper Studio](https://www.beekeeperstudio.io/)<br />
+[Install LAMP Stack CentOS 8 rhel 8](https://www.linuxbabe.com/redhat/install-lamp-stack-centos-8-rhel-8)<br />
 [MariaDB](https://mariadb.org/download/)
 * `sudo vim /etc/yum.repo.d/MariaDB.repo`
   * \# MariaDB 10.5 [Stable] CentOS repository list - created 2020-07-30 23:39 UTC<br />
