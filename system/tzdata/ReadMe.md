@@ -19,11 +19,11 @@ Is the above information OK?
 #? 1) Yes
 
 Make the time zone permanent through the bashrc
-* `vim .bashrc`
-..** Append this line to the file
-..*** TZ='America/Los_Angeles'; export TZ
-..** Save and quit the file
-..** Exit the terminal and open a new terminal
+- `vim .bashrc`
+-- Append this line to the file
+--- TZ='America/Los_Angeles'; export TZ
+-- Save and quit the file
+-- Exit the terminal and open a new terminal
 
 * `sudo systemctl restart rsyslog`
 * `sudo timedatectl status`
