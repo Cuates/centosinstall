@@ -30,28 +30,28 @@
         AllowOverride none<br />
       <\/Directory>
   * DocumentRoot "/var/www/html/"
-  * \# Relax access to content within /var/www.
+  * \# Relax access to content within /var/www.<br />
       <Directory "/var/www"><br />
         AllowOverride None<br />
         Require all granted<br />
       <\/Directory>
-  * \# Further relax access to the default document root:
+  * \# Further relax access to the default document root:<br />
       <Directory "/var/www/html"><br />
         Options FollowSymLinks<br />
         AllowOverride None<br />
         Order allow,deny<br />
         Allow from all<br />
       <\/Directory>
-  * \# DirectoryIndex: sets the file that Apache will serve if a directory is requested.
+  * \# DirectoryIndex: sets the file that Apache will serve if a directory is requested.<br />
       <IfModule dir_module><br />
         DirectoryIndex index.html index.php<br />
       <\/IfModule>
-  * \# The following lines prevent .htaccess and .htpasswd files from being viewed by Web clients.
+  * \# The following lines prevent .htaccess and .htpasswd files from being viewed by Web clients.<br />
       <Files ~ "^\.ht"><br />
         Order allow,deny<br />
         Deny from all<br />
       <\/Files>
-  * \# "/var/www/cgi-bin" should be changed to whatever your ScriptAliased CGI directory exists, if you have that configured.
+  * \# "/var/www/cgi-bin" should be changed to whatever your ScriptAliased CGI directory exists, if you have that configured.<br />
       <Directory "/var/www/cgi-bin"><br />
         AllowOverride None<br />
         Options None<br />
