@@ -19,7 +19,7 @@ Is the above information OK?
 #? 1) Yes
 
 Make the time zone permanent through the bashrc
-- `vim .bashrc`
+* `vim .bashrc`
  - Append this line to the file
   - TZ='America/Los_Angeles'; export TZ
  - Save and quit the file
