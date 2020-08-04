@@ -43,7 +43,7 @@
         Allow from all<br />
       <\/Directory>
   * \# DirectoryIndex: sets the file that Apache will serve if a directory is requested.<br />
-      <\IfModule dir_module><br />
+      \<IfModule dir_module><br />
         DirectoryIndex index.html index.php<br />
       <\/IfModule>
   * \# The following lines prevent .htaccess and .htpasswd files from being viewed by Web clients.<br />
