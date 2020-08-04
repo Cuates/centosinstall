@@ -24,11 +24,11 @@
 
 * `sudo vim /etc/httpd/conf/httpd.conf`
   * \# ServerName www.example.com:80 * Optional since already working
-  * \# Deny access to the entirety of your server's filesystem. You must explicitly permit access to web content directories in other <Directory> blocks below.
-      <Directory />
+  * \# Deny access to the entirety of your server's filesystem. You must explicitly permit access to web content directories in other <Directory> blocks below.<br />
+      <Directory \/>
         Options FollowSymLinks
         AllowOverride none
-      </Directory>
+      <\/Directory>
   * DocumentRoot "/var/www/html/"
   * \# Relax access to content within /var/www.
       <Directory "/var/www">
