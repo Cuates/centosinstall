@@ -5,7 +5,7 @@
 [Install LAMP Stack CentOS 8 rhel 8](https://www.linuxbabe.com/redhat/install-lamp-stack-centos-8-rhel-8)
 [MariaDB](https://mariadb.org/download/)
 * `sudo vim /etc/yum.repo.d/MariaDB.repo`
-  * # MariaDB 10.5 [Stable] CentOS repository list - created 2020-07-30 23:39 UTC<br />
+  * \# MariaDB 10.5 [Stable] CentOS repository list - created 2020-07-30 23:39 UTC<br />
     [MariaDB Download Test](https://mariadb.org/download-test/)<br />
     [mariadb]<br />
     name = MariaDB<br />
