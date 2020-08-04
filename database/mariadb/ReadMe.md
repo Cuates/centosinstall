@@ -42,3 +42,6 @@
   * GRANT ALL ON *.* TO user_name@'ip_address' IDENTIFIED BY 'user_password';
   * exit;
 * `mariadb --version`
+
+**IMPORTANT NOTE**
+* Need to grant permissions within the database to a specific user and IP for external database access
