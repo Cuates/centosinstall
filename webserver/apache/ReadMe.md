@@ -23,37 +23,37 @@
   * `curl -i -X TRACE 127.0.0.1`
 
 * `sudo vim /etc/httpd/conf/httpd.conf`
-  * # ServerName www.example.com:80 * Optional since already working
-  * # Deny access to the entirety of your server's filesystem. You must
-    # explicitly permit access to web content directories in other
-    # <Directory> blocks below.
+  * \# ServerName www.example.com:80 * Optional since already working
+  * \# Deny access to the entirety of your server's filesystem. You must
+    \# explicitly permit access to web content directories in other
+    \# <Directory> blocks below.
       <Directory />
         Options FollowSymLinks
         AllowOverride none
       </Directory>
   * DocumentRoot "/var/www/html/"
-  * # Relax access to content within /var/www.
+  * \# Relax access to content within /var/www.
       <Directory "/var/www">
         AllowOverride None
         Require all granted
       </Directory>
-  * # Further relax access to the default document root:
+  * \# Further relax access to the default document root:
       <Directory "/var/www/html">
         Options FollowSymLinks
         AllowOverride None
         Order allow,deny
         Allow from all
       </Directory>
-  * # DirectoryIndex: sets the file that Apache will serve if a directory is requested.
+  * \# DirectoryIndex: sets the file that Apache will serve if a directory is requested.
       <IfModule dir_module>
         DirectoryIndex index.html index.php
       </IfModule>
-  * # The following lines prevent .htaccess and .htpasswd files from being viewed by Web clients.
+  * \# The following lines prevent .htaccess and .htpasswd files from being viewed by Web clients.
       <Files ~ "^\.ht">
         Order allow,deny
         Deny from all
       </Files>
-  * # "/var/www/cgi-bin" should be changed to whatever your ScriptAliased CGI directory exists, if you have that configured.
+  * \# "/var/www/cgi-bin" should be changed to whatever your ScriptAliased CGI directory exists, if you have that configured.
       <Directory "/var/www/cgi-bin">
         AllowOverride None
         Options None
