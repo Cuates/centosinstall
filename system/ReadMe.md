@@ -1,4 +1,5 @@
 # System Install and Configuration
+> Packages installed and their configurations
 
 ## Table of Contents
 ### [CentOS 8.2.2004](https://github.com/Cuates/lampcentosinstall/tree/master/system/centos)
