@@ -1,4 +1,5 @@
 * `sudo tzselect`
+
 Please identify a location so that time zone rules can be set correctly.
 Please select a continent or ocean.
 #? 9) Pacific Ocean
@@ -19,10 +20,12 @@ Is the above information OK?
 
 Make the time zone permanent through the bashrc
 * `vim .bashrc`
+
 ** Append this line to the file
 *** TZ='America/Los_Angeles'; export TZ
 ** Save and quit the file
 ** Exit the terminal and open a new terminal
+
 * `sudo systemctl restart rsyslog`
 * `sudo timedatectl status`
 * `sudo rpm -qa | grep tzdata`
