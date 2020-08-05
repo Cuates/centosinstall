@@ -23,9 +23,7 @@
 
 ### [Server-side](https://github.com/Cuates/lampcentosinstall/tree/master/serverside)
 
-### Client Server Protocol
-* SSH 8.0p1-4
-* Telnet 0.17-73
+### [Client Server Protocol](https://github.com/Cuates/lampcentosinstall/tree/master/clientseverprotocol)
 
 ### Additional Language
 * Python 3.8.5
