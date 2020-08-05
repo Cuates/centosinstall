@@ -12,7 +12,7 @@
 * `sudo systemctl restart httpd`
 * `sudo setsebool -P httpd_execmem 1`
 * Test with /var/www/html/info.php
-  * <?php phpinfo(); ?>
+  * \<?php phpinfo(); ?\>
   * Visit website localhost/info.php
   * `sudo rm /var/www/html/info.php` (for security reasons)
 * `sudo mkdir /var/log/php`
