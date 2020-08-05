@@ -11,6 +11,6 @@
   * **WAIT FOR THIS TO FINISH**
 * `sudo make altinstall`
   * **WAIT FOR THIS TO FINISH**
-  * **DO NOT USER make install AS IT WILL OVERWRITE THE DEFAULT SYSTEM PYTHON**
+  * **DO NOT `sudo make install` AS IT WILL OVERWRITE THE DEFAULT SYSTEM PYTHON**
 * `python3.8 --version`
 * `pip3.8 --version`
