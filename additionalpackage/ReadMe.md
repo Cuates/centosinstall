@@ -4,10 +4,8 @@
 ## Table of Contents
 * [Vim](#vim)
 * [p7Zip](#p7zip)
-* [Zip](#zip)
-* [UnZip](#unzip)
-* [Rar](#rar)
-* [UnRar](#unrar)
+* [Zip UnZip](#zip-unzip)
+* [Rar UnRar](#rar-unrar)
 * [Dos2Unix](#dos2unix)
 * [Image Magick](#image-magick)
 * [Git](#)
@@ -20,17 +18,11 @@
 ### p7Zip
 * [16.02-16](#)
 
-### Zip
-* [3.0-23](#)
+### Zip UnZip
+* [3.0-23 6.0-43](#)
 
-### UnZip
-* [6.0-43](#)
-
-### Rar
-* [5.4.0-1](#)
-
-### UnRar
-* [5.4.0-1](#)
+### Rar UnRar
+* [5.4.0-1 5.4.0-1](#)
 
 ### Dos2Unix
 * [7.4.0-3](#)
