@@ -1,7 +1,4 @@
-[How To Debug Logrotate Warnings Or Errors](https://access.redhat.com/solutions/32831)<br />
-**IMPORTANT NOTE**
-* Utilized with PHP-FPM instead
-
+[How To Debug Logrotate Warnings Or Errors](https://access.redhat.com/solutions/32831)
 * `sudo mkdir /var/log/php`
 * `sudo vim /etc/lorotate.d/php`
   * /var/log/php/*log {<br />
@@ -16,3 +13,6 @@
 * `sudo systemctl restart rsyslog`
 * `sudo logrotate --force -v /etc/logrotate.d/php`
 * `sudo /usr/sbin/logrotate -d /etc/logrotate.conf`
+
+**IMPORTANT NOTE**
+* Utilized with PHP-FPM instead
