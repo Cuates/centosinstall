@@ -2,7 +2,7 @@
 [Install Angular Cli On CentOS](https://tecadmin.net/install-angular-cli-on-centos/)
 * `sudo dnf clean all`
 * `sudo dnf update`
-* `sudo dnf module install nodejs`
+* `sudo dnf module -y install nodejs`
 * `sudo npm install -g npm@latest`
 * `sudo dnf module install nodejs/development`
 * `node -v`
