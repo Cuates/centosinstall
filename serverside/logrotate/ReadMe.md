@@ -1,4 +1,4 @@
-[How To Debug Logrotate Warnings Or Errors](https://access.redhat.com/solutions/32831)
+[How To Debug Logrotate Warnings Or Errors](https://access.redhat.com/solutions/32831)<br />
 **IMPORTANT NOTE**
 * Utilized with PHP-FPM instead
 
