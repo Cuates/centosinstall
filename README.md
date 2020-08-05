@@ -21,10 +21,7 @@
 
 ### [Database](https://github.com/Cuates/lampcentosinstall/tree/master/database)
 
-### Server-side
-* PHP 7.4.9-1
-* Logrotate 3.14.0-3
-* Memcached 1.5.9
+### [Server-side](https://github.com/Cuates/lampcentosinstall/tree/master/serverside)
 
 ### Client Server Protocol
 * SSH 8.0p1-4
