@@ -46,6 +46,4 @@
 * Nodejs 10.21.0-3
 * NPM 6.14.4-1.10.21.0.3
 
-### System Share
-* Samba 4.11.2-13
-* CIFS 6.8-3
+### [System Share](https://github.com/Cuates/lampcentosinstall/tree/master/systemshare)
