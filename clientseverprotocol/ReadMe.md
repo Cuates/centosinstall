@@ -6,7 +6,7 @@
 * [Telnet](#telnet)
 
 ### SSH
-* [8.0p1-4](#)
+* [8.0p1-4](https://github.com/Cuates/lampcentosinstall/tree/master/clientseverprotocol/ssh)
 
 ### Telnet
-* [0.17-73](#)
+* [0.17-73](https://github.com/Cuates/lampcentosinstall/tree/master/clientseverprotocol/telnet)
