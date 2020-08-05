@@ -10,19 +10,19 @@
 * [Vue](#vue)
 
 ### Python
-* [3.8.5](#)
+* [3.8.5](https://github.com/Cuates/lampcentosinstall/tree/master/additionallanguage/python)
 
 ### Ruby
-* [2.7.1p83](#)
+* [2.7.1p83](https://github.com/Cuates/lampcentosinstall/tree/master/additionallanguage/ruby)
 
 ### Rails
-* [6.0.3.2](#)
+* [6.0.3.2](https://github.com/Cuates/lampcentosinstall/tree/master/additionallanguage/rails)
 
 ### Angular CLI
-* [10.0.5](#)
+* [10.0.5](https://github.com/Cuates/lampcentosinstall/tree/master/additionallanguage/angularcli)
 
 ### React
-* [1](#)
+* [1](https://github.com/Cuates/lampcentosinstall/tree/master/additionallanguage/react)
 
 ### Vue
-* [2.9.6](#)
+* [2.9.6](https://github.com/Cuates/lampcentosinstall/tree/master/additionallanguage/vue)
