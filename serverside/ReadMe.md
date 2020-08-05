@@ -7,10 +7,10 @@
 * [Memcached](#memcached)
 
 ### PHP
-* [7.4.9-1](#)
+* [7.4.9-1](https://github.com/Cuates/lampcentosinstall/tree/master/serverside/php)
 
 ### Logrotate
-* [3.14.0-3](#)
+* [3.14.0-3](https://github.com/Cuates/lampcentosinstall/tree/master/serverside/logrotate)
 
 ### Memcached
-* [1.5.9](#)
+* [1.5.9](https://github.com/Cuates/lampcentosinstall/tree/master/serverside/memcached)
