@@ -1,1 +1,1 @@
-* 'sudo dnf install -y telnet'
+* `sudo dnf install -y telnet`
