@@ -12,3 +12,4 @@
       port = 1433<br />
       tds version = 8.0
 * `tsql -C`
+* `tsql -S <FreeTDS_Name> -U <username> -P <password>`
