@@ -24,3 +24,4 @@
       PWD             = PASSWORD<br />
       TDS_Version     = 8.0
 * `isql --version`
+* `isql -v <FreeTDS_Name> <username> <password>`
