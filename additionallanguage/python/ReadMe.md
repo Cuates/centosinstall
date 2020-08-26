@@ -12,5 +12,6 @@
 * `sudo make altinstall`
   * **WAIT FOR THIS TO FINISH**
   * **DO NOT `sudo make install` AS IT WILL OVERWRITE THE DEFAULT SYSTEM PYTHON**
+* `sudo dnf install -y python3-devel` **THIS IS NEEDED FOR SOME OF THE PYTHON MODULES**
 * `python3.8 --version`
 * `pip3.8 --version`
