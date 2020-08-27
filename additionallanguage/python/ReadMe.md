@@ -26,6 +26,6 @@
   * [Install dependencies for python3 and mysql](https://stackoverflow.com/questions/21530577/fatal-error-python-h-no-such-file-or-directory)
   * `sudo dnf install -y python3-devel mysql-devel`
     * [pyodbc](https://pypi.org/project/pyodbc/)
-    * `pip3.8 install pyodbc`
+      * `pip3.8 install pyodbc`
     * [mysqlclient](https://pypi.org/project/mysqlclient/)
-    * `pip3.8 install mysqlclient`
+      * `pip3.8 install mysqlclient`
