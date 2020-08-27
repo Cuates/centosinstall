@@ -13,7 +13,7 @@
     module_hotfixes=1<br />
     gpgkey=http://sfo1.mirrors.digitalocean.com/mariadb/yum/RPM-GPG-KEY-MariaDB<br />
     gpgcheck=1<br />
-* `sudo dnf install -y mariadb-server mariadb`
+* `sudo dnf install -y mariadb-server mariadb mysql-devel`
   * Is this ok: y Enter
   * Is this ok: y Enter
   * Is this ok: y Enter
