@@ -15,7 +15,7 @@
 * `sudo dnf install -y python3-devel` **THIS IS NEEDED FOR SOME OF THE PYTHON MODULES**
 * `python3.8 --version`
 * `pip3.8 --version`
-* Update pip version
+* Upgrade pip version
   * `/usr/local/bin/python3.8 -m pip install --upgrade pip`
 * Installing modules for Python
   * [SQLAlchemy](https://pypi.org/project/SQLAlchemy/)
