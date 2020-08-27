@@ -13,8 +13,9 @@
 ### Python
 * [3.8.5](https://github.com/Cuates/lampcentosinstall/tree/master/additionallanguage/python)
 
-### PIP (Requires Python to be installed first)
+### PIP
 * [20.2.2](https://github.com/Cuates/lampcentosinstall/tree/master/additionallanguage/python)
+** **Requires Python to be installed first**
 
 ### Ruby
 * [2.7.1p83](https://github.com/Cuates/lampcentosinstall/tree/master/additionallanguage/ruby)
