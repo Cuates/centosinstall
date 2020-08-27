@@ -15,3 +15,17 @@
 * `sudo dnf install -y python3-devel` **THIS IS NEEDED FOR SOME OF THE PYTHON MODULES**
 * `python3.8 --version`
 * `pip3.8 --version`
+* Update pip version
+  * `/usr/local/bin/python3.8 -m pip install --upgrade pip`
+* Installing modules for Python
+  * [SQLAlchemy](https://pypi.org/project/SQLAlchemy/)
+  * `pip3.8 install sqlalchemy`
+  * [psycopg2](https://pypi.org/project/psycopg2/)
+  *`pip3.8 install psycopg2-binary`
+  * **need to perform the following first before pyodbc and mysqlclient can be installed**
+  * [Install dependencies for python3 and mysql](https://stackoverflow.com/questions/21530577/fatal-error-python-h-no-such-file-or-directory)
+  `sudo dnf install -y python3-devel mysql-devel`
+    * [pyodbc](https://pypi.org/project/pyodbc/)
+    `pip3.8 install pyodbc`
+    * [mysqlclient](https://pypi.org/project/mysqlclient/)
+    `pip3.8 install mysqlclient`
