@@ -3,6 +3,7 @@
 
 ## Table of Contents
 * [Python](#python)
+* [PIP](#pip)
 * [Ruby](#ruby)
 * [Rails](#rails)
 * [Angular CLI](#angular-cli)
