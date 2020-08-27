@@ -21,7 +21,7 @@
   * [SQLAlchemy](https://pypi.org/project/SQLAlchemy/)
   * `pip3.8 install sqlalchemy`
   * [psycopg2](https://pypi.org/project/psycopg2/)
-  *`pip3.8 install psycopg2-binary`
+  * `pip3.8 install psycopg2-binary`
   * **need to perform the following first before pyodbc and mysqlclient can be installed**
   * [Install dependencies for python3 and mysql](https://stackoverflow.com/questions/21530577/fatal-error-python-h-no-such-file-or-directory)
   `sudo dnf install -y python3-devel mysql-devel`
