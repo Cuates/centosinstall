@@ -18,6 +18,8 @@
 * Upgrade pip version
   * `/usr/local/bin/python3.8 -m pip install --upgrade pip`
 * Installing modules for Python
+  * [Pandas](https://pypi.org/project/pandas/)
+    * `pip3.8 install pandas`
   * [SQLAlchemy](https://pypi.org/project/SQLAlchemy/)
     * `pip3.8 install sqlalchemy`
   * [psycopg2](https://pypi.org/project/psycopg2/)
