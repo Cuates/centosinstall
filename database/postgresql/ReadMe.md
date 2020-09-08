@@ -24,6 +24,7 @@
     * listen_addresses = 'localhost'
   * IS
     * listen_addresses = '*'
+  * Save and Quit
 * `sudo systemctl restart postgresql`
 * `sudo netstat -antup | grep 5432`
 * `sudo vim /var/lib/pgsql/data/pg_hba.conf`
