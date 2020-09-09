@@ -7,8 +7,9 @@
 * `sudo npm install -g npm@latest`
 * `sudo dnf module -y install nodejs/development`
 * `node -v`
-* `sudo npm install vue`
+* **NOTE Perform the above only if not already installed**
+* `sudo npm install -g vue`
   * **WAIT FOR THIS TO FINISH**
-* `sudo npm install @vue/cli`
+* `sudo npm install -g @vue/cli` **NOTE May not need the -g**
   * **WAIT FOR THIS TO FINISH**
 * `vue --version`
