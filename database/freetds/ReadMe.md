@@ -3,9 +3,9 @@
 [How To Connect To SQL Server Using FreeTDS ODBC](https://stackoverflow.com/questions/57350910/how-to-connect-to-sql-server-using-freetds-odbc/)
 * `sudo dnf install -y epel-release`
 * `sudo dnf install -y freetds freetds-devel`
-* `sudo vim /etc/freetds.ini`
+* `sudo vim /etc/freetds.conf` **NOTE was /etc/freetds.ini**
   * Uncomment the following
-    * text size = 64512;
+    * text size = 64512
   * Add the following
     * [MSSQL_FreeTDS_Name]<br />
       host = SERVERNAME<br />
