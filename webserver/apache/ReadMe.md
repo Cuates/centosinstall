@@ -7,9 +7,10 @@
 * `sudo firewall-cmd --permanent --zone=public --add-service=http`
 * `sudo systemctl reload firewalld`
 * `sudo apachectl configtest`
-* `sudo vim /etc/httpd/conf.d/servername.conf`
-  * Add the following line in this file.
-    * ServerName localhost
+* Create a new configuration file named servername.conf under /etc/httpd/conf.d/ directory
+  *`sudo vim /etc/httpd/conf.d/servername.conf`
+    * Add the following line in this file.
+      * ServerName localhost
   * `sudo systemctl reload httpd`
 * `sudo apachectl configtest`
 
@@ -29,7 +30,7 @@
         Options FollowSymLinks<br />
         AllowOverride none<br />
       <\/Directory>
-  * DocumentRoot "/var/www/html/"
+  * DocumentRoot "/var/www/"
   * \# Relax access to content within /var/www.<br />
       <Directory "/var/www"><br />
         AllowOverride None<br />
