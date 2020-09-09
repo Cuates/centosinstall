@@ -13,7 +13,7 @@
 * [System Share](#system-share)
 
 ### Version
-* 0.0.1
+* 0.0.2
 
 ### [System](https://github.com/Cuates/lampcentosinstall/blob/master/system)
 
