@@ -8,16 +8,18 @@
 * `sudo systemctl restart httpd`
 * `sudo systemctl status httpd`
 * `sudo cp /etc/httpd/conf.d/pgadmin4.conf.sample /etc/httpd/conf.d/pgadmin4.conf`
-* `sudo httpd -t OR sudo apachectl configtest`
+* `sudo httpd -t` OR `sudo apachectl configtest`
 * `sudo systemctl restart httpd`
 * `sudo mkdir -p /var/lib/pgadmin4/`
 * `sudo mkdir -p /var/log/pgadmin4/`
 * `sudo vim /usr/lib/python3.6/site-packages/pgadmin4-web/config_distro.py`
-  * LOG_FILE = '/var/log/pgadmin4/pgadmin4.log'
-  * SQLITE_PATH = '/var/lib/pgadmin4/pgadmin4.db'
-  * SESSION_DB_PATH = '/var/lib/pgadmin4/sessions'
-  * STORAGE_DIR = '/var/lib/pgadmin4/storage'
-* `sudo dnf install -y python3-bcrypt python3-pynacl`
+  * Copy and paste the following to the bottom of the file
+    * LOG_FILE = '/var/log/pgadmin4/pgadmin4.log'
+    * SQLITE_PATH = '/var/lib/pgadmin4/pgadmin4.db'
+    * SESSION_DB_PATH = '/var/lib/pgadmin4/sessions'
+    * STORAGE_DIR = '/var/lib/pgadmin4/storage'
+  * Save and Exit
+* `sudo dnf install -y python3-bcrypt python3-pynacl` **NOTE if not already installed**
 * `sudo python3 /usr/lib/python3.6/site-packages/pgadmin4-web/setup.py`
   * Email address: admin@example.com
   * Password: PASSWORD_HERE
@@ -31,8 +33,9 @@
 * `sudo firewall-cmd --add-service={http,https} --permanent`
 * `sudo firewall-cmd --reload`
 * `sudo systemctl restart httpd`
+* `sudo rpm -qa | grep pgadmin`
 
-[Local pgAdmin](http://server-ip/pgadmin4/)
+[Local pgAdmin](http://localhost/pgadmin4/)
 * username
 * password
 * Add New Server
@@ -45,4 +48,3 @@
     * Check
   * Click: 'Save' button
     * Automatically connects to your PostgreSQL server
-  * sudo rpm -qa | grep pgadmin
