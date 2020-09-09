@@ -15,7 +15,7 @@
     * PermitRootLogin=no
   * `sudo systemctl restart sshd`
 * `sudo systemctl enable --now cockpit.socket`
-  * Activate the web console with the above command (*This is optional and is more for a GUI visual aid)
+  * Activate the web console with the above command (**This is optional and is more for a GUI visual aid**)
   * After ssh login, the terminal shows a message
     * Web console: https://localhost:9090/ or https://IP_ADDRESS:9090/
 
