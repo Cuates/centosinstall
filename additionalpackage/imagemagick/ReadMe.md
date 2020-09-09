@@ -8,6 +8,8 @@
 * `sudo dnf install -y php php-devel php-pear make`
 * `sudo pecl channel-update pecl.php.net`
 * `sudo pecl install imagick`
+  * Please provide the prefix of ImageMagick installation [autodetect]: Enter
+    * **WAIT FOR THIS TO FINISH**
 * `sudo vim /etc/php.d/20-imagick.ini`
   * extension=imagick.so
 * `sudo systemctl restart httpd`
