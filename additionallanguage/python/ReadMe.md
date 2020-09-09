@@ -6,6 +6,7 @@
 * `tar -xf Python-3.8.5.tgz`
 * `cd Python-3.8.5`
 * `./configure --enable-optimizations`
+  * **WAIT FOR THIS TO FINISH**
 * `nproc` (Displays the number of cores in your processor)
 * `make -j 4`
   * **WAIT FOR THIS TO FINISH**
