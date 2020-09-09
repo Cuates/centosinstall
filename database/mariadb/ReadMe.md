@@ -42,13 +42,13 @@
   * select user,host,password from mysql.user;
   * show databases;
   * GRANT ALL ON \*.\* TO user_name@ip_address IDENTIFIED BY 'user_password';
-   * IP_Address means user can login from a specific IP address
+    * IP_Address means user can login from a specific IP address
   * FLUSH PRIVILEGES;
-   * The above command is to apply changes 
+    * The above command is to apply changes 
   * GRANT ALL ON \*.\* TO user_name@ip_address IDENTIFIED BY 'user_password';
-   * '%' means user can login from any IP
+    * '%' means user can login from any IP
   * FLUSH PRIVILEGES;
-   * The above command is to apply changes 
+    * The above command is to apply changes 
   * exit;
 * `mariadb --version`
 
