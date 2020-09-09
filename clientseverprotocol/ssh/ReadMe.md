@@ -21,5 +21,6 @@
 
 [Using Selinux](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/using_selinux/index)<br />
 [Redhat Install Semanage Selinux Command Rpm](https://www.cyberciti.biz/faq/redhat-install-semanage-selinux-command-rpm/)
-* Search for semanage port
 * `ssh -V`
+
+* Search for semanage port if there are issues
