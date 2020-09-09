@@ -1,5 +1,7 @@
 [How To Install Imagemagick And PHP Imagick On CentOS 8 rhel 8](https://www.itzgeek.com/post/how-to-install-imagemagick-and-php-imagick-on-centos-8-rhel-8/)<br />
 [Install Imagemagick CentOS 8](https://idroot.us/install-imagemagick-centos-8/)
+
+* **NOTE** Needs PHP to be installed first
 * `sudo dnf install -y epel-release`
 * `sudo dnf config-manager --set-enabled PowerTools`
 * `sudo dnf install -y ImageMagick ImageMagick-devel`
