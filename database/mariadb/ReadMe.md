@@ -40,6 +40,8 @@
   * select user,host,password from mysql.user;
   * show databases;
   * GRANT ALL ON \*.\* TO user_name@ip_address IDENTIFIED BY 'user_password';
+  * FLUSH PRIVILEGES;
+   * The above command is to apply changes 
   * exit;
 * `mariadb --version`
 
