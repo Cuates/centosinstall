@@ -1,6 +1,8 @@
 [How To Install MariaDB On CentOS 8](https://www.linode.com/docs/databases/mariadb/how-to-install-mariadb-on-centos-8/)<br />
 [MariaDB Install](https://www.server-world.info/en/note?os=CentOS_8&p=mariadb&f=1)<br />
 [MySQL Remote Access](https://linuxize.com/post/mysql-remote-access/)<br />
+[Allow Remote Access to MariaDB Server](https://www.mynotepaper.com/allow-remote-access-to-mariadb-server-on-rhel-centos)<br />
+[Host 'xxx.xx.xxx.xxx' is not allowed to connect to this MySQL server](https://stackoverflow.com/questions/1559955/host-xxx-xx-xxx-xxx-is-not-allowed-to-connect-to-this-mysql-server)<br />
 [Beekeeper Studio](https://www.beekeeperstudio.io/)<br />
 [Install LAMP Stack CentOS 8 rhel 8](https://www.linuxbabe.com/redhat/install-lamp-stack-centos-8-rhel-8)<br />
 [MariaDB](https://mariadb.org/download/)
