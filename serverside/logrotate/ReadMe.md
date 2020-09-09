@@ -1,6 +1,6 @@
 [How To Debug Logrotate Warnings Or Errors](https://access.redhat.com/solutions/32831)
 * `sudo mkdir /var/log/php`
-* `sudo vim /etc/lorotate.d/php`
+* `sudo vim /etc/logrotate.d/php`
   * /var/log/php/*log {<br />
     missingok<br />
     notifempty<br />
