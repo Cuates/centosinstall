@@ -60,81 +60,82 @@
 **IMPORTANT NOTE**
 * Need to grant permissions within the database to a specific user and IP for external database access
 
-**Modify client.cnf File**
-* sudo vim /etc/my.cnf.d/client.cnf
-  * WAS
-    * [client]<br />
-      [client-mariadb]
+**Setup Database For utf8mb4**
+* Modify client.cnf File
+  * sudo vim /etc/my.cnf.d/client.cnf
+    * WAS
+      * [client]<br />
+        [client-mariadb]
 
-  * IS
-    * [client]<br />
-      default-character-set = utf8mb4<br />
-      [client-mariadb]
-      default-character-set = utf8mb4
-  * Save and Exit
+    * IS
+      * [client]<br />
+        default-character-set = utf8mb4<br />
+        [client-mariadb]
+        default-character-set = utf8mb4
+    * Save and Exit
 
-* `sudo vim /etc/my.cnf.d/mysql-client.cnf`
-  * WAS
-    * [mysql]<br />
-      [mysql_upgrade]<br />
-      [mysqladmin]<br />
-      [mysqlbinlog]<br />
-      [mysqlcheck]<br />
-      [mysqldump]<br />
-      [mysqlimport]<br />
-      [mysqlshow]<br />
-      [mysqlslap]<br />
-  * IS
-    * [mysql]<br />
-      default-character-set = utf8mb4<br />
-      [mysql_upgrade]<br />
-      [mysqladmin]<br />
-      [mysqlbinlog]<br />
-      [mysqlcheck]<br />
-      [mysqldump]<br />
-      [mysqlimport]<br />
-      [mysqlshow]<br />
-      [mysqlslap]<br />
-  * Save and Exit
+  * `sudo vim /etc/my.cnf.d/mysql-client.cnf`
+    * WAS
+      * [mysql]<br />
+        [mysql_upgrade]<br />
+        [mysqladmin]<br />
+        [mysqlbinlog]<br />
+        [mysqlcheck]<br />
+        [mysqldump]<br />
+        [mysqlimport]<br />
+        [mysqlshow]<br />
+        [mysqlslap]<br />
+    * IS
+      * [mysql]<br />
+        default-character-set = utf8mb4<br />
+        [mysql_upgrade]<br />
+        [mysqladmin]<br />
+        [mysqlbinlog]<br />
+        [mysqlcheck]<br />
+        [mysqldump]<br />
+        [mysqlimport]<br />
+        [mysqlshow]<br />
+        [mysqlslap]<br />
+    * Save and Exit
 
-**Modify server.cnf File**
-* `sudo vim /etc/my.cnf.d/server.cnf`
-  * WAS
-    * [server]<br />
-      [mysqld]<br />
-      [galera]<br />
-      [embedded]<br />
-      [mariadb]<br />
-      [mariadb-10.5]<br />
+* Modify server.cnf File
+  * `sudo vim /etc/my.cnf.d/server.cnf`
+    * WAS
+      * [server]<br />
+        [mysqld]<br />
+        [galera]<br />
+        [embedded]<br />
+        [mariadb]<br />
+        [mariadb-10.5]<br />
 
-  * IS
-    * [server]<br />
-      [mysqld]<br />
-      character-set-client-handshake = FALSE<br />
-      character-set-server = utf8mb4<br />
-      collation-server = utf8mb4_unicode_520_ci<br />
-      init-connect = 'SET NAMES utf8mb4 COLLATE utf8mb4_unicode_520_ci'<br />
-      init-connect = 'SET collation_connection = utf8mb4_unicode_520_ci'<br />
-      [galera]<br />
-      [embedded]<br />
-      [mariadb]<br />
-      [mariadb-10.5]<br />
-  * Save and Exit
+    * IS
+      * [server]<br />
+        [mysqld]<br />
+        character-set-client-handshake = FALSE<br />
+        character-set-server = utf8mb4<br />
+        collation-server = utf8mb4_unicode_520_ci<br />
+        init-connect = 'SET NAMES utf8mb4 COLLATE utf8mb4_unicode_520_ci'<br />
+        init-connect = 'SET collation_connection = utf8mb4_unicode_520_ci'<br />
+        [galera]<br />
+        [embedded]<br />
+        [mariadb]<br />
+        [mariadb-10.5]<br />
+    * Save and Exit
 
-**Restart MariaDB Services**
-* `sudo systemctl restart mariadb`
+* Restart MariaDB Services
+  * `sudo systemctl restart mariadb`
 
-**Repair And Optimize**
-* `mysqlcheck -u root -p --auto-repair --optimize --all-databases`
+* Repair And Optimize
+  * `mysqlcheck -u root -p --auto-repair --optimize --all-databases`
 
-**Check Database Took Hold Of New Modifications**
-* `select schema_name, default_character_set_name, default_collation_name from information_schema.schemata where schema_name not in ('mysql', 'information_schema', 'performance_schema', 'sys');`
-* `select * from information_schema.columns where table_name like 'media%';`
-* `show session variables where Variable_name like 'character_set\_%' or Variable_name like 'collation%';`
-* `show global variables where Variable_name like 'character_set\_%' or Variable_name like 'collation%';`
-* `show global variables like 'init_connect';`
-* `show variables like '%_server' ;`
-* `show variables like 'char%';`
-* `show variables like 'collation%';`
-* See which procedures have not been updated to the server’s new character_set_client, collation_connection and Database Collation values
-  * `show procedure status;`
+* Check Database Took Hold Of New Modifications
+  * `select schema_name, default_character_set_name, default_collation_name from information_schema.schemata where schema_name not in ('mysql', 'information_schema', 'performance_schema', 'sys');`
+  * `select * from information_schema.columns where table_name like 'media%';`
+  * `show session variables where Variable_name like 'character_set\_%' or Variable_name like 'collation%';`
+  * `show global variables where Variable_name like 'character_set\_%' or Variable_name like 'collation%';`
+  * `show global variables like 'init_connect';`
+  * `show variables like '%_server' ;`
+  * `show variables like 'char%';`
+  * `show variables like 'collation%';`
+  * See which procedures have not been updated to the server’s new character_set_client, collation_connection and Database Collation values
+    * `show procedure status;`
