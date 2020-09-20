@@ -48,3 +48,15 @@
     * Check
   * Click: 'Save' button
     * Automatically connects to your PostgreSQL server
+
+**If Updated PGSQL Do the Following To Be Able To Log Into pgAdmin**
+* `sudo vim /usr/lib/python3.6/site-packages/pgadmin4-web/config_distro.py`
+  * Copy and paste the following to the bottom of the file
+    * LOG_FILE = '/var/log/pgadmin4/pgadmin4.log'
+    * SQLITE_PATH = '/var/lib/pgadmin4/pgadmin4.db'
+    * SESSION_DB_PATH = '/var/lib/pgadmin4/sessions'
+    * STORAGE_DIR = '/var/lib/pgadmin4/storage'
+  * Save and Exit
+* `sudo setsebool -P httpd_can_network_connect 1`
+* `sudo setsebool -P httpd_can_network_connect_db 1`
+* `sudo systemctl restart httpd`
