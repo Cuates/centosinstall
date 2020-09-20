@@ -184,7 +184,8 @@
     ``` `columnFive` datetime not null default current_timestamp(), ```<br />
     ``` `columnSix` datetime default current_timestamp(), ```<br />
     ``` primary key (`tableID`), ```<br />
-    ``` unique key `UQ_<tablename>_columnOne` (`columnOne`) ```<br />
+    ``` unique key `UQ_<tablename>_columnOne` (`columnOne`), ```<br />
+    ``` index `IX_<tablename>_columnTwo` (`columnTwo`) ```<br />
     `) engine=InnoDB default charset=utf8mb4 collate utf8mb4_unicode_520_ci;`<br />
 
 * Table Creation
