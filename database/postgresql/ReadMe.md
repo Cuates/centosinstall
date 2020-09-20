@@ -42,7 +42,51 @@
 * `sudo firewall-cmd --reload`
 
 **USAGE**<br />
-[Placeholder](Placeholder)
+[PostgreSQL Grant](https://www.educba.com/postgresql-grant/)<br />
+[Create User](https://www.ntchosting.com/encyclopedia/databases/postgresql/create-user/)<br />
+[PostgreSQL Create Database](https://www.tutorialspoint.com/postgresql/postgresql_create_database.htm)<br />
+[SQL Create Database](https://www.postgresql.org/docs/9.0/sql-createdatabase.html)<br />
+[SQL Create Table](https://www.postgresql.org/docs/9.1/sql-createtable.html)<br />
+[PostgreSQL Create Table](https://www.tutorialspoint.com/postgresql/postgresql_create_table.htm)<br />
+[PostgreSQL Show Databases](https://www.postgresqltutorial.com/postgresql-show-databases/)<br />
+[Simulate Create Database If Not Exists For PostgreSQL](https://stackoverflow.com/questions/18389124/simulate-create-database-if-not-exists-for-postgresql)<br />
+[SQL Drop Database](https://www.postgresql.org/docs/8.2/sql-dropdatabase.html)<br />
+[PostgreSQL Drop Database](https://www.postgresqltutorial.com/postgresql-drop-database/)<br />
+[PostgreSQL Select Database](https://www.tutorialspoint.com/postgresql/postgresql_select_database.htm)<br />
+[PostgreSQL Show Tables](https://www.postgresqltutorial.com/postgresql-show-tables/)<br />
+[PostgreSQL Describe Table](https://www.postgresqltutorial.com/postgresql-describe-table/)<br />
+[How To Display All Tables In PostgreSQL](https://kb.objectrocket.com/postgresql/how-to-display-all-tables-in-postgresql-847)<br />
+[PostgreSQL Create Table If Not Exists](https://www.dbrnd.com/2018/03/postgresql-create-table-if-not-exists/)<br />
+[PostgreSQL Data Types](https://www.postgresqltutorial.com/postgresql-data-types/)<br />
+[PostgreSQL Serial](https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-serial/)<br />
+[PostgreSQL Integer](https://www.postgresqltutorial.com/postgresql-integer/)<br />
+[PostgreSQL Timestamp](https://www.postgresqltutorial.com/postgresql-timestamp/)<br />
+[PostgreSQL Primary Key](https://www.postgresqltutorial.com/postgresql-primary-key/)<br />
+[Primary Key Constraint](https://www.w3resource.com/PostgreSQL/primary-key-constraint.php)<br />
+[Datatype Bit](https://www.postgresql.org/docs/8.2/datatype-bit.html)<br />
+[Postgresql Insert](https://www.postgresqltutorial.com/postgresql-insert/)<br />
+[List All Sequences In A Postgres db 81 With SQL](https://stackoverflow.com/questions/1493262/list-all-sequences-in-a-postgres-db-8-1-with-sql)<br />
+[PostgreSQL Auto Increment](https://www.educba.com/postgresql-auto-increment/)<br />
+[View PG Sequences](https://www.postgresql.org/docs/10/view-pg-sequences.html)<br />
+[Indexes In PostgreSQL](https://www.educba.com/indexes-in-postgresql/)<br />
+[SQL Create Index](https://www.postgresql.org/docs/9.1/sql-createindex.html)<br />
+[PostgreSQL Create Index](https://www.postgresqltutorial.com/postgresql-indexes/postgresql-create-index/)<br />
+[Postgresql List Indexes](https://www.postgresqltutorial.com/postgresql-indexes/postgresql-list-indexes/)<br />
+[Postgresql Truncate Table](https://www.postgresqltutorial.com/postgresql-truncate-table/)<br />
+[SQL Truncate](https://www.postgresql.org/docs/9.1/sql-truncate.html)<br />
+[Howto Add PostgreSQL User Account](https://www.cyberciti.biz/faq/howto-add-postgresql-user-account/)<br />
+[Postgres User Permissions](https://flaviocopes.com/postgres-user-permissions/)<br />
+[Postgresql Grant](https://www.educba.com/postgresql-grant/)<br />
+[Create User](https://www.ntchosting.com/encyclopedia/databases/postgresql/create-user/)<br />
+[SQL Drop Role](https://www.postgresql.org/docs/9.1/sql-droprole.html)<br />
+[Cannot Drop PostgreSQL Role Error Cannot Be Dropped Because Some Objects Depe](https://stackoverflow.com/questions/51256454/cannot-drop-postgresql-role-error-cannot-be-dropped-because-some-objects-depe)<br />
+[Grant Revoke](https://www.techonthenet.com/postgresql/grant_revoke.php)<br />
+[How To Change Owner Of PostgreSQL Database](https://stackoverflow.com/questions/4313323/how-to-change-owner-of-postgresql-database)<br />
+[PostgreSQL Drop User](https://www.tutorialkart.com/postgresql/postgresql-drop-user/)<br />
+[PostgreSQL List Users](https://www.postgresqltutorial.com/postgresql-list-users/)<br />
+[Creating User Database And Adding Access On PostgreSQL](https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e)<br />
+[Permission Denied In Postgres](https://dba.stackexchange.com/questions/36870/permission-denied-in-postgres)<br />
+[Error Permission Denied For Sequence Cities Id Seq Using Postgres](https://stackoverflow.com/questions/9325017/error-permission-denied-for-sequence-cities-id-seq-using-postgres)
 
 * Databases
   * `\l`
