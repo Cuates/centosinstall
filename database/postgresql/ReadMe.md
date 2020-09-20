@@ -145,5 +145,8 @@
 * Table Delete
   * `delete from <tablename> where tableID = 1;`
 
-* Table Truncate And Restart Identity Start Value
+* Table Truncate
+  * `truncate table <tablename>;`
+
+* Table Truncate And Reseed Identity
   * `truncate table <tablename> restart identity;`
