@@ -154,7 +154,9 @@
 [Use Script Files MySQL](https://www.qualitestgroup.com/resources/knowledge-center/how-to-guide/use-script-files-mysql/)<br />
 [Types In MySQL bigint20 VS int20](https://stackoverflow.com/questions/3135804/types-in-mysql-bigint20-vs-int20)<br />
 [MariaDB And MySQL Character Set Conversion](https://www.fromdual.com/mariadb-and-mysql-character-set-conversion)<br />
-[Truncate Table](https://mariadb.com/kb/en/truncate-table/)
+[Truncate Table](https://mariadb.com/kb/en/truncate-table/)<br />
+[Listing Stored Procedures In MySQL Database](https://www.mysqltutorial.org/listing-stored-procedures-in-mysql-database.aspx)<br />
+[Oist Of Stored Procedures Functions MySQL Command Line](https://stackoverflow.com/questions/733349/list-of-stored-procedures-functions-mysql-command-line)
 
 * Databases
   * `show databases;`
