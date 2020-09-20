@@ -42,7 +42,7 @@
 * `sudo firewall-cmd --reload`
 
 **USAGE**<br />
-[TestONE](TestOne)
+[Placeholder](Placeholder)
 
 * Databases
   * `\l`
@@ -107,12 +107,12 @@
     `columnSix timestamp default current_timestamp,`<br />
     `constraint PK_<tablename>_<columnOne> primary key (columnOne)`<br />
   `);`
+
+* Ownership Create **NOTE This is for auto_increment**
+  * `alter sequence <tablename>_<tableID>_seq owned by <tablename>.<tableID>;`
   
 * Create Index **NOTE To create an index on the expression lower(<columnname>), allowing efficient case-insensitive searches**
   * `create index IX_<tablename>_columnTwo on <tablename> ((lower(columnTwo)));`
-
-* Ownership Create
-  * `alter sequence <tablename>_<tableID>_seq owned by <tablename>.<tableID>;`
 
 * Sequence Grant Permissions to all
   * `grant usage, select on all sequences in schema public to <username>;`
