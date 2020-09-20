@@ -49,7 +49,7 @@
   * Click: 'Save' button
     * Automatically connects to your PostgreSQL server
 
-**If Updated PGSQL Do the Following To Be Able To Log Into pgAdmin**
+**If Updated PostgreSQL Do the Following To Be Able To Log Into pgAdmin**
 * `sudo vim /usr/lib/python3.6/site-packages/pgadmin4-web/config_distro.py`
   * Copy and paste the following to the bottom of the file
     * LOG_FILE = '/var/log/pgadmin4/pgadmin4.log'
