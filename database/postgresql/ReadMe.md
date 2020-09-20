@@ -150,3 +150,19 @@
 
 * Table Truncate And Reseed Identity
   * `truncate table <tablename> restart identity;`
+
+* Procedure
+  * `select`<br />
+    `proc.specific_schema as procedure_schema,`<br />
+    `proc.specific_name,`<br />
+    `proc.routine_name as procedure_name,`<br />
+    `proc.external_language,`<br />
+    `args.parameter_name,`<br />
+    `args.parameter_mode,`<br />
+    `args.data_type`<br />
+    `from information_schema.routines proc`<br />
+    `left join information_schema.parameters args on proc.specific_schema = args.specific_schema and proc.specific_name = args.specific_name`<br />
+    `where`<br />
+    `proc.routine_schema not in ('pg_catalog', 'information_schema') and`<br />
+    `proc.routine_type = 'PROCEDURE'`<br />
+    `order by procedure_schema, specific_name, procedure_name, args.ordinal_position;`
