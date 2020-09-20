@@ -176,15 +176,15 @@
 
 * Table Create
   * `create table if not exists <tablename>(`<br />
-      ``` `tableID` bigint(20) unsigned not null auto_increment, ```<br />
-      ``` `columnOne` int(11) not null, ```<br />
-      ``` `columnTwo` varchar(255) collate utf8mb4_unicode_520_ci not null, ```<br />
-      ``` `columnThree` text collate utf8mb4_unicode_520_ci default null, ```<br />
-      ``` `columnFour` bit(1) not null default b'0', ```<br />
-      ``` `columnFive` datetime not null default current_timestamp(), ```<br />
-      ``` `columnSix` datetime default current_timestamp(), ```<br />
-      ``` primary key (`tableID`), ```<br />
-      ``` unique key `UQ_<tablename>_columnOne` (`columnOne`) ```<br />
+    ``` `tableID` bigint(20) unsigned not null auto_increment, ```<br />
+    ``` `columnOne` int(11) not null, ```<br />
+    ``` `columnTwo` varchar(255) collate utf8mb4_unicode_520_ci not null, ```<br />
+    ``` `columnThree` text collate utf8mb4_unicode_520_ci default null, ```<br />
+    ``` `columnFour` bit(1) not null default b'0', ```<br />
+    ``` `columnFive` datetime not null default current_timestamp(), ```<br />
+    ``` `columnSix` datetime default current_timestamp(), ```<br />
+    ``` primary key (`tableID`), ```<br />
+    ``` unique key `UQ_<tablename>_columnOne` (`columnOne`) ```<br />
     `) engine=InnoDB default charset=utf8mb4 collate utf8mb4_unicode_520_ci;`<br />
 
 * Table Creation
