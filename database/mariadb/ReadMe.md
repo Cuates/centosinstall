@@ -203,7 +203,7 @@
   * `select tableID, columnOne, columnTwo, columnThree, columnFour, columnFive, columnSix from <tablename>;`
 
 * Table Insert
-  * `insert into <tablename> (columnOne, columnTwo, columnThree, columnFour, columnFive, columnSix) values (0, 'columnTwo', 'columnThree, 1, current_timestamp(), current_timestamp());`
+  * `insert into <tablename> (columnOne, columnTwo, columnThree, columnFour, columnFive, columnSix) values (0, 'columnTwo', 'columnThree', 1, current_timestamp(), current_timestamp());`
   
 * Table Update
   * `update <tablename> set columnFour = 1 where columnFour = 0;`
