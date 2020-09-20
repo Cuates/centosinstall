@@ -140,7 +140,7 @@
   * See which procedures have not been updated to the server’s new character_set_client, collation_connection and Database Collation values
     * `show procedure status;`
 
-**USAGE**
+**USAGE**<br />
 [How To Create A Table In MySQL And MariaDB On An Ubuntu Cloud Server](https://www.digitalocean.com/community/tutorials/how-to-create-a-table-in-mysql-and-mariadb-on-an-ubuntu-cloud-server)<br />
 [There Can Be Only One Auto Column](https://stackoverflow.com/questions/8645889/there-can-be-only-one-auto-column)<br />
 [Unique](https://www.techonthenet.com/mariadb/unique.php)<br />
