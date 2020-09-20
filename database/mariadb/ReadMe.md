@@ -214,3 +214,9 @@
 
 * Table Truncate
   * `truncate table <tablename>;`
+
+* Procedures
+  * `show procedure status;`
+
+* Functions
+  * `show function status;`
