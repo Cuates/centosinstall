@@ -196,7 +196,7 @@
 * Table Truncate And Reseed Identity
   * `truncate table <tablename> restart identity;`
 
-* Procedure
+* Functions and Procedures **NOTE Stored Procedures are new; Before it was Functions only**
   * User Defined Functions Universal
     * `select`<br />
       `n.nspname as function_schema,`<br />
