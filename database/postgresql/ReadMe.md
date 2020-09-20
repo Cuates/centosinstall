@@ -196,17 +196,59 @@
   * `truncate table <tablename> restart identity;`
 
 * Procedure
-  * `select`<br />
-    `proc.specific_schema as procedure_schema,`<br />
-    `proc.specific_name,`<br />
-    `proc.routine_name as procedure_name,`<br />
-    `proc.external_language,`<br />
-    `args.parameter_name,`<br />
-    `args.parameter_mode,`<br />
-    `args.data_type`<br />
-    `from information_schema.routines proc`<br />
-    `left join information_schema.parameters args on proc.specific_schema = args.specific_schema and proc.specific_name = args.specific_name`<br />
-    `where`<br />
-    `proc.routine_schema not in ('pg_catalog', 'information_schema') and`<br />
-    `proc.routine_type = 'PROCEDURE'`<br />
-    `order by procedure_schema, specific_name, procedure_name, args.ordinal_position;`
+  * User Defined Functions Universal
+    * `select`<br />
+      `n.nspname as function_schema,`<br />
+      `p.proname as function_name,`<br />
+      `l.lanname as function_language,`<br />
+      `case`<br />
+        `when l.lanname = 'internal'`<br />
+          `then`<br />
+            `p.prosrc`<br />
+        `else`<br />
+          `pg_get_functiondef(p.oid)`<br />
+      `end as definition,`<br />
+      `pg_get_function_arguments(p.oid) as function_arguments,`<br />
+      `t.typname as return_type`<br />
+      `from pg_proc p`<br />
+      `left join pg_namespace n on p.pronamespace = n.oid`<br />
+      `left join pg_language l on p.prolang = l.oid`<br />
+      `left join pg_type t on t.oid = p.prorettype`<br />
+      `where`<br />
+      `n.nspname not in ('pg_catalog', 'information_schema')`<br />
+      `order by function_schema, function_name;`<br />
+  * User Defined Functions 11+
+    * `select`<br />
+      `n.nspname as schema_name,`<br />
+      `p.proname as specific_name,`<br />
+      `case p.prokind`<br />
+        `when 'f'`<br />
+          `then`<br />
+            `'FUNCTION'`<br />
+        `when 'p'`<br />
+          `then`<br />
+            `'PROCEDURE'`<br />
+        `when 'a'`<br />
+          `then`<br />
+            `'AGGREGATE'`<br />
+        `when 'w'`<br />
+          `then`<br />
+            `'WINDOW'`<br />
+      `end as kind,`<br />
+      `l.lanname as language,`<br />
+      `case`<br />
+        `when l.lanname = 'internal'`<br />
+          `then`<br />
+            `p.prosrc`<br />
+        `else`<br />
+          `pg_get_functiondef(p.oid)`<br />
+      `end as definition,`<br />
+      `pg_get_function_arguments(p.oid) as arguments,`<br />
+      `t.typname as return_type`<br />
+      `from pg_proc p`<br />
+      `left join pg_namespace n on p.pronamespace = n.oid`<br />
+      `left join pg_language l on p.prolang = l.oid`<br />
+      `left join pg_type t on t.oid = p.prorettype`<br />
+      `where`<br />
+      `n.nspname not in ('pg_catalog', 'information_schema')`<br />
+      `order by schema_name, specific_name;`
