@@ -139,3 +139,77 @@
   * `show variables like 'collation%';`
   * See which procedures have not been updated to the server’s new character_set_client, collation_connection and Database Collation values
     * `show procedure status;`
+
+**USAGE**
+[How To Create A Table In MySQL And MariaDB On An Ubuntu Cloud Server](https://www.digitalocean.com/community/tutorials/how-to-create-a-table-in-mysql-and-mariadb-on-an-ubuntu-cloud-server)<br />
+[There Can Be Only One Auto Column](https://stackoverflow.com/questions/8645889/there-can-be-only-one-auto-column)<br />
+[Unique](https://www.techonthenet.com/mariadb/unique.php)<br />
+[Getting Started With Indexes](https://mariadb.com/kb/en/getting-started-with-indexes/)<br />
+[Show Create Table](https://mariadb.com/kb/en/show-create-table/)<br />
+[Show Index](https://mariadb.com/kb/en/show-index/)<br />
+[Create Index](https://mariadb.com/kb/en/create-index/)<br />
+[How To Create Index In MySQL](https://www.javatpoint.com/how-to-create-index-in-mysql)<br />
+[Charset Charsets](https://dev.mysql.com/doc/refman/5.7/en/charset-charsets.html)<br />
+[How To Backup And Restore MySQL Databases Using The Mysqldump Command](https://www.sqlshack.com/how-to-backup-and-restore-mysql-databases-using-the-mysqldump-command/)<br />
+[Use Script Files MySQL](https://www.qualitestgroup.com/resources/knowledge-center/how-to-guide/use-script-files-mysql/)<br />
+[Types In MySQL bigint20 VS int20](https://stackoverflow.com/questions/3135804/types-in-mysql-bigint20-vs-int20)<br />
+[MariaDB And MySQL Character Set Conversion](https://www.fromdual.com/mariadb-and-mysql-character-set-conversion)<br />
+[Truncate Table](https://mariadb.com/kb/en/truncate-table/)
+
+* Show Databases
+  * `show databases;`
+
+* Create Database
+  * `create database if not exists <databasename> default character set utf8mb4 collate utf8mb4_unicode_520_ci;`
+
+* Show How Database Was Created
+  * `show create database <databasename>;`
+
+* Drop Database
+  * `drop database if exists <databasename>;`
+
+* Connect To Database
+  * `use <databasename>;`
+
+* Show Tables
+  * `show tables;`
+
+* Table Create
+  * `create table if not exists <tablename>(`<br />
+      ``tableID` bigint(20) unsigned not null auto_increment,`<br />
+      ``columnOne` int(11) not null,`<br />
+      ``columnTwo` varchar(255) collate utf8mb4_unicode_520_ci not null,`<br />
+      ``columnThree` text collate utf8mb4_unicode_520_ci default null,`<br />
+      ``columnFour` bit(1) not null default b'0',`<br />
+      ``columnFive` datetime not null default current_timestamp(),`<br />
+      ``columnSix` datetime default current_timestamp(),`<br />
+      `primary key (``tableID``),`<br />
+      `unique key ``UQ_<tablename>_columnOne`` (``columnOne``)`<br />
+    `) engine=InnoDB default charset=utf8mb4 collate utf8mb4_unicode_520_ci;`
+
+* Table Creation
+  * `show create table <tablename>;`
+
+* Table Columns
+  * `show columns in <tablename>;`
+
+* Table Indexes
+  * `show index from <tablename>;`
+
+* Table Drop
+  * `drop table if exists <tablename>;`
+  
+* Table Select
+  * `select tableID, columnOne, columnTwo, columnThree, columnFour, columnFive, columnSix from <tablename>;`
+
+* Table Insert
+  * `insert into <tablename> (columnOne, columnTwo, columnThree, columnFour, columnFive, columnSix) values (0, 'columnTwo', 'columnThree, 1, current_timestamp(), current_timestamp());`
+  
+* Table Update
+  * `update <tablename> set columnFour = 1 where columnFour = 0;`
+  
+* Table Delete
+  * `delete from <tablename> where tableID = 1;`
+
+* Table Truncate
+  * `truncate table <tablename>;`
