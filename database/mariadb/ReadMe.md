@@ -165,7 +165,7 @@
 * Database Creation
   * `show create database <databasename>;`
 
-* Drop Database
+* Database Drop
   * `drop database if exists <databasename>;`
 
 * Database Connect
