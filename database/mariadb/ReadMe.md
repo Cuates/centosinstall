@@ -156,7 +156,7 @@
 [MariaDB And MySQL Character Set Conversion](https://www.fromdual.com/mariadb-and-mysql-character-set-conversion)<br />
 [Truncate Table](https://mariadb.com/kb/en/truncate-table/)
 
-* Show Databases
+* Databases
   * `show databases;`
 
 * Database Create
@@ -171,7 +171,7 @@
 * Connect To Database
   * `use <databasename>;`
 
-* Show Tables
+* Tables
   * `show tables;`
 
 * Table Create
