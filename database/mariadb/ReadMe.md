@@ -168,7 +168,7 @@
 * Drop Database
   * `drop database if exists <databasename>;`
 
-* Connect To Database
+* Database Connect
   * `use <databasename>;`
 
 * Tables
