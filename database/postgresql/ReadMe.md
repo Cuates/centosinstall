@@ -40,3 +40,40 @@
 * `sudo systemctl restart postgresql`
 * `sudo firewall-cmd --zone=public --permanent --add-service=postgresql`
 * `sudo firewall-cmd --reload`
+
+**USAGE**<br />
+[TestONE](TestOne)
+
+* Databases
+  * `\l`
+  * Select database names from pg database
+    * `select datname from pg_database;`
+  * Select all records from pg database
+    * `select * from pg_database;`
+  
+* Database Create
+  * `create database <databasename>;` **NOTE Does not have 'if exists' when creating databases**
+
+* Database Drop
+  * `drop database if exists <databasename>;`
+
+* Database Connect
+  * `\c <databasename>;`
+
+* Tables
+  * `\dt`
+
+* Roles
+  * `\du`
+
+* User Create
+  * `create user <username> with password '<password>';`
+
+* Database Grant Privileges
+  * `grant all privileges on database <databasename> to <username>;`
+
+* Owner Reassign
+  * `reassign owned by <username> to postgres;`
+
+* Owner Drop
+  * `drop owned by <username>;`
