@@ -159,10 +159,10 @@
 * Show Databases
   * `show databases;`
 
-* Create Database
+* Database Create
   * `create database if not exists <databasename> default character set utf8mb4 collate utf8mb4_unicode_520_ci;`
 
-* Show How Database Was Created
+* Database Creation
   * `show create database <databasename>;`
 
 * Drop Database
