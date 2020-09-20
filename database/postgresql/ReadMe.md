@@ -77,3 +77,73 @@
 
 * Owner Drop
   * `drop owned by <username>;`
+
+* User Drop
+  * `drop user <username>;`
+
+* Table Grant Privileges
+  * `grant all privileges on all tables in schema public to <username>;`
+
+* Sequence Grant Privileges
+  * `grant all privileges on all sequences in schema public to <username>;`
+
+* Access Future Objects in the schema Automatically
+  * `alter default privileges in schema public grant all on tables to <username>;`
+
+* Access Future Objects in the Database Automatically
+  * `alter default privileges grant all on tables to <username>;`
+
+* Sequence Create **NOTE This is for auto_increment**
+  * `create sequence <tablename>_<tableID)_seq;`
+
+* Table Create
+  * `create table if not exists <tablename>(`<br />
+    `tableID bigint not null default nextval('<tablename>_<tableID>_seq'),`<br />
+    `columnOne int not null,`<br />
+    `columnTwo varchar(255) not null,`<br />
+    `columnThree text default null,`<br />
+    `columnFour bit(1) not null default b'0',`<br />
+    `columnFive timestamp not null default current_timestamp,`<br />
+    `columnSix timestamp default current_timestamp,`<br />
+    `constraint PK_<tablename>_<columnOne> primary key (columnOne)`<br />
+  `);`
+  
+* Create Index **NOTE To create an index on the expression lower(<columnname>), allowing efficient case-insensitive searches**
+  * `create index IX_<tablename>_columnTwo on <tablename> ((lower(columnTwo)));`
+
+* Ownership Create
+  * `alter sequence <tablename>_<tableID>_seq owned by <tablename>.<tableID>;`
+
+* Sequence Grant Permissions to all
+  * `grant usage, select on all sequences in schema public to <username>;`
+
+* Table Columns
+  * `\d <tablename>`
+  * `select * from information_schema.columns where table_name = '<tablename>';`
+
+* Table Describe
+  * `\d+ <tablename>`
+
+* Sequence
+  * `select c.relname from pg_class c where c.relkind = 'S';`
+
+* Sequence Last Value
+  * `select last_value from <tablename>_<tableID>_seq;`
+
+* Table Drop
+  * `drop table if exists <tablename>;`
+
+* Table Select
+  * `select tableID, columnOne, columnTwo, columnThree, columnFour, columnFive, columnSix from <tablename>;`
+
+* Table Insert
+  * `insert into <tablename> (columnOne, columnTwo, columnThre, columnFour, columnFive, columnSix) values (0, 'columnTwo', 'columnThree', 1, current_timestamp, current_timestamp);`
+
+* Table Update
+  * `update <tablename> set columnFour = 1 where columnFour = 0;`
+
+* Table Delete
+  * `delete from <tablename> where tableID = 1;`
+
+* Table Truncate And Restart Identity Start Value
+  * `truncate table <tablename> restart identity;`
