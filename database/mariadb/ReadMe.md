@@ -36,6 +36,7 @@
   * Reload privilege tables now: Y Enter
 * `mysql -u root -p`
   * exit;
+* `sudo firewall-cmd --get-services`
 * `sudo firewall-cmd --permanent --add-service=mysql`
 * `sudo firewall-cmd --reload`
 * `sudo firewall-cmd --list-services`
