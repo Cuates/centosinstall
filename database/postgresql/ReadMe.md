@@ -38,6 +38,7 @@
     * host    all             all             ::1/128                 md5
   * Save and Quit **NOTE make sure to tab each column to match the existing column**
 * `sudo systemctl restart postgresql`
+* `sudo firewall-cmd --get-services`
 * `sudo firewall-cmd --zone=public --permanent --add-service=postgresql`
 * `sudo firewall-cmd --reload`
 
