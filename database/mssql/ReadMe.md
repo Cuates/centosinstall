@@ -30,6 +30,7 @@
 
 * Select an edition you’d like to use
   * \# Enter
+  * License Key Enter (This step is for a PAID version of MSSQL only)
 
 * Accept the license terms
   * Yes
