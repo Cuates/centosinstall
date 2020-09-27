@@ -29,7 +29,7 @@
   * `sudo /opt/mssql/bin/mssql-conf setup`
 
 * Select an edition you’d like to use
-  * # Enter
+  * \# Enter
 
 * Accept the license terms
   * Yes
