@@ -64,20 +64,20 @@
   * Password Enter
 
 * Show Database users
-  * select name from sysusers;
+  * `select name from sysusers;`
 
 * Create a test database
-  * `CREATE DATABASE mytestDB`
-  * `SELECT Name from sys.Databases`
-  * `GO`
-  * `USE mytestDB`
-  * `CREATE TABLE Inventory (id INT, name NVARCHAR(50), quantity INT)`
-  * `INSERT INTO Inventory VALUES (1, 'banana', 150); INSERT INTO Inventory VALUES (2, 'orange', 154);`
-  * `GO`
-  * `SELECT * FROM Inventory LIMIT 1;`
+  * `create database mytestdb`
+  * `select name from sys.databases`
+  * `go`
+  * `use mytestdb`
+  * `create table inventory (id int, name nvarchar(50), quantity int)`
+  * `insert into inventory values (1, 'banana', 150); insert into inventory values (2, 'orange', 154);`
+  * `go`
+  * `select * from inventory limit 1;`
 
 * Show databases on the SQL Server
   * `select name,database_id from sys.databases;`
 
 * Drop a database
-  * `DROP DATABASE testDB;`
+  * `drop database testdb;`
