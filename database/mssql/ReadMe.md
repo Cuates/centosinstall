@@ -83,7 +83,9 @@
   * `go`
   * `use mytestdb`
   * `create table inventory (id int, name nvarchar(50), quantity int)`
-  * `insert into inventory values (1, 'banana', 150); insert into inventory values (2, 'orange', 154);`
+  * `insert into inventory values (1, 'banana', 150);`
+  * `go`
+  * `insert into inventory values (2, 'orange', 154);`
   * `go`
   * `select top 1 * from inventory;`
   * `go`
