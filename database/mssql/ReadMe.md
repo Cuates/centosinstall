@@ -32,7 +32,7 @@
   * License Key Enter (This step is for a PAID version of MSSQL only)
 
 * Accept the license terms
-  * Yes
+  * Yes Enter
 
 * Set SQL Server system administrator password
   * Password Enter
