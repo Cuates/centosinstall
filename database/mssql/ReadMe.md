@@ -34,6 +34,7 @@
 
 * Select an edition you’d like to use
   * \# Enter
+    * **NOTE** DOES NOT ASK FOR LICENSE KEY
 
 * Accept the license terms
   * Yes Enter
