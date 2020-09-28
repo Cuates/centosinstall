@@ -49,6 +49,7 @@
   * `source /etc/profile.d/mssql.sh`
 
 * If you have an active Firewalld service, allow SQL Server ports for remote hosts to connect
+  * `sudo firewall-cmd --get-services`
   * `sudo firewall-cmd --permanent --add-service=mssql`
   * `sudo firewall-cmd --reload`
   * `sudo firewall-cmd --list-services`
