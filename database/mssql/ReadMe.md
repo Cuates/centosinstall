@@ -2,6 +2,8 @@
 [How To Install Microsoft SQL Server 2019 In CentOS 8](https://developpaper.com/how-to-install-sql-server-2019-in-centos8/)<br />
 [How To Setup A Firewall With Firewalld On CentOS 7](https://linuxize.com/post/how-to-setup-a-firewall-with-firewalld-on-centos-7/
 )<br />
+[Polybase Linux Setup](https://docs.microsoft.com/en-us/sql/relational-databases/polybase/polybase-linux-setup?view=sql-server-ver15)<br />
+[SQL Server Linux Faq](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-faq?view=sql-server-2017#general-questions)<br />
 
 * Add the Microsoft SQL Server 2019 repository
   * `sudo curl https://packages.microsoft.com/config/rhel/8/mssql-server-2019.repo -o /etc/yum.repos.d/mssql-server-2019.repo`
@@ -56,6 +58,12 @@
   * `sudo firewall-cmd --reload`
   * `sudo firewall-cmd --list-services`
   * `sudo firewall-cmd --info-service mssql`
+
+* Install Polybase
+  * `sudo dnf -y install mssql-server-polybase`
+  * `sudo systemctl restart mssql-server`
+  * `sudo dnf -y install mssql-server-polybase-hadoop`
+  * `sudo systemctl restart mssql-launchpadd`
 
 **USAGE**<br />
 * Test SQL Server
