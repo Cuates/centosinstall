@@ -87,8 +87,10 @@
 [PostgreSQL List Users](https://www.postgresqltutorial.com/postgresql-list-users/)<br />
 [Creating User Database And Adding Access On PostgreSQL](https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e)<br />
 [Permission Denied In Postgres](https://dba.stackexchange.com/questions/36870/permission-denied-in-postgres)<br />
-[Error Permission Denied For Sequence Cities Id Seq Using Postgres](https://stackoverflow.com/questions/9325017/error-permission-denied-for-sequence-cities-id-seq-using-postgres)
-[List User Defined Functions](https://dataedo.com/kb/query/postgresql/list-user-defined-functions)
+[Error Permission Denied For Sequence Cities Id Seq Using Postgres](https://stackoverflow.com/questions/9325017/error-permission-denied-for-sequence-cities-id-seq-using-postgres)<br />
+[List User Defined Functions](https://dataedo.com/kb/query/postgresql/list-user-defined-functions)<br />
+[PostgreSQL What Does Grant All Privileges On Database Do](https://serverfault.com/questions/198002/postgresql-what-does-grant-all-privileges-on-database-do)<br />
+[SQL Alter Database](https://www.postgresql.org/docs/9.1/sql-alterdatabase.html)
 
 * Databases
   * `\l`
@@ -117,6 +119,9 @@
 
 * Database Grant Privileges
   * `grant all privileges on database <databasename> to <username>;`
+
+* Database Alter Owner To Role
+  * `alter database <databasename> owner to <username>;`
 
 * Owner Reassign
   * `reassign owned by <username> to postgres;`
