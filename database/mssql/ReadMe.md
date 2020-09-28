@@ -8,10 +8,10 @@
   * `sudo curl https://packages.microsoft.com/config/rhel/8/prod.repo -o /etc/yum.repos.d/msprod.repo`
 
 * Install MS SQL server on RHEL 8 / CentOS 8
+  * `sudo dnf makecache`
+  * `sudo dnf clean all`
   * `sudo dnf -y install mssql-server`
-
-* Accept License Agreement when you see a prompt
-  * YES Enter
+    * **WAIT FOR THIS TO FINISH**
 
 * Install SQL Server command-line tools
   * `sudo dnf -y install mssql-tools unixODBC-devel`
@@ -29,7 +29,6 @@
 
 * Select an edition you’d like to use
   * \# Enter
-  * License Key Enter (This step is for a PAID version of MSSQL only)
 
 * Accept the license terms
   * Yes Enter
@@ -74,10 +73,18 @@
   * `create table inventory (id int, name nvarchar(50), quantity int)`
   * `insert into inventory values (1, 'banana', 150); insert into inventory values (2, 'orange', 154);`
   * `go`
-  * `select * from inventory limit 1;`
+  * `select top 1 * from inventory;`
+  * `go`
 
 * Show databases on the SQL Server
-  * `select name,database_id from sys.databases;`
+  * `select name, database_id from sys.databases;`
+  * `go`
 
 * Drop a database
-  * `drop database testdb;`
+  * `use master;`
+  * `go`
+  * `drop database mytestdb;`
+  * `go`
+  * `select name, database_id from sys.databases;`
+  * `go`
+  * `exit`
