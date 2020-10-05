@@ -4,8 +4,8 @@
 [How to setup Samba for File Sharing in Linux](https://www.youtube.com/watch?v=oRHSrnQueak)<br />
 [How to configure samba server in centos 7](https://www.youtube.com/watch?v=IMPEjYoP3N4)<br />
 [How To Install And Configure Samba On CentOS 8](https://www.linuxtechi.com/install-configure-samba-centos-8/)<br />
-[Guest access in SMB2 disabled by default in Windows](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/guest-access-in-smb2-is-disabled-by-default)<br />
-[Quick Samba Server Setup on CentOS 7](https://www.youtube.com/watch?v=jGoU3k-b8sc)
+[Guest Access In SMB2 Disabled By Default In Windows](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/guest-access-in-smb2-is-disabled-by-default)<br />
+[Quick Samba Server Setup On CentOS 7](https://www.youtube.com/watch?v=jGoU3k-b8sc)
 
 * `sudo dnf -y install samba samba-common samba-client`
 * `sudo systemctl enable --now {smb,nmb}`
