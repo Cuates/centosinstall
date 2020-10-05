@@ -1,7 +1,7 @@
 [PostgreSQL Download](https://www.postgresql.org/download/linux/redhat/)
 * `sudo dnf module list postgresql`
 * `sudo dnf module -y enable postgresql:12`
-* `sudo dnf install -y postgresql-server postgresql postgresql-devel  postgresql-odbc`
+* `sudo dnf install -y postgresql-server postgresql-contrib postgresql postgresql-devel  postgresql-odbc`
 * `sudo postgresql-setup --initdb`
 * `sudo systemctl start postgresql`
 * `sudo systemctl enable postgresql`
