@@ -1,5 +1,11 @@
 [Install Samba On Redhat 8](https://linuxconfig.org/install-samba-on-redhat-8)<br />
-[Install Configure Samba CentOS 8](https://www.linuxtechi.com/install-configure-samba-centos-8/)
+[Install Configure Samba CentOS 8](https://www.linuxtechi.com/install-configure-samba-centos-8/)<br />
+[How to create a Samba share that is writable from Windows without 777 permissions](https://unix.stackexchange.com/questions/206309/how-to-create-a-samba-share-that-is-writable-from-windows-without-777-permission)<br />
+[How to setup Samba for File Sharing in Linux](https://www.youtube.com/watch?v=oRHSrnQueak)<br />
+[How to configure samba server in centos 7](https://www.youtube.com/watch?v=IMPEjYoP3N4)<br />
+[How To Install And Configure Samba On CentOS 8](https://www.linuxtechi.com/install-configure-samba-centos-8/)<br />
+[Guest access in SMB2 disabled by default in Windows](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/guest-access-in-smb2-is-disabled-by-default)
+
 * `sudo dnf -y install samba samba-common samba-client`
 * `sudo systemctl enable --now {smb,nmb}`
 * `sudo firewall-cmd --get-services`
