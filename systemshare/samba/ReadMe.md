@@ -65,7 +65,7 @@
 ### Accessing Linux File Share Via Windows
 * Access the Linux file share
   * Windows Key + r
-    * \\Machine_name_or_IP_Address
+    * `\\Machine_name_or_IP_Address`
   * Browse shared folders
     * Login with username and password from above
 * Windows 10 error 1219 that does not allow multiple user connections from windows **NOTE: May not be needed**
