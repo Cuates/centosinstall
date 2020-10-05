@@ -51,11 +51,11 @@
       create mask = 0777<br />
       directory mask = 0777<br />
       force user = <new_user_name><br />
-      # force group = @<new_group_name><br />
-      # valid users = <new_user_name><br />
-      # valid group = @<new_group_name><br />
-      # read list = <new_user_name><br />
-      # write list = <new_user_name>
+      \# force group = @<new_group_name><br />
+      \# valid users = <new_user_name><br />
+      \# valid group = @<new_group_name><br />
+      \# read list = <new_user_name><br />
+      \# write list = <new_user_name>
 * Restart Samba Services
   * `sudo systemctl restart smb.service nmb.service`
 * Check Samba settings
