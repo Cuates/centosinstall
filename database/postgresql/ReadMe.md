@@ -15,6 +15,7 @@
 [Install PostgresSQL And pgAdmin In CentOS 8](https://www.tecmint.com/install-postgressql-and-pgadmin-in-centos-8/)<br />
 [How To Install Postgres On Redhat 8](https://linuxconfig.org/how-to-install-postgres-on-redhat-8)<br />
 [How To Install PostgreSQL On rhel 8](https://www.itzgeek.com/how-tos/linux/centos-how-tos/how-to-install-postgresql-on-rhel-8.html)
+[Install PostgreSQL 12 CentOS 8](https://sysadminjournal.com/install-postgresql-12-centos-8/)
 * `sudo -i -u postgres`
   * `psql`
     * `\password postgres`
