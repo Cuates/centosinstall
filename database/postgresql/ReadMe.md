@@ -95,6 +95,8 @@
 [SQL Alter Database](https://www.postgresql.org/docs/9.1/sql-alterdatabase.html)
 
 * Databases
+  * `sudo -i -u postgres`
+  * `psql`
   * `\l`
   * Select database names from pg database
     * `select datname from pg_database;`
