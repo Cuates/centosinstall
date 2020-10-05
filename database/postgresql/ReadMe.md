@@ -21,6 +21,7 @@
     * `\password postgres`
     * PASSWORD_HERE
   * `exit`
+* `exit`
 * `sudo vim /var/lib/pgsql/data/postgresql.conf`
   * WAS
     * listen_addresses = 'localhost'
