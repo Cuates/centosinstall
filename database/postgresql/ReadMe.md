@@ -252,10 +252,10 @@
 * Sequence Last Value
   * `select last_value from <tablename>_<tableID>_seq;`
 
-* Drop Extension
+* Drop Extension **NOTE postgresql-contrib has to be installed before initial setup**
   * `drop extension if exists <extension_name>;`
 
-* Create Extension 
+* Create Extension **NOTE postgresql-contrib has to be installed before initial setup**
   * `create extension if not exists <extension_name> with schema public;`
 
 * Table Drop
