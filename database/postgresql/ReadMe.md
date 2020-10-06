@@ -212,6 +212,19 @@
 * Table Truncate And Reseed Identity
   * `truncate table <tablename> restart identity;`
 
+* Table Owner
+  * `select`<br />
+    `t.table_name,`<br />
+    `t.table_type,`<br />
+    `c.relname,`<br />
+    `c.relowner,`<br />
+    `u.usename`<br />
+    `from information_schema.tables t`<br />
+    `join pg_catalog.pg_class c on t.table_name = c.relname`<br />
+    `join pg_catalog.pg_user u on c.relowner = u.usesysid`<br />
+    `where`<br />
+    `t.table_schema = 'public';`
+
 * Functions and Procedures **NOTE Stored Procedures are new; Before it was Functions only**
   * User Defined Functions Universal
     * `select`<br />
