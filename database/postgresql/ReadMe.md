@@ -41,9 +41,8 @@
   * Save and Quit **NOTE make sure to tab each column to match the existing column**
 * `sudo systemctl restart postgresql`
 
-* Alternative Installation for the latest PostgreSQL 13 **Note Cannot install this and a newer/older version at the same time**<br /><br />
-
-[Install PostgresSQL 13 On CentOS  RHEL](https://computingforgeeks.com/install-postgresql-13-on-centos-rhel/)<br />
+* Alternative Installation for the latest PostgreSQL 13 **Note Cannot install this and a newer/older version at the same time**<br />
+* [Install PostgresSQL 13 On CentOS  RHEL](https://computingforgeeks.com/install-postgresql-13-on-centos-rhel/)<br />
 * Install PostgreSQL 13 on CentOS 8
   * `sudo dnf -qy module disable postgresql`
 
