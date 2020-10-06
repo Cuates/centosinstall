@@ -40,6 +40,9 @@
     * host    all             all             ::1/128                 md5
   * Save and Quit **NOTE make sure to tab each column to match the existing column**
 * `sudo systemctl restart postgresql`
+* `sudo firewall-cmd --get-services`
+* `sudo firewall-cmd --zone=public --permanent --add-service=postgresql`
+* `sudo firewall-cmd --reload`
 
 * Alternative Installation for the latest PostgreSQL 13 **Note Cannot install this and a newer/older version at the same time**<br />
 * [Install PostgresSQL 13 On CentOS  RHEL](https://computingforgeeks.com/install-postgresql-13-on-centos-rhel/)<br />
@@ -96,7 +99,6 @@
     * host    all             all             ::1/128                 md5
   * Save and Quit **NOTE make sure to tab each column to match the existing column**
 * `sudo systemctl restart postgresql-13`
-
 * `sudo firewall-cmd --get-services`
 * `sudo firewall-cmd --zone=public --permanent --add-service=postgresql`
 * `sudo firewall-cmd --reload`
