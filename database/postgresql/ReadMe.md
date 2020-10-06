@@ -191,6 +191,12 @@
 * Sequence Last Value
   * `select last_value from <tablename>_<tableID>_seq;`
 
+* Drop Extension
+  * `drop extension if exists citext;`
+
+* Create Extension 
+  * `create extension if not exists citext with schema public;`
+
 * Table Drop
   * `drop table if exists <tablename>;`
 
