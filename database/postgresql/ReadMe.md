@@ -127,6 +127,12 @@
 * Database Alter Owner To Role
   * `alter database <databasename> owner to <username>;`
 
+* Table Alter Owner To Role
+  * `alter table <tablename> owner to <username>`
+
+* Procedure Alter Owner To Role
+  * `alter procedure <procedurename> owner to <username>`
+
 * Owner Reassign
   * `reassign owned by <username> to postgres;`
 
