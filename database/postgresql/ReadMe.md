@@ -40,6 +40,70 @@
     * host    all             all             ::1/128                 md5
   * Save and Quit **NOTE make sure to tab each column to match the existing column**
 * `sudo systemctl restart postgresql`
+
+* Alternative Installation for the latest PostgreSQL 13 **Note Cannot install this and a newer/older version at the same time**
+[Install PostgresSQL 13 On CentOS  RHEL](https://computingforgeeks.com/install-postgresql-13-on-centos-rhel/)<br />
+* Install PostgreSQL 13 on CentOS 8
+  * `sudo dnf -qy module disable postgresql`
+
+* Enable PostgreSQL 13 repository
+  * `sudo dnf -y install dnf-utils`
+  * `sudo yum-config-manager --enable pgdg13`
+
+* Confirm the list of enabled repositories
+  * `dnf repolist`
+
+* Check to see if PostgreSQL 13 packages are available on the repository
+  * `sudo dnf search postgresql13`
+
+* Install PostgreSQL 13 packages on your CentOS 8
+  * `sudo dnf install -y postgresql13-server postgresql13-contrib postgresql13-devel postgresql13`
+
+* Initialize and start database service
+  * `sudo /usr/pgsql-13/bin/postgresql-13-setup initdb`
+
+* The database main configuration file is  /var/lib/pgsql/13/data/postgresql.conf
+  * `ls /var/lib/pgsql/13/data/`
+
+* Start the PostgreSQL database server and set it to start at boot.
+  * `sudo systemctl enable --now postgresql-13`
+
+* Check the service status to confirm it is running.
+  * `systemctl status postgresql-13`
+
+* Set PostgreSQL admin user’s password
+* `sudo -i -u postgres`
+  * `psql`
+    * `\password postgres`
+    * PASSWORD_HERE
+  * `exit`
+* `exit`
+
+* `sudo -i -u postgres`
+  * `psql`
+    * `\password postgres`
+    * PASSWORD_HERE
+  * `exit`
+* `exit`
+* `sudo vim /var/lib/pgsql/13/data/postgresql.conf`
+  * WAS
+    * listen_addresses = 'localhost'
+  * IS
+    * listen_addresses = '*'
+  * Save and Quit
+* `sudo systemctl restart postgresql-13`
+* `sudo netstat -antup | grep 5432`
+* `sudo vim /var/lib/pgsql/13/data/pg_hba.conf`
+  * WAS
+    * host    all             all             127.0.0.1/32            ident
+    * host    all             all             ::1/128                 ident
+  * IS
+    * host    all             all             127.0.0.1/32            md5
+    * host    all             all             0.0.0.0/0               md5
+    * host    all             all             ::1/128                 md5
+  * Save and Quit **NOTE make sure to tab each column to match the existing column**
+* `sudo systemctl restart postgresql-13`
+
 * `sudo firewall-cmd --get-services`
 * `sudo firewall-cmd --zone=public --permanent --add-service=postgresql`
 * `sudo firewall-cmd --reload`
@@ -92,7 +156,9 @@
 [Error Permission Denied For Sequence Cities Id Seq Using Postgres](https://stackoverflow.com/questions/9325017/error-permission-denied-for-sequence-cities-id-seq-using-postgres)<br />
 [List User Defined Functions](https://dataedo.com/kb/query/postgresql/list-user-defined-functions)<br />
 [PostgreSQL What Does Grant All Privileges On Database Do](https://serverfault.com/questions/198002/postgresql-what-does-grant-all-privileges-on-database-do)<br />
-[SQL Alter Database](https://www.postgresql.org/docs/9.1/sql-alterdatabase.html)
+[SQL Alter Database](https://www.postgresql.org/docs/9.1/sql-alterdatabase.html)<br />
+[PostgreSQL Case Insensitive Citext](https://www.logisticinfotech.com/blog/postgresql-case-insensitive-citext/)<br />
+[SQL Create Extension](https://www.postgresql.org/docs/12/sql-createextension.html)<br />
 
 * Databases
   * `sudo -i -u postgres`
