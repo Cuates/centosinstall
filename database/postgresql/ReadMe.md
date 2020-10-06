@@ -78,13 +78,6 @@
     * PASSWORD_HERE
   * `exit`
 * `exit`
-
-* `sudo -i -u postgres`
-  * `psql`
-    * `\password postgres`
-    * PASSWORD_HERE
-  * `exit`
-* `exit`
 * `sudo vim /var/lib/pgsql/13/data/postgresql.conf`
   * WAS
     * listen_addresses = 'localhost'
