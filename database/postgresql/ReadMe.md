@@ -192,10 +192,10 @@
   * `select last_value from <tablename>_<tableID>_seq;`
 
 * Drop Extension
-  * `drop extension if exists citext;`
+  * `drop extension if exists <extension_name>;`
 
 * Create Extension 
-  * `create extension if not exists citext with schema public;`
+  * `create extension if not exists <extension_name> with schema public;`
 
 * Table Drop
   * `drop table if exists <tablename>;`
