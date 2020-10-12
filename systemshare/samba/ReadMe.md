@@ -54,7 +54,8 @@
       writable = yes<br />
       read only = no<br />
       available = yes<br />
-      public = yes<br />
+      public = no<br />
+      guest ok = no<br />
       create mask = 0777<br />
       directory mask = 0777<br />
       force user = <new_user_name><br />
