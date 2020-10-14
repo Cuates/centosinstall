@@ -59,6 +59,7 @@
   * `sudo firewall-cmd --reload`
   * `sudo firewall-cmd --list-services`
   * `sudo firewall-cmd --info-service mssql`
+  * `sudo firewall-cmd --list-all`
 
 * Install Polybase
   * `sudo dnf -y install mssql-server-polybase`
