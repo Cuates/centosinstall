@@ -104,6 +104,7 @@
 * `sudo firewall-cmd --reload`
 * `sudo firewall-cmd --list-services`
 * `sudo firewall-cmd --info-service postgresql`
+* `sudo firewall-cmd --list-all`
 
 **USAGE**<br />
 [PostgreSQL Grant](https://www.educba.com/postgresql-grant/)<br />
