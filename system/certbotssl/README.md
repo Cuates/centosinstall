@@ -2,8 +2,11 @@
 [Installing Snap On Red Hat](https://snapcraft.io/docs/installing-snap-on-red-hat)<br />
 [How To Set Up Apache Virtual Hosts On Centos 8](https://linuxize.com/post/how-to-set-up-apache-virtual-hosts-on-centos-8/)
 
-* Prerequisite Apache/Httpd
-  * [Apache/Httpd Web Server](https://github.com/Cuates/lampcentosinstall/tree/master/webserver)
+* Prerequisite
+  * Apache/Httpd
+    * [Apache/Httpd Web Server](https://github.com/Cuates/lampcentosinstall/tree/master/webserver)
+  * NoIP
+    * [Domain Name](https://github.com/Cuates/lampcentosinstall/tree/master/system/domainname)
 
 * Set Apache virtual host before proceeding with Certbot
   * `sudo vim /etc/httpd/conf.d/<domain_name>.conf`
