@@ -69,7 +69,10 @@
         Your cert will expire on 2021-01-12. To obtain a new or tweaked
         version of this certificate in the future, simply run certbot again
         with the "certonly" option. To non-interactively renew *all* of
-        your certificates, run "certbot renew"
+        your certificates, run "certbot renew". You should make a
+        secure backup of this folder now. This configuration directory will
+        also contain certificates and private keys obtained by Certbot so
+        making regular backups of this folder is ideal.
 * Test automatic renewal
   * `sudo certbot renew --dry-run`
   * The command to renew certbot is installed in one of the following locations:
