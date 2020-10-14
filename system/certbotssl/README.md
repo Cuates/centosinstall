@@ -73,6 +73,8 @@
         secure backup of this folder now. This configuration directory will
         also contain certificates and private keys obtained by Certbot so
         making regular backups of this folder is ideal.
+  * Or, just get a certificate
+    * `sudo certbot certonly --apache`
 * Test automatic renewal
   * `sudo certbot renew --dry-run`
   * The command to renew certbot is installed in one of the following locations:
