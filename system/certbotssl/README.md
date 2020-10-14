@@ -56,11 +56,11 @@
       * Choose 1 when prompted about which domain you want the certificate for (there should only be one)
         * If none were found, then proceed to add your domain name
           * No names were found in your configuration files. Please enter in your domain name(s) (comma and/or space separated)  (Enter 'c' to cancel): yourdomain
-          * Create a virutalhost first
-            * Created an SSL vhost at /etc/httpd/conf.d/<yourdomainname>-le-ssl.conf
+          * Created an SSL vhost at /etc/httpd/conf.d/<yourdomainname>-le-ssl.conf
             Deploying Certificate to VirtualHost /etc/httpd/conf.d/<yourdomainname>-le-ssl.conf
             Redirecting vhost in /etc/httpd/conf.d/<yourdomainname>.conf to ssl vhost in /etc/httpd/conf.d/<yourdomainname>-le-ssl.conf
-            * Re-execute the command above
+          * Create a virutalhost first
+          * Re-execute the command above
     * IMPORTANT NOTES:
       - Congratulations! Your certificate and chain have been saved at:
         /etc/letsencrypt/live/<yourdomainname>/fullchain.pem
