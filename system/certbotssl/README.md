@@ -1,5 +1,5 @@
-[Centos RHEL 8 Apache](https://certbot.eff.org/lets-encrypt/centosrhel8-apache)
-[Installing Snap On Red Hat](https://snapcraft.io/docs/installing-snap-on-red-hat)
+[Centos RHEL 8 Apache](https://certbot.eff.org/lets-encrypt/centosrhel8-apache)<br />
+[Installing Snap On Red Hat](https://snapcraft.io/docs/installing-snap-on-red-hat)<br />
 [How To Set Up Apache Virtual Hosts On Centos 8](https://linuxize.com/post/how-to-set-up-apache-virtual-hosts-on-centos-8/)
 
 * Prerequisite Apache/Httpd
