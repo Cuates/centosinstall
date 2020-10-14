@@ -5,22 +5,20 @@
 * Set Apache virtual host before proceeding with Certbot
   * `sudo vim /etc/httpd/conf.d/<domain_name>.conf`
     * Paste the following into the file
-      * `<VirtualHost *:80>
-            ServerName cuateslws.ddns.net
-            ServerAlias cuateslws.ddns.net
-            ServerAdmin webmaster@example.com
-            DocumentRoot /var/www/html
-
-            <Directory /var/www/html>
-                Options FollowSymLinks
-                AllowOverride None
-                Order allow,deny
-                Allow from all
-            </Directory>
-
-            ErrorLog /var/log/httpd/cuateslws.ddns.net-error.log
-            CustomLog /var/log/httpd/cuateslws.ddns.net-access.log combined
-        </VirtualHost>`
+      * `<VirtualHost *:80>`<br />
+            `ServerName cuateslws.ddns.net`<br />
+            `ServerAlias cuateslws.ddns.net`<br />
+            `ServerAdmin webmaster@example.com`<br />
+            `DocumentRoot /var/www/html`<br />
+            `<Directory /var/www/html>`<br />
+                `Options FollowSymLinks`<br />
+                `AllowOverride None`<br />
+                `Order allow,deny`<br />
+                `Allow from all`<br />
+            `</Directory>`<br />
+            `ErrorLog /var/log/httpd/cuateslws.ddns.net-error.log`<br />
+            `CustomLog /var/log/httpd/cuateslws.ddns.net-access.log combined`<br />
+        `</VirtualHost>`
   * Save and exit
   * Restart apache/httpd
     * `sudo systemctl restart httpd`
