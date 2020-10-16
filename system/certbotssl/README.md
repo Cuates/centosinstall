@@ -86,7 +86,7 @@
     systemctl list-timers
 * Add Protocols h2 (HTTP/2) to the port 443 Certbot generated file
   * `sudo vim /etc/httpd/conf.d/<domain_name>-le-ssl.conf`
-    * Paste the following into the file
+    * Paste the HTTP/2 section into the below file
       * `<IfModule mod_ssl.c>`<br />
         `<VirtualHost *:443>`<br />
         `    ServerName <domain_name>`<br />
