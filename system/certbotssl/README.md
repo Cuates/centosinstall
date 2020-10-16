@@ -4,7 +4,8 @@
 [How To Enable HTTP 2 In Apache](https://www.howtoforge.com/how-to-enable-http-2-in-apache/)<br />
 [How To Check If Website Has HTTP 2 Protocol Support](https://stackoverflow.com/questions/54091567/how-to-check-if-website-has-http-2-protocol-support)<br />
 [Enable HTTP2 In Apache On Ubuntu](https://www.tecmint.com/enable-http2-in-apache-on-ubuntu/)<br />
-[With HTTP3 On The Horizon Have You Upgraded To HTTP2](https://www.cloudsavvyit.com/2007/with-http-3-on-the-horizon-have-you-upgraded-to-http-2/)
+[With HTTP3 On The Horizon Have You Upgraded To HTTP2](https://www.cloudsavvyit.com/2007/with-http-3-on-the-horizon-have-you-upgraded-to-http-2/)<br />
+[How To Enable TLS 1.3 In Apache On CentOS 8](https://devopscraft.com/how-to-enable-tls-1-3-in-apache-on-centos-8/)
 
 * Prerequisite
   * Apache/Httpd
