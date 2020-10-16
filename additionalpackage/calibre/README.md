@@ -1,15 +1,15 @@
-[How To Create A Calibre eBook Server On Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-create-a-calibre-ebook-server-on-ubuntu-20-04)
-[Calibre eBook Download Linux](https://calibre-ebook.com/download_linux)
-[Calibre Server on Linux](https://gist.github.com/plembo/337f323e53486cbdb03100692ae8c892)
-[Calibre Server Calibre Content Server Linux CLI WEBUI](https://www.youtube.com/watch?v=N1hwEfa9W1s)
-[Calibre Using A Full Virtual Host](https://manual.calibre-ebook.com/server.html#using-a-full-virtual-host)
-[Calibre Managing User Accounts From The Command Line Only](https://manual.calibre-ebook.com/server.html#managing-user-accounts-from-the-command-line-only)
-[Calibre Server](https://manual.calibre-ebook.com/generated/en/calibre-server.html)
-[calibre-is-awesome-calibreerver Is Not](https://grantwinney.com/calibre-is-awesome-calibre-server-is-not/)
-[Service Names Port Numbers](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=86)
-[Gutenberg](https://www.gutenberg.org/)
-[Remove Files Directories](https://linuxhandbook.com/remove-files-directories/)
-[Calibre Add Password In File](https://www.mobileread.com/forums/showthread.php?p=3645101)
+[How To Create A Calibre eBook Server On Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-create-a-calibre-ebook-server-on-ubuntu-20-04)<br />
+[Calibre eBook Download Linux](https://calibre-ebook.com/download_linux)<br />
+[Calibre Server on Linux](https://gist.github.com/plembo/337f323e53486cbdb03100692ae8c892)<br />
+[Calibre Server Calibre Content Server Linux CLI WEBUI](https://www.youtube.com/watch?v=N1hwEfa9W1s)<br />
+[Calibre Using A Full Virtual Host](https://manual.calibre-ebook.com/server.html#using-a-full-virtual-host)<br />
+[Calibre Managing User Accounts From The Command Line Only](https://manual.calibre-ebook.com/server.html#managing-user-accounts-from-the-command-line-only)<br />
+[Calibre Server](https://manual.calibre-ebook.com/generated/en/calibre-server.html)<br />
+[calibre-is-awesome-calibreerver Is Not](https://grantwinney.com/calibre-is-awesome-calibre-server-is-not/)<br />
+[Service Names Port Numbers](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=86)<br />
+[Gutenberg](https://www.gutenberg.org/)<br />
+[Remove Files Directories](https://linuxhandbook.com/remove-files-directories/)<br />
+[Calibre Add Password In File](https://www.mobileread.com/forums/showthread.php?p=3645101)<br />
 [Calibre DB Commands](https://manual.calibre-ebook.com/generated/en/calibredb.html#id1)
 
 * Visit the IANA web site for unassigned ports
@@ -115,7 +115,7 @@
   * Run the following command to download this book to your server
     * `wget https://www.gutenberg.org/ebooks/11.epub.images -o alice.epub`
   * Now open your crontab
-    * crontab -e
+    * `crontab -e`
       * Here we will set up a script to add all files in this directory to calibre and then delete them (adding books to calibre creates a copy of the files in your library directory, so we can remove the originals once they are added.)
       * Add the following content:
         * **IMPORTANT NOTE** username and password may need to be unicode converted as linux does not like some characters
