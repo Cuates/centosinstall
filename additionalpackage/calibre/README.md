@@ -103,7 +103,7 @@
       * `sudo systemctl start calibre-server`
       * If you visit your library again, it should now prompt you for a username and password before allowing you to access it.
       * If you get something along the lines of the below message, then clear your browser cache and try again
-        * `Failed to communicate with "/interface-data/<libnam>-init?library_id=<libnam>&sort=timestamp.desc&#######", with status: [400 (error)] Bad Request`
+        * Failed to communicate with "/interface-data/<libnam>-init?library_id=<libnam>&sort=timestamp.desc&#######", with status: [400 (error)] Bad Request
 * (Optional) Automatically Adding Books to Your calibre Library (This might be utilized through the samba share folder -- Revisit)
   * Create a Calibre Add Book Folder
     * `sudo mkdir -p /path/to/calibre/addbook/folder`
@@ -121,9 +121,9 @@
         * **IMPORTANT NOTE** username and password may need to be unicode converted as linux does not like some characters
         * `sudo vim /path/to/calibre/library_name`
           * Below minute increment can be adjusted as needed **IMPORTANT NOTE This step does not need to be done as one can be uploaded via the web site**
-          * `\*/5 \* \* \* \* calibredb add /path/to/calibre/addbook/folder/ -r --with-library /path/to/calibre/library_name --username mycalibreuser --password mycalibrepassword && rm -r /path/to/calibre/addbook/folder/\*`
+          * `*/5 * * * * calibredb add /path/to/calibre/addbook/folder/ -r --with-library /path/to/calibre/library_name --username mycalibreuser --password mycalibrepassword && rm -r /path/to/calibre/addbook/folder/*`
           * If having issues with the password not being correct perform the following command instead
-          * `\*/5 \* \* \* \* calibredb add /path/to/calibre/addbook/folder/ -r --with-library /path/to/calibre/library_name --username mycalibreuser --password "<f:/path/to/password/file>" && rm -r /path/to/calibre/addbook/folder/\*`
+          * `*/5 * * * * calibredb add /path/to/calibre/addbook/folder/ -r --with-library /path/to/calibre/library_name --username mycalibreuser --password "<f:/path/to/password/file>" && rm -r /path/to/calibre/addbook/folder/*`
         * Save and close the file.
         * This will run every 5 minutes, so you shouldn’t have to wait long for your new book to show up in the web interface. Wait a few minutes and then reload the library in your local web browser.
 * Access the library from an external network
