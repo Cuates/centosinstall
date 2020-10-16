@@ -30,7 +30,7 @@
   * `sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin`
   * If you get an error about an untrusted certificate, that means your computer does not have any root certificates installed and so cannot download the installer securely. If you still want to proceed, pass the --no-check-certificate option to wget, like this:
     * `sudo -v && wget --no-check-certificate -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin`
-    * calibre-server --version
+    * `calibre-server --version`
   * If you want to upgrade **IMPORTANT NOTE Every time you update you lose user accounts and libraries if no sqlitedb has been created**
     * `sudo systemctl stop calibre-server.service`
     * `sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin`
