@@ -3,7 +3,8 @@
 [How To Set Up Apache Virtual Hosts On Centos 8](https://linuxize.com/post/how-to-set-up-apache-virtual-hosts-on-centos-8/)<br />
 [How To Enable HTTP 2 In Apache](https://www.howtoforge.com/how-to-enable-http-2-in-apache/)<br />
 [How To Check If Website Has HTTP 2 Protocol Support](https://stackoverflow.com/questions/54091567/how-to-check-if-website-has-http-2-protocol-support)<br />
-[Enable HTTP2 In Apache On Ubuntu](https://www.tecmint.com/enable-http2-in-apache-on-ubuntu/)
+[Enable HTTP2 In Apache On Ubuntu](https://www.tecmint.com/enable-http2-in-apache-on-ubuntu/)<br />
+[With HTTP3 On The Horizon Have You Upgraded To HTTP2](https://www.cloudsavvyit.com/2007/with-http-3-on-the-horizon-have-you-upgraded-to-http-2/)
 
 * Prerequisite
   * Apache/Httpd
