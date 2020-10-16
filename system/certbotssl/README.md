@@ -1,6 +1,9 @@
 [Centos RHEL 8 Apache](https://certbot.eff.org/lets-encrypt/centosrhel8-apache)<br />
 [Installing Snap On Red Hat](https://snapcraft.io/docs/installing-snap-on-red-hat)<br />
-[How To Set Up Apache Virtual Hosts On Centos 8](https://linuxize.com/post/how-to-set-up-apache-virtual-hosts-on-centos-8/)
+[How To Set Up Apache Virtual Hosts On Centos 8](https://linuxize.com/post/how-to-set-up-apache-virtual-hosts-on-centos-8/)<br />
+[How To Enable HTTP 2 In Apache](https://www.howtoforge.com/how-to-enable-http-2-in-apache/)<br />
+[How To Check If Website Has HTTP 2 Protocol Support](https://stackoverflow.com/questions/54091567/how-to-check-if-website-has-http-2-protocol-support)<br />
+[Enable HTTP2 In Apache On Ubuntu](https://www.tecmint.com/enable-http2-in-apache-on-ubuntu/)
 
 * Prerequisite
   * Apache/Httpd
@@ -81,7 +84,7 @@
     /etc/crontab/
     /etc/cron.*/*
     systemctl list-timers
-** Add Protocols h2 (HTTP/2) to the port 443 Certbot generated file
+* Add Protocols h2 (HTTP/2) to the port 443 Certbot generated file
   * `sudo vim /etc/httpd/conf.d/<domain_name>-le-ssl.conf`
     * Paste the following into the file
       * `<IfModule mod_ssl.c>`<br />
@@ -106,8 +109,14 @@
         `</VirtualHost>`<br />
         `</IfModule>`
   * Save and exit
+  * Test the apache configuration
+    * `sudo apachectl configtest`
   * Restart apache/httpd
     * `sudo systemctl restart httpd`
+  * Test HTTP/2 Protocol
+    * `curl -I --http2 -s https://<domain_name>/ | grep HTTP`
+      * A message of HTTP/2 200 will display
+      * Else a message of HTTP/1.1 200 OK if HTTP/2 did not work
 * Visit your router setting for port forwarding
   * Set the IP address to the port 443 in the port forwarding section of your router
 * Confirm that Certbot worked
