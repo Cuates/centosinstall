@@ -81,6 +81,33 @@
     /etc/crontab/
     /etc/cron.*/*
     systemctl list-timers
+** Add Protocols h2 (HTTP/2) to the port 443 Certbot generated file
+  * `sudo vim /etc/httpd/conf.d/<domain_name>-le-ssl.conf`
+    * Paste the following into the file
+      * `<IfModule mod_ssl.c>`<br />
+        `<VirtualHost *:443>`<br />
+        `    ServerName <domain_name>`<br />
+        `    ServerAlias <domain_name>`<br />
+        `    ServerAdmin webmaster@example.com`<br />
+        `    DocumentRoot /var/www/html`<br />
+        `    <Directory /var/www/html>`<br />
+        `        Options FollowSymLinks`<br />
+        `        AllowOverride None`<br />
+        `        Order allow,deny`<br />
+        `        Allow from all`<br />
+        `    </Directory>`<br />
+        `    ErrorLog /var/log/httpd/<domain_name>-error.log`<br />
+        `    CustomLog /var/log/httpd/<domain_name>-access.log combined`<br />
+        `    # Enable HTTP/2, if available`<br />
+        `    Protocols h2 http/1.1`<br />
+        `SSLCertificateFile /etc/letsencrypt/live/<domain_name>/fullchain.pem`<br />
+        `SSLCertificateKeyFile /etc/letsencrypt/live/<domain_name>/privkey.pem`<br />
+        `Include /etc/letsencrypt/options-ssl-apache.conf`<br />
+        `</VirtualHost>`<br />
+        `</IfModule>`
+  * Save and exit
+  * Restart apache/httpd
+    * `sudo systemctl restart httpd`
 * Visit your router setting for port forwarding
   * Set the IP address to the port 443 in the port forwarding section of your router
 * Confirm that Certbot worked
