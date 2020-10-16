@@ -57,6 +57,7 @@
   * First, create a file called calibre-server.service in the directory /etc/sytemd/system/
     * `sudo vim /etc/systemd/system/calibre-server.service`
     * Now add the following configurations, which will start the calibre Content server on boot. Make sure to replace the highlighted text with your user and group
+    * ***IMPORTANT NOTE <new_user_name> must have root or sudoer privileges***
       * `## startup service`<br />
         `[Unit]`<br />
         `Description=calibre content server`<br />
@@ -83,8 +84,7 @@
     * Execute command again and set library permissions as well
   * Now we need to make another edit to our service
     * Reopen service file created earlier
-      * ***IMPORTANT NOTE***
-        * <new_user_name> must have root or sudoer privileges
+    * ***IMPORTANT NOTE <new_user_name> must have root or sudoer privileges***
       * `sudo vim /etc/systemd/system/calibre-server.service`
         * `## startup service`<br />
           `[Unit]`<br />
