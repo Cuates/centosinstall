@@ -21,6 +21,7 @@
 * Create a Calibre Folder
   * `sudo mkdir -p /path/to/calibre/folder`
     * The folder can be named differently for different library names (http://your_server_ip:4805 containing different port numbers if there are multiple calibre servers)
+    * At this time there is no way to execute multiple calibre servers simultaneously on a Linux server
 * Change owner
   * `sudo chown -R <new_user_name>:<new_user_name> /path/to/calibre/folder`
 * Provide permission to the calibre user
