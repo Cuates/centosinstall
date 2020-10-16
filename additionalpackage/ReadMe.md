@@ -11,6 +11,7 @@
 * [Git](#git)
 * [Nodejs](#nodejs)
 * [NPM](#npm)
+* [Calibre](#calibre)
 
 ### Vim
 * [8.0.1763-13](https://github.com/Cuates/lampcentosinstall/tree/master/additionalpackage/vim)
@@ -38,3 +39,6 @@
 
 ### NPM
 * [6.14.4-1.10.21.0.3](https://github.com/Cuates/lampcentosinstall/tree/master/additionalpackage/npm)
+
+### Calibre
+* [5.3.0](https://github.com/Cuates/lampcentosinstall/tree/master/additionalpackage/calibre)
