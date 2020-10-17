@@ -8,7 +8,8 @@
 [Quick Samba Server Setup On CentOS 7](https://www.youtube.com/watch?v=jGoU3k-b8sc)<br />
 [SMB Configuration Manual](https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html)<br />
 [Confining Samba with SELinux](https://danwalsh.livejournal.com/14195.html)<br />
-[Restorecon](https://linux.die.net/man/8/restorecon)
+[Restorecon](https://linux.die.net/man/8/restorecon)<br />
+[10 Linux Restorecon Command Examples To Restore Selinux Context](https://www.techolac.com/linux/10-linux-restorecon-command-examples-to-restore-selinux-context/)
 
 * `sudo dnf -y install samba samba-common samba-client`
 * `sudo systemctl enable --now {smb,nmb}`
@@ -38,6 +39,8 @@
     * To survive system relabel
       * `sudo semanage fcontext -a -t samba_share_t '/path/to/secured/folder(/.*)?'`
       * `sudo restorecon -R -v /path/to/secured/folder` **NOTE: Do not do chcon above, issue when this is executed on other local computers, does not give what we want**
+      * Display the SELinux context for particular file and or directory
+        * `ls -lZ`
 * Make Backup of Existing Conf File
   * `sudo cp -pf /etc/samba/smb.conf /etc/samba/smb.conf.bak`
 * Edit and Save /etc/samba/smb.conf **NOTE: Place the following at the end of the file**
