@@ -7,7 +7,7 @@
 * [Remi](#remi)
 * [Ifconfig](#ifconfig)
 * [TZData](#tzdata)
-* [Xrdp](#xrdp)
+* [XRDP](#xrdp)
 
 ### CentOS
 * [8.2.2004](https://github.com/Cuates/lampcentosinstall/blob/master/system/centos)
