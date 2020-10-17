@@ -39,6 +39,7 @@
     * To survive system relabel
       * `sudo semanage fcontext -a -t samba_share_t '/path/to/secured/folder(/.*)?'`
       * `sudo restorecon -R -v /path/to/secured/folder` **NOTE: Do not do chcon above, issue when this is executed on other local computers, does not give what we want**
+        * Do not add the -F flag to restorecon as it will change the user, role, range portion as well as the type which we do not want
       * Display the SELinux context for particular file and or directory
         * `ls -lZ`
 * Make Backup of Existing Conf File
