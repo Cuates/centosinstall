@@ -7,6 +7,7 @@
 * [Remi](#remi)
 * [Ifconfig](#ifconfig)
 * [TZData](#tzdata)
+* [Xrdp](#xrdp)
 
 ### CentOS
 * [8.2.2004](https://github.com/Cuates/lampcentosinstall/blob/master/system/centos)
@@ -22,3 +23,6 @@
 
 ### TZData
 * [2020a-1](https://github.com/Cuates/lampcentosinstall/tree/master/system/tzdata)
+
+### XRDP
+* [0.9.14](https://github.com/Cuates/lampcentosinstall/tree/master/system/xrdp)
