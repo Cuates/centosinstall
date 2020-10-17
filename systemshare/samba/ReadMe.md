@@ -6,7 +6,9 @@
 [How To Install And Configure Samba On CentOS 8](https://www.linuxtechi.com/install-configure-samba-centos-8/)<br />
 [Guest Access In SMB2 Disabled By Default In Windows](https://docs.microsoft.com/en-us/troubleshoot/windows-server/networking/guest-access-in-smb2-is-disabled-by-default)<br />
 [Quick Samba Server Setup On CentOS 7](https://www.youtube.com/watch?v=jGoU3k-b8sc)<br />
-[SMB Configuration Manual](https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html)
+[SMB Configuration Manual](https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html)<br />
+[Confining Samba with SELinux](https://danwalsh.livejournal.com/14195.html)<br />
+[Restorecon](https://linux.die.net/man/8/restorecon)
 
 * `sudo dnf -y install samba samba-common samba-client`
 * `sudo systemctl enable --now {smb,nmb}`
@@ -34,8 +36,8 @@
   * `sudo chown -R <user_name>:<user_name> /path/to/secured/folder`
   * `sudo chcon -t samba_share_t -R /path/to/secured/folder`
     * To survive system relabel
-      * `sudo semanage fcontext -a -t samba_share_t '/path/to/secured/folder(/.*)'`
-      * `sudo restorecon -vRF /path/to/secured/folder` **NOTE: Do not do chcon above, issue when this is executed on other local computers, does not give what we want**
+      * `sudo semanage fcontext -a -t samba_share_t '/path/to/secured/folder(/.*)?'`
+      * `sudo restorecon -R -v /path/to/secured/folder` **NOTE: Do not do chcon above, issue when this is executed on other local computers, does not give what we want**
 * Make Backup of Existing Conf File
   * `sudo cp -pf /etc/samba/smb.conf /etc/samba/smb.conf.bak`
 * Edit and Save /etc/samba/smb.conf **NOTE: Place the following at the end of the file**
