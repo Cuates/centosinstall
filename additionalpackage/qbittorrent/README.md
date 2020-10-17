@@ -56,6 +56,8 @@
         * `sudo systemctl start qbittorrent-nox.service`
       * Check status
         * `sudo systemctl status qbittorrent-nox.service`
+      * If you change the systemd service file, then reload the systemd daemon for the change to take effect
+        * `sudo systemctl daemon-reload`
 * Access qBittorrent Web UI
   * Open the following in a web browser
     * `<server_ip_address>:8080`
