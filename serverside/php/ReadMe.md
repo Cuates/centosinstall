@@ -1,7 +1,8 @@
 [Install LAMP Stack CentOS 8 Rhel 8](https://www.linuxbabe.com/redhat/install-lamp-stack-centos-8-rhel-8)<br />
 [How To Install PHP On CentOS 8](https://linuxize.com/post/how-to-install-php-on-centos-8/)<br />
 [How To Install PHP 73 On Rhel 8](https://www.itzgeek.com/how-tos/linux/centos-how-tos/how-to-install-php-7-3-on-rhel-8.html)<br />
-[Linux Installation](https://www.scriptcase.net/docs/en_us/v9/manual/02-scriptcase-installation/06-linux_php/)
+[Linux Installation](https://www.scriptcase.net/docs/en_us/v9/manual/02-scriptcase-installation/06-linux_php/)<br />
+[PHP Security Best Practices Tutorial](https://www.cyberciti.biz/tips/php-security-best-practices-tutorial.html)
 * Remi has to be enabled before the following can be done
   * [Remi Installation and Configuration](https://github.com/Cuates/lampcentosinstall/tree/master/system/remi)
 * `sudo dnf module -y enable php:remi-7.4`
