@@ -22,7 +22,7 @@
           ServerAlias cuateslws.ddns.net
           ServerAdmin webmaster@example.com
           DocumentRoot /var/www/html
-          &lt;Directory /var/www/html
+          &lt;Directory /var/www/html&gt;
             Options FollowSymLinks
             AllowOverride None
             Order allow,deny
