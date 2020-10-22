@@ -24,11 +24,14 @@
   * The Web UI administrator username is: admin
   * The Web UI administrator password is still the default one: adminadmin
   * This is a security risk, please consider changing your password from program preferences.
-* Create a qbittorent-nox user or utilize an already created user
-  * `sudo adduser --system --group qbittorrent-nox`
-    * --system flag means we are creating a system user instead of normal user. A system user doesn’t have password and can’t login, which is what you would want for a torrent client. A home directory /home/qbittorent-nox will be created for this user. Files are downloaded to /home/qbittorrent-nox/Downloads/  by default.
-  * Add your user to your group created above
-    * `sudo adduser <your-username> qbittorrent-nox`
+* Create a qbittorentnox user or utilize an already created user
+  * Create a New Group Name for Samba
+    * `sudo groupadd <new_group_name>`
+  * Associate New User Name to New Group Name
+    * `sudo useradd <new_user_name> -G <new_group_name>`
+      * A home directory /home/qbittorentnox will be created for this user. Files are downloaded to /home/qbittorrent-nox/Downloads/  by default.
+  * Associate Existing User to Group
+    * `sudo usermod -a -G <new_group_name> <existing_user_name>`
 * The qbittorrent-nox package ships with the needed systemd service file
   * Under /usr/lib/systemd/system/ directory you will find qbittorrent-nox@.service
     * Make a copy of the file /usr/lib/systemd/system/qbittorrent-nox@.service to /etc/systemd/system/qbittorrent-nox.service
