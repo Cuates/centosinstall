@@ -234,7 +234,7 @@
           * <pre>
             &lt;?php
               echo "Hello, world!\n";
-            ?&ft;
+            ?&gt;
             </pre>
         * Save and exit
         * One can also use the curl command to get same info using the cli
@@ -246,7 +246,7 @@
           * <pre>
             &lt;?php
               phpinfo();
-            ?&ft;
+            ?&gt;
             </pre>
         * Save and exit
         * Open a web browser and type the following url:
