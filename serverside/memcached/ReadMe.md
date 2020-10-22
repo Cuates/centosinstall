@@ -3,13 +3,21 @@
 * `sudo dnf install -y memcached`
 * `sudo vim /etc/sysconfig/memcached`
   * WAS
-    * CACHESIZE="64"
+    * <pre>
+      CACHESIZE="64"
+      </pre>
   * IS
-    * CACHESIZE="2048"
+    * <pre>
+      CACHESIZE="2048"
+      </pre>
   * WAS
-    * OPTIONS="-l 127.0.0.1,::1"
+    * <pre>
+      OPTIONS="-l 127.0.0.1,::1"
+      </pre>
   * IS
-    * OPTIONS=""
+    * <pre>
+      OPTIONS=""
+      </pre>
 * `sudo chkconfig --levels 235 memcached on`
 * `sudo systemctl start memcached`
 * `sudo systemctl enable memcached`
