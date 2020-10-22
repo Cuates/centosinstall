@@ -31,17 +31,17 @@
   * <pre>
     # ServerName www.example.com:80 * Optional since already working
     # Deny access to the entirety of your server's filesystem. You must explicitly permit access to web content directories in other &lt;Directory&gt; blocks below.
-    &lt;Directory \/&gt;
+    &lt;Directory /&gt;
       Options FollowSymLinks
       AllowOverride none
-    &lt;\/Directory&gt;
+    &lt;/Directory&gt;
     DocumentRoot "/var/www/"
 
     # Relax access to content within /var/www.
       &lt;Directory "/var/www"&gt;
         AllowOverride None
         Require all granted
-      &lt;\/Directory&gt;
+      &lt;/Directory&gt;
 
     # Further relax access to the default document root:
       &lt;Directory "/var/www/html"&gt;
@@ -49,18 +49,18 @@
         AllowOverride None
         Order allow,deny
         Allow from all
-      &lt;\/Directory&gt;
+      &lt;/Directory&gt;
 
     # DirectoryIndex: sets the file that Apache will serve if a directory is requested.
       &lt;IfModule dir_module&gt;
         DirectoryIndex index.html index.php
-      &lt;\/IfModule&gt;
+      &lt;/IfModule&gt;
 
     # The following lines prevent .htaccess and .htpasswd files from being viewed by Web clients.
       &lt;Files ~ "^\\.ht"&gt;
         Order allow,deny
         Deny from all
-      &lt;\/Files&gt;
+      &lt;/Files&gt;
 
     # "/var/www/cgi-bin" should be changed to whatever your ScriptAliased CGI directory exists, if you have that configured.
       &lt;Directory "/var/www/cgi-bin"&gt;
@@ -68,7 +68,7 @@
         Options None
         Order allow,deny
         Allow from all
-      &lt;\/Directory&gt;
+      &lt;/Directory&gt;
     </pre>
 
 * `sudo systemctl restart httpd`
