@@ -10,55 +10,61 @@
 * Create a new configuration file named servername.conf under /etc/httpd/conf.d/ directory
   *`sudo vim /etc/httpd/conf.d/servername.conf`
     * Add the following line in this file.
-      * ServerName localhost
+      * <pre>
+        ServerName localhost
+        </pre>
   * `sudo systemctl reload httpd`
 * `sudo apachectl configtest`
 
 * Disable Trace
   * `curl -i -X TRACE 127.0.0.1`
   * `vim /etc/httpd/conf/httpd.conf`
-    * Go to the end of the file and type the following
-    * \# Disable Trace
-    * TraceEnable off
+    * <pre>
+      Go to the end of the file and type the following
+      # Disable Trace
+      TraceEnable off
+      </pre>
   * `sudo systemctl restart httpd`
   * `curl -i -X TRACE 127.0.0.1`
 
 * `sudo vim /etc/httpd/conf/httpd.conf`
-  * \# ServerName www.example.com:80 * Optional since already working
-  * \# Deny access to the entirety of your server's filesystem. You must explicitly permit access to web content directories in other <Directory> blocks below.<br />
-      <Directory \/><br />
-        Options FollowSymLinks<br />
-        AllowOverride none<br />
-      <\/Directory>
-  * DocumentRoot "/var/www/"
-  * \# Relax access to content within /var/www.<br />
-      <Directory "/var/www"><br />
-        AllowOverride None<br />
-        Require all granted<br />
-      <\/Directory>
-  * \# Further relax access to the default document root:<br />
-      <Directory "/var/www/html"><br />
-        Options FollowSymLinks<br />
-        AllowOverride None<br />
-        Order allow,deny<br />
-        Allow from all<br />
-      <\/Directory>
-  * \# DirectoryIndex: sets the file that Apache will serve if a directory is requested.<br />
-      \<IfModule dir_module><br />
-        DirectoryIndex index.html index.php<br />
-      <\/IfModule>
-  * \# The following lines prevent .htaccess and .htpasswd files from being viewed by Web clients.<br />
-      <Files ~ "^\\.ht"><br />
-        Order allow,deny<br />
-        Deny from all<br />
-      <\/Files>
-  * \# "/var/www/cgi-bin" should be changed to whatever your ScriptAliased CGI directory exists, if you have that configured.<br />
-      <Directory "/var/www/cgi-bin"><br />
-        AllowOverride None<br />
-        Options None<br />
-        Order allow,deny<br />
-        Allow from all<br />
-      <\/Directory>
+  * <pre>
+    # ServerName www.example.com:80 * Optional since already working
+    # Deny access to the entirety of your server's filesystem. You must explicitly permit access to web content directories in other &lt;Directory&gt; blocks below.
+      &lt;Directory \/&gt;
+        Options FollowSymLinks
+        AllowOverride none
+      &lt;\/Directory&gt;
+    DocumentRoot "/var/www/"
+    # Relax access to content within /var/www.
+      &lt;Directory "/var/www"&gt;
+        AllowOverride None
+        Require all granted
+      &lt;\/Directory&gt;
+    # Further relax access to the default document root:
+      &lt;Directory "/var/www/html"&gt;
+        Options FollowSymLinks
+        AllowOverride None
+        Order allow,deny
+        Allow from all
+      &lt;\/Directory&gt;
+    # DirectoryIndex: sets the file that Apache will serve if a directory is requested.
+      &lt;IfModule dir_module&gt;
+        DirectoryIndex index.html index.php
+      &lt;\/IfModule&gt;
+    # The following lines prevent .htaccess and .htpasswd files from being viewed by Web clients.
+      &lt;Files ~ "^\\.ht"&gt;
+        Order allow,deny
+        Deny from all
+      &lt;\/Files&gt;
+    # "/var/www/cgi-bin" should be changed to whatever your ScriptAliased CGI directory exists, if you have that configured.
+      &lt;Directory "/var/www/cgi-bin"&gt;
+        AllowOverride None
+        Options None
+        Order allow,deny
+        Allow from all
+      &lt;\/Directory&gt;
+      </pre>
 
 * `sudo systemctl restart httpd`
 * `sudo apachectl configtest`
