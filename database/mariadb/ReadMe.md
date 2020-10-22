@@ -46,19 +46,19 @@
 * `sudo firewall-cmd --list-all`
 * Log into the router and port forward mysql (port 3306) to the Linux machine, so traffic can be redirected (this is optional)
 * `sudo mysql`
-  * select user,host,password from mysql.user;
-  * show databases;
-  * GRANT ALL ON \*.\* TO user_name@ip_address IDENTIFIED BY 'user_password' WITH GRANT OPTION;
+  * `select user,host,password from mysql.user;`
+  * `show databases;`
+  * `GRANT ALL ON *.* TO user_name@ip_address IDENTIFIED BY 'user_password' WITH GRANT OPTION;`
     * IP_Address means user can login from a specific IP address
     * "WITH GRANT OPTION" is optional
-  * FLUSH PRIVILEGES;
+  * `FLUSH PRIVILEGES;`
     * The above command is to apply changes 
-  * GRANT ALL ON \*.\* TO user_name@% IDENTIFIED BY 'user_password' WITH GRANT OPTION;
+  * `GRANT ALL ON *.* TO user_name@% IDENTIFIED BY 'user_password' WITH GRANT OPTION;`
     * '%' means user can login from any IP
     * "WITH GRANT OPTION" is optional
-  * FLUSH PRIVILEGES;
+  * `FLUSH PRIVILEGES;`
     * The above command is to apply changes 
-  * exit;
+  * `exit;`
 * `mariadb --version`
 
 **IMPORTANT NOTE**
@@ -66,7 +66,7 @@
 
 **Setup Database For utf8mb4**
 * Modify client.cnf File
-  * sudo vim /etc/my.cnf.d/client.cnf
+  * `sudo vim /etc/my.cnf.d/client.cnf`
     * WAS
       * <pre>
         [client]
