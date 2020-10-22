@@ -10,7 +10,7 @@
       # ODBC Trace
       [ODBC]
       Trace           = no
-      # Trace           = yes # Change this to yes if you want logs
+      # Trace         = yes # Change this to yes if you want logs
       TraceFile       = /tmp/unixodbc.log
       </pre>
 * `sudo vim /etc/odbc.ini`
