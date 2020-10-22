@@ -76,6 +76,41 @@
   * One can also use the curl command to get same info using the cli
     * `curl -I http://<ip_address>`
     * `curl http://<ip_address>`
+* Configure the domain_name.conf file
+  * Create a new domain_name.con file at the following location
+    * `/etc/nginx/conf.d/domain_name.conf`
+      * Paste the following in the domain_name.conf file
+       * <pre>
+         server {
+           listen 80;
+           listen [::]:80;
+
+           root /var/www/html;
+           index index.html index.htm index.php;
+
+           server_name cuateslws.ddns.net;
+
+           location / {
+           # By default, Nginx buffers traffic for servers that it proxies for. Buffers improve server performance as a server response isn’t sent until the client finishes sending a complete response. To turn the buffer off.
+           # proxy_buffering off;
+           try_files $uri $uri/ =404;
+           }
+
+           # Setting up php within Nginx
+           location ~ \.php$ {
+           try_files $uri =404;
+           fastcgi_intercept_errors on;
+           fastcgi_index  index.php;
+           include        fastcgi_params;
+           fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+           fastcgi_pass   php-fpm;
+           }
+         }
+         </pre>
+     * Test Nginx
+          * `sudo nginx -t`
+     * Restart Nginx Service
+       * `sudo systemctl restart nginx`
 * Optional you don’t need to configure Nginx upon installation. However, you should know the location of the configuration files and the Nginx root directory in case you need to modify the configuration.
   * Nginx configuration directory: `/etc/nginx`
   * Nginx root directory: `/usr/share/nginx/html`
