@@ -10,15 +10,17 @@
 [Change MySQL Default Character Set To utf-8 In my cnf](https://stackoverflow.com/questions/3513773/change-mysql-default-character-set-to-utf-8-in-my-cnf)<br />
 [MariaDB](https://mariadb.org/download/)
 * `sudo vim /etc/yum.repo.d/MariaDB.repo`
-  * \# MariaDB 10.5 [Stable] CentOS repository list - created 2020-07-30 23:39 UTC<br />
-    \# [MariaDB Download Test](https://mariadb.org/download-test/)<br />
-    **PASTE BELOW INTO FILE**<br />
-    [mariadb]<br />
-    name = MariaDB<br />
-    baseurl = http://sfo1.mirrors.digitalocean.com/mariadb/yum/10.5/centos8-amd64<br />
-    module_hotfixes=1<br />
-    gpgkey=http://sfo1.mirrors.digitalocean.com/mariadb/yum/RPM-GPG-KEY-MariaDB<br />
-    gpgcheck=1<br />
+  * MariaDB 10.5 [Stable] CentOS repository list - created 2020-07-30 23:39 UTC
+  * [MariaDB Download Test](https://mariadb.org/download-test/)
+  * **PASTE BELOW INTO FILE**<br />
+  * <pre>
+    [mariadb]
+    name = MariaDB
+    baseurl = http://sfo1.mirrors.digitalocean.com/mariadb/yum/10.5/centos8-amd64
+    module_hotfixes=1
+    gpgkey=http://sfo1.mirrors.digitalocean.com/mariadb/yum/RPM-GPG-KEY-MariaDB
+    gpgcheck=1
+    </pre>
 * `sudo dnf clean packages`
 * `sudo dnf install -y mariadb-server mariadb mysql-devel`
 * `sudo systemctl start mariadb`
@@ -66,62 +68,73 @@
 * Modify client.cnf File
   * sudo vim /etc/my.cnf.d/client.cnf
     * WAS
-      * [client]<br />
+      * <pre>
+        [client]
         [client-mariadb]
+        </pre>
 
     * IS
-      * [client]<br />
-        default-character-set = utf8mb4<br />
+      * <pre>
+        [client]
+        default-character-set = utf8mb4
         [client-mariadb]
         default-character-set = utf8mb4
+        </pre>
     * Save and Exit
 
   * `sudo vim /etc/my.cnf.d/mysql-client.cnf`
     * WAS
-      * [mysql]<br />
-        [mysql_upgrade]<br />
-        [mysqladmin]<br />
-        [mysqlbinlog]<br />
-        [mysqlcheck]<br />
-        [mysqldump]<br />
-        [mysqlimport]<br />
-        [mysqlshow]<br />
-        [mysqlslap]<br />
+      * <pre>
+        [mysql]
+        [mysql_upgrade]
+        [mysqladmin]
+        [mysqlbinlog]
+        [mysqlcheck]
+        [mysqldump]
+        [mysqlimport]
+        [mysqlshow]
+        [mysqlslap]
+        </pre>
     * IS
-      * [mysql]<br />
-        default-character-set = utf8mb4<br />
-        [mysql_upgrade]<br />
-        [mysqladmin]<br />
-        [mysqlbinlog]<br />
-        [mysqlcheck]<br />
-        [mysqldump]<br />
-        [mysqlimport]<br />
-        [mysqlshow]<br />
-        [mysqlslap]<br />
+      * <pre>
+        [mysql]
+        default-character-set = utf8mb4
+        [mysql_upgrade]
+        [mysqladmin]
+        [mysqlbinlog]
+        [mysqlcheck]
+        [mysqldump]
+        [mysqlimport]
+        [mysqlshow]
+        [mysqlslap]
+        </pre>
     * Save and Exit
 
 * Modify server.cnf File
   * `sudo vim /etc/my.cnf.d/server.cnf`
     * WAS
-      * [server]<br />
-        [mysqld]<br />
-        [galera]<br />
-        [embedded]<br />
-        [mariadb]<br />
-        [mariadb-10.5]<br />
-
+      * <pre>
+        [server]
+        [mysqld]
+        [galera]
+        [embedded]
+        [mariadb]
+        [mariadb-10.5]
+        </pre>
     * IS
-      * [server]<br />
-        [mysqld]<br />
-        character-set-client-handshake = FALSE<br />
-        character-set-server = utf8mb4<br />
-        collation-server = utf8mb4_unicode_520_ci<br />
-        init-connect = 'SET NAMES utf8mb4 COLLATE utf8mb4_unicode_520_ci'<br />
-        init-connect = 'SET collation_connection = utf8mb4_unicode_520_ci'<br />
-        [galera]<br />
-        [embedded]<br />
-        [mariadb]<br />
-        [mariadb-10.5]<br />
+      * <pre>
+        [server]
+        [mysqld]
+        character-set-client-handshake = FALSE
+        character-set-server = utf8mb4
+        collation-server = utf8mb4_unicode_520_ci
+        init-connect = 'SET NAMES utf8mb4 COLLATE utf8mb4_unicode_520_ci'
+        init-connect = 'SET collation_connection = utf8mb4_unicode_520_ci'
+        [galera]
+        [embedded]
+        [mariadb]
+        [mariadb-10.5]
+        </pre>
     * Save and Exit
 
 * Restart MariaDB Services
