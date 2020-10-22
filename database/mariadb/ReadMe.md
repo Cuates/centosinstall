@@ -176,7 +176,7 @@
   * `show session variables where Variable_name like 'character_set\_%' or Variable_name like 'collation%';`
   * `show global variables where Variable_name like 'character_set\_%' or Variable_name like 'collation%';`
   * `show global variables like 'init_connect';`
-  * `show variables like '%_server' ;`
+  * `show variables like '%_server';`
   * `show variables like 'char%';`
   * `show variables like 'collation%';`
   * See which procedures have not been updated to the server’s new character_set_client, collation_connection and Database Collation values
