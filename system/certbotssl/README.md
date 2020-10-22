@@ -16,20 +16,22 @@
 * Set Apache virtual host before proceeding with Certbot
   * `sudo vim /etc/httpd/conf.d/<domain_name>.conf`
     * Paste the following into the file
-      * `<VirtualHost *:80>`<br />
-        `    ServerName cuateslws.ddns.net`<br />
-        `    ServerAlias cuateslws.ddns.net`<br />
-        `    ServerAdmin webmaster@example.com`<br />
-        `    DocumentRoot /var/www/html`<br />
-        `    <Directory /var/www/html>`<br />
-        `        Options FollowSymLinks`<br />
-        `        AllowOverride None`<br />
-        `        Order allow,deny`<br />
-        `        Allow from all`<br />
-        `    </Directory>`<br />
-        `    ErrorLog /var/log/httpd/cuateslws.ddns.net-error.log`<br />
-        `    CustomLog /var/log/httpd/cuateslws.ddns.net-access.log combined`<br />
-        `</VirtualHost>`
+      * <pre>
+        &lt;VirtualHost *:80&gt;
+          ServerName cuateslws.ddns.net
+          ServerAlias cuateslws.ddns.net
+          ServerAdmin webmaster@example.com
+          DocumentRoot /var/www/html
+          &lt;Directory /var/www/html
+            Options FollowSymLinks
+            AllowOverride None
+            Order allow,deny
+            Allow from all
+          &lt;/Directory&gt;
+          ErrorLog /var/log/httpd/cuateslws.ddns.net-error.log
+          CustomLog /var/log/httpd/cuateslws.ddns.net-access.log combined
+        &lt;/VirtualHost&gt;
+        <pre>
   * Save and exit
   * Restart apache/httpd
     * `sudo systemctl restart httpd`
@@ -89,27 +91,28 @@
 * Add Protocols h2 (HTTP/2) to the port 443 Certbot generated file
   * `sudo vim /etc/httpd/conf.d/<domain_name>-le-ssl.conf`
     * Paste the HTTP/2 section into the below file
-      * `<IfModule mod_ssl.c>`<br />
-        `<VirtualHost *:443>`<br />
-        `    ServerName <domain_name>`<br />
-        `    ServerAlias <domain_name>`<br />
-        `    ServerAdmin webmaster@example.com`<br />
-        `    DocumentRoot /var/www/html`<br />
-        `    <Directory /var/www/html>`<br />
-        `        Options FollowSymLinks`<br />
-        `        AllowOverride None`<br />
-        `        Order allow,deny`<br />
-        `        Allow from all`<br />
-        `    </Directory>`<br />
-        `    ErrorLog /var/log/httpd/<domain_name>-error.log`<br />
-        `    CustomLog /var/log/httpd/<domain_name>-access.log combined`<br />
-        `    # Enable HTTP/2, if available`<br />
-        `    Protocols h2 http/1.1`<br />
-        `SSLCertificateFile /etc/letsencrypt/live/<domain_name>/fullchain.pem`<br />
-        `SSLCertificateKeyFile /etc/letsencrypt/live/<domain_name>/privkey.pem`<br />
-        `Include /etc/letsencrypt/options-ssl-apache.conf`<br />
-        `</VirtualHost>`<br />
-        `</IfModule>`
+      * <pre>
+        &lt;IfModule mod_ssl.c&gt;
+        &lt;VirtualHost *:443&gt;
+          ServerName <domain_name>
+          ServerAlias <domain_name>
+          ServerAdmin webmaster@example.com
+          DocumentRoot /var/www/html
+          &lt;Directory /var/www/html&gt;
+            Options FollowSymLinks
+            AllowOverride None
+            Order allow,deny
+            Allow from all
+          &lt;/Directory&gt;
+          ErrorLog /var/log/httpd/<domain_name>-error.log
+          CustomLog /var/log/httpd/<domain_name>-access.log combined
+          # Enable HTTP/2, if available
+          Protocols h2 http/1.1
+        SSLCertificateFile /etc/letsencrypt/live/<domain_name>/fullchain.pem
+        SSLCertificateKeyFile /etc/letsencrypt/live/<domain_name>/privkey.pem
+        Include /etc/letsencrypt/options-ssl-apache.conf
+        &lt;/VirtualHost&gt;
+        &lt;/IfModule&gt;
   * Save and exit
   * Test the apache configuration
     * `sudo apachectl configtest`
