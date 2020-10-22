@@ -32,12 +32,16 @@
 * `sudo netstat -antup | grep 5432`
 * `sudo vim /var/lib/pgsql/data/pg_hba.conf`
   * WAS
-    * host    all             all             127.0.0.1/32            ident
-    * host    all             all             ::1/128                 ident
+    <pre>
+    host    all             all             127.0.0.1/32            ident
+    host    all             all             ::1/128                 ident
+    </pre>
   * IS
-    * host    all             all             127.0.0.1/32            md5
-    * host    all             all             0.0.0.0/0               md5
-    * host    all             all             ::1/128                 md5
+    <pre>
+    host    all             all             127.0.0.1/32            md5
+    host    all             all             0.0.0.0/0               md5
+    host    all             all             ::1/128                 md5
+    </pre>
   * Save and Quit **NOTE make sure to tab each column to match the existing column**
 * `sudo systemctl restart postgresql`
 * `sudo firewall-cmd --get-services`
@@ -94,12 +98,16 @@
 * `sudo netstat -antup | grep 5432`
 * `sudo vim /var/lib/pgsql/13/data/pg_hba.conf`
   * WAS
-    * host    all             all             127.0.0.1/32            ident
-    * host    all             all             ::1/128                 ident
+    <pre>
+    host    all             all             127.0.0.1/32            ident
+    host    all             all             ::1/128                 ident
+    </pre>
   * IS
-    * host    all             all             127.0.0.1/32            md5
-    * host    all             all             0.0.0.0/0               md5
-    * host    all             all             ::1/128                 md5
+    <pre>
+    host    all             all             127.0.0.1/32            md5
+    host    all             all             0.0.0.0/0               md5
+    host    all             all             ::1/128                 md5
+    </pre>
   * Save and Quit **NOTE make sure to tab each column to match the existing column**
 * `sudo systemctl restart postgresql-13`
 * `sudo firewall-cmd --get-services`
