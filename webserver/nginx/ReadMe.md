@@ -76,9 +76,9 @@
   * One can also use the curl command to get same info using the cli
     * `curl -I http://<ip_address>`
     * `curl http://<ip_address>`
-* Configure the domain_name.conf file
-  * Create a new domain_name.con file at the following location
-    * `/etc/nginx/conf.d/domain_name.conf`
+* Configure the <domain_name>.conf file
+  * Create a new <domain_name>.con file at the following location
+    * `/etc/nginx/conf.d/<domain_name>.conf`
       * Paste the following in the domain_name.conf file
        * <pre>
          server {
@@ -88,7 +88,7 @@
            root /var/www/html;
            index index.html index.htm index.php;
 
-           server_name cuateslws.ddns.net;
+           server_name <domain_name>;
 
            location / {
            # By default, Nginx buffers traffic for servers that it proxies for. Buffers improve server performance as a server response isn’t sent until the client finishes sending a complete response. To turn the buffer off.
