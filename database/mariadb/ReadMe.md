@@ -86,26 +86,42 @@
     * WAS
       * <pre>
         [mysql]
+        
         [mysql_upgrade]
+        
         [mysqladmin]
+        
         [mysqlbinlog]
+        
         [mysqlcheck]
+        
         [mysqldump]
+        
         [mysqlimport]
+        
         [mysqlshow]
+        
         [mysqlslap]
         </pre>
     * IS
       * <pre>
         [mysql]
         default-character-set = utf8mb4
+        
         [mysql_upgrade]
+        
         [mysqladmin]
+        
         [mysqlbinlog]
+        
         [mysqlcheck]
+        
         [mysqldump]
+        
         [mysqlimport]
+        
         [mysqlshow]
+        
         [mysqlslap]
         </pre>
     * Save and Exit
