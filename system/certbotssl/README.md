@@ -30,8 +30,8 @@
             Order allow,deny
             Allow from all
           &lt;/Directory&gt;
-          ErrorLog /var/log/httpd/<domain_name>-error.log
-          CustomLog /var/log/httpd/<domain_name>-access.log combined
+          ErrorLog /var/log/httpd/&lt;domain_name&gt;-error.log
+          CustomLog /var/log/httpd/&lt;domain_name&gt;-access.log combined
         &lt;/VirtualHost&gt;
         </pre>
   * Save and exit
@@ -44,9 +44,9 @@
       # http port 80
       server {
         listen      80;
-        server_name <domain_name>t;
-        access_log  /var/log/nginx/http_<domain_name>_access.log;
-        error_log   /var/log/nginx/http_<domain_name>_error.log;
+        server_name &lt;domain_name&gt;;
+        access_log  /var/log/nginx/http_&lt;domain_name&gt;_access.log;
+        error_log   /var/log/nginx/http_&lt;domain_name&gt;_error.log;
         root        /usr/share/nginx/html;
       }
       </pre>
@@ -199,8 +199,8 @@
             # Enable HTTP/2, if available
             Protocols h2 http/1.1
         
-            SSLCertificateFile /etc/letsencrypt/live/<domain_name&gt;/fullchain.pem
-            SSLCertificateKeyFile /etc/letsencrypt/live/<domain_name&gt;/privkey.pem
+            SSLCertificateFile /etc/letsencrypt/live/&lt;domain_name&gt;/fullchain.pem
+            SSLCertificateKeyFile /etc/letsencrypt/live/&;t;domain_name&gt;/privkey.pem
             Include /etc/letsencrypt/options-ssl-apache.conf
           &lt;/VirtualHost&gt;
         &lt;/IfModule&gt;
