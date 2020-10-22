@@ -93,25 +93,25 @@
     * Paste the HTTP/2 section into the below file
       * <pre>
         &lt;IfModule mod_ssl.c&gt;
-        &lt;VirtualHost *:443&gt;
-          ServerName <domain_name>
-          ServerAlias <domain_name>
-          ServerAdmin webmaster@example.com
-          DocumentRoot /var/www/html
-          &lt;Directory /var/www/html&gt;
-            Options FollowSymLinks
-            AllowOverride None
-            Order allow,deny
-            Allow from all
-          &lt;/Directory&gt;
-          ErrorLog /var/log/httpd/<domain_name>-error.log
-          CustomLog /var/log/httpd/<domain_name>-access.log combined
-          # Enable HTTP/2, if available
-          Protocols h2 http/1.1
-        SSLCertificateFile /etc/letsencrypt/live/<domain_name>/fullchain.pem
-        SSLCertificateKeyFile /etc/letsencrypt/live/<domain_name>/privkey.pem
-        Include /etc/letsencrypt/options-ssl-apache.conf
-        &lt;/VirtualHost&gt;
+          &lt;VirtualHost *:443&gt;
+            ServerName <domain_name>
+            ServerAlias <domain_name>
+            ServerAdmin webmaster@example.com
+            DocumentRoot /var/www/html
+            &lt;Directory /var/www/html&gt;
+              Options FollowSymLinks
+              AllowOverride None
+              Order allow,deny
+              Allow from all
+            &lt;/Directory&gt;
+            ErrorLog /var/log/httpd/<domain_name>-error.log
+            CustomLog /var/log/httpd/<domain_name>-access.log combined
+            # Enable HTTP/2, if available
+            Protocols h2 http/1.1
+            SSLCertificateFile /etc/letsencrypt/live/<domain_name>/fullchain.pem
+            SSLCertificateKeyFile /etc/letsencrypt/live/<domain_name>/privkey.pem
+            Include /etc/letsencrypt/options-ssl-apache.conf
+          &lt;/VirtualHost&gt;
         &lt;/IfModule&gt;
         </pre>
   * Save and exit
