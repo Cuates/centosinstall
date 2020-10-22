@@ -16,7 +16,6 @@
   * \<?php phpinfo(); ?\>
   * Visit website localhost/info.php
   * `sudo rm /var/www/html/info.php` (for security reasons)
-* `sudo mkdir /var/log/php`
 * `sudo vim /etc/php.ini`
   * serialize_precision = -1
   * max_execution_time = 240
