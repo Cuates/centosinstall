@@ -1,5 +1,9 @@
 [How To Debug Logrotate Warnings Or Errors](https://access.redhat.com/solutions/32831)
+
+**OPTIONAL This can be left out as we are using php-fpm instead**
 * `sudo mkdir /var/log/php`
+* `sudo vim /etc/php.ini`
+  * error_log = /var/log/php/error.log
 * `sudo vim /etc/logrotate.d/php`
   * /var/log/php/*log {<br />
     missingok<br />
