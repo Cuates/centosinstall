@@ -17,12 +17,11 @@
 
 * Install SQL Server command-line tools
   * `sudo dnf -y install mssql-tools unixODBC-devel`
+    * Accept License
+      * YES Enter
+      * YES Enter
   * `sudo dnf -y update mssql-tools`
   * `sudo systemctl restart mssql-server`
-
-* Accept License
-  * YES Enter
-  * YES Enter
 
 * Confirm installation
   * `rpm -qi mssql-server`
