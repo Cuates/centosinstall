@@ -20,7 +20,6 @@
   * serialize_precision = -1
   * max_execution_time = 240
   * date.timezone = America/Los_Angeles
-  * error_log = /var/log/php/error.log **NOTE This can be left out as we are using php-fpm instead**
 * `sudo systemctl restart httpd`
 * `sudo apachectl configtest`
 * `php -r "echo extension_loaded('zip') ? 'Installed' : 'Not installed';"`
