@@ -36,7 +36,7 @@
 * `sudo systemctl restart httpd`
 * `sudo mkdir -p /var/lib/pgadmin4/`
 * `sudo mkdir -p /var/log/pgadmin4/`
-* `sudo vim /usr/pgadmin4/web/config_distro.py
+* `sudo vim /usr/pgadmin4/web/config_distro.py`
   * <pre>
     HELP_PATH = '../../../share/docs/en_US/html/'
     DEFAULT_BINARY_PATHS = {
