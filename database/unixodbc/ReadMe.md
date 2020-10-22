@@ -6,22 +6,26 @@
 * `sudo dnf install -y unixODBC unixODBC-devel`
 * `sudo vim /etc/odbcinst.ini`
   * Add to file
-    * \# ODBC Trace<br />
-      [ODBC]<br />
-      Trace           = no<br />
-      \# Trace           = yes # Change this to yes if you want logs<br />
-      TraceFile       = /tmp/unixodbc.log<br />
+    * <pre>
+      # ODBC Trace
+      [ODBC]
+      Trace           = no
+      # Trace           = yes # Change this to yes if you want logs
+      TraceFile       = /tmp/unixodbc.log
+      </pre>
 * `sudo vim /etc/odbc.ini`
   * Add to file
-    * [MSSQL]<br />
-      Driver          = FreeTDS<br />
-      Description     = MS SQL Server 2019<br />
-      Trace           = no<br />
-      Servername      = FreeTDS_Name<br />
-      Port            = 1433<br />
-      Database        = DATABASENAME<br />
-      UID             = USERNAME<br />
-      PWD             = PASSWORD<br />
+    * <pre>
+      [MSSQL]
+      Driver          = FreeTDS
+      Description     = MS SQL Server 2019
+      Trace           = no
+      Servername      = FreeTDS_Name
+      Port            = 1433
+      Database        = DATABASENAME
+      UID             = USERNAME
+      PWD             = PASSWORD
       TDS_Version     = 8.0
+      </pre>
 * `isql --version`
 * `isql -v <FreeTDS_Name> <username> <password>`
