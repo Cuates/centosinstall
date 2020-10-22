@@ -29,7 +29,7 @@
     * `pip3.9 install psycopg2-binary`
   * **need to perform the following first before pyodbc and mysqlclient can be installed**
   * [Install dependencies for python3 and mysql](https://stackoverflow.com/questions/21530577/fatal-error-python-h-no-such-file-or-directory)
-  * `sudo dnf install -y python3-devel mysql-devel unixODBC-devel`
+  * `sudo dnf install -y python3-devel mysql-devel unixODBC-devel` **IMPORTANT NOTE Install MariaDB first then do this command**
     * [pyodbc](https://pypi.org/project/pyodbc/)
       * `pip3.9 install pyodbc`
     * [mysqlclient](https://pypi.org/project/mysqlclient/)
