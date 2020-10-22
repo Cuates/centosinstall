@@ -18,33 +18,35 @@
 * Set Apache virtual host before proceeding with Certbot
   * `sudo vim /etc/httpd/conf.d/<domain_name>.conf`
     * Paste the following into the file
-      * `<VirtualHost *:80>`<br />
-        `    ServerName cuateslws.ddns.net`<br />
-        `    ServerAlias cuateslws.ddns.net`<br />
-        `    ServerAdmin webmaster@example.com`<br />
-        `    DocumentRoot /var/www/html`<br />
-        `    <Directory /var/www/html>`<br />
-        `        Options FollowSymLinks`<br />
-        `        AllowOverride None`<br />
-        `        Order allow,deny`<br />
-        `        Allow from all`<br />
-        `    </Directory>`<br />
-        `    ErrorLog /var/log/httpd/cuateslws.ddns.net-error.log`<br />
-        `    CustomLog /var/log/httpd/cuateslws.ddns.net-access.log combined`<br />
-        `</VirtualHost>`
+      * <pre>
+        &lt;VirtualHost *:80&gt;
+          ServerName &lt;domain_name&gt;
+          ServerAlias &lt;domain_name&gt;
+          ServerAdmin webmaster@example.com
+          DocumentRoot /var/www/html
+          &lt;Directory /var/www/html&gt;
+            Options FollowSymLinks
+            AllowOverride None
+            Order allow,deny
+            Allow from all
+          &lt;/Directory&gt;
+          ErrorLog /var/log/httpd/<domain_name>-error.log
+          CustomLog /var/log/httpd/<domain_name>-access.log combined
+        &lt;/VirtualHost&gt;
+        </pre>
   * Save and exit
   * Restart apache/httpd
     * `sudo systemctl restart httpd`
 * Set Nginx virtual host before proceeding with Certbot
-  * `sudo vim /etc/nginx/conf.d/cuateslws.ddns.net.conf`
+  * `sudo vim /etc/nginx/conf.d/<domain_name>`
   * Append the following code:
     * <pre>
       # http port 80
       server {
         listen      80;
-        server_name cuateslws.ddns.net;
-        access_log  /var/log/nginx/http_cuateslws.ddns.net_access.log;
-        error_log   /var/log/nginx/http_cuateslws.ddns.net_error.log;
+        server_name <domain_name>t;
+        access_log  /var/log/nginx/http_<domain_name>_access.log;
+        error_log   /var/log/nginx/http_<domain_name>_error.log;
         root        /usr/share/nginx/html;
       }
       </pre>
@@ -131,14 +133,14 @@
 
         Which names would you like to activate HTTPS for?
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        1: cuateslws.ddns.net
+        1: <domain_name>
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         Select the appropriate numbers separated by commas and/or spaces, or leave input
         blank to select all options shown (Enter 'c' to cancel): 1
         Cert not yet due for renewal
 
         You have an existing certificate that has exactly the same domains or certificate name you requested and isn't close to expiry.
-        (ref: /etc/letsencrypt/renewal/cuateslws.ddns.net.conf)
+        (ref: /etc/letsencrypt/renewal/<domain_name>.conf)
 
         What would you like to do?
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -147,18 +149,18 @@
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
         Select the appropriate number [1-2] then [enter] (press 'c' to cancel): 1
         Keeping the existing certificate
-        Deploying Certificate to VirtualHost /etc/nginx/conf.d/cuateslws.ddns.net.conf
-        Redirecting all traffic on port 80 to ssl in /etc/nginx/conf.d/cuateslws.ddns.net.conf
+        Deploying Certificate to VirtualHost /etc/nginx/conf.d/<domain_name>.conf
+        Redirecting all traffic on port 80 to ssl in /etc/nginx/conf.d/<domain_name>.conf
 
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-        Congratulations! You have successfully enabled https://cuateslws.ddns.net
+        Congratulations! You have successfully enabled https://<domain_name>
         - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
         IMPORTANT NOTES:
         - Congratulations! Your certificate and chain have been saved at:
-          /etc/letsencrypt/live/cuateslws.ddns.net/fullchain.pem
+          /etc/letsencrypt/live/<domain_name>/fullchain.pem
           Your key file has been saved at:
-          /etc/letsencrypt/live/cuateslws.ddns.net/privkey.pem
+          /etc/letsencrypt/live/<domain_name>/privkey.pem
           Your cert will expire on 2021-01-12. To obtain a new or tweaked
           version of this certificate in the future, simply run certbot again
           with the "certonly" option. To non-interactively renew *all* of
@@ -178,27 +180,31 @@
 * Add Protocols h2 (HTTP/2) to the port 443 Certbot generated file
   * `sudo vim /etc/httpd/conf.d/<domain_name>-le-ssl.conf`
     * Paste the HTTP/2 section into the below file
-      * `<IfModule mod_ssl.c>`<br />
-        `<VirtualHost *:443>`<br />
-        `    ServerName <domain_name>`<br />
-        `    ServerAlias <domain_name>`<br />
-        `    ServerAdmin webmaster@example.com`<br />
-        `    DocumentRoot /var/www/html`<br />
-        `    <Directory /var/www/html>`<br />
-        `        Options FollowSymLinks`<br />
-        `        AllowOverride None`<br />
-        `        Order allow,deny`<br />
-        `        Allow from all`<br />
-        `    </Directory>`<br />
-        `    ErrorLog /var/log/httpd/<domain_name>-error.log`<br />
-        `    CustomLog /var/log/httpd/<domain_name>-access.log combined`<br />
-        `    # Enable HTTP/2, if available`<br />
-        `    Protocols h2 http/1.1`<br />
-        `SSLCertificateFile /etc/letsencrypt/live/<domain_name>/fullchain.pem`<br />
-        `SSLCertificateKeyFile /etc/letsencrypt/live/<domain_name>/privkey.pem`<br />
-        `Include /etc/letsencrypt/options-ssl-apache.conf`<br />
-        `</VirtualHost>`<br />
-        `</IfModule>`
+      * <pre>
+        &lt;IfModule mod_ssl.c&gt;
+          &lt;VirtualHost *:443&gt;
+            ServerName &lt;domain_name&gt;
+            ServerAlias &lt;domain_name&gt;
+            ServerAdmin webmaster@example.com
+            DocumentRoot /var/www/html
+            &lt;Directory /var/www/html&gt;
+              Options FollowSymLinks
+              AllowOverride None
+              Order allow,deny
+              Allow from all
+            &lt;/Directory&gt;
+            ErrorLog /var/log/httpd/&lt;domain_name&gt;-error.log
+            CustomLog /var/log/httpd/&lt;domain_name&gt;-access.log combined
+        
+            # Enable HTTP/2, if available
+            Protocols h2 http/1.1
+        
+            SSLCertificateFile /etc/letsencrypt/live/<domain_name&gt;/fullchain.pem
+            SSLCertificateKeyFile /etc/letsencrypt/live/<domain_name&gt;/privkey.pem
+            Include /etc/letsencrypt/options-ssl-apache.conf
+          &lt;/VirtualHost&gt;
+        &lt;/IfModule&gt;
+        </pre>
   * Save and exit
   * Test the apache configuration
     * `sudo apachectl configtest`
@@ -213,15 +219,15 @@
     * Paste the HTTP/2 section into the below file
       * <pre>
         server {
-          server_name <yourdomainname> www.<yourdomainname>;
-          access_log  /var/log/nginx/<yourdomainname>_access.log;
-          error_log  /var/log/nginx/<yourdomainname>_error.log;
+          server_name &lt;yourdomainname&gt; www.&lt;yourdomainname&gt;;
+          access_log  /var/log/nginx/&lt;yourdomainname&gt;_access.log;
+          error_log  /var/log/nginx/&lt;yourdomainname&gt;_error.log;
 
           listen [::]:443 ssl ipv6only=on http2; # managed by Certbot
           listen 443 ssl http2; # managed by Certbot
 
-          ssl_certificate /etc/letsencrypt/live/<yourdomainname>/fullchain.pem; # managed by Certbot
-          ssl_certificate_key /etc/letsencrypt/live/<yourdomainname>/privkey.pem; # managed by Certbot
+          ssl_certificate /etc/letsencrypt/live/&lt;yourdomainname&gt;/fullchain.pem; # managed by Certbot
+          ssl_certificate_key /etc/letsencrypt/live/&lt;yourdomainname&gt;/privkey.pem; # managed by Certbot
           include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
           ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
         }
