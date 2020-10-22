@@ -131,24 +131,34 @@
     * WAS
       * <pre>
         [server]
+        
         [mysqld]
+        
         [galera]
+        
         [embedded]
+        
         [mariadb]
+        
         [mariadb-10.5]
         </pre>
     * IS
       * <pre>
         [server]
+        
         [mysqld]
         character-set-client-handshake = FALSE
         character-set-server = utf8mb4
         collation-server = utf8mb4_unicode_520_ci
         init-connect = 'SET NAMES utf8mb4 COLLATE utf8mb4_unicode_520_ci'
         init-connect = 'SET collation_connection = utf8mb4_unicode_520_ci'
+        
         [galera]
+        
         [embedded]
+        
         [mariadb]
+        
         [mariadb-10.5]
         </pre>
     * Save and Exit
