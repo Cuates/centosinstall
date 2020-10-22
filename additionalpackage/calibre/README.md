@@ -58,17 +58,21 @@
     * `sudo vim /etc/systemd/system/calibre-server.service`
     * Now add the following configurations, which will start the calibre Content server on boot. Make sure to replace the highlighted text with your user and group
     * ***IMPORTANT NOTE <new_user_name> must have root or sudoer privileges***
-      * `## startup service`<br />
-        `[Unit]`<br />
-        `Description=calibre content server`<br />
-        `After=network.target`<br />
-        `[Service]`<br />
-        `Type=simple`<br />
-        `User=<new_user_name>`<br />
-        `Group=<new_user_name>`<br />
-        `ExecStart=/opt/calibre/calibre-server --port=4805 /path/to/calibre/library_name --enable-local-write`<br />
-        `[Install]`<br />
-        `WantedBy=multi-user.target`
+      * <pre>
+        ## startup service
+        [Unit]
+        Description=calibre content server
+        After=network.target
+        
+        [Service]
+        Type=simple
+        User=<new_user_name>
+        Group=<new_user_name>
+        ExecStart=/opt/calibre/calibre-server --port=4805 /path/to/calibre/library_name --enable-local-write
+        
+        [Install]
+        WantedBy=multi-user.target
+        </pre>
     * Save and close the file
     * Now enable the service to start on boot up and start it
       * `sudo systemctl enable calibre-server`
@@ -86,17 +90,21 @@
     * Reopen service file created earlier
     * ***IMPORTANT NOTE <new_user_name> must have root or sudoer privileges***
       * `sudo vim /etc/systemd/system/calibre-server.service`
-        * `## startup service`<br />
-          `[Unit]`<br />
-          `Description=calibre content server`<br />
-          `After=network.target`<br />
-          `[Service]`<br />
-          `Type=simple`<br />
-          `User=<new_user_name>`<br />
-          `Group=<new_user_name>`<br />
-          `ExecStart=/opt/calibre/calibre-server --port=4805 --userdb /path/to/calibre/useraccount/users.sqlite --enable-auth /path/to/calibre/library_name --enable-local-write`<br />
-          `[Install]`<br />
-          `WantedBy=multi-user.target`
+        * <pre>
+          ## startup service
+          [Unit]
+          Description=calibre content server
+          After=network.target
+          
+          [Service]
+          Type=simple
+          User=<new_user_name>
+          Group=<new_user_name>
+          ExecStart=/opt/calibre/calibre-server --port=4805 --userdb /path/to/calibre/useraccount/users.sqlite --enable-auth /path/to/calibre/library_name --enable-local-write
+          
+          [Install]
+          WantedBy=multi-user.target
+          </pre>
       * Save and close the file
     * Refresh the services daemon to rescan the services files, and start the calibre server again with
       * `sudo systemctl daemon-reload`
