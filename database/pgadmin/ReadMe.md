@@ -13,6 +13,29 @@
   * <pre>
     LoadModule wsgi_module modules/mod_wsgi.so
     WSGIDaemonProcess pgadmin processes=1 threads=25 python-home=/usr/pgadmin4/venv
+    WSGIScriptAlias /pgadmin4 /usr/lib/python3.6/site-packages/pgadmin4-web/pgAdmin4.wsgi
+
+    &lt;Directory /usr/lib/python3.6/site-packages/pgadmin4-web/&gt;
+      WSGIProcessGroup pgadmin
+      WSGIApplicationGroup %{GLOBAL}
+      &lt;IfModule mod_authz_core.c&gt;
+        # Apache 2.4
+        Require all granted
+      &lt;/IfModule&gt;
+      &lt;IfModule !mod_authz_core.c&gt;
+        # Apache 2.2
+        Order Deny,Allow
+        Deny from All
+        Allow from 127.0.0.1
+        Allow from ::1
+      &lt;/IfModule&gt;
+    &lt;/Directory&gt;
+    </pre>
+* OR
+* `sudo cp /etc/httpd/conf.d/pgadmin4.conf.sample /etc/httpd/conf.d/pgadmin4.conf`
+  * <pre>
+    LoadModule wsgi_module modules/mod_wsgi.so
+    WSGIDaemonProcess pgadmin processes=1 threads=25 python-home=/usr/pgadmin4/venv
     WSGIScriptAlias /pgadmin4 /usr/pgadmin4/web/pgAdmin4.wsgi
 
     &lt;Directory /usr/pgadmin4/web/&gt;
@@ -36,6 +59,20 @@
 * `sudo systemctl restart httpd`
 * `sudo mkdir -p /var/lib/pgadmin4/`
 * `sudo mkdir -p /var/log/pgadmin4/`
+* `sudo vim /usr/lib/python3.6/site-packages/pgadmin4-web/config_distro.py`
+  * <pre>
+    HELP_PATH = '/usr/share/doc/pgadmin4-docs/en_US/html'
+    UPGRADE_CHECK_ENABLED = False
+    </pre>
+  * Copy and paste the following to the bottom of the file
+    * <pre>
+      LOG_FILE = '/var/log/pgadmin4/pgadmin4.log'
+      SQLITE_PATH = '/var/lib/pgadmin4/pgadmin4.db'
+      SESSION_DB_PATH = '/var/lib/pgadmin4/sessions'
+      STORAGE_DIR = '/var/lib/pgadmin4/storage'
+      </pre>
+  * Save and Exit
+* OR
 * `sudo vim /usr/pgadmin4/web/config_distro.py`
   * <pre>
     HELP_PATH = '../../../share/docs/en_US/html/'
@@ -45,10 +82,12 @@
     }
     </pre>
   * Copy and paste the following to the bottom of the file
-    * LOG_FILE = '/var/log/pgadmin4/pgadmin4.log'
-    * SQLITE_PATH = '/var/lib/pgadmin4/pgadmin4.db'
-    * SESSION_DB_PATH = '/var/lib/pgadmin4/sessions'
-    * STORAGE_DIR = '/var/lib/pgadmin4/storage'
+    * <pre>
+      LOG_FILE = '/var/log/pgadmin4/pgadmin4.log'
+      SQLITE_PATH = '/var/lib/pgadmin4/pgadmin4.db'
+      SESSION_DB_PATH = '/var/lib/pgadmin4/sessions'
+      STORAGE_DIR = '/var/lib/pgadmin4/storage'
+      </pre>
   * Save and Exit
 * `sudo dnf install -y python3-bcrypt python3-pynacl` **NOTE if not already installed**
 * `sudo /usr/pgadmin4/web/setup.py`
