@@ -10,9 +10,11 @@
 * `sudo pecl install imagick`
   * Please provide the prefix of ImageMagick installation [autodetect]: Enter
     * **WAIT FOR THIS TO FINISH**
-* `sudo vim /etc/php.d/20-imagick.ini`
-  * ; Image Magick
-  * extension=imagick.so
+* Open the following file and add the lines to the file
+  * `sudo vim /etc/php.d/20-imagick.ini`
+    * ; Image Magick
+    * extension=imagick.so
+  * Save and Exit
 * `sudo systemctl restart httpd`
 * `sudo php -m`
 * `convert --version`
