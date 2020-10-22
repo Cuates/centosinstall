@@ -94,8 +94,8 @@
       * <pre>
         &lt;IfModule mod_ssl.c&gt;
           &lt;VirtualHost *:443&gt;
-            ServerName <domain_name>
-            ServerAlias <domain_name>
+            ServerName &lt;domain_name&gt;
+            ServerAlias &lt;domain_name&gt;
             ServerAdmin webmaster@example.com
             DocumentRoot /var/www/html
             &lt;Directory /var/www/html&gt;
@@ -104,12 +104,12 @@
               Order allow,deny
               Allow from all
             &lt;/Directory&gt;
-            ErrorLog /var/log/httpd/<domain_name>-error.log
-            CustomLog /var/log/httpd/<domain_name>-access.log combined
+            ErrorLog /var/log/httpd/&lt;domain_name&gt;-error.log
+            CustomLog /var/log/httpd/&lt;domain_name&gt;-access.log combined
             # Enable HTTP/2, if available
             Protocols h2 http/1.1
-            SSLCertificateFile /etc/letsencrypt/live/<domain_name>/fullchain.pem
-            SSLCertificateKeyFile /etc/letsencrypt/live/<domain_name>/privkey.pem
+            SSLCertificateFile /etc/letsencrypt/live/&lt;domain_name&gt;/fullchain.pem
+            SSLCertificateKeyFile /etc/letsencrypt/live/&lt;domain_name&gt;/privkey.pem
             Include /etc/letsencrypt/options-ssl-apache.conf
           &lt;/VirtualHost&gt;
         &lt;/IfModule&gt;
