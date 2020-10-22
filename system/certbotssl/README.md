@@ -31,7 +31,7 @@
           ErrorLog /var/log/httpd/cuateslws.ddns.net-error.log
           CustomLog /var/log/httpd/cuateslws.ddns.net-access.log combined
         &lt;/VirtualHost&gt;
-        <pre>
+        </pre>
   * Save and exit
   * Restart apache/httpd
     * `sudo systemctl restart httpd`
@@ -113,6 +113,7 @@
         Include /etc/letsencrypt/options-ssl-apache.conf
         &lt;/VirtualHost&gt;
         &lt;/IfModule&gt;
+        </pre>
   * Save and exit
   * Test the apache configuration
     * `sudo apachectl configtest`
