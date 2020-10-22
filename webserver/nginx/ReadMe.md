@@ -80,33 +80,33 @@
   * Create a new <domain_name>.con file at the following location
     * `/etc/nginx/conf.d/<domain_name>.conf`
       * Paste the following in the domain_name.conf file
-       * <pre>
-         server {
-           listen 80;
-           listen [::]:80;
+        * <pre>
+          server {
+            listen 80;
+            listen [::]:80;
 
-           root /var/www/html;
-           index index.html index.htm index.php;
+            root /var/www/html;
+            index index.html index.htm index.php;
 
-           server_name <domain_name>;
+            server_name <domain_name>;
 
-           location / {
-           # By default, Nginx buffers traffic for servers that it proxies for. Buffers improve server performance as a server response isn’t sent until the client finishes sending a complete response. To turn the buffer off.
-           # proxy_buffering off;
-           try_files $uri $uri/ =404;
-           }
+            location / {
+            # By default, Nginx buffers traffic for servers that it proxies for. Buffers improve server performance as a server response isn’t sent until the client finishes sending a complete response. To turn the buffer off.
+            # proxy_buffering off;
+            try_files $uri $uri/ =404;
+            }
 
-           # Setting up php within Nginx
-           location ~ \.php$ {
-           try_files $uri =404;
-           fastcgi_intercept_errors on;
-           fastcgi_index  index.php;
-           include        fastcgi_params;
-           fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
-           fastcgi_pass   php-fpm;
-           }
-         }
-         </pre>
+            # Setting up php within Nginx
+            location ~ \.php$ {
+            try_files $uri =404;
+            fastcgi_intercept_errors on;
+            fastcgi_index  index.php;
+            include        fastcgi_params;
+            fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+            fastcgi_pass   php-fpm;
+            }
+          }
+          </pre>
      * Test Nginx
           * `sudo nginx -t`
      * Restart Nginx Service
@@ -157,22 +157,22 @@
             * `sudo chmod -R 755 /var/www/`
           * Create a sample index.html page to test the server block configuration
             * `sudo vim /var/www/your_domain/html/index.html`
-            * Add the following into index.html
-              * <pre>
-                &lt;html&gt;
-                    &lt;head&gt;
-                      &lt;title&gt;Welcome to your_domain&lt;/title&gt;
-                    &lt;/head&gt;
-                    &lt;body&gt;
-                      &lt;h1&gt;
-                        Success! Your Nginx server is successfully configured for &lt;em&gt;your_domain&lt;/em&gt;.
-                      &lt;/h1&gt;
-                      &lt;p&gt;
-                        This is a sample page.
-                      &lt;/p&gt;
-                    &lt;/body&gt;
-                &lt;/html&gt;
-                </pre>
+              * Add the following into index.html
+                * <pre>
+                  &lt;html&gt;
+                      &lt;head&gt;
+                        &lt;title&gt;Welcome to your_domain&lt;/title&gt;
+                      &lt;/head&gt;
+                      &lt;body&gt;
+                        &lt;h1&gt;
+                          Success! Your Nginx server is successfully configured for &lt;em&gt;your_domain&lt;/em&gt;.
+                        &lt;/h1&gt;
+                        &lt;p&gt;
+                          This is a sample page.
+                        &lt;/p&gt;
+                      &lt;/body&gt;
+                  &lt;/html&gt;
+                  </pre>
             * Save and exit
       * Create a new server block at `/etc/nginx/sites-available/your_domain.conf`
         * Paste in the following configuration block into the file
