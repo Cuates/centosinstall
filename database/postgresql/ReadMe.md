@@ -47,7 +47,7 @@
 * Alternative Installation for the latest PostgreSQL 13 **Note Cannot install this and a newer/older version at the same time**<br />
 * [Install PostgresSQL 13 On CentOS  RHEL](https://computingforgeeks.com/install-postgresql-13-on-centos-rhel/)<br />
 * Add PostgreSQL packabes to CentOS 8 server
-  * `sudo dnf install https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm`
+  * `sudo dnf -y install https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm`
 
 * Disable PostgreSQL AppStream repository on CentOS 8
   * `sudo dnf -qy module disable postgresql`
