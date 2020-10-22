@@ -8,7 +8,7 @@
 * `sudo systemctl reload firewalld`
 * `sudo apachectl configtest`
 * Create a new configuration file named servername.conf under /etc/httpd/conf.d/ directory
-  *`sudo vim /etc/httpd/conf.d/servername.conf`
+  * `sudo vim /etc/httpd/conf.d/servername.conf`
     * Add the following line in this file.
       * <pre>
         ServerName localhost
