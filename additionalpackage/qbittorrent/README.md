@@ -36,20 +36,24 @@
       * Edit the .service file created
         * `sudo vim /etc/systemd/system/qbittorrent-nox.service`
         * Add the user, group, and umask to the template file created above
-          * `[Unit]`<br />
-            `Description=qBittorrenti-nox service for user qbittorrent-nox`<br />
-            `Documentation=man:qbittorrent-nox(1)`<br />
-            `Wants=network-online.target`<br />
-            `After=network-online.target nss-lookup.target`<br />
-            `[Service]`<br />
-            `Type=simple`<br />
-            `PrivateTmp=false`<br />
-            `User=qbittorrent-nox`<br />
-            `Group=qbittorrent-nox`<br />
-            `UMask=007`<br />
-            `ExecStart=/usr/bin/qbittorrent-nox`<br />
-            `[Install]`<br />
-            `WantedBy=multi-user.target`
+          * <pre>
+            [Unit]
+            Description=qBittorrenti-nox service for user qbittorrent-nox
+            Documentation=man:qbittorrent-nox(1)
+            Wants=network-online.target
+            After=network-online.target nss-lookup.target
+            
+            [Service]
+            Type=simple
+            PrivateTmp=false
+            User=qbittorrent-nox
+            Group=qbittorrent-nox
+            UMask=007
+            ExecStart=/usr/bin/qbittorrent-nox
+            
+            [Install]
+            WantedBy=multi-user.target
+            <pre>
       * Enable qbittorrent-nox to auto-start at boot time by running the below command
         * `sudo systemctl enable qbittorrent-nox.service`
       * Now we can start the qBittorrent service with the following command
