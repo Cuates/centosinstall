@@ -21,6 +21,7 @@
 * Installing modules for Python
   * [Pandas](https://pypi.org/project/pandas/)
     * `pip3.9 install pandas`
+      * **WAIT FOR THIS TO FINISH**
   * [SQLAlchemy](https://pypi.org/project/SQLAlchemy/)
     * `pip3.9 install sqlalchemy`
   * [psycopg2](https://pypi.org/project/psycopg2/)
