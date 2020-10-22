@@ -28,7 +28,8 @@
   * The main configuration file is named xrdp.ini. This file is divided into sections and allows you to set global configuration settings such as security and listening addresses and create different xrdp login sessions.
   * Modify xrdp.ini file
     * `sudo vim /etc/xrdp/xrdp.ini`
-    * Add the following line at the end of the file
+    * Add the following lines at the end of the file
+      * `; XRDP`
       * `exec gnome-session`
     * Save and Exit
   * Restart whenever changes are made to xrdp.ini
@@ -36,17 +37,17 @@
       * Xrdp uses startwm.sh file to launch the X session. If you want to use another X Window desktop, edit this file.
 * Configure Firewall
   * By default, Xrdp listens on port 3389 on all interfaces
-  * Typically you would want to allow access to the Xrdp server only from a specific IP address or IP range. For example, to allow connections only from the 192.168.1.0/24 range, enter the following command
+  * To allow traffic to port 3389 from anywhere use the commands below. Allowing access from anywhere is highly discouraged for security reasons.
+    * `sudo firewall-cmd --get-services`
+    * `sudo firewall-cmd --zone=public --permanent --add-port=3389/tcp`
+    * `sudo firewall-cmd --reload`
+    * `sudo firewall-cmd --list-ports`
+    * `sudo firewall-cmd --list-all`
+  * Typically you would want to allow access to the Xrdp server only from a specific IP address or IP range. For example, to allow connections only from the 192.168.1.0/24 range, enter the following command **OPTIONAL**
     * `sudo firewall-cmd --get-services`
     * `sudo firewall-cmd --new-zone=xrdp --permanent`
     * `sudo firewall-cmd --zone=xrdp --add-port=3389/tcp --permanent`
     * `sudo firewall-cmd --zone=xrdp --add-source=192.168.1.0/24 --permanent`
-    * `sudo firewall-cmd --reload`
-    * `sudo firewall-cmd --list-ports`
-    * `sudo firewall-cmd --list-all`
-  * To allow traffic to port 3389 from anywhere use the commands below. Allowing access from anywhere is highly discouraged for security reasons.
-    * `sudo firewall-cmd --get-services`
-    * `sudo firewall-cmd --zone=public --permanent --add-port=3389/tcp`
     * `sudo firewall-cmd --reload`
     * `sudo firewall-cmd --list-ports`
     * `sudo firewall-cmd --list-all`
