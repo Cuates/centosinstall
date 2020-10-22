@@ -33,6 +33,8 @@
         &lt;/VirtualHost&gt;
         </pre>
   * Save and exit
+  * Test configuration
+    * `sudo httpd -t` OR `sudo apachectl configtest`
   * Restart apache/httpd
     * `sudo systemctl restart httpd`
 * Install SSH onto the server
@@ -116,7 +118,7 @@
         </pre>
   * Save and exit
   * Test the apache configuration
-    * `sudo apachectl configtest`
+    * `sudo httpd -t` OR `sudo apachectl configtest`
   * Restart apache/httpd
     * `sudo systemctl restart httpd`
   * Test HTTP/2 Protocol
