@@ -170,6 +170,7 @@
   * `mysqlcheck -u root -p --auto-repair --optimize --all-databases`
 
 * Check Database Took Hold Of New Modifications
+  * `sudo mysql`
   * `select schema_name, default_character_set_name, default_collation_name from information_schema.schemata where schema_name not in ('mysql', 'information_schema', 'performance_schema', 'sys');`
   * `select * from information_schema.columns where table_name like 'media%';`
   * `show session variables where Variable_name like 'character_set\_%' or Variable_name like 'collation%';`
