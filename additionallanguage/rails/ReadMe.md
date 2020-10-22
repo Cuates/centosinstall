@@ -1,4 +1,8 @@
 [Install Ruby On Rails CentOS 8](https://www.osradar.com/install-ruby-on-rails-centos-8/)
+
+Dependency Additional Language
+* [Ruby](https://github.com/Cuates/lampcentosinstall/tree/master/additionallanguage/ruby)
+
 * **IMPORTANT NOTE**
   * Login into the root user first
 * `source /etc/profile.d/rmv.sh`
