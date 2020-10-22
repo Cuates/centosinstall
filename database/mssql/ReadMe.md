@@ -67,12 +67,12 @@
 * Test SQL Server
   * Connect to the SQL Server and verify it is working
     * `sqlcmd -S localhost -U SA`
-
-* Authenticate with the password set above
-  * Password Enter
+      * Authenticate with the password set above
+        * Password Enter
 
 * Show Database users
   * `select name from sysusers;`
+  * `go`
 
 * Create a test database
   * `create database mytestdb`
