@@ -42,6 +42,7 @@
             Documentation=man:qbittorrent-nox(1)
             Wants=network-online.target
             After=network-online.target nss-lookup.target
+            
             [Service]
             Type=simple
             PrivateTmp=false
@@ -49,9 +50,10 @@
             Group=qbittorrent-nox
             UMask=007
             ExecStart=/usr/bin/qbittorrent-nox
+            
             [Install]
             WantedBy=multi-user.target
-            <pre>
+            </pre>
       * Enable qbittorrent-nox to auto-start at boot time by running the below command
         * `sudo systemctl enable qbittorrent-nox.service`
       * Now we can start the qBittorrent service with the following command
