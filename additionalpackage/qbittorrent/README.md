@@ -29,7 +29,7 @@
     * `sudo groupadd <new_group_name>`
   * Associate New User Name to New Group Name
     * `sudo useradd <new_user_name> -G <new_group_name>`
-      * A home directory /home/qbittorentnox will be created for this user. Files are downloaded to /home/qbittorrent-nox/Downloads/  by default.
+      * A home directory /home/qbittorentnox will be created for this user. Files are downloaded to /home/qbittorrentnox/Downloads/ by default.
   * Associate Existing User to Group
     * `sudo usermod -a -G <new_group_name> <existing_user_name>`
 * The qbittorrent-nox package ships with the needed systemd service file
