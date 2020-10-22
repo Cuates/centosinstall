@@ -46,31 +46,34 @@
   * `sudo cp -pf /etc/samba/smb.conf /etc/samba/smb.conf.bak`
 * Edit and Save /etc/samba/smb.conf **NOTE: Place the following at the end of the file**
   * `sudo vim /etc/samba/smb.conf`
-    * [global]<br />
-      workgroup = <Windows_Work_Group><br />
-      security = user<br />
-      passdb backend = tdbsam<br />
-      printing = cups<br />
-      printcap name = cups<br />
-      load printers = yes<br />
+    * <pre>
+      [global]
+      workgroup = &lt;Windows_Work_Group&gt;
+      security = user
+      passdb backend = tdbsam
+      printing = cups
+      printcap name = cups
+      load printers = yes
       cups options = raw
-    * [<secured_shared_name>]<br />
-      comment = Private Share Drive<br />
-      path = /path/to/secured/folder<br />
-      browsable = yes<br />
-      writable = yes<br />
-      read only = no<br />
-      available = yes<br />
-      public = no<br />
-      guest ok = no<br />
-      create mask = 0777<br />
-      directory mask = 0777<br />
-      force user = <new_user_name><br />
-      \# force group = @<new_group_name><br />
-      \# valid users = <new_user_name><br />
-      \# valid group = @<new_group_name><br />
-      \# read list = <new_user_name><br />
-      \# write list = <new_user_name>
+      
+      [&lt;secured_shared_name&gt;]
+      comment = Private Share Drive
+      path = /path/to/secured/folder
+      browsable = yes
+      writable = yes
+      read only = no
+      available = yes
+      public = no
+      guest ok = no
+      create mask = 0777
+      directory mask = 0777
+      force user = &lt;new_user_name&gt;
+      # force group = @&lt;new_group_name&gt;
+      # valid users = &lt;new_user_name&gt;
+      # valid group = @&lt;new_group_name&gt;
+      # read list = &lt;new_user_name&gt;
+      # write list = &lt;new_user_name&gt;
+      </pre>
 * Restart Samba Services
   * `sudo systemctl restart smb.service nmb.service`
 * Check Samba settings
