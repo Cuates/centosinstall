@@ -82,7 +82,7 @@
         </pre>
     * Save and Exit
 
-  * `sudo vim /etc/my.cnf.d/mysql-client.cnf`
+  * `sudo vim /etc/my.cnf.d/mysql-clients.cnf`
     * WAS
       * <pre>
         [mysql]
