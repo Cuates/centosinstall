@@ -30,17 +30,14 @@
 
 * Initialize MS SQL Database Engine
   * `sudo /opt/mssql/bin/mssql-conf setup`
-
-* Select an edition you’d like to use
-  * \# Enter
-    * **NOTE** DOES NOT ASK FOR LICENSE KEY
-
-* Accept the license terms
-  * Yes Enter
-
-* Set SQL Server system administrator password
-  * Password Enter
-  * Confirm Password Enter
+    * Select an edition you’d like to use
+      * \# Enter
+      * **NOTE** DOES NOT ASK FOR LICENSE KEY
+    * Accept the license terms
+      * Yes Enter
+    * Set SQL Server system administrator password
+      * Password Enter
+      * Confirm Password Enter
 
 * The service should be started and set to start at boot
   * `systemctl status mssql-server.service`
