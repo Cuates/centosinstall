@@ -17,9 +17,11 @@
   * Visit website localhost/info.php
   * `sudo rm /var/www/html/info.php` (for security reasons)
 * `sudo vim /etc/php.ini`
-  * serialize_precision = -1
-  * max_execution_time = 240
-  * date.timezone = America/Los_Angeles
+  * <pre>
+    serialize_precision = -1
+    max_execution_time = 240
+    date.timezone = America/Los_Angeles
+    </pre>
 * `sudo systemctl restart httpd`
 * `sudo apachectl configtest`
 * `php -r "echo extension_loaded('zip') ? 'Installed' : 'Not installed';"`
