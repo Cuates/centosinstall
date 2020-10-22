@@ -9,7 +9,7 @@
 [Set Value Of Character Set Client To utf8mb4](https://dba.stackexchange.com/questions/59126/set-value-of-character-set-client-to-utf8mb4)<br />
 [Change MySQL Default Character Set To utf-8 In my cnf](https://stackoverflow.com/questions/3513773/change-mysql-default-character-set-to-utf-8-in-my-cnf)<br />
 [MariaDB](https://mariadb.org/download/)
-* `sudo vim /etc/yum.repo.d/MariaDB.repo`
+* `sudo vim /etc/yum.repos.d/MariaDB.repo`
   * MariaDB 10.5 [Stable] CentOS repository list - created 2020-07-30 23:39 UTC
   * [MariaDB Download Test](https://mariadb.org/download-test/)
   * **PASTE BELOW INTO FILE**<br />
