@@ -230,24 +230,24 @@
       * Test PHP and Nginx
         * Create a new PHP file
           * `sudo vim /var/www/your_domain/html/hello.php`
-        * Append the following PHP code
-          * <pre>
-            &lt;?php
-              echo "Hello, world!\n";
-            ?&gt;
-            </pre>
+            * Append the following PHP code
+              * <pre>
+                &lt;?php
+                echo "Hello, world!\n";
+                ?&gt;
+                </pre>
         * Save and exit
         * One can also use the curl command to get same info using the cli
           * `curl -I http://<ip_address>/hello.php`
           * `curl http://<ip_address>/hello.php`
         * Create a PHP Info page
           * `sudo vim /var/www/your_domain/html/phpinfo.php`
-        * Append the following PHP code
-          * <pre>
-            &lt;?php
-              phpinfo();
-            ?&gt;
-            </pre>
+            * Append the following PHP code
+              * <pre>
+                &lt;?php
+                phpinfo();
+                ?&gt;
+                </pre>
         * Save and exit
         * Open a web browser and type the following url:
         * http://your-domain-OR-ip/hello.php
