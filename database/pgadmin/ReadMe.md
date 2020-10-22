@@ -90,6 +90,8 @@
       </pre>
   * Save and Exit
 * `sudo dnf install -y python3-bcrypt python3-pynacl` **NOTE if not already installed**
+* `sudo /usr/lib/python3.6/site-packages/pgadmin4-web/setup.py`
+* OR
 * `sudo /usr/pgadmin4/web/setup.py`
   * Email address: admin@example.com
   * Password: PASSWORD_HERE
