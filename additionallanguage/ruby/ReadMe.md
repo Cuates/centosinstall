@@ -10,6 +10,6 @@
 * `source /etc/profile.d/rvm.sh`
 * `rvm requirements`
 * `rvm list known`
-* `rvm install 2.7.1` **Pick the latest MRI Rubies version**
-* `rvm use 2.7.1 --default`
+* `rvm install 2.7.2` **Pick the latest MRI Rubies version**
+* `rvm use 2.7.2 --default`
 * `ruby --version`
