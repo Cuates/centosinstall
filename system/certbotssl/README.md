@@ -200,7 +200,7 @@
             Protocols h2 http/1.1
         
             SSLCertificateFile /etc/letsencrypt/live/&lt;domain_name&gt;/fullchain.pem
-            SSLCertificateKeyFile /etc/letsencrypt/live/&;t;domain_name&gt;/privkey.pem
+            SSLCertificateKeyFile /etc/letsencrypt/live/&lt;domain_name&gt;/privkey.pem
             Include /etc/letsencrypt/options-ssl-apache.conf
           &lt;/VirtualHost&gt;
         &lt;/IfModule&gt;
