@@ -1,5 +1,5 @@
-# lampcentosinstall
-> LAMP CentOS web server installation and configuration
+# centosinstall
+> CentOS web server installation and configuration
 
 ## Table of Contents
 * [Version](#version)
