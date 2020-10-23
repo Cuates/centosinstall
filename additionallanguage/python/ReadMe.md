@@ -34,3 +34,7 @@
       * `pip3.9 install pyodbc`
     * [mysqlclient](https://pypi.org/project/mysqlclient/)
       * `pip3.9 install mysqlclient`
+        * If "NameError: name '\_mysql' is not defined", then proceed with the following instead
+          * `pip3.9 uninstall mysqlclient`
+          * `pip3.9 install --no-binary mysqlclient mysqlclient`
+            * Note: The first occurrence is the name of the package to apply the no-binary option to, the second specifies the package to install
