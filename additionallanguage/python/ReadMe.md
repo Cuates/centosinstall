@@ -1,6 +1,8 @@
 [How To Install Python 38 On CentOS 8](https://linuxize.com/post/how-to-install-python-3-8-on-centos-8/)<br />
 [How To Install Python On 3 On CentOS](https://computingforgeeks.com/how-to-install-python-on-3-on-centos/)<br />
-[Unable To Install Pyodbc On Linux](https://stackoverflow.com/questions/2960339/unable-to-install-pyodbc-on-linux)
+[Unable To Install Pyodbc On Linux](https://stackoverflow.com/questions/2960339/unable-to-install-pyodbc-on-linux)<br />
+[Database_Drivers](https://crateanon.readthedocs.io/en/latest/installation/database_drivers.html)<br />
+[Pythons mysqldb Cant Find libmysqlclient dylib With Homebrewed MySQL](https://stackoverflow.com/questions/34536914/pythons-mysqldb-can-t-find-libmysqlclient-dylib-with-homebrewed-mysql)
 * `sudo dnf groupinstall -y 'development tools'`
 * `sudo dnf install -y bzip2 bzip2-devel expat-devel gdbm-devel ncurses-devel openssl-devel readline-devel wget sqlite-devel tk-devel xz-devel zlib-devel libffi-devel`
 * `wget https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tgz`
