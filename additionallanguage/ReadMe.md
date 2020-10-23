@@ -15,7 +15,7 @@
 
 ### PIP
 * [20.2.2](https://github.com/Cuates/centosinstall/tree/master/additionallanguage/python)
-  * [Python Dependent](https://github.com/Cuates/centosinstall/tree/master/additionallanguage/python)**
+  * [Python Dependent](https://github.com/Cuates/centosinstall/tree/master/additionallanguage/python)
 
 ### Ruby
 * [2.7.1p83](https://github.com/Cuates/centosinstall/tree/master/additionallanguage/ruby)
