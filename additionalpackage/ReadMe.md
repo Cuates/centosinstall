@@ -32,7 +32,7 @@
 
 ### Image Magick
 * [6.9.10-86](https://github.com/Cuates/centosinstall/tree/master/additionalpackage/imagemagick)
-  * * [PHP Dependent](https://github.com/Cuates/centosinstall/tree/master/serverside/php)
+  * [PHP Dependent](https://github.com/Cuates/centosinstall/tree/master/serverside/php)
 
 ### Git
 * [2.18.4-2](https://github.com/Cuates/centosinstall/tree/master/additionalpackage/git)
