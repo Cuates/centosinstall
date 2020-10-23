@@ -39,6 +39,8 @@
   * `sudo systemctl enable nginx`
 * If you check the service status, the output should show you Nginx is active (running)
   * `sudo systemctl status nginx`
+* Check nginx version
+  * `nginx -v`
 * Additional Commands
   * Start service and Enable service at boot up
     * `sudo systemctl enable --now nginx`
