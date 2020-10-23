@@ -10,19 +10,19 @@
 * [XRDP](#xrdp)
 
 ### CentOS
-* [8.2.2004](https://github.com/Cuates/lampcentosinstall/blob/master/system/centos)
+* [8.2.2004](https://github.com/Cuates/centosinstall/blob/master/system/centos)
 
 ### DNF
-* [4.2.17](https://github.com/Cuates/lampcentosinstall/tree/master/system/dnf)
+* [4.2.17](https://github.com/Cuates/centosinstall/tree/master/system/dnf)
 
 ### Remi
-* [8.1-2](https://github.com/Cuates/lampcentosinstall/tree/master/system/remi)
+* [8.1-2](https://github.com/Cuates/centosinstall/tree/master/system/remi)
 
 ### Ifconfig
-* [2.10-alpha](https://github.com/Cuates/lampcentosinstall/tree/master/system/ifconfig)
+* [2.10-alpha](https://github.com/Cuates/centosinstall/tree/master/system/ifconfig)
 
 ### TZData
-* [2020a-1](https://github.com/Cuates/lampcentosinstall/tree/master/system/tzdata)
+* [2020a-1](https://github.com/Cuates/centosinstall/tree/master/system/tzdata)
 
 ### XRDP
-* [0.9.14](https://github.com/Cuates/lampcentosinstall/tree/master/system/xrdp)
+* [0.9.14](https://github.com/Cuates/centosinstall/tree/master/system/xrdp)
