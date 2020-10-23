@@ -9,16 +9,16 @@
 * [pgAdmin](#pgadmin)
 
 ### FreeTDS
-* [1.1.20-1](https://github.com/Cuates/lampcentosinstall/tree/master/database/freetds)
+* [1.1.20-1](https://github.com/Cuates/centosinstall/tree/master/database/freetds)
 
 ### UnixODBC
-* [2.3.7](https://github.com/Cuates/lampcentosinstall/tree/master/database/unixodbc)
+* [2.3.7](https://github.com/Cuates/centosinstall/tree/master/database/unixodbc)
 
 ### MariaDB
-* [10.5.4](https://github.com/Cuates/lampcentosinstall/tree/master/database/mariadb)
+* [10.5.4](https://github.com/Cuates/centosinstall/tree/master/database/mariadb)
 
 ### PostgreSQL
-* [12.1-2](https://github.com/Cuates/lampcentosinstall/tree/master/database/postgresql)
+* [12.1-2](https://github.com/Cuates/centosinstall/tree/master/database/postgresql)
 
 ### pgAdmin
-* [4.22-1](https://github.com/Cuates/lampcentosinstall/tree/master/database/pgadmin)
+* [4.22-1](https://github.com/Cuates/centosinstall/tree/master/database/pgadmin)
