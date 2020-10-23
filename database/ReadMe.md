@@ -22,3 +22,4 @@
 
 ### pgAdmin
 * [4.22-1](https://github.com/Cuates/centosinstall/tree/master/database/pgadmin)
+  * [PostgreSQL Dependent](https://github.com/Cuates/centosinstall/tree/master/database/postgresql)
