@@ -6,7 +6,7 @@
 * [CIFS](#cifs)
 
 ### Samba
-* [4.11.2-13](https://github.com/Cuates/lampcentosinstall/tree/master/systemshare/samba)
+* [4.11.2-13](https://github.com/Cuates/centosinstall/tree/master/systemshare/samba)
 
 ### CIFS
-* [6.8-3](https://github.com/Cuates/lampcentosinstall/tree/master/systemshare/cifs)
+* [6.8-3](https://github.com/Cuates/centosinstall/tree/master/systemshare/cifs)
