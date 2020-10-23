@@ -1,5 +1,5 @@
 # centosinstall
-> CentOS web server installation and configuration
+> CentOS installation and configuration
 
 ## Table of Contents
 * [Version](#version)
@@ -15,18 +15,18 @@
 ### Version
 * 0.0.2
 
-### [System](https://github.com/Cuates/lampcentosinstall/blob/master/system)
+### [System](https://github.com/Cuates/centosinstall/blob/master/system)
 
-### [Additional Package](https://github.com/Cuates/lampcentosinstall/tree/master/additionalpackage)
+### [Additional Package](https://github.com/Cuates/centosinstall/tree/master/additionalpackage)
 
-### [Additional Language](https://github.com/Cuates/lampcentosinstall/tree/master/additionallanguage)
+### [Additional Language](https://github.com/Cuates/centosinstall/tree/master/additionallanguage)
 
-### [Client Server Protocol](https://github.com/Cuates/lampcentosinstall/tree/master/clientseverprotocol)
+### [Client Server Protocol](https://github.com/Cuates/centosinstall/tree/master/clientseverprotocol)
 
-### [Web Server](https://github.com/Cuates/lampcentosinstall/tree/master/webserver)
+### [Web Server](https://github.com/Cuates/centosinstall/tree/master/webserver)
 
-### [Server-side](https://github.com/Cuates/lampcentosinstall/tree/master/serverside)
+### [Server-side](https://github.com/Cuates/centosinstall/tree/master/serverside)
 
-### [Database](https://github.com/Cuates/lampcentosinstall/tree/master/database)
+### [Database](https://github.com/Cuates/centosinstall/tree/master/database)
 
-### [System Share](https://github.com/Cuates/lampcentosinstall/tree/master/systemshare)
+### [System Share](https://github.com/Cuates/centosinstall/tree/master/systemshare)
