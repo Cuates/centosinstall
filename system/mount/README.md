@@ -15,7 +15,7 @@
   * Linux NTFS User space Driver
     * `sudo dnf -y install ntfs-3g`
   * Check the following path to see if FUSE is installed on the kernel (Your kernel number will vary depending on what version of Linux you have)
-      * `ls -lart /lib/modules/4.18.0-193.19.1.el8_2.x86_64/kernel/fs/ | grep fuse
+      * `ls -lart /lib/modules/4.18.0-193.19.1.el8_2.x86_64/kernel/fs/ | grep fuse`
         * If there is no fuse on the linux kernel system, then proceed with the following commands
           * FUSE module is by default included with CentOS 7 or Red Hat 7 Linux. However, if you find that FUSE module is not present in your kernel, issue the following command to install and load the FUSE driver module.
             * `sudo dnf -y install fuse`
