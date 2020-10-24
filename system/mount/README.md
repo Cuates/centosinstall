@@ -58,7 +58,7 @@
     * `sudo umount /mnt/windows01/` OR `sudo umount /mnt/harddrive01/`
 
 * Additional Information
-  * Optional Using Mount Hard Drive for Samba Share File/Folder
+  * Using Mount Hard Drive for Samba Share File/Folder
     * If mounted, then umount first before proceeding
       * `sudo umount /path/to/mount/point`
     * Manual Mount
