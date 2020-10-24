@@ -13,7 +13,8 @@
 [Sharing A Mounted Drive With Samba On CentOS 7](https://unix.stackexchange.com/questions/391673/sharing-a-mounted-drive-with-samba-on-centos7)<br />
 [Add Multiple Groups To Valid Users](https://superuser.com/questions/437495/add-multiple-groups-to-valid-users)<br />
 [Samba Share Multi User Access](https://arkit.co.in/samba-share-multi-user-access/)<br />
-[Multiple Connections To A Server Or Shared Resource By The Same User Using More](https://stackoverflow.com/questions/24933661/multiple-connections-to-a-server-or-shared-resource-by-the-same-user-using-more)
+[Multiple Connections To A Server Or Shared Resource By The Same User Using More](https://stackoverflow.com/questions/24933661/multiple-connections-to-a-server-or-shared-resource-by-the-same-user-using-more)<br />
+[Logging Into A Smb File Server Multiple Times With Different Usernames From One Mac](https://derflounder.wordpress.com/2013/05/31/logging-into-a-smb-file-server-multiple-times-with-different-usernames-from-one-mac/)
 
 * `sudo dnf -y install samba samba-common samba-client`
 * `sudo systemctl enable --now {smb,nmb}`
@@ -121,3 +122,20 @@
       </pre>
   * Save and Exit
   * Then attempt to map the share again
+
+### Accessing Linux File Share Via Mac
+* To connect to an SMB file server using a different username, you can use this procedure
+  * In the Finder, choose the Go menu, then select Connect to Server
+  * Type the network address for the computer or server in the Server Address field in the following format
+    * `smb://other_username:*@server_name_ip_address`
+      * The "*" is to trigger the server login window for your SMB server, so that the password for the other_username account can be entered
+    * Click the Connect button
+    * Enter the desired username and password when prompted
+      * Username: other_username
+      * Password: The current account password for other_username
+      * Select the share on your SMB server that you want to use
+      * ** WARNING: Do not try to mount the same share twice using different usernames **
+  * One way you can verify that you’re actually connected using different usernames is to use the mount command in Terminal. This should show all mounted volumes on the Mac, including mounted fileshares. The fileshare mount information should include which account was used to mount the share
+    * Open a terminal
+      * `mount`
+  * ** NOTE: Depending on your file server, this approach may not work consistently. On our Isilon storage, the SMB share would mount with the user-specified username every time. On another server I tested, the server would prefer the specific username that was last used to connect and keep using that username when mounting additional shares **
