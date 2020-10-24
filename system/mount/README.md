@@ -7,7 +7,8 @@
 [How To Mount A Windows NTFS Disk In Linux](https://www.rootusers.com/how-to-mount-a-windows-ntfs-disk-in-linux/)<br />
 [Mount Unmount USB Drive On Ubuntu Linux](https://fossbytes.com/mount-unmount-usb-drive-on-ubuntu-linux/)<br />
 [How To Manage Partitions In CentOS 8 RHEL 8](https://www.osradar.com/how-to-manage-partitions-in-centos-8-rhel-8/)<br />
-[Adding A New Disk Drive To A RHEL System](https://www.techotopia.com/index.php/Adding_a_New_Disk_Drive_to_a_RHEL_System)
+[Adding A New Disk Drive To A RHEL System](https://www.techotopia.com/index.php/Adding_a_New_Disk_Drive_to_a_RHEL_System)<br />
+[Sharing A Mounted Drive With Samba On CentOS 7](https://unix.stackexchange.com/questions/391673/sharing-a-mounted-drive-with-samba-on-centos7)
 
 * NTSF Hard Drives
   * Install Required Packages
