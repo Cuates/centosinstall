@@ -34,14 +34,15 @@
   * `sudo mkdir -p /path/to/secured/folder`
 * Allow to listen through SELinux
   * `sudo chmod -R 0777 /path/to/secured/folder`
-  * `sudo chown -R <user_name>:<user_name> /path/to/secured/folder`
-  * `sudo chcon -t samba_share_t -R /path/to/secured/folder`
-    * To survive system relabel
-      * `sudo semanage fcontext -a -t samba_share_t '/path/to/secured/folder(/.*)?'`
-      * `sudo restorecon -R -v /path/to/secured/folder` **NOTE: Do not do chcon above, issue when this is executed on other local computers, does not give what we want**
-        * **IMPORTANT NOTE Do not add the -F flag to restorecon as it will change the user, role, range portion as well as the type which we do not want**
-      * Display the SELinux context for particular file and or directory
-        * `ls -lZ`
+  * `sudo chown -R <user_name>:<group_name> /path/to/secured/folder`
+  * To survive system relabel
+    * `sudo semanage fcontext -a -t samba_share_t '/path/to/secured/folder(/.*)?'`
+    * `sudo restorecon -R -v /path/to/secured/folder`
+      * **IMPORTANT NOTE Do not add the -F flag to restorecon as it will change the user, role, range portion as well as the type which we do not want**
+      * **NOTE: Do not do chcon below, issue when this is executed on other local computers**
+        * `sudo chcon -t samba_share_t -R /path/to/secured/folder`
+    * Display the SELinux context for particular file and or directory
+      * `ls -lZ`
 * Make Backup of Existing Conf File
   * `sudo cp -pf /etc/samba/smb.conf /etc/samba/smb.conf.bak`
 * Edit and Save /etc/samba/smb.conf **NOTE: Place the following at the end of the file**
@@ -67,8 +68,8 @@
       guest ok = no
       create mask = 0777
       directory mask = 0777
-      force user = &lt;new_user_name&gt;
-      # force group = @&lt;new_group_name&gt;
+      # force user = &lt;new_user_name&gt;
+      force group = @&lt;new_group_name&gt;
       # valid users = &lt;new_user_name&gt;
       # valid group = @&lt;new_group_name&gt;
       # read list = &lt;new_user_name&gt;
