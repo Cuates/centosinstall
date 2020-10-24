@@ -81,9 +81,8 @@
       create mask = 0777
       directory mask = 0777
       # force user = &lt;new_user_name&gt;
-      force group = @&lt;new_group_name&gt;
-      # valid users = &lt;new_user_name&gt;
-      # valid group = @&lt;new_group_name&gt;
+      # force group = @&lt;new_group_name&gt;
+      valid users = @&lt;new_group_name&gt;, &lt;new_user_name&gt;
       # read list = &lt;new_user_name&gt;
       # write list = &lt;new_user_name&gt;
       </pre>
