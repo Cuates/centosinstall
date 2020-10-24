@@ -127,7 +127,7 @@
 * To connect to an SMB file server using a different username, you can use this procedure
   * In the Finder, choose the Go menu, then select Connect to Server
   * Type the network address for the computer or server in the Server Address field in the following format
-    * `smb://other_username:*@server_name_ip_address`
+    * `smb://username:*@server_name_ip_address`
       * The "*" is to trigger the server login window for your SMB server, so that the password for the other_username account can be entered
     * Click the Connect button
     * Enter the desired username and password when prompted
