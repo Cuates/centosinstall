@@ -12,7 +12,8 @@
 [10 Linux Restorecon Command Examples To Restore Selinux Context](https://www.techolac.com/linux/10-linux-restorecon-command-examples-to-restore-selinux-context/)<br />
 [Sharing A Mounted Drive With Samba On CentOS 7](https://unix.stackexchange.com/questions/391673/sharing-a-mounted-drive-with-samba-on-centos7)<br />
 [Add Multiple Groups To Valid Users](https://superuser.com/questions/437495/add-multiple-groups-to-valid-users)<br />
-[Samba Share Multi User Access](https://arkit.co.in/samba-share-multi-user-access/)
+[Samba Share Multi User Access](https://arkit.co.in/samba-share-multi-user-access/)<br />
+[Multiple Connections To A Server Or Shared Resource By The Same User Using More](https://stackoverflow.com/questions/24933661/multiple-connections-to-a-server-or-shared-resource-by-the-same-user-using-more)
 
 * `sudo dnf -y install samba samba-common samba-client`
 * `sudo systemctl enable --now {smb,nmb}`
@@ -111,3 +112,12 @@
     * `net use`
     * `net use /delete *` OR `net use /delete \\Machine_name_or_IP_Address \path\to\secured\folder`
   * Then re-attempt to access the file share
+* Windows modification to connect to multiple Samba shares at once
+  * Paste and Modify the following at the end of the C:\Windows\System32\drivers\etc\hosts file
+    * <pre>
+      &lt;IP_Address&gt; &lt;Alias_Name&gt;
+      &lt;IP_Address&gt; &lt;Alias_Name&gt;
+      &lt;IP_Address&gt; &lt;Alias_Name&gt;
+      </pre>
+  * Save and Exit
+  * Then attempt to map the share again
