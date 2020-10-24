@@ -56,3 +56,16 @@
 * Unmount A Hard Disk Drive
   * Make sure to be a directory above the mount point (directory) or anywhere outside the mount point (directory) to execute the umount command
     * `sudo umount /mnt/windows01/` OR `sudo umount /mnt/harddrive01/`
+
+* Additional Information
+  * Optional Using Mount Hard Drive for Samba Share File/Folder
+    * If mounted, then umount first before proceeding
+      * `sudo umount /path/to/mount/point`
+    * Manual Mount
+      * `sudo mount /path/to/mount/drive /path/to/mount/point -o context="unconfined_u:object_r:samba_share_t:s0"`
+    * Etc Fstab Mount
+      * Open /etc/fstab
+        * `sudo vim /etc/fstab`
+          * Modify or paste the following
+            * `UUID=<...> /path/to/mount/point auto defaults,context="unconfined_u:object_r:samba_share_t:s0" 0 0`
+      * Save and exit
