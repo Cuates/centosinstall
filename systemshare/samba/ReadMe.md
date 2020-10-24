@@ -32,7 +32,7 @@
   * `sudo smbpasswd -a <new_user_name>`
     * New SMB password: <new_user_name_samba_password>
 * Optional Using Mount Hard Drive
-  * If mount, then umount first before proceeding
+  * If mounted, then umount first before proceeding
     * `sudo umount /path/to/mount/point`
   * Manual Mount
     * `sudo mount /path/to/mount/drive /path/to/mount/point -o context="unconfined_u:object_r:samba_share_t:s0"`
