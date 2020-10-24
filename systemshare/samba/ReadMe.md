@@ -24,6 +24,10 @@
 * `smbd -V`
 
 ### Creating and Sharing Linux File Share
+* Delete an Existing Group
+  * `sudo groupdel <groupname>`
+* Verify Group was Removed
+  * `cat /etc/group`
 * Create a New Group Name for Samba
   * `sudo groupadd <new_group_name>`
 * Associate New User Name to New Group Name
