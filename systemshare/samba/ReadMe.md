@@ -9,7 +9,8 @@
 [SMB Configuration Manual](https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html)<br />
 [Confining Samba with SELinux](https://danwalsh.livejournal.com/14195.html)<br />
 [Restorecon](https://linux.die.net/man/8/restorecon)<br />
-[10 Linux Restorecon Command Examples To Restore Selinux Context](https://www.techolac.com/linux/10-linux-restorecon-command-examples-to-restore-selinux-context/)
+[10 Linux Restorecon Command Examples To Restore Selinux Context](https://www.techolac.com/linux/10-linux-restorecon-command-examples-to-restore-selinux-context/)<br />
+[Sharing A Mounted Drive With Samba On CentOS 7](https://unix.stackexchange.com/questions/391673/sharing-a-mounted-drive-with-samba-on-centos7)
 
 * `sudo dnf -y install samba samba-common samba-client`
 * `sudo systemctl enable --now {smb,nmb}`
@@ -30,6 +31,15 @@
 * Create New User Name Samba Password
   * `sudo smbpasswd -a <new_user_name>`
     * New SMB password: <new_user_name_samba_password>
+* Optional Using Mount Hard Drive
+  * Manual Mount
+    * `sudo mount /path/to/mount/drive /path/to/mount/point -o context="unconfined_u:object_r:samba_share_t:s0"`
+  * Etc Fstab Mount
+    * Open /etc/fstab
+      * `sudo vim /etc/fstab`
+        * Modify or paste the following
+          * `UUID=<...> /path/to/mount/point auto defaults,context="unconfined_u:object_r:samba_share_t:s0" 0 0`
+      * Save and exit
 * Create a Secured Folder
   * `sudo mkdir -p /path/to/secured/folder`
 * Allow to listen through SELinux
