@@ -11,7 +11,8 @@
 [Restorecon](https://linux.die.net/man/8/restorecon)<br />
 [10 Linux Restorecon Command Examples To Restore Selinux Context](https://www.techolac.com/linux/10-linux-restorecon-command-examples-to-restore-selinux-context/)<br />
 [Sharing A Mounted Drive With Samba On CentOS 7](https://unix.stackexchange.com/questions/391673/sharing-a-mounted-drive-with-samba-on-centos7)<br />
-[Add Multiple Groups To Valid Users](https://superuser.com/questions/437495/add-multiple-groups-to-valid-users)
+[Add Multiple Groups To Valid Users](https://superuser.com/questions/437495/add-multiple-groups-to-valid-users)<br />
+[Samba Share Multi User Access](https://arkit.co.in/samba-share-multi-user-access/)
 
 * `sudo dnf -y install samba samba-common samba-client`
 * `sudo systemctl enable --now {smb,nmb}`
