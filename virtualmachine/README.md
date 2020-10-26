@@ -6,7 +6,7 @@
 * [VirutalBox](#virtualbox)
 
 ### VMWare Workstation
-* [16.0](https://github.com/Cuates/centosinstall/tree/master/systemshare/samba)
+* [16.0](https://github.com/Cuates/centosinstall/tree/master/virtualmachine/vmwareworkstation)
 
 ### VirutalBox
-* [6.1.16](https://github.com/Cuates/centosinstall/tree/master/systemshare/cifs)
+* [6.1.16](https://github.com/Cuates/centosinstall/tree/master/virtualmachine/virtualbox)
