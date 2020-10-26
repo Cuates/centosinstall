@@ -1,5 +1,3 @@
-VMWare
-
 [Install VMWare Workstation Pro 15 CentOS 8](https://linuxhint.com/install_vmware_workstation_pro_15_centos8/)<br />
 [Install VMWare Workstation On CentOS](https://computingforgeeks.com/install-vmware-workstation-on-centos/)<br />
 [workstation Pro](https://www.vmware.com/products/workstation-pro.html)<br />
@@ -10,12 +8,13 @@ VMWare
   * You also need to have elfutils-libelf-devel package installed for VMware Kernel Module building to work
     * `sudo dnf -y install elfutils-libelf-devel`
 * Downloading VMware Workstation Pro 16
-  * Command Line or
-    * `wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle`
-      * **WAIT FOR THIS TO FINISH**
-  * Through Web Browser
-    * First, visit the official website (https://www.vmware.com/products/workstation-pro.html) of VMware Workstation Pro. Once the page loads, click on Download Now >> (https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html)
-      * Click on Download Now >> in the Workstation 16 Pro for Linux section (https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle)
+  * At the time of writing this article, the latest stable version of VMWare Workstation is version 16.x.
+    * Command Line or
+      * `wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle`
+        * **WAIT FOR THIS TO FINISH**
+    * Through Web Browser
+      * First, visit the official website (https://www.vmware.com/products/workstation-pro.html) of VMware Workstation Pro. Once the page loads, click on Download Now >> (https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html)
+        * Click on Download Now >> in the Workstation 16 Pro for Linux section (https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle)
 * Installing VMware Workstation Pro
   * Add executable permission to the VMware Workstation Pro 16 installer binary
     * `sudo chmod +x VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle`
