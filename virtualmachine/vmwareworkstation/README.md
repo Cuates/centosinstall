@@ -39,4 +39,4 @@ VMWare
           * License Key
             * Enter your `license key` if you have one else skip and use `trial version` instead
             * Click `Finish`
-          * VMware Workstation Pro 16 should start. Click on OK.
+          * VMware Workstation Pro 16 should start. Click on `OK`.
