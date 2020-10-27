@@ -1,7 +1,11 @@
 [Install VMWare Workstation Pro 15 CentOS 8](https://linuxhint.com/install_vmware_workstation_pro_15_centos8/)<br />
 [Install VMWare Workstation On CentOS](https://computingforgeeks.com/install-vmware-workstation-on-centos/)<br />
 [workstation Pro](https://www.vmware.com/products/workstation-pro.html)<br />
-[Workstation Pro Evaluation](https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html)
+[Workstation Pro Evaluation](https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html)<br />
+[VMWare vmrun Command](https://www.vmware.com/pdf/vix160_vmrun_command.pdf)<br />
+[Syntax Of vmrun Commands](https://docs.vmware.com/en/VMware-Fusion/12/com.vmware.fusion.using.doc/GUID-24F54E24-EFB0-4E94-8A07-2AD791F0E497.html)
+[vmware Command Options](https://docs.vmware.com/en/VMware-Workstation-Pro/16.0/com.vmware.ws.using.doc/GUID-7369457F-FE1D-40FE-97B6-B29CA4916CCD.html#GUID-7369457F-FE1D-40FE-97B6-B29CA4916CCD)<br />
+[Run The vmware Command](https://docs.vmware.com/en/VMware-Workstation-Pro/16.0/com.vmware.ws.using.doc/GUID-DA203314-F153-4F1F-8FCF-A7700530943D.html)
 
 * Installing Required Dependencies
   * `sudo dnf -y groupinstall "Development Tools"`
@@ -39,3 +43,10 @@
             * Enter your `license key` if you have one else skip and use `trial version` instead
             * Click `Finish`
           * VMware Workstation Pro 16 should start. Click on `OK`.
+
+* Additional Commands
+  * Start Stop VMWare Workstation Via Command Line
+    * Start
+      * `sudo /usr/bin/vmrun -T ws start /path/to/virtual/machine/file.vmx nogui`
+    * Stop
+      * `sudo /usr/bin/vmrun -T ws stop /path/to/virtual/machine/file.vmx soft`
