@@ -10,8 +10,8 @@
 [How To Set Up Pgadmin4 With Nginx In Ubuntu 16.04](https://askubuntu.com/questions/939881/how-to-set-up-pgadmin4-with-nginx-in-ubuntu-16-04)<br />
 [Nginx Configure Pgadmin In Location](https://stackoverflow.com/questions/45958416/nginx-configure-pgadmin-in-location)
 
-* ** IMPORTANT NOTE ** Make sure to be root user
-* ** The following was executed with `python3.9` and `pip3.9` **
+* **IMPORTANT NOTE Make sure to be root user**
+* **The following was executed with `python3.9` and `pip3.9`**
 
 * Download wheel (last version)
   * Note will need to get the latest one from the web site
