@@ -2,7 +2,8 @@
 [How To Install PHP On CentOS 8](https://linuxize.com/post/how-to-install-php-on-centos-8/)<br />
 [How To Install PHP 73 On Rhel 8](https://www.itzgeek.com/how-tos/linux/centos-how-tos/how-to-install-php-7-3-on-rhel-8.html)<br />
 [Linux Installation](https://www.scriptcase.net/docs/en_us/v9/manual/02-scriptcase-installation/06-linux_php/)<br />
-[PHP Security Best Practices Tutorial](https://www.cyberciti.biz/tips/php-security-best-practices-tutorial.html)
+[PHP Security Best Practices Tutorial](https://www.cyberciti.biz/tips/php-security-best-practices-tutorial.html)<br />
+[Modsecurity With Nginx On CentOS 8](https://www.aventistech.com/kb/modsecurity-with-nginx-on-centos-8/)
 
 * `sudo dnf module -y enable php:remi-7.4`
 * `sudo dnf install -y php php-cli php-common php-curl php-fpm php-mysql php-mysqlnd php-opcache php-gd php-xml php-mbstring php-pdo php-pdo-dblib php-pgsql php-pecl-rar php-odbc php-memcached php-pecl-memcache php-bcmath php-dba php-devel php-embedded php-imap php-intl php-ldap php-mcrypt php-pear php-recode php-pspell php-tidy php-xmlrpc`
@@ -25,3 +26,16 @@
 * `sudo apachectl configtest`
 * `php -r "echo extension_loaded('zip') ? 'Installed' : 'Not installed';"`
 * `php -v`
+
+* Configure PHP-FPM
+  * Open and modify user and group values
+    * `sudo vim /etc/php-fpm/www.conf`
+      * Apache
+        * user = apache
+        * group = apache
+      * Nginx
+        * user = nginx
+        * group = nginx
+  * Save and Exit
+  * Restart php-fpm service
+    * `sudo systemctl restart php-fpm`
