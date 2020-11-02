@@ -44,7 +44,7 @@
       </pre>
     * Save and exit
 * Run setup to install pgadmin4
-  * Initial setup will ask for e-mail and password.
+  * Note: Initial setup will ask for e-mail and password.
   * `python3.9 /opt/pgadmin4/lib/python3.9/site-packages/pgadmin4/pgAdmin4.py`
     * Following output was displayed
       <pre>
