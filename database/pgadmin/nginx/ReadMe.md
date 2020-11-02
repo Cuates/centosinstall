@@ -103,6 +103,7 @@
     * `sudo vim /etc/nginx/conf.d/cuateslws.ddns.net.conf`
       * Paste the following within the main server block of code in the file
         <pre>
+        ...
         location /pgadmin4 {
           proxy_set_header Host $http_host;
           proxy_set_header X-Real-IP $remote_addr;
@@ -111,6 +112,7 @@
           proxy_set_header X-Script-Name /pgadmin4;
           proxy_pass http://127.0.0.1:5050;
         }
+        ...
         </pre>
       * Save and exit
 * Reload nginx
