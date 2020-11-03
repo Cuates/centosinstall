@@ -286,3 +286,6 @@
               #    location = /50x.html {
               #}
               </pre>
+        * Save and exit
+      * Restart Nginx services
+        * `sudo systemctl restart nginx`
