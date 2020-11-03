@@ -40,3 +40,5 @@
           * `pip3.9 uninstall mysqlclient`
           * `pip3.9 install --no-binary mysqlclient mysqlclient`
             * Note: The first occurrence is the name of the package to apply the no-binary option to, the second specifies the package to install
+  * [Gunicorn](https://pypi.org/project/gunicorn/)
+    * `pip3.9 install gunicorn`
