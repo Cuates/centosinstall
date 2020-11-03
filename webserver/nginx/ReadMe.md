@@ -256,11 +256,11 @@
         * Open a web browser and type the following url:
         * http://your-domain-OR-ip/hello.php
         * http://your-domain-OR-ip/phpinfo.php
-  * Basic Configuration Modifications
+  * Additional Configuration Modifications
     * Disable Nginx version display
       * Open and modify nginx.conf file
         * `sudo vim /etc/nginx/nginx.conf`
-          * Add the following to http section
+          * Add to the http block
             * <pre>
               # Disable Nginx version display
               server_tokens off;
@@ -268,3 +268,19 @@
         * Save and exit
       * Restart Nginx services
         * `sudo systemctl restart nginx`
+    * Modify server root location
+      * Open and modify nginx.conf file
+        * `sudo vim /etc/nginx/nginx.conf`
+          * Change default html location
+            * `root /usr/share/nginx/html`
+            * `root /new/path/to/html`
+          * Once above is completed, comment out within the server block
+            * <pre>
+              #error_page 404 /404.html;
+              #    location = /40x.html {
+              #}
+
+              #error_page 500 502 503 504 /50x.html;
+              #    location = /50x.html {
+              #}
+              </pre>
