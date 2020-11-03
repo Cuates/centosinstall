@@ -8,7 +8,9 @@
 [Install PHP 7 X On CentOS 8 For Nginx](https://www.cyberciti.biz/faq/install-php-7-x-on-centos-8-for-nginx/)<br />
 [Server Blocks](https://www.nginx.com/resources/wiki/start/topics/examples/server_blocks/)<br />
 [How To Set Up Nginx Server Blocks Virtual Hosts On Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04)<br />
-[CentOS 8 And Nginx](https://www.server-world.info/en/note?os=CentOS_8&p=nginx&f=1)
+[CentOS 8 And Nginx](https://www.server-world.info/en/note?os=CentOS_8&p=nginx&f=1)<br />
+[Tips And Tricks To Secure Your Nginx Web Server](https://www.howtoforge.com/tips-and-tricks-to-secure-your-nginx-web-server/)<br />
+[Nginx Production Configuration](https://geekflare.com/nginx-production-configuration/)
 
 *  Installation of EPEL (Extra Package for Enterprise Linux) repository
   * `sudo dnf -y install epel-release`
@@ -254,3 +256,15 @@
         * Open a web browser and type the following url:
         * http://your-domain-OR-ip/hello.php
         * http://your-domain-OR-ip/phpinfo.php
+  * Basic Configuration Modifications
+    * Disable Nginx version display
+      * Open and modify nginx.conf file
+        * `sudo vim /etc/nginx/nginx.conf`
+          * Add the following to http section
+            * <pre>
+              # Disable Nginx version display
+              server_tokens off;
+              </pre>
+        * Save and exit
+      * Restart Nginx services
+        * `sudo systemctl restart nginx`
