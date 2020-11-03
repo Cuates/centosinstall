@@ -30,7 +30,7 @@
           * Next, extract the phpMyAdmin to the directory created above
             * `tar xzf ~/phpMyAdmin-5.0.4-all-languages.tar.gz -C /var/www/phpMyAdmin --strip-components=1`
 * Create phpMyAdmin Nginx Server Block
-  * `sudo vim /etc/nginx/conf.d/cuateslws.ddns.net.conf`
+  * `sudo vim /etc/nginx/conf.d/<domain_name>.conf`
     * Paste the following block of code into the file
       * <pre>
         location /phpMyAdmin {
