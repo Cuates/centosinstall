@@ -272,8 +272,10 @@
       * Open and modify nginx.conf file
         * `sudo vim /etc/nginx/nginx.conf`
           * Change default html location
-            * `root /usr/share/nginx/html`
-            * `root /new/path/to/html`
+            * Default location
+              * `root /usr/share/nginx/html`
+            * New location
+              * `root /new/path/to/html`
           * Once above is completed, comment out within the server block
             * <pre>
               #error_page 404 /404.html;
