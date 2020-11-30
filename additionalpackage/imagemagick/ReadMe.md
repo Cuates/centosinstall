@@ -21,10 +21,10 @@
       imagick.skip_version_check=1
 
       ; Fixes a drawing bug with locales that use ',' as float separators.
-      ;imagick.locale_fix=0
+      ; imagick.locale_fix=0
 
       ; Used to enable the image progress monitor.
-      ;imagick.progress_monitor=0
+      ; imagick.progress_monitor=0
       </pre>
   * Save and Exit
 * `sudo systemctl restart httpd`
