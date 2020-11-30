@@ -19,7 +19,7 @@
       Do you want to change your default shell to zsh? [Y/n] Y Enter
 
       Changing the shell...
-      Changing shell for hd.
+      Changing shell for &lt;username&gt;.
       Password:
       Shell changed.
       Shell successfully changed to '/usr/bin/zsh'.
