@@ -192,5 +192,5 @@
     * `cd ~/.oh-my-zsh/custom/plugins/`
   * Echo string into ZSHrc file
     * `echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc`
-  * Refresh ZSH syntax highlightin
+  * Refresh ZSH syntax highlighting
     * `source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh`
