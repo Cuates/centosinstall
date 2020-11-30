@@ -8,7 +8,7 @@
 [Powerlevel 9k Personalise Your Terminal Prompt For Any Programming Language](https://blog.hassler.ec/wp/2018/11/23/powerlevel9k-personalise-your-terminal-prompt-for-any-programming-language/)
 
 * Navigate to the ohmyzsh github page
-  * Install ohmyzsh within your iterm2 application
+  * Install ohmyzsh within your terminal application
     * `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
     * <pre>
       Looking for an existing zsh config...
@@ -57,7 +57,7 @@
     * Change your ZSH_THEME to the new powerlevel10k in ~/.zshrc file
       * `vim ~/.zshrc`
         * Navigate to the ZSH_THEME and modify it with "powerlevel10k/powerlevel10k"
-          * `ZSH_THEME="powerlevel10k/powerlevel10k"
+          * ZSH_THEME="powerlevel10k/powerlevel10k"
   * Save and quit file
 * Quit terminal
 * If not want to quit terminal then
