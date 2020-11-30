@@ -10,7 +10,7 @@
 * The instructions were written with Vim 8+
 
 ### Prerequisite Powerlevel10K
-* [powerlevel10k]()
+* [powerlevel10k](https://github.com/Cuates/centosinstall/tree/master/system/terminal)
 
 ### Install And Configure
 [Vundle Vim](https://github.com/VundleVim/Vundle.vim)<br />
