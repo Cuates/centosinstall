@@ -8,6 +8,7 @@
 * [Ifconfig](#ifconfig)
 * [TZData](#tzdata)
 * [XRDP](#xrdp)
+* [Terminal](#terminal)
 
 ### CentOS
 * [8.2.2004](https://github.com/Cuates/centosinstall/blob/master/system/centos)
@@ -26,3 +27,6 @@
 
 ### XRDP
 * [0.9.14](https://github.com/Cuates/centosinstall/tree/master/system/xrdp)
+
+### Terminal
+* [CentOS 8](https://github.com/Cuates/centosinstall/tree/master/system/terminal)
