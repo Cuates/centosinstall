@@ -58,10 +58,8 @@
       * Navigate to the ZSH_THEME and modify it with "powerlevel10k/powerlevel10k"
         * ZSH_THEME="powerlevel10k/powerlevel10k"
   * Save and quit file
-* Quit terminal
 * If not want to quit terminal then
   * `source ~/.zshrc`
-* Reopen terminal
 * On initial install you will need to get true type fonts ttf
   * Following the onscreen prompts
     * Install Meslo Nerd Font?
