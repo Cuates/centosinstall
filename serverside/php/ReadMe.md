@@ -28,7 +28,7 @@
 * OR `sudo systemctl restart nginx`
 * `sudo apachectl configtest`
 * OR `sudo nginx -t`
-* `php -r "echo extension_loaded('zip') ? 'Installed' : 'Not installed';"`
+* `php -r "echo extension_loaded('zip') ? \"Installed\r\n\" : \"Not installed\r\n\";"`
 * `php -v`
 
 * Configure PHP-FPM
