@@ -1,7 +1,7 @@
 [Pgadmin4 Installation - Craines](https://gist.github.com/craines/ba6fe9ba416df841d8e5ac5da6128ea7)<br />
 [Install Pgadmin4](https://gist.github.com/rubinhozzz/368176fec80edcf449a76e15164ff728)<br />
 [Nginx Pgadmin](https://github.com/rbernardes/nginx-pgadmin)<br />
-[Pgadmin4 4.28 Py3 None Any](https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v4.28/pip/pgadmin4-4.28-py3-none-any.whl)<br />
+[Pgadmin4 4.28 Py3 None Any Wheel](https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v4.28/pip/pgadmin4-4.28-py3-none-any.whl)<br />
 [Pgadmin4](https://ftp.postgresql.org/pub/pgadmin/pgadmin4/)<br />
 [Django Nginx Emerg Open Etc Nginx Proxy Params Failed 2 No Such File](https://stackoverflow.com/questions/42589781/django-nginx-emerg-open-etc-nginx-proxy-params-failed-2-no-such-file)<br />
 [Server Deployment](https://www.pgadmin.org/docs/pgadmin4/latest/server_deployment.html)<br />
