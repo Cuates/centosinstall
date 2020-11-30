@@ -47,4 +47,4 @@
   * Enable PHP 8.0
     * `sudo dnf module -y enable php:remi-8.0`
   * Install
-    * `sudo dnf install -y php php-cli php-common php-curl php-fpm php-mysqlnd php-opcache php-gd php-xml php-mbstring php-pdo php-pdo-dblib php-pgsql php-odbc php-memcached php-bcmath php-dba php-devel php-embedded php-imap php-intl php-ldap php-mcrypt php-pear php-pspell php-tidy php-xmlrpc php-pecl-imagick php-pecl-imagick-devel`
+    * `sudo dnf install -y php php-cli php-common php-curl php-fpm php-mysqlnd php-opcache php-gd php-xml php-mbstring php-pdo php-pdo-dblib php-pgsql php-odbc php-memcached php-pecl-memcached php-bcmath php-dba php-devel php-embedded php-imap php-intl php-ldap php-mcrypt php-pear php-pspell php-tidy php-xmlrpc php-pecl-imagick php-pecl-imagick-devel`
