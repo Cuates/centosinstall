@@ -11,8 +11,21 @@
     * **WAIT FOR THIS TO FINISH**
 * Open the following file and add the lines to the file **NOTE: If not already present**
   * `sudo vim /etc/php.d/40-imagick.ini`
-    * ; Image Magick
-    * extension=imagick.so
+    * <pre>
+      ; Enable imagick extension module
+      extension = imagick.so
+
+      ; Documentation: http://php.net/imagick
+
+      ; Don't check builtime and runtime versions of ImageMagick
+      imagick.skip_version_check=1
+
+      ; Fixes a drawing bug with locales that use ',' as float separators.
+      ;imagick.locale_fix=0
+
+      ; Used to enable the image progress monitor.
+      ;imagick.progress_monitor=0
+      </pre>
   * Save and Exit
 * `sudo systemctl restart httpd`
 * `sudo php -m`
