@@ -81,10 +81,9 @@
   * Installed  fonts at the following location
     * <pre>
       Copying fonts...
-      Powerline fonts installed to /Users/<username>/Library/Fonts (Mac OS)
-      Powerline fonts installed to /home/<username>/.local/share/fonts (Linux)
+      Powerline fonts installed to /home/&lt;username&gt;/.local/share/fonts (Linux)
       </pre>
-* Once the ttfs are downloaded and configured close and open the iterm2 application
+* Once the ttfs are downloaded and configured close and open the terminal application
 * On initial install for powerlevel10k you will need to go through the onscreen prompts to configure powerlevel10k
   * If you have already configured the prompts and want to make modifications to the prompt via the wizard execute the following command
     * Configure Wizard
