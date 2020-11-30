@@ -12,6 +12,7 @@
 * `sudo systemctl enable php-fpm`
 * `sudo systemctl status php-fpm`
 * `sudo systemctl restart httpd`
+* OR `sudo systemctl restart nginx`
 * `sudo setsebool -P httpd_execmem 1`
 * Test with /var/www/html/info.php
   * \<?php phpinfo(); ?\>
