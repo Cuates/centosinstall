@@ -55,8 +55,8 @@
         POWERLEVEL9K_MODE="nerdfont-complete"
         </pre>
     * Change your ZSH_THEME to the new powerlevel10k in ~/.zshrc file
-     * Navigate to the ZSH_THEME and modify it with "powerlevel10k/powerlevel10k"
-       * ZSH_THEME="powerlevel10k/powerlevel10k"
+      * Navigate to the ZSH_THEME and modify it with "powerlevel10k/powerlevel10k"
+        * ZSH_THEME="powerlevel10k/powerlevel10k"
   * Save and quit file
 * Quit terminal
 * If not want to quit terminal then
