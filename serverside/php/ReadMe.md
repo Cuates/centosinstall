@@ -24,6 +24,7 @@
     date.timezone = America/Los_Angeles
     </pre>
 * `sudo systemctl restart httpd`
+* OR `sudo systemctl restart nginx`
 * `sudo apachectl configtest`
 * `php -r "echo extension_loaded('zip') ? 'Installed' : 'Not installed';"`
 * `php -v`
