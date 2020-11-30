@@ -36,13 +36,13 @@
 [Space Vim Nerd Tree](https://github.com/SpaceVim/nerdtree)<br />
 [Adding Custom Vim Colorscheme In Mac OS Sierra](https://stackoverflow.com/questions/47980152/adding-custom-vim-colorscheme-in-macos-sierra)
 
-# Set up Vundle
-  # `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
-# Configure Plugins
-  # If .vimrc is not created, then create one for modifications with airline
-    # `vim ~/.vimrc`
-      # Paste the following into the .vimrc file
-        # <pre>
+* Set up Vundle
+  * `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+* Configure Plugins
+  * If .vimrc is not created, then create one for modifications with airline
+    * `vim ~/.vimrc`
+      * Paste the following into the .vimrc file
+        * <pre>
           set nocompatible              " be iMproved, required
           filetype off                  " required
 
@@ -155,61 +155,61 @@
           " Close vim when NERDTree is the only window opened
           autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endifautocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
           </pre>
-    # Save and Exit
-# Install NERDTree
-  # `git clone https://github.com/preservim/nerdtree.git ~/.vim/bundle/nerdtree`
-    # Make sure the following NERDTree is in the .vimrc file
-      # <pre>
+    * Save and Exit
+* Install NERDTree
+  * `git clone https://github.com/preservim/nerdtree.git ~/.vim/bundle/nerdtree`
+    * Make sure the following NERDTree is in the .vimrc file
+      * <pre>
         " NERDTree
         Plugin 'preservim/nerdtree'
         </pre>
-    # Make sure the close NERDTree when it is the only window opened
-      # <pre>
+    * Make sure the close NERDTree when it is the only window opened
+      * <pre>
         " Close vim when NERDTree is the only window opened
         autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endifautocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
         </pre>
-# Install Plugins:
-  # Launch vim
-    # run
-      # `:PluginInstall`
-  # Exit vim once done
-# Download themes to theme folder
-  # `git clone https://github.com/vim-airline/vim-airline-themes`
-    # Move all themes to the folder
-      # `mv vim-airline-themes/autoload/airline/themes/* ~/.vim/bundle/vim-airline/autoload/airline/themes/`
-    # To use any of the themes downloaded open up vim and type the command in the statusline
-      # Test theme proceed with the following command
-        # Open vim
-          # `:AirlineTheme <theme>`
-      # To make the theme permanent add the following line to .vimrc if not already done so
-        # `let g:airline_theme='jellybeans'`
-# Vim View and change default color scheme
-  # All your customizing is supposed to happen in $HOME/.vimrc and/or $HOME/.vim/ and nowhere else
-    # Create a vim color folder
-      # `mkdir ~/.vim/colors/`
-    # Make sure .vimrc has the runtimepath set to your new color location
-      # <pre>
+* Install Plugins:
+  * Launch vim
+    * run
+      * `:PluginInstall`
+  * Exit vim once done
+* Download themes to theme folder
+  * `git clone https://github.com/vim-airline/vim-airline-themes`
+    * Move all themes to the folder
+      * `mv vim-airline-themes/autoload/airline/themes/* ~/.vim/bundle/vim-airline/autoload/airline/themes/`
+    * To use any of the themes downloaded open up vim and type the command in the statusline
+      * Test theme proceed with the following command
+        * Open vim
+          * `:AirlineTheme <theme>`
+      * To make the theme permanent add the following line to .vimrc if not already done so
+        * `let g:airline_theme='jellybeans'`
+* Vim View and change default color scheme
+  * All your customizing is supposed to happen in $HOME/.vimrc and/or $HOME/.vim/ and nowhere else
+    * Create a vim color folder
+      * `mkdir ~/.vim/colors/`
+    * Make sure .vimrc has the runtimepath set to your new color location
+      * <pre>
         " Set new path
         set runtimepath+=~/.vim/colors
         </pre>
-  # Navigate to the following directory for out of the box themes
-    # `cd /usr/share/vim/vim*/colors directory`
-  # Copy entire vim themes from system director to local directory
-    # NOTE vim number may vary
-    # `cp /usr/share/vim/vim80/colors/*.vim ~/.vim/colors`
-  # To see a list of ready-to-use themes, open any document using the Vim editor, use
-    # `:colorscheme [space] [crtl+d]`
-  # For instance, to switch to the color scheme darkblue, open any document using the Vim editor, use
-    # `:colorscheme darkblue`
-  # Download another theme and use it
-    # **NOTE vim number will depend on the version of vim you have installed (In this case it is 81)**
-    # git clone https://github.com/arzg/vim-colors-xcode.git
-      # Move the scheme configuration to ~/.vim/colors/
-        # `mv vim-colors-xcode/colors/*.vim  ~/.vim/colors/`
-      # Open any file and just search for xcodedarkhc, open any document using the Vim editor, use
-        # `:colorscheme <colorscheme_name>`
-      # To make this change permanent, update .vimrc file in /etc or in the user's home directory.
-        # Change below the line with your preferred color scheme name:
-          # `colorscheme <colorscheme_name>`
-        # To enable the syntax highlight, use:
-          # `syntax on`
+  * Navigate to the following directory for out of the box themes
+    * `cd /usr/share/vim/vim*/colors directory`
+  * Copy entire vim themes from system director to local directory
+    * NOTE vim number may vary
+    * `cp /usr/share/vim/vim80/colors/*.vim ~/.vim/colors`
+  * To see a list of ready-to-use themes, open any document using the Vim editor, use
+    * `:colorscheme [space] [crtl+d]`
+  * For instance, to switch to the color scheme darkblue, open any document using the Vim editor, use
+    * `:colorscheme darkblue`
+  * Download another theme and use it
+    * **NOTE vim number will depend on the version of vim you have installed (In this case it is 81)**
+    * git clone https://github.com/arzg/vim-colors-xcode.git
+      * Move the scheme configuration to ~/.vim/colors/
+        * `mv vim-colors-xcode/colors/*.vim  ~/.vim/colors/`
+      * Open any file and just search for xcodedarkhc, open any document using the Vim editor, use
+        * `:colorscheme <colorscheme_name>`
+      * To make this change permanent, update .vimrc file in /etc or in the user's home directory.
+        * Change below the line with your preferred color scheme name:
+          * `colorscheme <colorscheme_name>`
+        * To enable the syntax highlight, use:
+          * `syntax on`
