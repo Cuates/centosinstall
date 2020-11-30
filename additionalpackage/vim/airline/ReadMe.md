@@ -206,7 +206,7 @@
     * git clone https://github.com/arzg/vim-colors-xcode.git
       * Move the scheme configuration to ~/.vim/colors/
         * `mv vim-colors-xcode/colors/*.vim  ~/.vim/colors/`
-      * Open any file and just search for xcodedarkhc, open any document using the Vim editor, use
+      * * Open any document using the Vim editor and search for xcodedarkhc, use
         * `:colorscheme <colorscheme_name>`
       * To make this change permanent, update .vimrc file in /etc or in the user's home directory.
         * Change below the line with your preferred color scheme name:
