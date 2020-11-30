@@ -1,7 +1,7 @@
 [Pgadmin4 Installation - Craines](https://gist.github.com/craines/ba6fe9ba416df841d8e5ac5da6128ea7)<br />
 [Install Pgadmin4](https://gist.github.com/rubinhozzz/368176fec80edcf449a76e15164ff728)<br />
 [Nginx Pgadmin](https://github.com/rbernardes/nginx-pgadmin)<br />
-[Pgadmin4 4.27 Py3 None Any](https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v4.27/pip/pgadmin4-4.27-py3-none-any.whl)<br />
+[Pgadmin4 4.28 Py3 None Any](https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v4.28/pip/pgadmin4-4.28-py3-none-any.whl)<br />
 [Pgadmin4](https://ftp.postgresql.org/pub/pgadmin/pgadmin4/)<br />
 [Django Nginx Emerg Open Etc Nginx Proxy Params Failed 2 No Such File](https://stackoverflow.com/questions/42589781/django-nginx-emerg-open-etc-nginx-proxy-params-failed-2-no-such-file)<br />
 [Server Deployment](https://www.pgadmin.org/docs/pgadmin4/latest/server_deployment.html)<br />
@@ -16,7 +16,7 @@
 * Download wheel (last version)
   * Note will need to get the latest one from the web site
     * `cd ~`
-    * `wget https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v4.27/pip/pgadmin4-4.27-py3-none-any.whl`
+    * `wget https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v4.28/pip/pgadmin4-4.28-py3-none-any.whl`
 * Create /opt/pgadmin4 folder
   * `sudo mkdir /opt/pgadmin4`
 * Create and activate virtual environment
@@ -25,8 +25,9 @@
   * `cd /opt/pgadmin4`
   * `source bin/activate`
 * Copy the downloaded .wheel to /opt/pgadmin4 and install
-  * `cp ~/pgadmin4-4.27-py3-none-any.whl /opt/pgadmin4`
+  * `cp ~/pgadmin4-4.28-py3-none-any.whl /opt/pgadmin4`
   * `pip3.9 install pgadmin4-X.X-py2.py3-none-any.whl`
+    * NOTE X.X is the latest version number
 * Create data directory
   * `mkdir data`
 * Create a config_local.py file inside the following directory
