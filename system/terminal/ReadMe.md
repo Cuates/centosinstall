@@ -139,6 +139,8 @@
       https://github.com/romkatv/powerlevel10k/issues
       </pre>
 * Modify and add the following
+  * Run the following command in a terminal to see a list of colors that do not support true colors
+    * `for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done`
   * `vim ~/.p10k.zsh`
     * Locate
       * typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
@@ -158,8 +160,10 @@
           * <pre>
             ####################################[ date: current date ]####################################
             typeset -g POWERLEVEL9K_DATE_FORMAT='%D{%Y-%m-%d}'
-            typeset -g POWERLEVEL9K_DATE_FOREGROUND="#ff6700"
-            typeset -g POWERLEVEL9K_DATE_BACKGROUND="#650000"
+            typeset -g POWERLEVEL9K_DATE_FOREGROUND="#ff6700" # True color supported in the terminal
+            typeset -g POWERLEVEL9K_DATE_BACKGROUND="#650000" # True color supported in the terminal
+            # typeset -g POWERLEVEL9K_DATE_FOREGROUND=196 # True color not supported in the terminal
+            # typeset -g POWERLEVEL9K_DATE_BACKGROUND=52 # True color not supported in the terminal
             </pre>
       * Uncomment below lines
         * <pre>
@@ -168,8 +172,10 @@
           </pre>
         * Modify with below lines
           * <pre>
-            typeset -g POWERLEVEL9K_TIME_FOREGROUND="#3664ff"
-            typeset -g POWERLEVEL9K_TIME_BACKGROUND="#00074a"
+            typeset -g POWERLEVEL9K_TIME_FOREGROUND="#3664ff" # True color supported in the terminal
+            typeset -g POWERLEVEL9K_TIME_BACKGROUND="#00074a" # True color supported in the terminal
+            # typeset -g POWERLEVEL9K_TIME_FOREGROUND=27 # True color not supported in the terminal
+            # typeset -g POWERLEVEL9K_TIME_BACKGROUND=17 # True color not supported in the terminal
             </pre>
       * `typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIINS_CONTENT_EXPANSION='❯'`
         * Modify with below line
