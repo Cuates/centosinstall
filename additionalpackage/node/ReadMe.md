@@ -11,3 +11,4 @@
   * `sudo npm install -g n`
   * `sudo /usr/local/bin/n latest`
   * `/usr/local/bin/node --version`
+  * Exit terminal and re-open a new terminal for changes to take hold
