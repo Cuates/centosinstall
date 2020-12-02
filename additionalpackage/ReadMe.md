@@ -9,7 +9,7 @@
 * [Dos2Unix](#dos2unix)
 * [Image Magick](#image-magick)
 * [Git](#git)
-* [Nodejs](#nodejs)
+* [Node](#node)
 * [NPM](#npm)
 * [Calibre](#calibre)
 * [qBittorrent](#qbittorrent)
@@ -37,8 +37,8 @@
 ### Git
 * [2.18.4-2](https://github.com/Cuates/centosinstall/tree/master/additionalpackage/git)
 
-### Nodejs
-* [10.21.0-3](https://github.com/Cuates/centosinstall/tree/master/additionalpackage/nodejs)
+### Node
+* [15.3.0](https://github.com/Cuates/centosinstall/tree/master/additionalpackage/node)
 
 ### NPM
 * [6.14.4-1.10.21.0.3](https://github.com/Cuates/centosinstall/tree/master/additionalpackage/npm)
