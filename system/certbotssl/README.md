@@ -12,6 +12,8 @@
 * Prerequisite
   * Apache/Httpd
     * [Apache/Httpd Web Server](https://github.com/Cuates/lampcentosinstall/tree/master/webserver)
+  * Nginx
+    * [Nginx](https://github.com/Cuates/centosinstall/tree/master/webserver/nginx)
   * NoIP
     * [Domain Name](https://github.com/Cuates/lampcentosinstall/tree/master/system/domainname)
 
