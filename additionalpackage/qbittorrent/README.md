@@ -1,8 +1,8 @@
-[Install Qbittorrent Centos 8 RHEL 8](https://www.linuxbabe.com/redhat/install-qbittorrent-centos-8-rhel-8)
-[How To Instal Qbittorrent On Desktop Server Centos 8 RHEL 8](https://tier4hosting.com/how-to-instal-qbittorrent-on-desktop-server-centos-8-rhel-8/)
-[Install qBittorrent Ubuntu 1904 Desktop Server](https://www.linuxbabe.com/ubuntu/install-qbittorrent-ubuntu-19-04-desktop-server)
-[Install qBittorrent Webui Ubuntu](https://www.smarthomebeginner.com/install-qbittorrent-webui-ubuntu/)
-[Apache SSL FAQ](https://httpd.apache.org/docs/current/ssl/ssl_faq.html#aboutcerts)
+[Install Qbittorrent Centos 8 RHEL 8](https://www.linuxbabe.com/redhat/install-qbittorrent-centos-8-rhel-8)<br />
+[How To Instal Qbittorrent On Desktop Server Centos 8 RHEL 8](https://tier4hosting.com/how-to-instal-qbittorrent-on-desktop-server-centos-8-rhel-8/)<br />
+[Install qBittorrent Ubuntu 1904 Desktop Server](https://www.linuxbabe.com/ubuntu/install-qbittorrent-ubuntu-19-04-desktop-server)<br />
+[Install qBittorrent Webui Ubuntu](https://www.smarthomebeginner.com/install-qbittorrent-webui-ubuntu/)<br />
+[Apache SSL FAQ](https://httpd.apache.org/docs/current/ssl/ssl_faq.html#aboutcerts)<br />
 [Install qBittorrent Ubuntu 1904 Desktop Server](https://www.linuxbabe.com/ubuntu/install-qbittorrent-ubuntu-19-04-desktop-server)
 
 * Install qBittorrent on CentOS 8/RHEL 8 Server
