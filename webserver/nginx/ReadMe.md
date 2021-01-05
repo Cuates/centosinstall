@@ -10,7 +10,8 @@
 [How To Set Up Nginx Server Blocks Virtual Hosts On Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04)<br />
 [CentOS 8 And Nginx](https://www.server-world.info/en/note?os=CentOS_8&p=nginx&f=1)<br />
 [Tips And Tricks To Secure Your Nginx Web Server](https://www.howtoforge.com/tips-and-tricks-to-secure-your-nginx-web-server/)<br />
-[Nginx Production Configuration](https://geekflare.com/nginx-production-configuration/)
+[Nginx Production Configuration](https://geekflare.com/nginx-production-configuration/)<br />
+[Nginx 413 Request Entity Too Large](https://stackoverflow.com/questions/43182944/nginx-413-request-entity-too-large)
 
 *  Installation of EPEL (Extra Package for Enterprise Linux) repository
   * `sudo dnf -y install epel-release`
