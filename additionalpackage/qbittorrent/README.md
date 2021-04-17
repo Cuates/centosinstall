@@ -49,7 +49,7 @@
             [Service]
             Type=simple
             PrivateTmp=false
-            User=qbittorrent-nox
+            User=qbittorrentnox
             Group=qbittorrent-nox
             UMask=007
             ExecStart=/usr/bin/qbittorrent-nox
