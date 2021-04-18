@@ -61,7 +61,7 @@
 * Install snapd
   * `sudo dnf -y install snapd`
   * The systemd unit that manages the main snap communication socket needs to be enabled
-    * `sudo systemctl enable &45;&45;now snapd.socket`
+    * `sudo systemctl enable --now snapd.socket`
   * To enable classic snap support, enter the following to create a symbolic link between /var/lib/snapd/snap and /snap
     * `sudo ln -s /var/lib/snapd/snap /snap`
   * Either log out and back in again or restart your system to ensure snap’s paths are updated correctly.
