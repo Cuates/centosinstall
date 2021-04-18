@@ -11,7 +11,8 @@
 [CentOS 8 And Nginx](https://www.server-world.info/en/note?os=CentOS_8&p=nginx&f=1)<br />
 [Tips And Tricks To Secure Your Nginx Web Server](https://www.howtoforge.com/tips-and-tricks-to-secure-your-nginx-web-server/)<br />
 [Nginx Production Configuration](https://geekflare.com/nginx-production-configuration/)<br />
-[Nginx 413 Request Entity Too Large](https://stackoverflow.com/questions/43182944/nginx-413-request-entity-too-large)
+[Nginx 413 Request Entity Too Large](https://stackoverflow.com/questions/43182944/nginx-413-request-entity-too-large)<br />
+[Permission Denied While Connecting To Upstream Nginx](https://stackoverflow.com/questions/23948527/13-permission-denied-while-connecting-to-upstreamnginx)
 
 *  Installation of EPEL (Extra Package for Enterprise Linux) repository
   * `sudo dnf -y install epel-release`
@@ -116,6 +117,11 @@
           * `sudo nginx -t`
      * Restart Nginx Service
        * `sudo systemctl restart nginx`
+* Important Note Needed for viewing additional domain websites
+  * Error
+    * permission denied while connecting to upstream
+  * Resolution
+    * `sudo setsebool -P httpd_can_network_connect 1`
 * Optional you don’t need to configure Nginx upon installation. However, you should know the location of the configuration files and the Nginx root directory in case you need to modify the configuration.
   * Nginx configuration directory: `/etc/nginx`
   * Nginx root directory: `/usr/share/nginx/html`
