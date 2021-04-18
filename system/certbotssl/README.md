@@ -80,7 +80,7 @@
   * Run this command to get a certificate and have Certbot edit your Apache configuration automatically to serve it, turning on HTTPS access in a single step.
     * `sudo certbot --apache`
       * Enter your email address when prompted for urgent renewal and security notices
-      * Enter A to agree to the terms and conditions when prompted
+      * Enter Y to agree to the terms and conditions when prompted
       * Choose Y or N when prompted to share your email address with the EFF
       * Choose 1 when prompted about which domain you want the certificate for (there should only be one)
         * If none were found, then proceed to add your domain name
