@@ -3,5 +3,7 @@
 
 * `sudo dnf install -y zip unzip php-pecl-zip`
 * `sudo systemctl restart httpd`
+* OR
+* `sudo systemctl restart nginx`
 * `zip --version`
 * `unzip --version`
