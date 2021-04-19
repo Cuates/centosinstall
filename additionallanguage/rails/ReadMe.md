@@ -2,6 +2,7 @@
 
 * **IMPORTANT NOTE**
   * Login into the root user first
+  *   * [Ruby Dependent](https://github.com/Cuates/centosinstall/tree/master/additionallanguage/ruby)
 * `source /etc/profile.d/rvm.sh`
 * `gem install rails` (side note to install a specific version: `gem install rails -v 6.1.3.1`)
   * **WAIT FOR THIS TO FINISH**
