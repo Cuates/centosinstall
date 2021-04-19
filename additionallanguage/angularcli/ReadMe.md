@@ -4,7 +4,7 @@
 * `sudo dnf update`
 * `sudo dnf module -y install nodejs`
 * `sudo npm install -g npm@latest`
-* **NOTE Perform the above only if not installed already**
+  * **NOTE Perform the above only if not installed already**
 * `sudo dnf module -y install nodejs/development`
 * `node -v`
 * `sudo npm install -g @angular/cli`
