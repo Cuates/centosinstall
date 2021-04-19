@@ -1,5 +1,6 @@
 [How To Install Imagemagick And PHP Imagick On CentOS 8 rhel 8](https://www.itzgeek.com/post/how-to-install-imagemagick-and-php-imagick-on-centos-8-rhel-8/)<br />
-[Install Imagemagick CentOS 8](https://idroot.us/install-imagemagick-centos-8/)
+[Install Imagemagick CentOS 8](https://idroot.us/install-imagemagick-centos-8/)<br />
+[How To Enable PowerTools Repository In CentOS 8](https://serverfault.com/questions/997896/how-to-enable-powertools-repository-in-centos-8)
 
 * `sudo dnf install -y epel-release`
 * `sudo dnf config-manager --set-enabled powertools`
