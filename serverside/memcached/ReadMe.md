@@ -25,4 +25,6 @@
 * `sudo netstat -an | grep 11211`
 * `sudo memcached-tool localhost:11211 stats`
 * `sudo systemctl restart httpd`
+* OR
+* `sudo systemctl restart nginx`
 * `memcached --version`
