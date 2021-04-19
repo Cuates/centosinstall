@@ -5,9 +5,9 @@
 [Pythons mysqldb Cant Find libmysqlclient dylib With Homebrewed MySQL](https://stackoverflow.com/questions/34536914/pythons-mysqldb-can-t-find-libmysqlclient-dylib-with-homebrewed-mysql)
 * `sudo dnf groupinstall -y 'development tools'`
 * `sudo dnf install -y bzip2 bzip2-devel expat-devel gdbm-devel ncurses-devel openssl-devel readline-devel wget sqlite-devel tk-devel xz-devel zlib-devel libffi-devel`
-* `wget https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tgz`
-* `tar -xf Python-3.9.0.tgz`
-* `cd Python-3.9.0`
+* `wget https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tgz`
+* `tar -xf Python-3.9.4.tgz`
+* `cd Python-3.9.4`
 * `./configure --enable-optimizations`
   * **WAIT FOR THIS TO FINISH**
 * `nproc` (Displays the number of cores in your processor)
