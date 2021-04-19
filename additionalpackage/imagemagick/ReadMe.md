@@ -2,7 +2,8 @@
 [Install Imagemagick CentOS 8](https://idroot.us/install-imagemagick-centos-8/)
 
 * `sudo dnf install -y epel-release`
-* `sudo dnf config-manager --set-enabled PowerTools`
+* `sudo dnf config-manager --set-enabled powertools`
+* `sudo dnf repolist`
 * `sudo dnf install -y ImageMagick ImageMagick-devel`
 * `sudo dnf install -y php php-devel php-pear make`
 * `sudo pecl channel-update pecl.php.net`
