@@ -9,5 +9,5 @@
 * `node -v`
 * `sudo npm install -g @angular/cli`
   * **WAIT FOR THIS TO FINISH**
-* Share anonymous usage data: N
+  * Share anonymous usage data: N
 * `ng --version`
