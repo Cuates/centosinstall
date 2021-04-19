@@ -4,5 +4,5 @@
 * `sudo dnf update`
 * `sudo dnf module -y install nodejs`
 * `sudo npm install -g npm@latest`
-* **NOTE Perform the above if not already installed**
+  * **NOTE Perform the above if not already installed**
 * `sudo npm install -g create-react-app`
