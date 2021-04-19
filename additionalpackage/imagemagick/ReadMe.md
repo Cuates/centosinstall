@@ -28,5 +28,7 @@
       </pre>
   * Save and Exit
 * `sudo systemctl restart httpd`
+* * OR
+* `sudo systemctl restart nginx`
 * `sudo php -m`
 * `convert --version`
