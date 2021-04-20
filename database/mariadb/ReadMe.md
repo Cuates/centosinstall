@@ -8,7 +8,10 @@
 [How To Create And Manage Databases In MySQL And MariaDB On A Cloud Server](https://www.digitalocean.com/community/tutorials/how-to-create-and-manage-databases-in-mysql-and-mariadb-on-a-cloud-server)<br />
 [Set Value Of Character Set Client To utf8mb4](https://dba.stackexchange.com/questions/59126/set-value-of-character-set-client-to-utf8mb4)<br />
 [Change MySQL Default Character Set To utf-8 In my cnf](https://stackoverflow.com/questions/3513773/change-mysql-default-character-set-to-utf-8-in-my-cnf)<br />
-[MariaDB](https://mariadb.org/download/)
+[MariaDB](https://mariadb.org/download/)<br />
+[How To Recover InnoDB Database From .frm And .ibd Files](https://www.youtube.com/watch?v=qeEAKVF33Y0)<br />
+[How to fix error in Mysql “tablespace is missing for table XXXXX”](https://bobcares.com/blog/mysql-tablespace-is-missing-for-table/)
+
 * `sudo vim /etc/yum.repos.d/MariaDB.repo`
   * MariaDB 10.5 [Stable] CentOS repository list - created 2020-07-30 23:39 UTC
   * [MariaDB Download Test](https://mariadb.org/download-test/)
@@ -264,3 +267,24 @@
 
 * Functions
   * `show function status;`
+
+* Restore from IBD files
+  * Make sure you have the .ibd files copied to the MariaDB machine
+  * Log into the MariaDB database server
+  * Login to mysql
+    * `sudo mysql`
+  * Create Database Instance
+    * `create database if not exists `<database_instance>` default character set utf8mb4 collate utf8mb4_unicode_520_ci;`
+  * Change databases
+    * `use <database_instance>;`
+  * Create the table schema
+    * **This step can be ignored if table schema is already obtained**
+    * This can be retrieved from the .frm file but you will need a special tool to obtain it
+  * Alter table to discard with table space
+    * `alter table table_name discard tablespace;`
+  * Copy ibd file in question to /var/lib/mysql/path
+    * `sudo cp /path/to/ibd /var/lib/mysql/<database_instance>`
+  * Make sure all .ibd files are chown to mysql:mysql user
+    * `sudo chown mysql:mysql *.ibd`
+  * Alter table with the ibd data by using import
+    * `alter table table_name import tablespace;`
