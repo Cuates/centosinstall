@@ -5,7 +5,8 @@
 [Phpmyadmin Blowfish Secret Generator](https://phpsolved.com/phpmyadmin-blowfish-secret-generator/])<br />
 [CentOS Repositories](https://centos.pkgs.org/)<br />
 [How To Install PhpMyAdmin With Nginx On CentOS 7](https://linuxize.com/post/how-to-install-phpmyadmin-with-nginx-on-centos-7/)<br />
-[Error Warning In Libraries Classes Config](https://stackoverflow.com/questions/65641099/phpmyadmin-5-1-0-rc1-5-0-4-error-warning-in-libraries-classes-config-php12)
+[Error Warning In Libraries Classes Config](https://stackoverflow.com/questions/65641099/phpmyadmin-5-1-0-rc1-5-0-4-error-warning-in-libraries-classes-config-php12)<br />
+[How To Install And Secure phpMyAdmin With Nginx](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-with-nginx-on-an-ubuntu-20-04-server)
 
 * Install Required PHP Modules
   * `sudo dnf module -y enable php:remi-8.0`
@@ -81,6 +82,15 @@
                  * Enable template caching
                  */
                 $cfg['TempDir'] = '/tmp/phpMyAdmin';
+              </pre>
+      * Disable Root Login
+        * `sudo vim /var/www/phpMyAdmin/config.inc.php`
+          * Add the following to end of file
+            * <pre>
+                /* Authentication type */
+                $cfg['Servers'][$i]['auth_type'] = 'cookie';
+                $cfg['Servers'][$i]['AllowNoPassword'] = false;
+                $cfg['Servers'][$i]['AllowRoot'] = false;
               </pre>
       * Save and exit
 * Allow Nginx to make modifications to the PHP session folder
