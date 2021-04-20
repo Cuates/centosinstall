@@ -10,7 +10,8 @@
 [Change MySQL Default Character Set To utf-8 In my cnf](https://stackoverflow.com/questions/3513773/change-mysql-default-character-set-to-utf-8-in-my-cnf)<br />
 [MariaDB](https://mariadb.org/download/)<br />
 [How To Recover InnoDB Database From .frm And .ibd Files](https://www.youtube.com/watch?v=qeEAKVF33Y0)<br />
-[How to fix error in Mysql “tablespace is missing for table XXXXX”](https://bobcares.com/blog/mysql-tablespace-is-missing-for-table/)
+[How to fix error in Mysql “tablespace is missing for table XXXXX”](https://bobcares.com/blog/mysql-tablespace-is-missing-for-table/)<br />
+[How To Import ANd Export Database In MySQL Or MariaDB](https://www.digitalocean.com/community/tutorials/how-to-import-and-export-databases-in-mysql-or-mariadb)
 
 * `sudo vim /etc/yum.repos.d/MariaDB.repo`
   * MariaDB 10.5 [Stable] CentOS repository list - created 2020-07-30 23:39 UTC
@@ -288,3 +289,8 @@
     * `sudo chown mysql:mysql *.ibd`
   * Alter table with the ibd data by using import
     * `alter table table_name import tablespace;`
+
+* Export
+  * `mysqldump -u <username> -p <database_instance> > database_instance_dump.sql`
+* Check Export If It's A Legitimate SQL Dump File
+  * `head -n 5 database_instance_dump.sql`
