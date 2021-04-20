@@ -16,7 +16,6 @@
 * Download wheel (last version)
   * Note will need to get the latest one from the web site
     * `cd ~`
-    * `wget https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v4.28/pip/pgadmin4-4.28-py3-none-any.whl`
     * `wget https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v5.1/pip/pgadmin4-5.1-py3-none-any.whl`
 * Create /opt/pgadmin4 folder
   * `sudo mkdir /opt/pgadmin4`
@@ -26,7 +25,7 @@
   * `cd /opt/pgadmin4`
   * `source bin/activate`
 * Copy the downloaded .wheel to /opt/pgadmin4 and install
-  * `cp ~/pgadmin4-4.28-py3-none-any.whl /opt/pgadmin4`
+  * `cp ~/pgadmin4-5.1-py3-none-any.whl /opt/pgadmin4`
   * `pip3.9 install pgadmin4-X.X-py2.py3-none-any.whl`
     * NOTE X.X is the latest version number
 * Create data directory
