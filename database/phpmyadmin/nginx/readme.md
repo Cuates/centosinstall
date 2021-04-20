@@ -64,7 +64,8 @@
   * Copy the sample phpMyAdmin configuration file without the "sample" string in the name
     * `sudo cp /var/www/phpMyAdmin/config.sample.inc.php /var/www/phpMyAdmin/config.inc.php`
       * Create a blowfish secret required for cookie based authentication to encrypt password in cookie. You can generate the blowfish secret online and paste as follows; Else you can create your own blowfish secret.
-        * [Blowfish Secret Generator](https://phpsolved.com/phpmyadmin-blowfish-secret-generator/%5D)
+        * [Blowfish Secret Generator](https://phpsolved.com/phpmyadmin-blowfish-secret-generator/)
+          * Copy and paste from generator on website
         * `sudo vim /var/www/phpMyAdmin/config.inc.php`
           * Include a custom blowfish secret or the generated one from the site
             * <pre>
