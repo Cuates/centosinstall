@@ -73,16 +73,16 @@
               // $cfg['blowfish_secret'] = ''; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
               $cfg['blowfish_secret'] = '<blowfish_secret_code_goes_here>';
               </pre>
-  * Enable Template Caching
-    * `sudo vim /var/www/phpMyAdmin/config.inc.php`
-      * Add the following to end of file
-        * <pre>
-            /**
-             * Enable template caching
-             */
-            $cfg['TempDir'] = '/tmp/phpMyAdmin';
-          </pre>
-  * Save and exit
+      * Enable Template Caching
+        * `sudo vim /var/www/phpMyAdmin/config.inc.php`
+          * Add the following to end of file
+            * <pre>
+                /**
+                 * Enable template caching
+                 */
+                $cfg['TempDir'] = '/tmp/phpMyAdmin';
+              </pre>
+      * Save and exit
 * Allow Nginx to make modifications to the PHP session folder
   * `sudo chgrp -R nginx /var/lib/php/session/`
 * Allow Nginx to make modifications to the PHP wsdlcache folder
