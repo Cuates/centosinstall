@@ -85,7 +85,7 @@
               </pre>
       * Disable Root Login
         * `sudo vim /var/www/phpMyAdmin/config.inc.php`
-          * Add the following to end of file
+          * Add the following to the Authentication type if not already present
             * <pre>
                 /* Authentication type */
                 $cfg['Servers'][$i]['auth_type'] = 'cookie';
