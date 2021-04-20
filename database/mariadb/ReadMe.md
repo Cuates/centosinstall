@@ -274,16 +274,16 @@
   * Login to mysql
     * `sudo mysql`
   * Create Database Instance
-    * ````create database if not exists `&lt;database_instance&gt;` default character set utf8mb4 collate utf8mb4_unicode_520_ci;````
+    * ````create database if not exists `<database_instance>` default character set utf8mb4 collate utf8mb4_unicode_520_ci;````
   * Change databases
-    * `use &lt;database_instance&gt;;`
+    * `use <database_instance>;`
   * Create the table schema
     * **This step can be ignored if table schema is already obtained**
     * This can be retrieved from the .frm file but you will need a special tool to obtain it
   * Alter table to discard with table space
     * `alter table table_name discard tablespace;`
   * Copy ibd file in question to /var/lib/mysql/path
-    * `sudo cp /path/to/ibd /var/lib/mysql/&lt;database_instance&gt;`
+    * `sudo cp /path/to/ibd /var/lib/mysql/<database_instance>;`
   * Make sure all .ibd files are chown to mysql:mysql user
     * `sudo chown mysql:mysql *.ibd`
   * Alter table with the ibd data by using import
