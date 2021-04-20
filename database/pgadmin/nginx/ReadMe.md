@@ -66,8 +66,8 @@
   * `pip3.9 install gunicorn`
   * `deactivate`
 * Create and run pgadmin4.service for systemd
-  * `cd /etc/systemd/system/
-  * `sudo vim pgadmin4.service
+  * `cd /etc/systemd/system/`
+  * `sudo vim pgadmin4.service`
     * Paste the following into the file
       ** Note the bind ip and port number can change to whatever you need it to be **
       <pre>
