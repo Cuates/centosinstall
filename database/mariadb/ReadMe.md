@@ -274,7 +274,7 @@
   * Login to mysql
     * `sudo mysql`
   * Create Database Instance
-    * `create database if not exists `&lt;database_instance&gt;` default character set utf8mb4 collate utf8mb4_unicode_520_ci;`
+    * `````create database if not exists `&lt;database_instance&gt;` default character set utf8mb4 collate utf8mb4_unicode_520_ci;```
   * Change databases
     * `use &lt;database_instance&gt;;`
   * Create the table schema
