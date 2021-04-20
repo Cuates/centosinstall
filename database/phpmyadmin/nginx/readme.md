@@ -4,7 +4,8 @@
 [PHP MyAdmin Additional Download](https://www.phpmyadmin.net/downloads/)<br />
 [Phpmyadmin Blowfish Secret Generator](https://phpsolved.com/phpmyadmin-blowfish-secret-generator/])<br />
 [CentOS Repositories](https://centos.pkgs.org/)<br />
-[How To Install PhpMyAdmin With Nginx On CentOS 7](https://linuxize.com/post/how-to-install-phpmyadmin-with-nginx-on-centos-7/)
+[How To Install PhpMyAdmin With Nginx On CentOS 7](https://linuxize.com/post/how-to-install-phpmyadmin-with-nginx-on-centos-7/)<br />
+[Error Warning In Libraries Classes Config](https://stackoverflow.com/questions/65641099/phpmyadmin-5-1-0-rc1-5-0-4-error-warning-in-libraries-classes-config-php12)
 
 * Install Required PHP Modules
   * `sudo dnf module -y enable php:remi-8.0`
@@ -72,7 +73,16 @@
               // $cfg['blowfish_secret'] = ''; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
               $cfg['blowfish_secret'] = '<blowfish_secret_code_goes_here>';
               </pre>
-        * Save and exit
+  * Enable Template Caching
+    * `sudo vim /var/www/phpMyAdmin/config.inc.php`
+      * Add the following to end of file
+        * <pre>
+            /**
+             * Enable template caching
+             */
+            $cfg['TempDir'] = '/tmp/phpMyAdmin';
+          </pre>
+  * Save and exit
 * Allow Nginx to make modifications to the PHP session folder
   * `sudo chgrp -R nginx /var/lib/php/session/`
 * Allow Nginx to make modifications to the PHP wsdlcache folder
