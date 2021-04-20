@@ -17,6 +17,7 @@
   * Note will need to get the latest one from the web site
     * `cd ~`
     * `wget https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v4.28/pip/pgadmin4-4.28-py3-none-any.whl`
+    * `wget https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v5.1/pip/pgadmin4-5.1-py3-none-any.whl`
 * Create /opt/pgadmin4 folder
   * `sudo mkdir /opt/pgadmin4`
 * Create and activate virtual environment
