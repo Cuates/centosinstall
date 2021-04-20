@@ -53,7 +53,7 @@
     * "WITH GRANT OPTION" is optional
   * `FLUSH PRIVILEGES;`
     * The above command is to apply changes 
-  * `GRANT ALL ON *.* TO user_name@% IDENTIFIED BY 'user_password' WITH GRANT OPTION;`
+  * `GRANT ALL ON *.* TO user_name@'%' IDENTIFIED BY 'user_password' WITH GRANT OPTION;`
     * '%' means user can login from any IP
     * "WITH GRANT OPTION" is optional
   * `FLUSH PRIVILEGES;`
