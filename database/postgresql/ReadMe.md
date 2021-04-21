@@ -168,6 +168,7 @@
 [SQL Alter Database](https://www.postgresql.org/docs/9.1/sql-alterdatabase.html)<br />
 [PostgreSQL Case Insensitive Citext](https://www.logisticinfotech.com/blog/postgresql-case-insensitive-citext/)<br />
 [SQL Create Extension](https://www.postgresql.org/docs/12/sql-createextension.html)<br />
+[PostgreSQL Backup Database](https://www.postgresqltutorial.com/postgresql-backup-database/)<br />
 [Backup Dump Restore](https://www.postgresql.org/docs/9.1/backup-dump.html#BACKUP-DUMP-RESTORE)<br />
 
 * Databases
