@@ -168,6 +168,7 @@
 [SQL Alter Database](https://www.postgresql.org/docs/9.1/sql-alterdatabase.html)<br />
 [PostgreSQL Case Insensitive Citext](https://www.logisticinfotech.com/blog/postgresql-case-insensitive-citext/)<br />
 [SQL Create Extension](https://www.postgresql.org/docs/12/sql-createextension.html)<br />
+[Backup Dump Restore](https://www.postgresql.org/docs/9.1/backup-dump.html#BACKUP-DUMP-RESTORE)<br />
 
 * Databases
   * `sudo -i -u postgres`
@@ -363,3 +364,11 @@
       `where`<br />
       `n.nspname not in ('pg_catalog', 'information_schema')`<br />
       `order by schema_name, specific_name;`
+
+* Backup Database
+  * Login as postgres user
+    * `sudo -i -u postgres`
+    * Create a dump of the database as a compressed file
+      * `pg_dump media | gzip > media_pg_dump_2021-04-21.gz`
+    * The compressed file is saved in the current path
+      * `/var/lib/pgsql`
