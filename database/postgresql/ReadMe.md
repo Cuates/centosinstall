@@ -370,6 +370,6 @@
   * Login as postgres user
     * `sudo -i -u postgres`
     * Create a dump of the database as a compressed file
-      * `pg_dump media | gzip > media_pg_dump_2021-04-21.gz`
+      * `pg_dump <database_instance> | gzip > database_instance_pg_dump_2021-04-21.gz`
     * The compressed file is saved in the current path
       * `/var/lib/pgsql`
