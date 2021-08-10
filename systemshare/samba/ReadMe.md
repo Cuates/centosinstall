@@ -52,6 +52,9 @@
         * Modify or paste the following
           * `UUID=<...> /path/to/mount/point auto defaults,context="unconfined_u:object_r:samba_share_t:s0" 0 0`
       * Save and exit
+* After Successful Mount
+  * `sudo chmod -R 0777 /path/to/mount/folder`
+    * This will help in permission access to all file(s) and folder(s)
 * Create a Secured Folder
   * `sudo mkdir -p /path/to/secured/folder`
 * Allow to listen through SELinux
