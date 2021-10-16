@@ -91,7 +91,7 @@
     * Save and exit
 * Configure Nginx Bucket Size
   * `sudo vim /etc/nginx/nginx.conf`
-  * Add the Following at End of File
+  * Add the Following Just Above the Last Line
     * <pre>
         # Define Nginx server hash bucket size
         server_names_hash_bucket_size 64;
