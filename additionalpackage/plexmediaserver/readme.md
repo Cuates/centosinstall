@@ -39,7 +39,7 @@
 * Make Sure you Create a plex.example.com Host Name Before Proceeding with Nginx Configuration
 * Make Sure Nginx is Installed and Configured on the Linux Server
 * Create Nginx Virtual Host Configuration
-  * `sudo vim /etc/nginx/config.d/plex.conf`
+  * `sudo vim /etc/nginx/conf.d/plex.conf`
   * Add the Following
     * <pre>
         upstream plex_backend {
