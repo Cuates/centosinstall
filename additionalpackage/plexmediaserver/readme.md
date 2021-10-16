@@ -34,8 +34,6 @@
   * `sudo setsebool httpd_can_network_connect 1`
   * Does not need to be done if already done during the Nginx/Apache setup process
 * Access Plex Media Server Via Web UI
-  * http://your-server-ip:32400
-  OR
   * http://server-ip:32400/web
 * Make Sure Router Port Forwards to Port 32400 for Plex Media Server
 * Make Sure you Create a plex.example.com Host Name Before Proceeding with Nginx Configuration
