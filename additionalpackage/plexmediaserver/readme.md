@@ -11,6 +11,7 @@
         gpgkey=https://downloads.plex.tv/plex-keys/PlexSign.key
         gpgcheck=1
       </pre>
+    * Save and exit
 * `sudo  dnf makecache`
 * `sudo dnf clean all`
 * Install Plex
@@ -87,6 +88,7 @@
           }
         }
       </pre>
+    * Save and exit
 * Configure Nginx Bucket Size
   * `sudo vim /etc/nginx/nginx.conf`
   * Add the Following at End of File
@@ -94,11 +96,14 @@
         # Define Nginx server hash bucket size
         server_names_hash_bucket_size 64;
       </pre>
+    * Save and exit
 * Check Nginx for Syntax Errors
   * `sudo nginx -t`
 * Restart Nginx
   * `sudo systemctl restart nginx`
 * Check Nginx Status
   * `sudo systemctl status nginx`
+* Execute Certbot for HTTPS
+  * `sudo certbot --nginx`
 * Access Plex Media Server Via Web UI
   * http://plex.example.com
