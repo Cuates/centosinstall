@@ -42,7 +42,7 @@
 * Make Sure you Create a plex.example.com Host Name Before Proceeding with Nginx Configuration
 * Make Sure Nginx is Installed and Configured on the Linux Server
 * Create Nginx Virtual Host Configuration
-  * `sudo vim /etc/nginx/conf.d/plex.conf`
+  * `sudo vim /etc/nginx/conf.d/plexservername.hostname.conf`
   * Add the Following
     * <pre>
         upstream plex_backend {
@@ -52,7 +52,7 @@
 
         server {
           listen 80;
-          server_name plex.example.com;
+          server_name plexservername.hostname;
 
           send_timeout 100m; #Some players don't reopen a socket and playback stops totally instead of resuming after an extended pause (e.g. Ch$
 
