@@ -2,8 +2,8 @@
 [Centos Plex Media Server](https://www.howtoforge.com/tutorial/centos-plex-media-server/)
 
 # Add repository for Plex Media Server on CentOS 8
-  # `sudo vim /etc/yum.repos.d/plex.repo`
-    ## <pre>
+  ## `sudo vim /etc/yum.repos.d/plex.repo`
+    ### <pre>
         [Plex]
         name=Plex
         baseurl=https://downloads.plex.tv/repo/rpm/$basearch/
