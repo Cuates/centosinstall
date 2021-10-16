@@ -11,6 +11,9 @@
         gpgkey=https://downloads.plex.tv/plex-keys/PlexSign.key
         gpgcheck=1
       </pre>
+* `sudo  dnf makecache`
+* `sudo dnf clean all`
+* `sudo dnf update`
 * Install Plex
   * `sudo dnf install -y plexmediaserver`
 * Enable on Boot
