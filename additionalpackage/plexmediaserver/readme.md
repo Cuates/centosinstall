@@ -1,5 +1,7 @@
 [How To Install Plex Media Server On Centos 8](https://cloudcone.com/docs/article/how-to-install-plex-media-server-on-centos-8/)<br />
-[Centos Plex Media Server](https://www.howtoforge.com/tutorial/centos-plex-media-server/)
+[Centos Plex Media Server](https://www.howtoforge.com/tutorial/centos-plex-media-server/)<br />
+[Setting Up Hashes](https://nginx.org/en/docs/hash.html)<br />
+[Server Names Hash Bucket Size](https://nginx.org/en/docs/http/ngx_http_core_module.html#server_names_hash_bucket_size)
 
 * Add repository for Plex Media Server on CentOS 8
   * `sudo vim /etc/yum.repos.d/plex.repo`
