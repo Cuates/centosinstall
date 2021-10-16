@@ -22,9 +22,14 @@
 * Check Plex Media Server Status
   * `sudo systemctl status plexmediaserver`
 * Configure Firewall
-  * `sudo firewall-cmd --add-service=plex --zone=public --permanent`
+  * `sudo firewall-cmd --get-services`
+  * `sudo firewall-cmd --zone=public --permanent --add-service=plex`
 * Reload Firwall
   * `sudo firewall-cmd --reload`
+* Check Firewall
+  * `sudo firewall-cmd --list-services`
+  * `sudo firewall-cmd --info-services plex`
+  * `sudo firewall-cmd --list-all`
 * Plex Media Server Runs on 32400; Run the Following Command to Check
   * `sudo netstat -pnltu | grep -i netstat`
 * Congfigure Plex Media Server to be Accessed Over the Internet
