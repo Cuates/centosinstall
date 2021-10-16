@@ -33,6 +33,8 @@
   * `sudo firewall-cmd --list-services`
   * `sudo firewall-cmd --info-service plex`
   * `sudo firewall-cmd --list-all`
+* Check If Plex Is Running On Port 32400
+  * `sudo netstat -pnltu | grep -i plex`
 * Congfigure Plex Media Server to be Accessed Over the Internet
   * `sudo setsebool httpd_can_network_connect 1`
   * Does not need to be done if already done during the Nginx/Apache setup process
