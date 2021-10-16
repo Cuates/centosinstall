@@ -32,6 +32,7 @@
   OR
   * http://server-ip:32400/web
 * Make Sure Router Port Forwards to Port 32400 for Plex Media Server
+* Make Sure you Create a plex.example.com Host Name Before Proceeding with Nginx Configuration
 * Make Sure Nginx is Installed and Configured on the Linux Server
 * Create Nginx Virtual Host Configuration
   * `sudo vim /etc/nginx/config.d/plex.conf`
