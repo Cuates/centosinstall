@@ -30,8 +30,6 @@
   * `sudo firewall-cmd --list-services`
   * `sudo firewall-cmd --info-service plex`
   * `sudo firewall-cmd --list-all`
-* Plex Media Server Runs on 32400; Run the Following Command to Check
-  * `sudo netstat -pnltu | grep -i netstat`
 * Congfigure Plex Media Server to be Accessed Over the Internet
   * `sudo setsebool httpd_can_network_connect on -P`
 * Access Plex Media Server Via Web UI
