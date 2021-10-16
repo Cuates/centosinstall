@@ -31,7 +31,8 @@
   * `sudo firewall-cmd --info-service plex`
   * `sudo firewall-cmd --list-all`
 * Congfigure Plex Media Server to be Accessed Over the Internet
-  * `sudo setsebool httpd_can_network_connect on -P`
+  * `sudo setsebool httpd_can_network_connect 1`
+  * Does not need to be done if already done during the Nginx/Apache setup process
 * Access Plex Media Server Via Web UI
   * http://your-server-ip:32400
   OR
