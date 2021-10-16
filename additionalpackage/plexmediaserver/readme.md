@@ -28,7 +28,7 @@
   * `sudo firewall-cmd --reload`
 * Check Firewall
   * `sudo firewall-cmd --list-services`
-  * `sudo firewall-cmd --info-services plex`
+  * `sudo firewall-cmd --info-service plex`
   * `sudo firewall-cmd --list-all`
 * Plex Media Server Runs on 32400; Run the Following Command to Check
   * `sudo netstat -pnltu | grep -i netstat`
