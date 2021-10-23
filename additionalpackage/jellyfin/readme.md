@@ -35,16 +35,6 @@
   * `sudo firewall-cmd --list-all`
 * Check If Jellyfin Is Running On Port 8096
   * `sudo netstat -pnltu | grep -i 8096`
-* Configure Jellyfin Media server
-  * Open the web interface and configure initial setup
-    * Setup Admin user acount
-    * Login with your admin credentials you created in the step above.
-    * You will be required to setup your media library, choosing the type of media you want to stream and setting up of the content directories.
-    * Setup your media system and add content to the jellyfin server in the folders you specified
-    * Click Add Media Library to add a different Library then Next
-    * Check the Allow remote connections box to allow connections from remote devices.
-    * You will then be redirected to the dashboard where you can now see the media that you have uploaded to the folders appear.
-    * Content metadata such as banners, Movie information including Cast Crew and ratings will be downloaded automatically (If available).
 * Nginx and Jellyfin configuration
   * Create the file /etc/nginx/conf.d/jellyfin.conf which will forward requests to Jellyfin
 * Make Sure Router Port Forwards to Port 8096 for Jellyfin Media Server
@@ -133,3 +123,13 @@
   * `sudo certbot --nginx`
 * Access Jellyfin Media Server Via Web UI
   * http://jellyfin.example.com
+* Configure Jellyfin Media server
+  * Open the web interface and configure initial setup
+    * Setup Admin user acount
+    * Login with your admin credentials you created in the step above.
+    * You will be required to setup your media library, choosing the type of media you want to stream and setting up of the content directories.
+    * Setup your media system and add content to the jellyfin server in the folders you specified
+    * Click Add Media Library to add a different Library then Next
+    * Check the Allow remote connections box to allow connections from remote devices.
+    * You will then be redirected to the dashboard where you can now see the media that you have uploaded to the folders appear.
+    * Content metadata such as banners, Movie information including Cast Crew and ratings will be downloaded automatically (If available).
