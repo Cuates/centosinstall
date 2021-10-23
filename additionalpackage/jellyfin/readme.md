@@ -1,5 +1,6 @@
 [Install Jellyfin Media Server On CentOS Linux](https://computingforgeeks.com/install-jellyfin-media-server-on-centos-linux/)<br />
 [Jellyfin And Nginx Configuration](https://jellyfin.org/docs/general/networking/nginx.html)<br />
+[List Open Ports Firewalld](https://linuxhint.com/list_open_ports_firewalld/)<br />
 
 * Dependencies to install Jellyfin Media Server is [ffmpeg](https://github.com/Cuates/centosinstall/blob/master/additionalpackage/ffmpeg)
 * Visit the following website [Jellyfin for CentOS](https://repo.jellyfin.org/releases/server/centos/stable/) to download the 2 different rpms for the server and web
@@ -29,6 +30,7 @@
 * Reload Firwall
   * `sudo firewall-cmd --reload`
 * Check Firewall
+  * `sudo firewall-cmd --info-service jellyfin`
   * `sudo firewall-cmd --list-ports`
   * `sudo firewall-cmd --list-all`
 * Check If Jellyfin Is Running On Port 8096
