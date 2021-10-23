@@ -42,7 +42,6 @@
   * `sudo vim /etc/nginx/conf.d/jellyfinservername.hostname.conf`
   * Add the Following
     * <pre>
-        # Uncomment the commented sections after you have acquired a SSL Certificate
         server {
             listen 80;
             listen [::]:80;
