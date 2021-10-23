@@ -24,13 +24,10 @@
   * http://server-IP:8096.
 * Open port 8096 through firewall router
 * Configure Firewall
-  * `sudo firewall-cmd --get-services`
   * `sudo firewall-cmd --zone=public --permanent --add-port=8096/tcp`
 * Reload Firwall
   * `sudo firewall-cmd --reload`
 * Check Firewall
-  * `sudo firewall-cmd --list-services`
-  * `sudo firewall-cmd --info-service plex`
   * `sudo firewall-cmd --list-all`
 * Check If Jellyfin Is Running On Port 8096
   * `sudo netstat -pnltu | grep -i 8096`
