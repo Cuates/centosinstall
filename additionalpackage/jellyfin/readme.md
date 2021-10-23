@@ -70,6 +70,7 @@
 
             location / {
                 # Proxy main Jellyfin traffic
+                ## proxy_pass http://$jellyfin:8096;
                 proxy_pass http://127.0.0.1:8096;
                 proxy_set_header Host $host;
                 proxy_set_header X-Real-IP $remote_addr;
@@ -85,6 +86,7 @@
             # location block for /web - This is purely for aesthetics so /web/#!/ works instead of having to go to /web/index.html/#!/
             location = /web/ {
                 # Proxy main Jellyfin traffic
+                ## proxy_pass http://$jellyfin:8096/web/index.html;
                 proxy_pass http://127.0.0.1:8096/web/index.html;
                 proxy_set_header Host $host;
                 proxy_set_header X-Real-IP $remote_addr;
@@ -96,6 +98,7 @@
 
             location /socket {
                 # Proxy Jellyfin Websockets traffic
+                ## proxy_pass http://$jellyfin:8096;
                 proxy_pass http://127.0.0.1:8096;
                 proxy_http_version 1.1;
                 proxy_set_header Upgrade $http_upgrade;
