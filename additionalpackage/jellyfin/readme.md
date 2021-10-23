@@ -11,9 +11,9 @@
     * Or manually download both rpms from the Jellyfin CentOS stable list
 * Install the downloaded packages
   * Jellyfin-server
-    * `sudo yum -y localinstall jellyfin-server-*.rpm`
+    * `sudo dnf -y localinstall jellyfin-server-*.rpm`
   * Jellyfin-web
-    * `sudo yum -y localinstall jellyfin-web-*.rpm`
+    * `sudo dnf -y localinstall jellyfin-web-*.rpm`
 * Start Jellyfin service
   * `sudo systemctl start jellyfin`
 * Enable Jellyfin service
