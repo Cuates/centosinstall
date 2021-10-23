@@ -35,8 +35,6 @@
   * `sudo firewall-cmd --list-all`
 * Check If Jellyfin Is Running On Port 8096
   * `sudo netstat -pnltu | grep -i 8096`
-* Nginx and Jellyfin configuration
-  * Create the file /etc/nginx/conf.d/jellyfin.conf which will forward requests to Jellyfin
 * Make Sure Router Port Forwards to Port 8096 for Jellyfin Media Server
 * Make Sure you Create a jellyfin.example.com Host Name Before Proceeding with Nginx Configuration
 * Make Sure Nginx is Installed and Configured on the Linux Server
