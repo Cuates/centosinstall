@@ -118,6 +118,17 @@
   * `sudo systemctl status nginx`
 * Execute Certbot for HTTPS
   * `sudo certbot --nginx`
+* Modify Jellyfin conf file
+  * `sudo vim /etc/nginx/conf.d/jellyfinservername.hostname.conf`
+    * Make sure the following lines include http2
+      * <pre>
+          listen 443 ssl http2;
+          listen [::]:443 ssl http2;
+        </pre>
+* Check Nginx for Syntax Errors
+  * `sudo nginx -t`
+* Restart Nginx
+  * `sudo systemctl restart nginx`
 * Access Jellyfin Media Server Via Web UI
   * http://jellyfin.example.com
 * Configure Jellyfin Media server
