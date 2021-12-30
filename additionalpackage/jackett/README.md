@@ -11,12 +11,18 @@
   * To install Jackett as a service
     * Open a Terminal
     * cd to the jackett folder
-    * run `sudo ./install_service_systemd.sh`
-      * You need root permissions to install the service
-      * The service will start on each logon
-      * You can always stop it by running `systemctl stop jackett.service` from Terminal
-      * You can start it again it using `systemctl start jackett.service`
-      * Logs are stored as usual under `~/.config/Jackett/log.txt` and also in `journalctl -u jackett.service`
+    * run install script
+      * `sudo ./install_service_systemd.sh`
+       * You need root permissions to install the service
+       * The service will start on each logon
+       * You can always stop it by running from Terminal
+         * `systemctl stop jackett.service`
+       * You can start it again it using
+         * `systemctl start jackett.service`
+       * Logs are stored in the following path file
+         * `~/.config/Jackett/log.txt`
+       * Logs can also be seen with the following command
+         * `journalctl -u jackett.service`
     * **IMPORTANT NOTE**
       * You need to have a user that is not root within the Jackett service
       * Also, the Jackett folder needs to be accessible to the non root user
