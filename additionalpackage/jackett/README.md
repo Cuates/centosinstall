@@ -30,8 +30,11 @@
     * `sudo firewall-cmd --list-ports`
     * `sudo firewall-cmd --list-all`
   * Make Sure Router Port Forwards to Port 9117 for Jackett Server
-* Run without installing as a service
-  * Download and extract the latest Jackett.Binaries.LinuxAMDx64.tar.gz release from the [releases page](https://github.com/Jackett/Jackett/releases), open a Terminal, cd to the jackett folder and run Jackett with the command `./jackett`
+* **OPTIONAL** Run without installing as a service
+  * Download and extract the latest Jackett.Binaries.LinuxAMDx64.tar.gz release from the [releases page](https://github.com/Jackett/Jackett/releases)
+    * Open a Terminal
+    * cd to the jackett folder
+    * run Jackett with the command `./jackett`
 * Home Directory
   * If you want to run it with a user without a /home directory you need to add `Environment=XDG_CONFIG_HOME=/path/to/folder` to your systemd file, this folder will be used to store your config files.
 * Running Jackett behind a reverse proxy
