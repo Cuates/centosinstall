@@ -5,9 +5,17 @@
   * `sudo dnf install -y libicu`
 * Install as service
   * Download and extract the latest Jackett.Binaries.LinuxAMDx64.tar.gz release from the [releases page](https://github.com/Jackett/Jackett/releases)
-  * If you downloaded the tar.gz perform the following command to untar the file
+  * Perform the following command to untar the file if you downloaded the tar.gz
     * `tar xzf /path/to/Jackett.Binaries.LinuxAMDx64.tar.gz`
-  * To install Jackett as a service, open a Terminal, cd to the jackett folder and run `sudo ./install_service_systemd.sh` You need root permissions to install the service. The service will start on each logon. You can always stop it by running `systemctl stop jackett.service` from Terminal. You can start it again it using `systemctl start jackett.service`. Logs are stored as usual under `~/.config/Jackett/log.txt` and also in `journalctl -u jackett.service`.
+  * To install Jackett as a service
+    * Open a Terminal
+    * cd to the jackett folder
+    * run `sudo ./install_service_systemd.sh`
+      * You need root permissions to install the service
+      * The service will start on each logon
+      * You can always stop it by running `systemctl stop jackett.service` from Terminal
+      * You can start it again it using `systemctl start jackett.service`
+      * Logs are stored as usual under `~/.config/Jackett/log.txt` and also in `journalctl -u jackett.service`
     * **IMPORTANT NOTE**
       * You need to have a user that is not root assigned within the Jackett service
       * Also, the Jackett folder needs to be accessible to the non root user assigned
