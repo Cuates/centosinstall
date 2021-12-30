@@ -7,6 +7,7 @@
   * Download and extract the latest Jackett.Binaries.LinuxAMDx64.tar.gz release from the [releases page](https://github.com/Jackett/Jackett/releases)
   * Perform the following command to untar the file if you downloaded the tar.gz
     * `tar xzf /path/to/Jackett.Binaries.LinuxAMDx64.tar.gz`
+      * Make sure to untar the file under a non root user
   * To install Jackett as a service
     * Open a Terminal
     * cd to the jackett folder
