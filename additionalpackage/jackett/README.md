@@ -67,7 +67,8 @@
       * Server port:
         * 9117
       * Optional
-        * Add password for secure access to service is not currently working
+        * Add password for secure access to service
+          * This is currentlty not working 
       * Click on Apply server settings
         * This will refresh the page with the latest modifications
-      * Navigate to your URL host name with base path override added to the end
+      * The Jackett UI is now setup when you navigate to your URL host name with base path override added to the end
