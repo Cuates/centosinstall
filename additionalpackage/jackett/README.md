@@ -71,4 +71,4 @@
           * This is currentlty not working 
       * Click on Apply server settings
         * This will refresh the page with the latest modifications
-      * The Jackett UI is now setup when you navigate to your URL host name with base path override added to the end
+  * The Jackett UI is now setup when you navigate to your URL host name with base path override added to the end
