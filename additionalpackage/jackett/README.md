@@ -38,7 +38,8 @@
 * Home Directory
   * If you want to run it with a user without a /home directory you need to add `Environment=XDG_CONFIG_HOME=/path/to/folder` to your systemd file, this folder will be used to store your config files.
 * Running Jackett behind a reverse proxy
-  * When running jackett behind a reverse proxy make sure that the original hostname of the request is passed to Jackett. If HTTPS is used also set the X-Forwarded-Proto header to "https". Don't forget to adjust the "Base path override" Jackett option accordingly.
+  * When running jackett behind a reverse proxy make sure that the original hostname of the request is passed to Jackett. If HTTPS is used also set the X-Forwarded-Proto header to "https"
+  * **IMPORTANT** Don't forget to adjust the "Base path override" Jackett option accordingly on the Jackett UI
   * Example config for Nginx:
     * <pre>
         location /jackett {
