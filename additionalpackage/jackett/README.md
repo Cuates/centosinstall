@@ -18,8 +18,8 @@
       * You can start it again it using `systemctl start jackett.service`
       * Logs are stored as usual under `~/.config/Jackett/log.txt` and also in `journalctl -u jackett.service`
     * **IMPORTANT NOTE**
-      * You need to have a user that is not root assigned within the Jackett service
-      * Also, the Jackett folder needs to be accessible to the non root user assigned
+      * You need to have a user that is not root within the Jackett service
+      * Also, the Jackett folder needs to be accessible to the non root user
     * Make changes to /path/to/services/jackett.service
       * To update any modifications made to jackett.service perform the following command
         * `systemctl daemon-reload`
