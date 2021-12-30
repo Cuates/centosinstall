@@ -30,11 +30,12 @@
       * To update any modifications made to jackett.service perform the following command
         * `systemctl daemon-reload`
   * Give port permission to Jackett Server
-    * `sudo firewall-cmd --get-services`
-    * `sudo firewall-cmd --zone=public --permanent --add-port=9117/tcp`
-    * `sudo firewall-cmd --reload`
-    * `sudo firewall-cmd --list-ports`
-    * `sudo firewall-cmd --list-all`
+    * Default port for Jacektt server is 9117 
+      * `sudo firewall-cmd --get-services`
+      * `sudo firewall-cmd --zone=public --permanent --add-port=9117/tcp`
+      * `sudo firewall-cmd --reload`
+      * `sudo firewall-cmd --list-ports`
+      * `sudo firewall-cmd --list-all`
   * Make Sure Router Port Forwards to Port 9117 for Jackett Server
 * **OPTIONAL** Run without installing as a service
   * Download and extract the latest Jackett.Binaries.LinuxAMDx64.tar.gz release from the [releases page](https://github.com/Jackett/Jackett/releases)
