@@ -1,6 +1,6 @@
 [Jackett](https://github.com/Jackett/Jackett)<br />
 [Jackett Linux Prereqs](https://github.com/dotnet/core/blob/main/Documentation/linux-prereqs.md)<br />
-[Jackett Issues 5589](https://github.com/Jackett/Jackett/issues/5589)
+[Jackett MAC OS Issues 5589](https://github.com/Jackett/Jackett/issues/5589)
 
 * On most operating systems all the required dependencies will already be present. In case they are not, you can refer to this page https://github.com/dotnet/core/blob/master/Documentation/linux-prereqs.md
   * `sudo dnf install -y libicu`
