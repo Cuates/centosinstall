@@ -69,7 +69,7 @@
     * `sudo systemctl restart nginx`
   * Once everything is fine with nginx perform the following on the server IP address and port for Jackett
     * e.g.
-      * http://168.17.0.2:9117
+      * http://localhost:9117
     * Modify the Jackett Configuration to work with nginx modifications
       * Base path override:
         * /path/to/base/
