@@ -69,7 +69,7 @@
     * `sudo systemctl restart nginx`
   * Once everything is fine with nginx perform the following on the server IP address and port for Jackett
     * e.g.
-      * http://localhost:9117
+      * [localhost](http://localhost:9117)
     * Modify the Jackett Configuration to work with nginx modifications
       * Base path override:
         * /path/to/base/
@@ -95,6 +95,6 @@
     * Run Jackett without installing as a service using the following command
       * `./jackett`
     * Open site on the following http
-      * `http://localhost:9117`
+      * [localhost](http://localhost:9117)
     * Shut down application use the following command in the terminal
       * `Ctrl+C `
