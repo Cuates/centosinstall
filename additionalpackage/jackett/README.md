@@ -1,5 +1,6 @@
 [Jackett](https://github.com/Jackett/Jackett)<br />
-[Jackett Linux Prereqs](https://github.com/dotnet/core/blob/main/Documentation/linux-prereqs.md)
+[Jackett Linux Prereqs](https://github.com/dotnet/core/blob/main/Documentation/linux-prereqs.md)<br />
+[Jackett Issues 5589](https://github.com/Jackett/Jackett/issues/5589)
 
 * On most operating systems all the required dependencies will already be present. In case they are not, you can refer to this page https://github.com/dotnet/core/blob/master/Documentation/linux-prereqs.md
   * `sudo dnf install -y libicu`
@@ -82,3 +83,18 @@
       * Click on Apply server settings
         * This will refresh the page with the latest modifications
   * The Jackett UI is now setup when you navigate to your URL host name with base path override added to the end
+* MAC OS X Install 
+  * Download and extract the latest Jackett.Binaries.macOS.tar.gz release from the [releases page](https://github.com/Jackett/Jackett/releases)
+  * Open a terminal of choice
+    * Read the quarantine attribute of one dll
+      * `xattr -p com.apple.quarantine libhostfxr.dylib`
+    * Copy the string (should be something like "0081;5d1bec70;Archive Utility;0622FF31-4499-4EBA-954A-EDC879E4010A") but replace the first 4 characters by 00c1 which tells Gatekeeper to shut up. Then use your modified string:
+      * e.g.
+        * `xattr -w com.apple.quarantine "00c1;5d1bec70;Archive Utility;0622FF31-4499-4EBA-954A-EDC879E4010A" *.{dylib,dll}`
+      * This will effectively whitelist all the dll and dylib files, allowing Jackett to run.
+    * Run Jackett without installing as a service using the following command
+      * `./jackett`
+    * Open site on the following http
+      * `http://[::]:9117`
+    * Shut down application use the following command in the terminal
+      * `Ctrl+C `
