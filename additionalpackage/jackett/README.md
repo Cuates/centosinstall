@@ -95,6 +95,6 @@
     * Run Jackett without installing as a service using the following command
       * `./jackett`
     * Open site on the following http
-      * `http://[::]:9117`
+      * `http://localhost:9117`
     * Shut down application use the following command in the terminal
       * `Ctrl+C `
