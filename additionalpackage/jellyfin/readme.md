@@ -144,3 +144,58 @@
     * Check the Allow remote connections box to allow connections from remote devices.
     * You will then be redirected to the dashboard where you can now see the media that you have uploaded to the folders appear.
     * Content metadata such as banners, Movie information including Cast Crew and ratings will be downloaded automatically (If available).
+* **Optional** Steps for custom cache and metadata locations
+  * Specify a custom location for downloaded artwork and metadata.
+    * Make the following changes to the metadata folder. This helps in having more space allocated to the metadata items in the Jellyfin application. Perform the same steps for cache as well.
+    * Find a location that has lots of space to store metadata and cache from the media you are going to save.
+    * Preferably an external hard drive
+      * Perform the following in the command line
+        * Change directory to external hard drive
+          * `cd /path/to/external/hard/drive/with/lots/of/space/`
+        * Create the Jellyfin directory
+          * `mkdir jellyfin`
+        * Change directory to new Jellyfin folder
+          * `cd jellyfin/`
+        * Create the cache directory within the new Jellyfin directory path
+        * `mkdir cache`
+        * Change directory to new cache folder
+          * `cd cache/`
+        * Make a note of where the new cache directory is located
+          * `pwd`
+        * Change directory to new Jellyfin folder
+          * `cd jellyfin/`
+          * Create the metadata directory within the new Jellyfin directory path
+            * `mkdir metadata`
+          * Change directory to new metadata folder
+            * `cd metadata/`
+          * Make a note of where the new metadata directory is located
+            * `pwd`
+          * Change directory to the parent of the new Jellyfin folder that was created
+            * `cd /path/to/external/hard/drive/with/lots/of/space/where/the/new/jellyfin/was/created`
+          * The folder will need jellyfin permissions
+            * `sudo chown -R jellyfin:jellyfin jellyfin/`
+          * Jellyfin folder will need special permission to be accessible to the Jellyfin application
+            * default permissions for Jellyfin is drwxr-x---
+              * Change permission to match the default Jellyfin folder
+                * `sudo chmod -R 750 jellyfin`
+          * Cache folder will need special permission to be accessible to the Jellyfin application
+            * default permissions for Jellyfin's cache is drwxr-x---
+              * Change permission to match the default Jellyfin's cache folder
+                * `sudo chmod -R 750 cache`
+          * Metadata folder will need special permission to be accessible to the Jellyfin application
+            * default permissions for Jellyfin's metadata is drwxr-xr-x
+              * Change permission to match the default Jellyfin's metadata folder
+                * `sudo chmod -R 755 metadata`
+    * Navigate to the Jellyfin server to modify locations for both Cache path and Metadata path
+      * Go to Dashboard --> General --> Cache Path
+        * Click the search icon to the right of the input field
+        * Click on the 3 dots below the Folder input field
+        * Find the new path the metadata will live in
+        * Old path was `/var/cache/jellyfin`
+        * New path is /path/to/external/hard/drive/with/lots/of/space/with/the/new/jellyfin/cache
+      * Go to Dashboard --> General --> Metadata Path
+        * Click the search icon to the right of the input field
+        * Click on the 3 dots below the Folder input field
+        * Find the new path the metadata will live in
+        * Old path was `/var/lib/jellyfin/metadata`
+        * New path is /path/to/external/hard/drive/with/lots/of/space/with/the/new/jellyfin/metadata
