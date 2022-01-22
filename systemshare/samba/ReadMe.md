@@ -76,7 +76,7 @@
 * Make Backup of Existing Conf File
   * `sudo cp -pf /etc/samba/smb.conf /etc/samba/smb.conf.bak`
 * Edit and Save /etc/samba/smb.conf **NOTE: Place the following at the end of the file**
-  * **NOTE** The "veto files" are set because the Mac OS write "._" and ".DS_Store" files while view and visiting files and folders
+  * **NOTE** The "veto files" are set because Mac OS writes "._*" and ".DS_Store" files while viewing and visiting files and folders
   * `sudo vim /etc/samba/smb.conf`
     * <pre>
       [global]
