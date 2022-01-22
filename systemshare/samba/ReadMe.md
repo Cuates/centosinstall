@@ -14,7 +14,12 @@
 [Add Multiple Groups To Valid Users](https://superuser.com/questions/437495/add-multiple-groups-to-valid-users)<br />
 [Samba Share Multi User Access](https://arkit.co.in/samba-share-multi-user-access/)<br />
 [Multiple Connections To A Server Or Shared Resource By The Same User Using More](https://stackoverflow.com/questions/24933661/multiple-connections-to-a-server-or-shared-resource-by-the-same-user-using-more)<br />
-[Logging Into A Smb File Server Multiple Times With Different Usernames From One Mac](https://derflounder.wordpress.com/2013/05/31/logging-into-a-smb-file-server-multiple-times-with-different-usernames-from-one-mac/)
+[Logging Into A Smb File Server Multiple Times With Different Usernames From One Mac](https://derflounder.wordpress.com/2013/05/31/logging-into-a-smb-file-server-multiple-times-with-different-usernames-from-one-mac/)<br />
+[smb.conf](https://www.samba.org/samba/docs/current/man-html/smb.conf.5.html)<br />
+[Is There Any Way To Prevent A Mac From Creating Dot Underscore Files](https://superuser.com/questions/212896/is-there-any-way-to-prevent-a-mac-from-creating-dot-underscore-files)<br />
+[Why Are Dot Underscore Files Created And How Can I Avoid Them](https://apple.stackexchange.com/questions/14980/why-are-dot-underscore-files-created-and-how-can-i-avoid-them)<br />
+[110732 Samba Veto Files No Longer Functioning Properly On My Server](https://forums.unraid.net/topic/110732-samba-veto-files-no-longer-functioning-properly-on-my-server/)<br />
+[Samba Veto Files Used To Allow Only One Extension To Be Written To The Share](https://linux.samba.narkive.com/gU3xIugh/samba-veto-files-used-to-allow-only-one-extension-to-be-written-to-the-share)
 
 * `sudo dnf -y install samba samba-common samba-client`
 * `sudo systemctl enable --now {smb,nmb}`
@@ -81,6 +86,7 @@
       printcap name = cups
       load printers = yes
       cups options = raw
+      veto files = /._*/.DS_Store/
       
       [&lt;secured_shared_name&gt;]
       comment = Private Share Drive
