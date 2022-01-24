@@ -157,7 +157,7 @@
         * Change directory to new Jellyfin folder
           * `cd jellyfin/`
         * Create the cache directory within the new Jellyfin directory path
-        * `mkdir cache`
+          * `mkdir cache`
         * Change directory to new cache folder
           * `cd cache/`
         * Make a note of where the new cache directory is located
