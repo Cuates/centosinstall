@@ -14,3 +14,15 @@
   * `sudo /usr/local/bin/n latest` OR `sudo n latest`
   * `/usr/local/bin/node --version` OR `node --version`
   * `npm --version`
+* Remove Existing NodeJS Module
+  * `sudo dnf remove -y nodejs`
+* List Available NodeJS Modules
+  * `sudo dnf module list | grep nodejs` OR `sudo dnf module list nodejs`
+* Reset NodeJS Module
+  * `suod dnf module reset nodejs`
+* Enable NodeJS Module Version
+  * `sudo dnf module -y enable nodejs:<stream>`
+  * * i.e. `sudo dnf module -y enable nodejs:16`
+* Install Specific NodeJS Module
+  * `sudo dnf module install -y nodejs:<stream>`
+    * i.e. `sudo dnf module install -y nodejs:16`
