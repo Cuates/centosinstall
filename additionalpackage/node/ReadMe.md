@@ -19,7 +19,7 @@
 * List Available NodeJS Modules
   * `sudo dnf module list | grep nodejs` OR `sudo dnf module list nodejs`
 * Reset NodeJS Module
-  * `suod dnf module reset nodejs`
+  * `sudo dnf module reset nodejs`
 * Enable NodeJS Module Version
   * `sudo dnf module -y enable nodejs:<stream>`
   * * i.e. `sudo dnf module -y enable nodejs:16`
