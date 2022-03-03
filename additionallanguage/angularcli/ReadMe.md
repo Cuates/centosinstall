@@ -1,5 +1,6 @@
-[Install Angular CentOS 8](https://idroot.us/install-angular-centos-8/)
-[Install Angular Cli On CentOS](https://tecadmin.net/install-angular-cli-on-centos/)
+[Install Angular CentOS 8](https://idroot.us/install-angular-centos-8/) <br />
+[Install Angular Cli On CentOS](https://tecadmin.net/install-angular-cli-on-centos/) <br />
+[Install Angular On Mac OS](https://www.zeolearn.com/magazine/setup-angular-mac)
 * `sudo dnf clean all`
 * `sudo dnf update`
 * `sudo dnf module -y install nodejs`
