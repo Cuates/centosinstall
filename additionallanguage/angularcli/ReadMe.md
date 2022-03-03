@@ -11,4 +11,9 @@
 * `sudo npm install -g @angular/cli`
   * **WAIT FOR THIS TO FINISH**
   * Share anonymous usage data: N
-* `ng --version`
+* Check global versions of the web application
+  * Execute either of the commands to see the version numbers installed
+    * `sudo npm list -global --depth 0`
+    * `ng --version`
+* Uninstall Angular from command line
+  * `sudo npm uninstall -g @angular/cli`
