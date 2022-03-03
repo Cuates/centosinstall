@@ -27,4 +27,4 @@
   * `sudo dnf module install -y nodejs:<stream>`
     * i.e. `sudo dnf module install -y nodejs:16`
 ### If the above does not work then install via NVM
-  * [Install NVM](https://github.com/Cuates/centosinstall/tree/master/additionalpackage/node)
+  * [Install NVM](https://github.com/Cuates/centosinstall/tree/master/additionalpackage/nvm)
