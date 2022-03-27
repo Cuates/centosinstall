@@ -43,8 +43,14 @@ NOTE: Check to see if show advanced is on
         * None
       * Recycling Bin Cleanup
         * 7
+    * Permissions
+      * For Mac OS and Linux
+        * Leave as is if you do not know what you are doing
+          * chmod Folder
+            * 755 drwxr-xr-x
     * Root Folders
       * path\to\root\folder
+    * Click Save Changes
   * Profiles
     * Release Profiles
       * English_Translated
@@ -191,6 +197,7 @@ NOTE: Check to see if show advanced is on
         * Slide the bar to the farthest it can go to the right
       * Excluding
         * HDTV-1080p
+    * Click Save Changes
   * Download Clients
     * + (plus) button
       * Torrents
@@ -214,6 +221,7 @@ NOTE: Check to see if show advanced is on
       * Check
         * Enable
         * Redownload Failed
+    * Click Save Changes
   * UI
     * Calendar
       * First Day of Week
@@ -229,3 +237,4 @@ NOTE: Check to see if show advanced is on
         * 17:00/17:30
       * Check
         * Show Relative Dates
+     * Click Save Changes
