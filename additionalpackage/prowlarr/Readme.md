@@ -27,6 +27,7 @@ NOTE: Check to see if show advanced is on
       * Click Test button
         * If all is good, click Save button
   * Download Clients
+    * NOTE: You must enable the UI Remote Control for the torrent client first
     * &#43; &#40;plus&#41; button
       * Torrents
         * Select torrent client of choice
