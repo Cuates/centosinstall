@@ -55,3 +55,4 @@ NOTE: Check to see if show advanced is on
     * Language
       * UI Language
         * English
+    * Click Save Changes
