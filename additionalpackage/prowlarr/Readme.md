@@ -27,7 +27,7 @@ NOTE: Check to see if show advanced is on
       * Click Test button
         * If all is good, click Save button
   * Download Clients
-    * &#43; (plus) button
+    * &#43; &#40;plus&#41; button
       * Torrents
         * Select torrent client of choice
         * Name
