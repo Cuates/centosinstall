@@ -219,6 +219,7 @@ NOTE: Check to see if show advanced is on
           * If all is good, click Save button
     * Completed Download Handling
       * Check
+        * Enable
         * Redownload Failed
     * Click Save Changes
   * UI
