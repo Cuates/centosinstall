@@ -17,7 +17,7 @@ NOTE: Check to see if show advanced is on
       * Sync Level
         * Add and Remove Only
       * Prowlarr Server
-        * http://localhost:9696/
+        * http://localhost:9696
       * Sonarr Server
         * http://localhost:8989
       * ApiKey
