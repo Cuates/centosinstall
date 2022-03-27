@@ -40,6 +40,8 @@ NOTE: Check to see if show advanced is on
           * 8080 OR port number
         * Category
           * prowlarr name to be seen on torrent client
+        * Click Test button
+          * If all is good, click Save button
   * UI
     * Dates
       * Short Date Format
