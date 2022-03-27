@@ -199,6 +199,7 @@ NOTE: Check to see if show advanced is on
         * HDTV-1080p
     * Click Save Changes
   * Download Clients
+    * NOTE: You must enable the UI Remote Control for the torrent client first
     * + (plus) button
       * Torrents
         * Select torrent client of choice
