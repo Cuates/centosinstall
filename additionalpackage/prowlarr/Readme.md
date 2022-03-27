@@ -8,7 +8,7 @@ NOTE: To search and retrieve files you must add indexers first
 NOTE: Check to see if show advanced is on
 * Settings
   * Apps
-    * + (plus) button
+    * + &#40;plus&#41; button
       * Add Application
         * Select application client of choice
           * If you select Sonarr, then you must set up Sonarr first
