@@ -12,7 +12,7 @@
     * Message: npm WARN using --force Recommended protections disabled
   * `sudo npm install -g n`
      * Exit terminal and re-open a new terminal for changes to take hold
-  * `sudo /usr/local/bin/n latest` OR `sudo n latest`
+  * `sudo /usr/local/bin/n latest`
   * `/usr/local/bin/node --version` OR `node --version`
   * `npm --version`
 * Remove Existing NodeJS Module
