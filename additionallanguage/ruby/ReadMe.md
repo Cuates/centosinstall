@@ -12,5 +12,7 @@
 * `rvm list known`
 * `rvm install 3.1.1` **Pick the latest MRI Rubies version**
   * **WAIT FOR THIS TO FINISH**
+  * If built withou documentation message is presented (OPTIONAL STEP)
+    * `rvm docs generate-ri`
 * `rvm use 3.1.1 --default`
 * `ruby --version`
