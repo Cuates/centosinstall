@@ -1,5 +1,9 @@
 [Install Use ffmpeg In CentOS 8](https://linuxhint.com/install-use-ffmpeg-in-centos8/)<br />
 
+NOTE: Version 9 does not have powertools
+* You can skip the powertools installation steps
+* Go straight to install FFmpeg package
+
 * Check if you have the EPEL Repository is installed and enabled
   * ` sudo dnf repolist`
 * Install Epel Repository if not already installed
