@@ -9,6 +9,7 @@
 * Upgrade
   * `sudo npm install npm@latest -g`
   * `sudo npm cache clean -f`
+    * Message: npm WARN using --force Recommended protections disabled
   * `sudo npm install -g n`
      * Exit terminal and re-open a new terminal for changes to take hold
   * `sudo /usr/local/bin/n latest` OR `sudo n latest`
