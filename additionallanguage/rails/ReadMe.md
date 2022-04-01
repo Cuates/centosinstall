@@ -6,6 +6,7 @@
 * `source /etc/profile.d/rvm.sh`
 * `gem install rails` (side note to install a specific version: `gem install rails -v 6.1.3.1`)
   * **WAIT FOR THIS TO FINISH**
-  * Install package 'rubygems' to provide command 'gem'? y
-  * Proceed with changes? y
+  * If presented with the following messages
+    * Install package 'rubygems' to provide command 'gem'? y
+    * Proceed with changes? y
 * `rails -v`
