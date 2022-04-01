@@ -10,7 +10,7 @@
 * `source /etc/profile.d/rvm.sh`
 * `rvm requirements`
 * `rvm list known`
-* `rvm install 3.0.1` **Pick the latest MRI Rubies version**
+* `rvm install 3.1.1` **Pick the latest MRI Rubies version**
   * **WAIT FOR THIS TO FINISH**
-* `rvm use 3.0.1 --default`
+* `rvm use 3.1.1 --default`
 * `ruby --version`
