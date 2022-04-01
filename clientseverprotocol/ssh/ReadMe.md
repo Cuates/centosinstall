@@ -1,7 +1,8 @@
 [Enable SSH CentOS 8](https://linuxhint.com/enable_ssh_centos8/)<br />
 [Install Enable OpenSSH Server CentOS 8 Linux](https://www.how2shout.com/linux/install-enable-openssh-server-centos-8-linux/)<br />
 [Install SSH Server On Redhat 8](https://linuxconfig.org/install-ssh-server-on-redhat-8)<br />
-[Redhat 8 Open And Close Ports](https://linuxconfig.org/redhat-8-open-and-close-ports)
+[Redhat 8 Open And Close Ports](https://linuxconfig.org/redhat-8-open-and-close-ports)<br />
+[Man SSHD Permit Root Login](https://man.openbsd.org/sshd_config#PermitRootLogin)
 * `sudo dnf install -y openssh-clients openssh-server`
 * `sudo systemctl status sshd`
 * `sudo systemctl start sshd`
@@ -11,8 +12,12 @@
 * `sudo vim /etc/ssh/sshd_config`
   * WAS
     * PermitRootLogin=yes
+    * OR
+    * #PermitRootLogin prohibit-password
   * IS
     * PermitRootLogin=no
+    * OR
+    * PermitRootLogin no
   * `sudo systemctl restart sshd`
 * `sudo systemctl enable --now cockpit.socket`
   * Activate the web console with the above command (**This is optional and is more for a GUI visual aid**)
