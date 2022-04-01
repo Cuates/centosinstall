@@ -13,7 +13,7 @@
   * Local time is now:      Wed Jun 15 13:11:13 PDT 2016.
   * Universal Time is now:  Wed Jun 15 20:11:13 UTC 2016.
   * Is the above information OK?
-    * 1) Yes
+    * 1&#41; Yes
 * Make the time zone permanent through the bashrc
   * `vim .bashrc`
     * Append this line to the file
