@@ -25,6 +25,10 @@
       * Run the VMware Workstation Pro 16 installer binary
         * `sudo ./VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle`
           * **WAIT FOR THIS TO FINISH**
+          * VMWare Workstation
+            * If the installation complains about System service scripts directory (commonly /etc/init.d), the create a folder called init.d inside the /etc direct
+              * Must be root user to perform the following task
+                * `mkdir /etc/init.d`
   * VMware Workstation Pro 16 has been installed on your CentOS 8 system
     * Navigate to the Linux GUI to proceed with the rest of the process
       * Click on the VMware Workstation icon
@@ -50,3 +54,10 @@
       * `sudo /usr/bin/vmrun -T ws start /path/to/virtual/machine/file.vmx nogui`
     * Stop
       * `sudo /usr/bin/vmrun -T ws stop /path/to/virtual/machine/file.vmx soft`
+
+* VMWare Uninstall Command Line
+  * vmware-installer -l
+    * Note Product Name
+  * vmware-installer -u <Product Name>
+    * Do you wish to keep your configuration files?
+      * Type: No
