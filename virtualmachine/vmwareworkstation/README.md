@@ -14,16 +14,16 @@
 * Downloading VMware Workstation Pro 16
   * At the time of writing this article, the latest stable version of VMWare Workstation is version 16.x.
     * Command Line or
-      * `wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle`
+      * `wget https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.2.3-19376536.x86_64.bundle`
         * **WAIT FOR THIS TO FINISH**
     * Through Web Browser
       * First, visit the official website (https://www.vmware.com/products/workstation-pro.html) of VMware Workstation Pro. Once the page loads, click on Download Now >> (https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html)
-        * Click on Download Now >> in the Workstation 16 Pro for Linux section (https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle)
+        * Click on Download Now >> in the Workstation 16 Pro for Linux section (https://download3.vmware.com/software/wkst/file/VMware-Workstation-Full-16.2.3-19376536.x86_64.bundle)
 * Installing VMware Workstation Pro
   * Add executable permission to the VMware Workstation Pro 16 installer binary
-    * `sudo chmod +x VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle`
+    * `sudo chmod +x VMware-Workstation-Full-16.2.3-19376536.x86_64.bundle`
       * Run the VMware Workstation Pro 16 installer binary
-        * `sudo ./VMware-Workstation-Full-16.0.0-16894299.x86_64.bundle`
+        * `sudo ./VMware-Workstation-Full-16.2.3-19376536.x86_64.bundle`
           * **WAIT FOR THIS TO FINISH**
           * VMWare Workstation
             * If the installation complains about System service scripts directory (commonly /etc/init.d), the create a folder called init.d inside the /etc direct
