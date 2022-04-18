@@ -9,12 +9,12 @@
   * Close and reopen terminal or source your profile
     * This will install the nvm script to your user account.
     * To use it, you must first source your .bash_profile file
+  * You can see the different versions you have installed by typing
+    * `nvm list`
   * Install Nodejs version of choice
     * Install the latest version using one of the following commands below. NOTE: Your Nodejs version might be different with what is shown below.
       * `nvm install v16.14.0`
       * `nvm install lts/gallium`
-  * You can see the different versions you have installed by typing
-    * `nvm list`
   * You can verify that the install was successful using the same technique from the other sections, by typing:
     * `node --version`
 * Uninstalling Node Version Manager (NVM)
