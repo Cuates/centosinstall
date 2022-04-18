@@ -195,6 +195,8 @@
                   &lt;/html&gt;
                   </pre>
             * Save and exit
+            * Chmod the file to be viewable to the internet
+              * `chmod 644 <filename>`
       * Create a new server block at `/etc/nginx/sites-available/your_domain.conf`
         * Paste in the following configuration block into the file
           * <pre>
