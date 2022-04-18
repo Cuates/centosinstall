@@ -13,7 +13,8 @@
 [Nginx Production Configuration](https://geekflare.com/nginx-production-configuration/)<br />
 [Nginx 413 Request Entity Too Large](https://stackoverflow.com/questions/43182944/nginx-413-request-entity-too-large)<br />
 [Permission Denied While Connecting To Upstream Nginx](https://stackoverflow.com/questions/23948527/13-permission-denied-while-connecting-to-upstreamnginx)<br />
-[Nginx service failed because the control process exited](https://stackoverflow.com/questions/35868976/nginx-service-failed-because-the-control-process-exited)
+[Nginx service failed because the control process exited](https://stackoverflow.com/questions/35868976/nginx-service-failed-because-the-control-process-exited)<br />
+[Nginx emerg bind to 0 0 0 080 failed 98 address already in use](https://viewsby.wordpress.com/2013/07/09/nginx-emerg-bind-to-0-0-0-080-failed-98-address-already-in-use/)
 
 *  Installation of EPEL (Extra Package for Enterprise Linux) repository
   * `sudo dnf -y install epel-release`
@@ -37,8 +38,13 @@
   * Inspect the Nginx package before adding it to your system
     * Request to see the RPM metadata included in every RPM package
       * `sudo dnf info nginx`
-* If Apache is installed and started on your machince, then you will need to stop the Apache process
-  * `sudo systemctl stop httpd.service`
+* If you get the following error when trying to start nginx, then perform the following command
+  * "Job for nginx.service failed because the control process exited with error code.
+See "systemctl status nginx.service" and "journalctl -xe" for details."
+  * Also, if you get the following from the `journal -xe` command, then perform the following command
+    * "nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)"
+      * The following command will kill anything running port 80
+        * `sudo fuser -k 80/tcp`
 * Install Nginx
   * `sudo dnf -y install nginx`
 * Start the service
