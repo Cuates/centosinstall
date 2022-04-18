@@ -38,17 +38,17 @@
   * Inspect the Nginx package before adding it to your system
     * Request to see the RPM metadata included in every RPM package
       * `sudo dnf info nginx`
-* If you get the following error when trying to start nginx, then perform the following command
-  * "Job for nginx.service failed because the control process exited with error code.
-See "systemctl status nginx.service" and "journalctl -xe" for details."
-  * Also, if you get the following from the `journal -xe` command, then perform the following command
-    * "nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)"
-      * The following command will kill anything running port 80
-        * `sudo fuser -k 80/tcp`
 * Install Nginx
   * `sudo dnf -y install nginx`
 * Start the service
   * `sudo systemctl start nginx`
+    * If you get the following error when trying to start nginx, then perform the following command
+    * "Job for nginx.service failed because the control process exited with error code.
+  See "systemctl status nginx.service" and "journalctl -xe" for details."
+    * Also, if you get the following from the `journal -xe` command, then perform the following command
+      * "nginx: [emerg] bind() to 0.0.0.0:80 failed (98: Address already in use)"
+        * The following command will kill anything running port 80
+          * `sudo fuser -k 80/tcp`
 * To enable the service to start running upon boot time use
   * `sudo systemctl enable nginx`
 * If you check the service status, the output should show you Nginx is active (running)
