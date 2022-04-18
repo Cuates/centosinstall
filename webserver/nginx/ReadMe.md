@@ -36,6 +36,8 @@
   * Inspect the Nginx package before adding it to your system
     * Request to see the RPM metadata included in every RPM package
       * `sudo dnf info nginx`
+* If Apache is install and started on your machince, then you will need to stop the Apache process
+  * `sudo systemctl stop httpd.service`
 * Install Nginx
   * `sudo dnf -y install nginx`
 * Start the service
