@@ -11,10 +11,11 @@ NOTE: Version 9 does not have powertools
 * Check again if you have the EPEL Repository is installed and enabled
   * ` sudo dnf repolist`
 * Install RPM Fusion Repository
-  * Version 8
-    * `sudo dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm`
-  * Version 9
-    * `sudo dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-9.noarch.rpm`
+  * One of the below version will be utilized. Make sure to install the correct one for the version of your linux system.
+    * Version 8
+      * `sudo dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm`
+    * Version 9
+      * `sudo dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-9.noarch.rpm`
 * Check again if you have the RPM Fusion Repository is installed and enabled
   * ` sudo dnf repolist`
 * Enable Power Tools if not already enabled
