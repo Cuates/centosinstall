@@ -31,8 +31,10 @@
     * Optional
       * Change port to another port number if needed
     * Add the following lines at the end of the file
-      * `; XRDP`
-      * `exec gnome-session`
+      * <pre>
+          `; XRDP`
+          `exec gnome-session`
+        </pre>
     * Save and Exit
   * Restart whenever changes are made to xrdp.ini
     * `sudo systemctl restart xrdp`
