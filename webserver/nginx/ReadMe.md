@@ -93,7 +93,7 @@
     * `curl -I http://<ip_address>`
     * `curl http://<ip_address>`
 * Configure the <domain_name>.conf file
-  * Create a new <domain_name>.con file at the following location
+  * Create a new <domain_name>.conf file at the following location
     * `/etc/nginx/conf.d/<domain_name>.conf`
       * Paste the following in the domain_name.conf file
         * <pre>
@@ -132,6 +132,8 @@
     * permission denied while connecting to upstream
   * Resolution
     * `sudo setsebool -P httpd_can_network_connect 1`
+  * You cannot move already existing conf files to the conf.d folder as there will be permission issues
+    * Instead cp the files over for then to work properly
 * Optional you don’t need to configure Nginx upon installation. However, you should know the location of the configuration files and the Nginx root directory in case you need to modify the configuration.
   * Nginx configuration directory: `/etc/nginx`
   * Nginx root directory: `/usr/share/nginx/html`
