@@ -19,7 +19,8 @@
 * View the available Nginx versions
   * `dnf module list nginx`
 * Enabling the latest Nginx web server module
-  * `sudo dnf module enable nginx:1.16`
+  * Version will be different for the one you choose
+  * `sudo dnf module enable nginx:1.20`
     * Your version may differ depending on what version shows in the module
     * Type y and click Enter key to complete the modifications
   * If error message is given "Error: It is not possible to switch enabled streams of a module"
