@@ -47,6 +47,7 @@
 * If upgrading from 7.4 to 8.1, then
   * Reset the PHP for the new PHP
     * `sudo dnf module reset php`
+  * Update the system with any new updates
     *  `sudo dnf update`
   * Remove
     * `sudo dnf remove -y php php-cli php-common php-curl php-fpm php-mysql php-mysqlnd php-opcache php-gd php-xml php-mbstring php-pdo php-pdo-dblib php-pgsql php-pecl-rar php-odbc php-memcached php-pecl-memcache php-bcmath php-dba php-devel php-embedded php-imap php-intl php-ldap php-mcrypt php-pear php-recode php-pspell php-tidy php-xmlrpc`
