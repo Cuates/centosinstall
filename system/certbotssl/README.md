@@ -40,6 +40,7 @@
   * Restart apache/httpd
     * `sudo systemctl restart httpd`
 * Set Nginx virtual host before proceeding with Certbot
+  * Only perform the following commands if the <domain_name>.conf file does not exist
   * `sudo vim /etc/nginx/conf.d/<domain_name>`
   * Append the following code:
     * <pre>
