@@ -41,6 +41,7 @@
       * Xrdp uses startwm.sh file to launch the X session. If you want to use another X Window desktop, edit this file.
 * Configure Firewall
   * By default, Xrdp listens on port 3389 on all interfaces
+  * Change to custom port number if different from 3389
   * To allow traffic to port 3389 from anywhere use the commands below. Allowing access from anywhere is highly discouraged for security reasons.
     * `sudo firewall-cmd --get-services`
     * `sudo firewall-cmd --zone=public --permanent --add-port=3389/tcp`
