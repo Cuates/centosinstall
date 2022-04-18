@@ -11,6 +11,7 @@
   * NOTE: gdbm-devel package/module errored out for CentOS 9 and is not needed to complete steps below
 * `wget https://www.python.org/ftp/python/3.10.4/Python-3.10.4.tgz`
   * Note: Make sure to download the latest version
+  * Adjust the version numbers below with the latest version retrieved
 * `tar -xf Python-3.10.4.tgz`
 * `cd Python-3.10.4`
 * `./configure --enable-optimizations`
