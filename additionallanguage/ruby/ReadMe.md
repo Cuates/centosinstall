@@ -14,5 +14,6 @@
   * **WAIT FOR THIS TO FINISH**
   * If built without documentation message is presented (OPTIONAL STEP)
     * `rvm docs generate-ri`
+      * **WAIT FOR THIS TO FINISH**
 * `rvm use 3.1.1 --default`
 * `ruby --version`
