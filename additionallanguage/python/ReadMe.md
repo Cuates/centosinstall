@@ -37,16 +37,16 @@
     * `pip3.10 install sqlalchemy`
   * [psycopg2](https://pypi.org/project/psycopg2/)
     * `pip3.10 install psycopg2-binary`
-  * **need to perform the following first before pyodbc and mysqlclient can be installed**
-  * [Install dependencies for python3 and mysql](https://stackoverflow.com/questions/21530577/fatal-error-python-h-no-such-file-or-directory)
-  * `sudo dnf install -y python3-devel mysql-devel unixODBC-devel` **IMPORTANT NOTE Install MariaDB first then do this command**
-    * [pyodbc](https://pypi.org/project/pyodbc/)
-      * `pip3.10 install pyodbc`
-    * [mysqlclient](https://pypi.org/project/mysqlclient/)
-      * `pip3.10 install mysqlclient`
-        * If "NameError: name '\_mysql' is not defined", then proceed with the following instead
-          * `pip3.10 uninstall mysqlclient`
-          * `pip3.10 install --no-binary mysqlclient mysqlclient`
-            * Note: The first occurrence is the name of the package to apply the no-binary option to, the second specifies the package to install
+  * **Need to perform the following first before pyodbc and mysqlclient can be installed**
+   * [Install dependencies for python3 and mysql](https://stackoverflow.com/questions/21530577/fatal-error-python-h-no-such-file-or-directory)
+   * `sudo dnf install -y python3-devel mysql-devel unixODBC-devel` **IMPORTANT NOTE Install MariaDB first then do this command**
+     * [pyodbc](https://pypi.org/project/pyodbc/)
+       * `pip3.10 install pyodbc`
+     * [mysqlclient](https://pypi.org/project/mysqlclient/)
+       * `pip3.10 install mysqlclient`
+         * If "NameError: name '\_mysql' is not defined", then proceed with the following instead
+           * `pip3.10 uninstall mysqlclient`
+           * `pip3.10 install --no-binary mysqlclient mysqlclient`
+             * Note: The first occurrence is the name of the package to apply the no-binary option to, the second specifies the package to install
   * [Gunicorn](https://pypi.org/project/gunicorn/)
     * `pip3.10 install gunicorn`
