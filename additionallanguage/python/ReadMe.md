@@ -5,7 +5,8 @@
 [Pythons mysqldb Cant Find libmysqlclient dylib With Homebrewed MySQL](https://stackoverflow.com/questions/34536914/pythons-mysqldb-can-t-find-libmysqlclient-dylib-with-homebrewed-mysql)
 * `sudo dnf groupinstall -y 'development tools'`
 * `sudo dnf install -y bzip2 bzip2-devel expat-devel ncurses-devel openssl-devel readline-devel wget sqlite-devel tk-devel xz-devel zlib-devel libffi-devel`
-  * NOTE: gdbm-devel package/module errored and is not needed to complete steps below
+  * NOTE: gdbm-devel package/module errored out for CentOS 9 and is not needed to complete steps below
+  * NOTE: put back in the gdbm-devel package/module for CentOS 8
 * `wget https://www.python.org/ftp/python/3.10.4/Python-3.10.4.tgz`
   * Note: Make sure to download the latest version
 * `tar -xf Python-3.10.4.tgz`
