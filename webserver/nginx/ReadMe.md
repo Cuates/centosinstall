@@ -12,7 +12,8 @@
 [Tips And Tricks To Secure Your Nginx Web Server](https://www.howtoforge.com/tips-and-tricks-to-secure-your-nginx-web-server/)<br />
 [Nginx Production Configuration](https://geekflare.com/nginx-production-configuration/)<br />
 [Nginx 413 Request Entity Too Large](https://stackoverflow.com/questions/43182944/nginx-413-request-entity-too-large)<br />
-[Permission Denied While Connecting To Upstream Nginx](https://stackoverflow.com/questions/23948527/13-permission-denied-while-connecting-to-upstreamnginx)
+[Permission Denied While Connecting To Upstream Nginx](https://stackoverflow.com/questions/23948527/13-permission-denied-while-connecting-to-upstreamnginx)<br />
+[Nginx service failed because the control process exited](https://stackoverflow.com/questions/35868976/nginx-service-failed-because-the-control-process-exited)
 
 *  Installation of EPEL (Extra Package for Enterprise Linux) repository
   * `sudo dnf -y install epel-release`
