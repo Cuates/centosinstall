@@ -3,9 +3,9 @@
     * Please select a continent or ocean.
     * 9&#41; Pacific Ocean
   * Please select a country.
-    * 26) United States
+    * 26&#41; United States
   * Please select one of the following time zone regions.
-    * 21) Pacific
+    * 21&#41; Pacific
   * The following information has been given:
     * United States
     * Pacific
