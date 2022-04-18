@@ -27,6 +27,7 @@
       max_execution_time = 240
       date.timezone = America/Los_Angeles
       </pre>
+    * Save and Exit
   * `sudo systemctl restart httpd`
   * OR `sudo systemctl restart nginx`
   * `sudo apachectl configtest`
