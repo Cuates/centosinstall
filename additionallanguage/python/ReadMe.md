@@ -17,9 +17,9 @@
 * `./configure --enable-optimizations`
   * **WAIT FOR THIS TO FINISH**
 * `nproc` (Displays the number of cores in your processor)
-  * Note the number of cores on your system
+  * NOTE: the number of cores on your system
 * `make -j 4`
-  * Note the 4 in the command above is the number of cores on the system; yours may vary depending on what you have on your system
+  * NOTE: the 4 in the command above is the number of cores on the system; yours may vary depending on what you have on your system
   * **WAIT FOR THIS TO FINISH**
 * `sudo make altinstall`
   * **WAIT FOR THIS TO FINISH**
