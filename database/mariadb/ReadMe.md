@@ -25,7 +25,9 @@
     gpgkey=http://sfo1.mirrors.digitalocean.com/mariadb/yum/RPM-GPG-KEY-MariaDB
     gpgcheck=1
     </pre>
+  * Save and Exit
 * `sudo dnf clean packages`
+* `sudo dnf update`
 * `sudo dnf install -y mariadb-server mariadb mysql-devel`
 * `sudo systemctl start mariadb`
 * `sudo systemctl enable mariadb`
