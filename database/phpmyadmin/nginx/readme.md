@@ -18,7 +18,7 @@
   * `cd ~`
   * `sudo wget https://files.phpmyadmin.net/phpMyAdmin/5.1.3/phpMyAdmin-5.1.3-all-languages.tar.gz`
     * Verify phpMyAdmin with Checksum
-      * Download the SHA256 hash for phpMyAdmin-5.1.0-all-languages.tar.gz
+      * Download the SHA256 hash for phpMyAdmin-5.1.3-all-languages.tar.gz
         * `sudo wget https://files.phpmyadmin.net/phpMyAdmin/5.1.3/phpMyAdmin-5.1.3-all-languages.tar.gz.sha256`
           * Calculate the SHA256 hash for downloaded file
             * `sha256sum phpMyAdmin-5.1.3-all-languages.tar.gz`
