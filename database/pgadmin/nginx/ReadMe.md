@@ -125,7 +125,7 @@
   * `sudo nginx -t`
   * `sudo systemctl reload nginx.service`
 * Configure the firewall to see the new port number
-  * `sudo firewalld-cmd --get-services`
+  * `sudo firewall-cmd --get-services`
   * `sudo firewall-cmd --zone=public --permanent --add-port=5050/tcp`
   * `sudo firewall-cmd --reload`
   * `sudo firewall-cmd --list-ports`
