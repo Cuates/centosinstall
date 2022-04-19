@@ -24,6 +24,7 @@
 * Create and activate virtual environment
   * `cd /opt`
   * `virtualenv --python=python3.10 pgadmin4`
+  * `python3.10 -m venv /opt/pgadmin/venv`
     * If you get the following message, then proceed with following commands
       * "Install package 'python3-virtualenv' to provide command 'virtualenv'?"
         * Type "y" and Click Enter
