@@ -23,14 +23,7 @@
   * `sudo mkdir /opt/pgadmin4`
 * Create and activate virtual environment
   * `cd /opt`
-  * `virtualenv --python=python3.10 pgadmin4`
-  * `python3.10 -m venv /opt/pgadmin/venv`
-    * If you get the following message, then proceed with following commands
-      * "Install package 'python3-virtualenv' to provide command 'virtualenv'?"
-        * Type "y" and Click Enter
-      * "The following packages have to be installed:"
-        * Proceed with changes? [N/y]
-          * Type "y" and Click Enter
+  * `python3.10 -m venv /opt/pgadmin4`
   * `cd /opt/pgadmin4`
   * `source bin/activate`
 * Copy the downloaded .wheel to /opt/pgadmin4 and install
