@@ -13,16 +13,17 @@
   * `sudo dnf -y install php-{spl,hash,ctype,json,mbstring,zip,gd,curl,xml,common}` OR
   * `sudo dnf -y install php-spl php-hash php-ctype php-json php-mbstring php-zip php-gd php-curl php-xml php-common`
 * Download phpMyAdmin
-  * **At the time of this writing PHP MyAdmin is `5.1.0`**
+  * **At the time of this writing PHP MyAdmin is `5.1.3`**
+  * **Make sure to get the lastes version from the website**
   * `cd ~`
-  * `sudo wget https://files.phpmyadmin.net/phpMyAdmin/5.1.0/phpMyAdmin-5.1.0-all-languages.tar.gz`
+  * `sudo wget https://files.phpmyadmin.net/phpMyAdmin/5.1.3/phpMyAdmin-5.1.3-all-languages.tar.gz`
     * Verify phpMyAdmin with Checksum
       * Download the SHA256 hash for phpMyAdmin-5.1.0-all-languages.tar.gz
-        * `sudo wget https://files.phpmyadmin.net/phpMyAdmin/5.1.0/phpMyAdmin-5.1.0-all-languages.tar.gz.sha256`
+        * `sudo wget https://files.phpmyadmin.net/phpMyAdmin/5.1.3/phpMyAdmin-5.1.3-all-languages.tar.gz.sha256`
           * Calculate the SHA256 hash for downloaded file
-            * `sha256sum phpMyAdmin-5.1.0-all-languages.tar.gz`
+            * `sha256sum phpMyAdmin-5.1.3-all-languages.tar.gz`
           * Compare the calculated hash with the downloaded hash
-            * `cat phpMyAdmin-5.1.0-all-languages.tar.gz.sha256`
+            * `cat phpMyAdmin-5.1.3-all-languages.tar.gz.sha256`
       * If all is well, you are good to proceed
 * Install phpMyAdmin
   * Since phpMyAdmin comes as a standalone application ready for installation, simply extract it to your Web root directory
@@ -30,7 +31,7 @@
       * Create your phpMyAdmin web root directory. You can choose to use a different directory instead of the one created below
         * `sudo mkdir -p /var/www/phpMyAdmin`
           * Next, extract the phpMyAdmin to the directory created above
-            * `tar xzf ~/phpMyAdmin-5.1.0-all-languages.tar.gz -C /var/www/phpMyAdmin --strip-components=1`
+            * `tar xzf ~/phpMyAdmin-5.1.3-all-languages.tar.gz -C /var/www/phpMyAdmin --strip-components=1`
 * Create phpMyAdmin Nginx Server Block
   * `sudo vim /etc/nginx/conf.d/<domain_name>.conf`
     * Paste the following block of code into the file
