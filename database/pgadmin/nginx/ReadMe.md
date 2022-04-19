@@ -11,28 +11,28 @@
 [Nginx Configure Pgadmin In Location](https://stackoverflow.com/questions/45958416/nginx-configure-pgadmin-in-location)
 
 * **IMPORTANT NOTE Make sure to be root user**
-* **The following was executed with `python3.9` and `pip3.9`**
+* **The following was executed with `python3.10` and `pip3.10`**
 
 * Download wheel (last version)
   * Note will need to get the latest one from the web site
     * `cd ~`
-    * `wget https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v5.1/pip/pgadmin4-5.1-py3-none-any.whl`
+    * `wget https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v6.8/pip/pgadmin4-6.8-py3-none-any.whl`
 * Create /opt/pgadmin4 folder
   * `sudo mkdir /opt/pgadmin4`
 * Create and activate virtual environment
   * `cd /opt`
-  * `virtualenv --python=python3.9 pgadmin4`
+  * `virtualenv --python=python3.10 pgadmin4`
   * `cd /opt/pgadmin4`
   * `source bin/activate`
 * Copy the downloaded .wheel to /opt/pgadmin4 and install
   * `cp ~/pgadmin4-5.1-py3-none-any.whl /opt/pgadmin4`
-  * `pip3.9 install pgadmin4-X.X-py2.py3-none-any.whl`
+  * `pip3.10 install pgadmin4-X.X-py2.py3-none-any.whl`
     * NOTE X.X is the latest version number
 * Create data directory
   * `mkdir data`
 * Create a config_local.py file inside the following directory
-  * `cd /opt/pgadmin4/lib/python3.9/site-packages/pgadmin4`
-  * `sudo vim /opt/pgadmin4/lib/python3.9/site-packages/pgadmin4/config_local.py`
+  * `cd /opt/pgadmin4/lib/python3.10/site-packages/pgadmin4`
+  * `sudo vim /opt/pgadmin4/lib/python3.10/site-packages/pgadmin4/config_local.py`
     * Paste the following into the file
       <pre>
       import os
@@ -46,7 +46,7 @@
     * Save and exit
 * Run setup to install pgadmin4
   * Note: Initial setup will ask for e-mail and password.
-  * `python3.9 /opt/pgadmin4/lib/python3.9/site-packages/pgadmin4/pgAdmin4.py`
+  * `python3.10 /opt/pgadmin4/lib/python3.10/site-packages/pgadmin4/pgAdmin4.py`
     * Following output was displayed
       <pre>
       pgAdmin 4 - Application Initialisation
@@ -63,7 +63,7 @@
     * CRTL+C to quit from the pgadmin installation
 * Install gunicorn
   * `cd /opt/pgadmin4`
-  * `pip3.9 install gunicorn`
+  * `pip3.10 install gunicorn`
   * `deactivate`
 * Create and run pgadmin4.service for systemd
   * `cd /etc/systemd/system/`
@@ -79,7 +79,7 @@
       User=root
       Group=root
       Environment="PATH=/opt/pgadmin4/bin"
-      ExecStart=/opt/pgadmin4/bin/gunicorn --bind 127.0.0.1:5050 --workers=1 --threads=25 --chdir /opt/pgadmin4/lib/python3.9/site-packages/pgadmin4 pgAdmin4:app
+      ExecStart=/opt/pgadmin4/bin/gunicorn --bind 127.0.0.1:5050 --workers=1 --threads=25 --chdir /opt/pgadmin4/lib/python3.10/site-packages/pgadmin4 pgAdmin4:app
 
       [Install]
       WantedBy=multi-user.target
