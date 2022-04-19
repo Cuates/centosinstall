@@ -1,5 +1,6 @@
 [Install PostgresSQL 13 On CentOS  RHEL](https://computingforgeeks.com/install-postgresql-13-on-centos-rhel/)<br />
 [Install postgresql rocky almalinux](https://www.linuxshelltips.com/install-postgresql-rocky-almalinux/)<br />
+[Install postgresql and pgadmin in almalinux rocky 8](https://www.how2shout.com/linux/install-postgresql-and-pgadmin-in-almalinux-rocky-8/)<br />
 
 [PostgreSQL Download](https://www.postgresql.org/download/linux/redhat/)
 * `sudo dnf module list postgresql`
