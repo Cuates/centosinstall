@@ -9,6 +9,7 @@
 [Pgadmin4 Installation - Rubinhozzz](https://gist.github.com/rubinhozzz/9217e8b0dc834874a301cd0435e70691)<br />
 [How To Set Up Pgadmin4 With Nginx In Ubuntu 16.04](https://askubuntu.com/questions/939881/how-to-set-up-pgadmin4-with-nginx-in-ubuntu-16-04)<br />
 [Nginx Configure Pgadmin In Location](https://stackoverflow.com/questions/45958416/nginx-configure-pgadmin-in-location)
+[Install pgadmin rocky linux almalinux](https://www.tecmint.com/install-pgadmin-rocky-linux-almalinux/)<br />
 
 * **IMPORTANT NOTE Make sure to be root user**
 * **The following was executed with `python3.10` and `pip3.10`**
