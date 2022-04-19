@@ -1,6 +1,8 @@
+[Install PostgresSQL 13 On CentOS  RHEL](https://computingforgeeks.com/install-postgresql-13-on-centos-rhel/)<br />
+
 [PostgreSQL Download](https://www.postgresql.org/download/linux/redhat/)
 * `sudo dnf module list postgresql`
-* `sudo dnf module -y enable postgresql:12`
+* `sudo dnf module -y enable postgresql:13`
 * `sudo dnf install -y postgresql-server postgresql-contrib postgresql postgresql-devel  postgresql-odbc`
 * `sudo postgresql-setup --initdb`
 * `sudo systemctl start postgresql`
@@ -48,38 +50,37 @@
 * `sudo firewall-cmd --zone=public --permanent --add-service=postgresql`
 * `sudo firewall-cmd --reload`
 
-* Alternative Installation for the latest PostgreSQL 13 **Note Cannot install this and a newer/older version at the same time**<br />
-* [Install PostgresSQL 13 On CentOS  RHEL](https://computingforgeeks.com/install-postgresql-13-on-centos-rhel/)<br />
+* Alternative Installation for the latest PostgreSQL 14 **Note Cannot install this and a newer/older version at the same time**<br />
 * Add PostgreSQL packabes to CentOS 8 server
   * `sudo dnf -y install https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm`
 
 * Disable PostgreSQL AppStream repository on CentOS 8
   * `sudo dnf -qy module disable postgresql`
 
-* Enable PostgreSQL 13 repository
+* Enable PostgreSQL 14 repository
   * `sudo dnf -y install dnf-utils`
-  * `sudo yum-config-manager --enable pgdg13`
+  * `sudo yum-config-manager --enable pgdg14`
 
 * Confirm the list of enabled repositories
   * `dnf repolist`
 
-* Check to see if PostgreSQL 13 packages are available on the repository
-  * `sudo dnf search postgresql13`
+* Check to see if PostgreSQL 14 packages are available on the repository
+  * `sudo dnf search postgresql14`
 
-* Install PostgreSQL 13 packages on your CentOS 8
-  * `sudo dnf install -y postgresql13-server postgresql13-contrib postgresql13-devel postgresql13`
+* Install PostgreSQL 14 packages on your CentOS 8
+  * `sudo dnf install -y postgresql14-server postgresql14-contrib postgresql14-devel postgresql14`
 
 * Initialize and start database service
-  * `sudo /usr/pgsql-13/bin/postgresql-13-setup initdb`
+  * `sudo /usr/pgsql-14/bin/postgresql-14-setup initdb`
 
-* The database main configuration file is  /var/lib/pgsql/13/data/postgresql.conf
-  * `ls /var/lib/pgsql/13/data/`
+* The database main configuration file is  /var/lib/pgsql/14/data/postgresql.conf
+  * `ls /var/lib/pgsql/14/data/`
 
 * Start the PostgreSQL database server and set it to start at boot.
-  * `sudo systemctl enable --now postgresql-13`
+  * `sudo systemctl enable --now postgresql-14`
 
 * Check the service status to confirm it is running.
-  * `systemctl status postgresql-13`
+  * `systemctl status postgresql-14`
 
 * Set PostgreSQL admin user’s password
 * `sudo -i -u postgres`
@@ -88,15 +89,15 @@
     * PASSWORD_HERE
   * `exit`
 * `exit`
-* `sudo vim /var/lib/pgsql/13/data/postgresql.conf`
+* `sudo vim /var/lib/pgsql/14/data/postgresql.conf`
   * WAS
     * listen_addresses = 'localhost'
   * IS
     * listen_addresses = '*'
   * Save and Quit
-* `sudo systemctl restart postgresql-13`
+* `sudo systemctl restart postgresql-14`
 * `sudo netstat -antup | grep 5432`
-* `sudo vim /var/lib/pgsql/13/data/pg_hba.conf`
+* `sudo vim /var/lib/pgsql/14/data/pg_hba.conf`
   * WAS
     <pre>
     host    all             all             127.0.0.1/32            ident
@@ -109,7 +110,7 @@
     host    all             all             ::1/128                 md5
     </pre>
   * Save and Quit **NOTE make sure to tab each column to match the existing column**
-* `sudo systemctl restart postgresql-13`
+* `sudo systemctl restart postgresql-14`
 * `sudo firewall-cmd --get-services`
 * `sudo firewall-cmd --zone=public --permanent --add-service=postgresql`
 * `sudo firewall-cmd --reload`
