@@ -108,8 +108,8 @@
   * Run this command to get a certificate and have Certbot edit your Nginx configuration automatically to serve it, turning on HTTPS access in a single step.
     * `sudo certbot --nginx`
       * Enter your email address when prompted for urgent renewal and security notices
-      * Enter A to agree to the terms and conditions when prompted
-      * Choose Y or N when prompted to share your email address with the EFF
+      * Enter Y or N to agree to the terms and conditions when prompted: Y
+      * Choose Y or N when prompted to share your email address with the EFF: N
       * Choose 1 when prompted about which domain you want the certificate for (there should only be one)
         * If none were found, then proceed to add your domain name
           * No names were found in your configuration files. Please enter in your domain name(s) (comma and/or space separated)  (Enter 'c' to cancel): yourdomain
