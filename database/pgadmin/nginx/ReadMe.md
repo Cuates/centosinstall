@@ -33,7 +33,7 @@
   * `cd /opt/pgadmin4`
   * `source bin/activate`
 * Copy the downloaded .wheel to /opt/pgadmin4 and install
-  * `cp ~/pgadmin4-5.1-py3-none-any.whl /opt/pgadmin4`
+  * `cp ~/pgadmin4-6.8-py3-none-any.whl /opt/pgadmin4/`
   * `pip3.10 install pgadmin4-X.X-py2.py3-none-any.whl`
     * NOTE X.X is the latest version number
 * Create data directory
