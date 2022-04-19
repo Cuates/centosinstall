@@ -12,7 +12,8 @@
 [How To Recover InnoDB Database From .frm And .ibd Files](https://www.youtube.com/watch?v=qeEAKVF33Y0)<br />
 [How to fix error in Mysql “tablespace is missing for table XXXXX”](https://bobcares.com/blog/mysql-tablespace-is-missing-for-table/)<br />
 [How To Import ANd Export Database In MySQL Or MariaDB](https://www.digitalocean.com/community/tutorials/how-to-import-and-export-databases-in-mysql-or-mariadb)<br />
-[Install mariadb in rocky linux and almalinux](https://www.tecmint.com/install-mariadb-in-rocky-linux/)
+[Install mariadb in rocky linux and almalinux](https://www.tecmint.com/install-mariadb-in-rocky-linux/)<br />
+[](https://superuser.com/questions/364086/error-message-sudo-mysql-secure-installation-command-not-found)
 
 * `sudo vim /etc/yum.repos.d/MariaDB.repo`
   * MariaDB 10.8.2 [Stable] Red Hat Linux instead of CentOS
@@ -34,7 +35,7 @@
 * `sudo systemctl start mariadb`
 * `sudo systemctl enable mariadb`
 * `sudo systemctl status mariadb`
-* `sudo mysql_secure_installation`
+* `sudo mariadb-secure-installation`
   * Enter current password for root (enter for none): Enter
   * Switch to unix_socket authentication: Y Enter
   * Change the root password? Y Enter
