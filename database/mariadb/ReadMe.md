@@ -30,7 +30,6 @@
 * `sudo dnf update`
   * If anything comes up for Mariadb, then type "y" and click Enter to proceed with the installation.
   * If anything comes up for Mariadb importing GPG Key, then type "y" and click Enter to proceed.
-  * 
 * `sudo dnf install -y mariadb-server mariadb mysql-devel`
 * `sudo systemctl start mariadb`
 * `sudo systemctl enable mariadb`
