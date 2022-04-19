@@ -11,7 +11,8 @@
 [MariaDB](https://mariadb.org/download/)<br />
 [How To Recover InnoDB Database From .frm And .ibd Files](https://www.youtube.com/watch?v=qeEAKVF33Y0)<br />
 [How to fix error in Mysql “tablespace is missing for table XXXXX”](https://bobcares.com/blog/mysql-tablespace-is-missing-for-table/)<br />
-[How To Import ANd Export Database In MySQL Or MariaDB](https://www.digitalocean.com/community/tutorials/how-to-import-and-export-databases-in-mysql-or-mariadb)
+[How To Import ANd Export Database In MySQL Or MariaDB](https://www.digitalocean.com/community/tutorials/how-to-import-and-export-databases-in-mysql-or-mariadb)<br />
+[Install mariadb in rocky linux](https://www.tecmint.com/install-mariadb-in-rocky-linux/)
 
 * `sudo vim /etc/yum.repos.d/MariaDB.repo`
   * MariaDB 10.5 [Stable] CentOS repository list - created 2020-07-30 23:39 UTC
