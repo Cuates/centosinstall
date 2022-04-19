@@ -16,7 +16,6 @@
 
 * `sudo vim /etc/yum.repos.d/MariaDB.repo`
   * MariaDB 10.8.2 [Stable] Red Hat Linux instead of CentOS
-  * [MariaDB Download Test](https://mariadb.org/download-test/)
   * **PASTE BELOW INTO FILE**<br />
   * <pre>
     [mariadb]
