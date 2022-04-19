@@ -2,7 +2,9 @@
 [How To Install Python On 3 On CentOS](https://computingforgeeks.com/how-to-install-python-on-3-on-centos/)<br />
 [Unable To Install Pyodbc On Linux](https://stackoverflow.com/questions/2960339/unable-to-install-pyodbc-on-linux)<br />
 [Database_Drivers](https://crateanon.readthedocs.io/en/latest/installation/database_drivers.html)<br />
-[Pythons mysqldb Cant Find libmysqlclient dylib With Homebrewed MySQL](https://stackoverflow.com/questions/34536914/pythons-mysqldb-can-t-find-libmysqlclient-dylib-with-homebrewed-mysql)
+[Pythons mysqldb Cant Find libmysqlclient dylib With Homebrewed MySQL](https://stackoverflow.com/questions/34536914/pythons-mysqldb-can-t-find-libmysqlclient-dylib-with-homebrewed-mysql)<br />
+[Python3 wheel installed still using legacy setup py when installing dlib](https://stackoverflow.com/questions/66958482/python3-wheel-installed-still-using-legacy-setup-py-when-installing-dlib)<br />
+
 * `sudo dnf groupinstall -y 'development tools'`
 * Version 8
   * `sudo dnf install -y bzip2 bzip2-devel expat-devel ncurses-devel openssl-devel readline-devel wget sqlite-devel tk-devel xz-devel zlib-devel libffi-devel gdbm-devel`
