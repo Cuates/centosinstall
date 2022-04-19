@@ -29,6 +29,9 @@
 * `pip3.10 --version`
 * Upgrade pip version
   * `/usr/local/bin/python3.10 -m pip install --upgrade pip`
+* If you are presented with the following message, the perform the command below
+  * "Using legacy 'setup.py install' for <package_name>, since package 'wheel' is not installed." 
+  * `pip3.10 install wheel`
 * Installing modules for Python
   * [Pandas](https://pypi.org/project/pandas/)
     * `pip3.10 install pandas`
