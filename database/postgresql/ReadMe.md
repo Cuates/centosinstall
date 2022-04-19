@@ -2,6 +2,7 @@
 [Install postgresql rocky almalinux](https://www.linuxshelltips.com/install-postgresql-rocky-almalinux/)<br />
 [Install postgresql and pgadmin in almalinux rocky 8](https://www.how2shout.com/linux/install-postgresql-and-pgadmin-in-almalinux-rocky-8/)<br />
 [Auth pg hba conf](https://www.postgresql.org/docs/current/auth-pg-hba-conf.html)<br />
+[How to use scram sha 256 based authentication for user with tls config in postgr](https://stackoverflow.com/questions/66452532/how-to-use-scram-sha-256-based-authentication-for-user-with-tls-config-in-postgr)<br />
 
 [PostgreSQL Download](https://www.postgresql.org/download/linux/redhat/)
 * `sudo dnf module list postgresql`
