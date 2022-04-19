@@ -105,6 +105,6 @@
   * `sudo systemctl restart nginx php-fpm`
 * Accessing phpMyAdmin
   * `http(s)://your_domain_or_ip_address/phpMyAdmin`
-    * Login as database root user. Upon successful authentication, you will land on the phpMyAdmin dashboard
+    * Login as database root user if you did not prevent root user from logging into the site. Upon successful authentication, you will land on the phpMyAdmin dashboard
     * You will not be able to login as root user since you block root user from accessing the site
     * Login using another user on the system
