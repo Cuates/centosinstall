@@ -9,7 +9,8 @@
 [How To Install And Secure phpMyAdmin With Nginx](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-with-nginx-on-an-ubuntu-20-04-server)
 
 * Install Required PHP Modules
-  * `sudo dnf module -y enable php:remi-8.0`
+  * `sudo dnf module -y enable php:remi-8.1`
+    * PHP version will vary with the version you installed on you machine
   * `sudo dnf -y install php-{spl,hash,ctype,json,mbstring,zip,gd,curl,xml,common}` OR
   * `sudo dnf -y install php-spl php-hash php-ctype php-json php-mbstring php-zip php-gd php-curl php-xml php-common`
 * Download phpMyAdmin
