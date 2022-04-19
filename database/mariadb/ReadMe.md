@@ -12,16 +12,16 @@
 [How To Recover InnoDB Database From .frm And .ibd Files](https://www.youtube.com/watch?v=qeEAKVF33Y0)<br />
 [How to fix error in Mysql “tablespace is missing for table XXXXX”](https://bobcares.com/blog/mysql-tablespace-is-missing-for-table/)<br />
 [How To Import ANd Export Database In MySQL Or MariaDB](https://www.digitalocean.com/community/tutorials/how-to-import-and-export-databases-in-mysql-or-mariadb)<br />
-[Install mariadb in rocky linux](https://www.tecmint.com/install-mariadb-in-rocky-linux/)
+[Install mariadb in rocky linux and almalinux](https://www.tecmint.com/install-mariadb-in-rocky-linux/)
 
 * `sudo vim /etc/yum.repos.d/MariaDB.repo`
-  * MariaDB 10.5 [Stable] CentOS repository list - created 2020-07-30 23:39 UTC
+  * MariaDB 10.8.2 [Stable]
   * [MariaDB Download Test](https://mariadb.org/download-test/)
   * **PASTE BELOW INTO FILE**<br />
   * <pre>
     [mariadb]
     name = MariaDB
-    baseurl = http://sfo1.mirrors.digitalocean.com/mariadb/yum/10.5/centos8-amd64
+    baseurl = http://sfo1.mirrors.digitalocean.com/mariadb/yum/10.8.2/rhel8-amd64/
     module_hotfixes=1
     gpgkey=http://sfo1.mirrors.digitalocean.com/mariadb/yum/RPM-GPG-KEY-MariaDB
     gpgcheck=1
