@@ -311,7 +311,7 @@
   * Second create users that will access the database
   * Third open the dump in a mariadb client
     * The dump will consist of various select, insert, delete, and so on statements
-    * Make sure to include the following command, this will make sure you are using the correct databsae
-      * `use <database_instance>`
+    * Make sure to include the following command at the top of the dump; this will make sure you are using the correct databsae
+      * `use <database_instance>;`
       * Execute the entire dump and wait for the commands to finish
   * You should not be back up and running with your old database system on your new system
