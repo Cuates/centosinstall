@@ -67,6 +67,9 @@
     * "WITH GRANT OPTION" is optional
   * `FLUSH PRIVILEGES;`
     * The above command is to apply changes 
+  * `GRANT ALL ON <database_name>.* TO user_name@ip_address IDENTIFIED BY 'user_password' WITH GRANT OPTION;`
+    * database_name means only to a certain database and no other on the system
+    * "WITH GRANT OPTION" is optional
   * `exit;`
 * `mariadb --version`
 
