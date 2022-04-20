@@ -4,6 +4,10 @@
 [Auth pg hba conf](https://www.postgresql.org/docs/current/auth-pg-hba-conf.html)<br />
 [How to use scram sha 256 based authentication for user with tls config in postgr](https://stackoverflow.com/questions/66452532/how-to-use-scram-sha-256-based-authentication-for-user-with-tls-config-in-postgr)<br />
 [From md5 to scram sha 256 in postgresql](https://www.cybertec-postgresql.com/en/from-md5-to-scram-sha-256-in-postgresql/)<br />
+[Backup dump restore](https://www.postgresql.org/docs/14/backup-dump.html#BACKUP-DUMP-RESTORE)<br />
+[Import sql dump into postgresql database](https://stackoverflow.com/questions/6842393/import-sql-dump-into-postgresql-database)<br />
+[Importing and exporting data in postgresql#importing data from sql files](https://www.prisma.io/dataguide/postgresql/inserting-and-modifying-data/importing-and-exporting-data-in-postgresql#importing-data-from-sql-files)<br />
+[Backup and restore a postgresql database](https://axiomq.com/blog/backup-and-restore-a-postgresql-database/)<br />
 
 [PostgreSQL Download](https://www.postgresql.org/download/linux/redhat/)
 * `sudo dnf module list postgresql`
