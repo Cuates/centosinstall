@@ -302,3 +302,16 @@
   * `mysqldump -u <username> -p <database_instance> > database_instance_dump.sql`
 * Check Export If It's A Legitimate SQL Dump File
   * `head -n 5 database_instance_dump.sql`
+
+* Import
+  * Make sure your database is all setup and ready for database and table creation
+  * Make sure you have the dump from your old database system
+  * First create the database
+    * `create database if not exists `<database_instance>` default character set utf8mb4 collate utf8mb4_unicode_520_ci;`
+  * Second create users that will access the database
+  * Third open the dump in a mariadb client
+    * The dump will consist of various select, insert, delete, and so on statements
+    * Make sure to include the following command, this will make sure you are using the correct databsae
+      * `use <database_instance>`
+      * Execute the entire dump and wait for the commands to finish
+  * You should not be back up and running with your old database system on your new system
