@@ -307,7 +307,7 @@
   * Make sure your database is all setup and ready for database and table creation
   * Make sure you have the dump from your old database system
   * First create the database
-    * `create database if not exists `<database_instance>` default character set utf8mb4 collate utf8mb4_unicode_520_ci;`
+    * ````create database if not exists `<database_instance>` default character set utf8mb4 collate utf8mb4_unicode_520_ci;````
   * Second create users that will access the database
   * Third open the dump in a mariadb client
     * The dump will consist of various select, insert, delete, and so on statements
