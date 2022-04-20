@@ -379,3 +379,18 @@
       * `pg_dump <database_instance> | gzip > database_instance_pg_dump_2021-04-21.gz`
     * The compressed file is saved in the current path
       * `/var/lib/pgsql`
+
+ * Importing from a backup gz file
+   * Open a terminal of your choice
+   * Copy over the backup of your old database into the postgresql location
+     * `cp filename.gz /var/lib/pgsql/`
+   * Set the permissions to postgres user for the file just copied
+     * `chown postgres:postgres filename.gz`
+   * Login as the postgresql user
+     * `sudo -i -u postgres`
+   * Use compressed dumps of choice to import everything from your old database to your new database
+     * The following command will be for gz file; yours will vary depending on what compression you chose
+       * `gunzip -c filename.gz | psql <database_name>`
+         * "-c" is to drop the database objects before recreating them
+         * WAIT FOR THE PROCESS TO FINISH
+   * Your new postgresql database now has the old database backup imported
