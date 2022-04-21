@@ -159,3 +159,19 @@
         * Right click on "Databases"
           * Click "Refresh"
       * You have successfully imported your backup from your old SQL server
+
+* Check new user's permission to make sure they are able to access the newly created database.
+  * Open Microsoft SQL Server Management Studio
+      * Sign in as a root user for the SQL server
+        * Expand the SQL server you just connected to
+          * Expand Database under the server you just connected to
+            * Expand Security under the database you expanded
+              * Expand Users under the database you expanded
+               * Right click on "Properties" for the newly created user
+                 * Provide new user with the following
+                   * Check
+                     * db_datareader
+                     * db_datawriter
+                     * db_owner
+                 * Adjust any other properties for the user that is needed
+                 * Click button "OK"
