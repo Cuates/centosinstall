@@ -121,8 +121,8 @@
                 * Set Default language
               * Adjust anything else for any of the other tabs if needed
               * Click button "OK" when you are done with the modifications
-* Sign out of the current user
-* Sign in as the newly created user to make sure everything worked
+  * Sign out of the current user
+  * Sign in as the newly created user to make sure everything worked
 
 * Import
   * The following is for a Linux MSSQL server
