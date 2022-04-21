@@ -314,4 +314,4 @@
     * Make sure to include the following command at the top of the dump; this will make sure you are using the correct databsae
       * `use <database_instance>;`
       * Execute the entire dump and wait for the commands to finish
-  * You should not be back up and running with your old database system on your new system
+  * You should now be back up and running with your old database system on your new system
