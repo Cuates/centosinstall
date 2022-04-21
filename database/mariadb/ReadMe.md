@@ -303,6 +303,7 @@
   * Open a terminal of choice to execute the following dump command
   * The following command will dump the content of the database to a file named with current date-time stamp
   * NOTE: You will want to take a backup of the database with the mariadb 'root' user name, so you will need the root mariadb password to continue the SQL dump command
+  * You will be prompted to input the mariadb user name's password you entered into the dump command
     * Dump for a certain database;
       * NOTE: You will have to create your Database to import the dump back into the database as the command dumps everything inside the database to a file
         * ````mysqldump -u <mariadb_user_name> -p <database_instance> -R -E --triggers --single-transaction > database_instance_`date +%d_%b_%Y_%H_%M_%S`.sql````
