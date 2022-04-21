@@ -300,6 +300,7 @@
     * `alter table table_name import tablespace;`
 
 * Export
+  * Open a terminal of choice to execute the following dump command
   * The following command will dump the content of the database to a file named with current date-time stamp
   * NOTE: You will want to take a backup of the database with root user, so you will need the root mariadb password to continue the SQL dump command
     * Dump for a certain database;
@@ -324,7 +325,8 @@
   * Second create users that will access the database
   * Third open the dump in a mariadb client
     * The dump will consist of various select, insert, delete, and so on statements
-    * Make sure to include the following command at the top of the dump; this will make sure you are using the correct databsae
+    * Make sure to include the following command at the top of the dump; this will make sure you are using the correct database
+    * NOTE: If the create database is inserted at the top of the dump file then this will go below the create database command
       * `use <database_instance>;`
       * Execute the entire dump and wait for the commands to finish
   * You should now be back up and running with your old database system on your new system
