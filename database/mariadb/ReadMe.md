@@ -302,12 +302,12 @@
 * Export
   * Open a terminal of choice to execute the following dump command
   * The following command will dump the content of the database to a file named with current date-time stamp
-  * NOTE: You will want to take a backup of the database with root user, so you will need the root mariadb password to continue the SQL dump command
+  * NOTE: You will want to take a backup of the database with the mariadb 'root' user name, so you will need the root mariadb password to continue the SQL dump command
     * Dump for a certain database;
       * NOTE: You will have to create your Database to import the dump back into the database as the command dumps everything inside the database to a file
-        * ````mysqldump -u root -p <database_instance> -R -E --triggers --single-transaction > database_instance_`date +%d_%b_%Y_%H_%M_%S`.sql````
+        * ````mysqldump -u <mariadb_user_name> -p <database_instance> -R -E --triggers --single-transaction > database_instance_`date +%d_%b_%Y_%H_%M_%S`.sql````
     * Dump all databases
-      * ````mysqldump -u root -p -A -R -E --triggers --single-transaction > database_instance_`date +%d_%b_%Y_%H_%M_%S`.sql````
+      * ````mysqldump -u <mariadb_user_name> -p -A -R -E --triggers --single-transaction > database_instance_`date +%d_%b_%Y_%H_%M_%S`.sql````
     * Flag meaning
       * -A For all databases &#40;you can also use --all-databases&#41;
       * -R For all routines &#40;stored procedures & triggers&#41;
