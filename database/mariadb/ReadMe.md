@@ -13,7 +13,8 @@
 [How to fix error in Mysql “tablespace is missing for table XXXXX”](https://bobcares.com/blog/mysql-tablespace-is-missing-for-table/)<br />
 [How To Import ANd Export Database In MySQL Or MariaDB](https://www.digitalocean.com/community/tutorials/how-to-import-and-export-databases-in-mysql-or-mariadb)<br />
 [Install mariadb in rocky linux and almalinux](https://www.tecmint.com/install-mariadb-in-rocky-linux/)<br />
-[](https://superuser.com/questions/364086/error-message-sudo-mysql-secure-installation-command-not-found)
+[Error message sudo mysql secure installation command not found](https://superuser.com/questions/364086/error-message-sudo-mysql-secure-installation-command-not-found)<br />
+[How to take complete backup of mysql database using mysqldump command line utili](https://stackoverflow.com/questions/1078196/how-to-take-complete-backup-of-mysql-database-using-mysqldump-command-line-utili)<br />
 
 * `sudo vim /etc/yum.repos.d/MariaDB.repo`
   * MariaDB 10.8.2 [Stable] Red Hat Linux instead of CentOS
@@ -299,7 +300,18 @@
     * `alter table table_name import tablespace;`
 
 * Export
-  * `mysqldump -u <username> -p <database_instance> > database_instance_dump.sql`
+  * The following command will dump the content of the database to a file named with current date-time stamp
+  * NOTE: You will want to take a backup of the database with root user, so you will need the root mariadb password to continue the SQL dump command
+    * Dump for a certain database;
+      * NOTE: You will have to create your Database to import the dump back into the database as the command dump everything inside the database to a file
+        * ````mysqldump -u root -p <database_instance> -R -E --triggers --single-transaction > database_instance_`date +%d_%b_%Y_%H_%M_%S`.sql````
+    * Dump all databases
+      * ````mysqldump -u root -p -A -R -E --triggers --single-transaction > database_instance_`date +%d_%b_%Y_%H_%M_%S`.sql````
+    * Flag meaning
+      * -A For all databases &#40;you can also use --all-databases&#41;
+      * -R For all routines &#40;stored procedures & triggers&#41;
+      * -E For all events
+      * --single-transaction Without locking the tables i.e., without interrupting any connection &#40;R/W&#41;
 * Check Export If It's A Legitimate SQL Dump File
   * `head -n 5 database_instance_dump.sql`
 
