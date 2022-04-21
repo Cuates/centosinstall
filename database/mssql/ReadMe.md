@@ -175,3 +175,16 @@
                      * db_owner
                  * Adjust any other properties for the user that is needed
                  * Click button "OK"
+        * Expand the SQL server you just connected to
+          * Expand Security under the server you just connected to
+            * Expand on "Logins"
+              * Right click on "Properties" for the newly created user
+                * Select the "User Mapping" tab
+                  * Select the database of choice in the "Users mapped to this login" panel
+                    * Make sure the user is inputted in the User section and the Default Schema is dbo
+                  * Provide new user with the following in the "Database role membership for: " section
+                   * Check
+                     * db_datareader
+                     * db_datawriter
+                     * db_owner
+                * Click button "OK"
