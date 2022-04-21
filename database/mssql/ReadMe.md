@@ -4,6 +4,7 @@
 )<br />
 [Polybase Linux Setup](https://docs.microsoft.com/en-us/sql/relational-databases/polybase/polybase-linux-setup?view=sql-server-ver15)<br />
 [SQL Server Linux Faq](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-faq?view=sql-server-2017#general-questions)<br />
+[How to import .bak file to a database in SQL server](https://www.youtube.com/watch?v=dCSkov0OfHM)<br />
 
 * Add the Microsoft SQL Server 2019 repository
   * `sudo curl https://packages.microsoft.com/config/rhel/8/mssql-server-2019.repo -o /etc/yum.repos.d/mssql-server-2019.repo`
@@ -99,3 +100,62 @@
   * `select name, database_id from sys.databases;`
   * `go`
   * `exit`
+
+* Create a user for the SQL server via GUI
+  * Open Microsoft SQL Server Management Studio
+    * Sign in as a root user for the SQL server
+      * Expand the SQL server you just connected to
+        * Expand Security under the server you just connected to
+          * Right click on "Logins"
+            * Click on "New Login..."
+              * Under the General tab perform the necessary changes
+                * Type the "Login name"
+                * Make sure the SQL Server authentication radio button is selected
+                  * Input password and confirm password
+                  * Uncheck
+                    * Enforce password policy
+                    * Enforce password expiration
+                    * User must change password at next login
+                * Make any necessary modification where needed
+                * Set Default database
+                * Set Default language
+              * Adjust anything else for any of the other tabs if needed
+              * Click button "OK" when you are done with the modifications
+* Sign out of the current user
+* Sign in as the newly created user to make sure everything worked
+
+* Import
+  * The following is for a Linux MSSQL server
+    * Open a terminal of choice
+      * Sign into the linux server as root user
+        * Copy the .bak file you created when you exported the database to the following location '/var/opt/mssql/data'
+          * `cp ~/media.bak .`
+        * Adjust the permissions to the mssql user, this will allow the mssql user to interact with the backup file
+          * `chown mssql:mssql media.bak`
+  * Open Microsoft SQL Server Management Studio on Windows or any operating system that will open the SSMS application
+    * Sign in as a root user for the SQL server
+      * Expand the SQL server you just connected to
+        * Right click on "Databases"
+            * Click on "Restore Files and Filegroups"
+              * Under the General tab perform the necessary changes
+                * Type the "To database" name
+                * Select "From device" radio button
+                  * Click on the 3 dots to the right of the radio button
+                  * Make sure "Backup media type is "File"
+                  * Click button "Add"
+                  * Select the "data" folder in the tree structure
+                  * Select the backup of choice
+                    * Click button "OK"
+                  * Click button "OK"
+                * Check "Restore" of the backup you created earlier
+                  * You see which one to check, look at the "Start Date" and "Finish Date" columns for the latest backup
+              * Adjust anything else for any of the other tabs if needed
+              * Click button "OK" when you are done with the modifications
+              * Wait for the "Executing" to finish
+                * This may take some time depending on how much data was backup
+              * You will get a pop window stating
+                * "Database 'database_name' restored successfully."
+                  * Click button "OK"
+        * Right click on "Databases"
+          * Click "Refresh"
+      * You have successfully imported your backup from your old SQL server
