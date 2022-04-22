@@ -189,3 +189,19 @@
                      * db_datawriter
                      * db_owner
                 * Click button "OK"
+
+* If you have issues with deleting a user from the database then proceed with the following
+  * Issue with not able to delete user because they own a database
+    * Check what the user has ownership to
+      * <pre>
+          select
+          s.name
+          from sys.schemas s
+          where s.principal_id = user_id('mediasql');
+        </pre>
+    * Assign dbo to owner of the database again
+      * <pre>
+          ALTER AUTHORIZATION ON SCHEMA::db_owner TO dbo;
+          ALTER AUTHORIZATION ON SCHEMA::db_datareader TO dbo;
+          ALTER AUTHORIZATION ON SCHEMA::db_datawriter TO dbo;
+        </pre>
