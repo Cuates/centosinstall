@@ -197,7 +197,7 @@
           select
           s.name
           from sys.schemas s
-          where s.principal_id = user_id('mediasql');
+          where s.principal_id = user_id('user_name');
         </pre>
     * Assign dbo to owner of the database again
       * <pre>
