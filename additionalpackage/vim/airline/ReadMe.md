@@ -205,7 +205,7 @@
     * `:colorscheme darkblue`
   * Download another theme and use it
     * **NOTE vim number will depend on the version of vim you have installed (In this case it is 81)**
-    * git clone https://github.com/arzg/vim-colors-xcode.git
+    * `git clone https://github.com/arzg/vim-colors-xcode.git`
       * Move the scheme configuration to ~/.vim/colors/
         * `mv vim-colors-xcode/colors/*.vim  ~/.vim/colors/`
       * * Open any document using the Vim editor and search for xcodedarkhc, use
