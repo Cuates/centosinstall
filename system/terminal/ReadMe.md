@@ -38,6 +38,7 @@
       • Join our Discord server: https://discord.gg/ohmyzsh
       • Get stickers, shirts, coffee mugs and other swag: https://shop.planetargon.com/collections/oh-my-zsh
       </pre>
+    * NOTE: You will be presented with a new terminal command prompt
 * Navigate to the Powerlevel10k github page
   * Install Powerlevel10k
     * Choose the Oh My Zsh installation instructions
