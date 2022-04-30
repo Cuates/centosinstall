@@ -156,6 +156,7 @@
           autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endifautocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
           </pre>
     * Save and Exit
+      * NOTE: Once you go back into vim to proceed with the remaining steps, there will be a message warning you that the xcodedarkhc is not found
 * Install NERDTree
   * `git clone https://github.com/preservim/nerdtree.git ~/.vim/bundle/nerdtree`
     * Make sure the following NERDTree is in the .vimrc file
