@@ -163,7 +163,7 @@
         " NERDTree
         Plugin 'preservim/nerdtree'
         </pre>
-    * Make sure the close NERDTree when it is the only window opened
+    * Make sure to close the NERDTree when it is the only window opened
       * <pre>
         " Close vim when NERDTree is the only window opened
         autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endifautocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
