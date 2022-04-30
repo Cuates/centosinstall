@@ -172,6 +172,7 @@
   * Launch vim
     * run
       * `:PluginInstall`
+        * WAIT for the install to complete on the left hand side panel
   * Exit vim once done
 * Download themes to theme folder
   * `git clone https://github.com/vim-airline/vim-airline-themes`
