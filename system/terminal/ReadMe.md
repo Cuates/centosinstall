@@ -198,3 +198,6 @@
     * `echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc`
   * Refresh ZSH syntax highlighting
     * `source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh`
+
+* Logout of your user account and log back in to get the latest changes done to your new environment
+  * Some icons will not display properly depending on what terminal application you are running
