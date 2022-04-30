@@ -59,7 +59,7 @@
       * Navigate to the ZSH_THEME and modify it with "powerlevel10k/powerlevel10k"
         * ZSH_THEME="powerlevel10k/powerlevel10k"
   * Save and quit file
-* If not want to quit terminal then
+* If you do not want to quit terminal to get the new chanages then source the zshrc file
   * `source ~/.zshrc`
 * On initial install you will need to get true type fonts ttf
   * Following the onscreen prompts
@@ -76,7 +76,7 @@
     * `cd ..`
   * Remove cloned fonts
     * `rm -rf fonts`
-  * Installed  fonts at the following location
+  * Installed fonts at the following location
     * <pre>
       Copying fonts...
       Powerline fonts installed to /home/&lt;username&gt;/.local/share/fonts
