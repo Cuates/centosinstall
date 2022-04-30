@@ -195,6 +195,7 @@
         </pre>
   * Navigate to the following directory for out of the box themes
     * `cd /usr/share/vim/vim*/colors directory`
+      * Replace * with version number on your system
   * Copy entire vim themes from system director to local directory
     * NOTE vim number may vary
     * `cp /usr/share/vim/vim80/colors/*.vim ~/.vim/colors`
