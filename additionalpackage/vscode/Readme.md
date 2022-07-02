@@ -9,3 +9,6 @@
 
 # Install Visual Studio Code
 * `sudo dnf install code`
+
+# Important Note
+* You cannot start Visual Studio Code as root user
