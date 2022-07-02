@@ -1,4 +1,4 @@
-(Visual Studio Code Setup Install)[https://code.visualstudio.com/docs/setup/linux]<br />
+[Visual Studio Code Setup Install](https://code.visualstudio.com/docs/setup/linux)<br />
 
 # Setup Repo and Key
 * `sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc`
