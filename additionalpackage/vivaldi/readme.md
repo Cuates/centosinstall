@@ -4,6 +4,6 @@
   * `sudo dnf config-manager --add-repo https://repo.vivaldi.com/archive/vivaldi-fedora.repo`
 * Install
   * `sudo dnf install vivaldi-stable`
-  * `Is this ok [y/N]: y`
+    * `Is this ok [y/N]: y`
 * Import GPG Key
   * `Is this ok [y/n]: y`
