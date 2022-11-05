@@ -5,5 +5,5 @@
 * Install
   * `sudo dnf install vivaldi-stable`
   * `Is this ok [y/N]: y`
-*  Import GPG Key
+* Import GPG Key
   * `Is this ok [y/n]: y`
