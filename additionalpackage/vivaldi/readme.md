@@ -1,4 +1,4 @@
-https://www.makeuseof.com/how-to-install-vivaldi-on-linux/
+[](https://www.makeuseof.com/how-to-install-vivaldi-on-linux/)<br />
 
 Add Repo
 sudo dnf config-manager --add-repo https://repo.vivaldi.com/archive/vivaldi-fedora.repo
