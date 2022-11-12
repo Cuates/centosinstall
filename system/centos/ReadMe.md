@@ -9,3 +9,11 @@
   * If there are issues with "Error: GPG check FAILED", then execute the following command
     * `sudo dnf update --nogpgcheck`
 * `sudo shutdown -r now`
+
+
+# Trigger fresh update command
+* If issue with updating pacakges flush dnf cache first and then trigger a fresh update
+  * `sudo dnf clean all`
+  * `sudo dnf check`
+  * `sudo dnf check-update`
+  * `sudo dnf update`
