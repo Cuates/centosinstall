@@ -191,8 +191,99 @@
          * **Note** Your connection speed may vary
       * Check
         * Do not count slow torrents in these limits
+      * Download rate threshold
+        * Choose number
+         * i.e. 10 KiB/s
+         * **Note** Your connection speed may vary
+      * Upload rate threshold
+       * Choose number
+        * i.e. 10 KiB/s
+        * **Note** If you set this value higher than your connection speed may vary
+      * Torrent inactivity timer
+        * Choose number
+         * i.e. 60 sec
+         * **Note** Your connection speed may vary
     * Seeding Limits
+      * Check
+        *  When ratio reaches
+        *  Choose
+          * i.e. 1.00
+          * Then choose
+            * Pause torrent
   * RSS
+    * Leave as default
   * Web UI
+    * Check
+      * Web user interface (Remote control)
+        * IP Address
+          * Input asterisk (*)
+          * Choose
+            * Port number
+          * Authentication
+            * Username
+              * i.e. username if any
+            * Password
+              * i.e. password if any
+            * Check
+              * Bypass authentication for clients on localhost
+          * Security
+            * Check
+              * Enable clickjacking protection
+              * Enable cross-site request forgery (CSRF) proection
+              * Enable host header validation
+                * Server Domain
+                  * Input asterisk (*) 
   * Advanced
-    
+    * Confirm Torrent Recheck
+      * Check
+    * Refresh Interval
+      * i.e. 1500 ms
+    * Asynchronous I/O threads
+      * i.e. 10
+    * File Pool Size
+      * i.e. 40
+    * Outstanding memory when checking torrents
+      * i.e. 32 MiB
+    * Disk Cache
+      * i.e. -1 (auto)
+    * Dish Cache Expiry Interval
+      * i.e. 60 s
+    * Disk Queue Size
+      * i.e. 1024 KiB
+    * Outgoing Connections Per Second
+      * i.e. 30
+    * Socket Backlog Size
+      * i.e. 30
+    * Outgoing Ports (min) [0: disable]
+      * i.e. 0
+    * * Outgoing Ports (max) [0: disable]
+      * i.e. 0
+    * Type of Service (ToS) for connections to peers
+      * i.e. 4
+    * muTP-TCP mix mode algorithnm
+      * Choose
+        * i.e. Prefer TCP
+    * Validate HTTPS tracker certificates
+      * Check
+    * Server-side requests forgery (SSRF) mitigation
+      * Check
+    * Upload Slot Behavior
+      * Choose
+        * i.e. Fixed slots
+    * Upload Choking Algorthim
+      * Choose
+        * i.e. Fastest upload
+    * Always announce to all tiers
+      * Check
+    * Max concurrent http announces
+      * i.e. 50
+    * Stop tracker timeout
+      * i.e. 5 s
+    * Peer Turnover diconnect percentage
+      * i.e. 4 %
+    * Peer Turnover threshold percentage
+      * i.e. 90 %
+    * Peer Turnover diconnect interval
+      * i.e. 300 s
+    * Maximum outstandin request to a single peer
+      * i.e. 500
