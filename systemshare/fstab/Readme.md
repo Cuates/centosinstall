@@ -2,7 +2,7 @@
 
 # **Make sure to have cifs-utils installed before proceeding with these steps**
 
-# Create the mount the shared drive directory
+# Create the mount shared drive directory
 * `cd /mnt`
 * `mkdir <share_directory_name>`
 
