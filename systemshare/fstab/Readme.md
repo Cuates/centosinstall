@@ -2,11 +2,11 @@
 
 # **Make sure to have cifs-utils installed before proceeding with these steps**
 
-# Create directory to mount the shared drive in
+# Create the mount the shared drive directory
 * `cd /mnt`
 * `mkdir <share_directory_name>`
 
-# Credital file for the shared drive
+# Shared drive credenital's file
 * Create credential file
   * `cd /etc`
   * `vim <credential_file_name>`
