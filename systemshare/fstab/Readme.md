@@ -14,6 +14,7 @@
         username=username
         password=password
       </pre>
+    * Save and Exit
 * Set file permissions for root user only
   * `sudo chown root: /etc/<credential_file_name>`
   * `sudo chmod 600 /etc/<credential_file_name>`
