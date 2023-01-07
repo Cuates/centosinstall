@@ -94,6 +94,9 @@
           * Show qBittorrent in notification area
           * Minimize qBittorrent in notification area
           * Close qBittorrent to notification area
+          * Tray icon style
+            * Select
+              * Monochrome (for dark theme)
           * File association
             * Use qBittorrent for .torrent file
             * Use qBittorrent for magnet links
