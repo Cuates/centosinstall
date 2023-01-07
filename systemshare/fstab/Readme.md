@@ -1,6 +1,6 @@
 [How To Mount cifs Windows Share On Linux](https://linuxize.com/post/how-to-mount-cifs-windows-share-on-linux/) <br />
 
-# **Make sure to have cifs-utils installed before proceeding with these steps**
+# Make sure to have cifs-utils installed before proceeding with these steps
 
 # Create directory to mount the shared drive in
 * `cd /mnt`
