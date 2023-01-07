@@ -220,6 +220,7 @@
           * Input asterisk (*)
           * Choose
             * Port number
+              * **NOTE** The port number will be provided or you can choose one
           * Authentication
             * Username
               * i.e. username if any
