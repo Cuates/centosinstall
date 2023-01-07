@@ -22,7 +22,7 @@
 # Configure fstab
   * `vim /etc/fstab`
     * <pre>
-        # &60;file system&62; &60;dir&62; &60;type&62; &60;options&62; &60;dump&62; &60;pass&62;
+        # &#60;file system&#62; &#60;dir&#62; &#60;type&#62; &#60;options&#62; &#60;dump&#62; &#60;pass&#62;
         //WIN_SHARE_IP/share_name  /mnt/<share_directory_name>  cifs  credentials=/etc/<credential_file_name>,file_mode=0777,dir_mode=0777 0 0
       </pre>
 
