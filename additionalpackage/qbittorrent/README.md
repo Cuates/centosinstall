@@ -199,13 +199,13 @@
          * i.e. 10 KiB/s
          * **Note** Your connection speed may vary
       * Upload rate threshold
-       * Choose number
-        * i.e. 10 KiB/s
-        * **Note** If you set this value higher than your connection speed may vary
+        * Choose number
+          * i.e. 10 KiB/s
+          * **Note** If you set this value higher than your connection speed may vary
       * Torrent inactivity timer
         * Choose number
-         * i.e. 60 sec
-         * **Note** Your connection speed may vary
+          * i.e. 60 sec
+          * **Note** Your connection speed may vary
     * Seeding Limits
       * Check
         *  When ratio reaches
