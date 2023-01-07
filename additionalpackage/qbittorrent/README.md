@@ -77,3 +77,122 @@
 * Access the library from an external network
   * Navigate to your router's port forward section
     * Add the port to the IP address
+
+* Set up the setting for qBittorrent
+  ** These are based on Windows application settings **
+  * Behavior
+    * Interface
+      * Language
+        * English
+    * Transfer List
+      * Check
+        * Confirm when deleting torrents
+        * Use alternating row colors
+    * Desktop
+      * Check
+        * Confirmation on auto-exit when downloads finish
+          * Show qBittorrent in notification area
+          * Minimize qBittorrent in notification area
+          * Close qBittorrent to notification area
+          * File association
+            * Use qBittorrent for .torrent file
+            * Use qBittorrent for magnet links
+        * Check for program update
+    * Power Management
+      * Check
+        * Inhibit system sleep when torrents are downloading
+        * Inhibit system sleep when torrents are seeding 
+    * Log File
+      * Check
+        * Backup the log file after 65 KiB
+        * Delete backup logs folder older than 1 months
+  * Downloads
+    * When adding a torrent
+      * Check
+        * Display torrent content and some options
+        * Bring torrent dialog to the front
+    * Check
+      * Enable recursive download dialog
+    * Saving Management
+      * Default Save Path
+        * Browse
+          * <path_to_torrent_directory>
+  * Connections
+    * Peer Connection Protocol
+      * Select
+        * TCP and muTP
+    * Listening Port
+      * Port used for incoming connections
+        * Choose any port you like or leave as default
+      * Check
+        * Use UPnP / NAT-PMP port forwarding from my router
+    * Connection Limits
+      * Check
+        * Global maximum number of connections
+          * Choose number of connection
+            * i.e. 500
+            * **Note** If you set this value higher than your connection speed may vary
+        * Global maximum number of connections per torrent
+          * Choose number of connection
+            * i.e. 500
+            * **Note** If you set this value higher than your connection speed may vary
+        * Global maximum number of upload slots
+          * Choose number of connection
+            * i.e. 1
+            * **Note** If you set this value higher than your connection speed may vary
+        * Global maximum number of upload slots per torrent
+          * Choose number of connection
+            * i.e. 1
+            * **Note** If you set this value higher than your connection speed may vary
+  * Speed
+    * Global Rate Limits
+      * Upload
+        * Select
+          * i.e. 10 KiB/s
+      * Download
+        * Select
+          * i.e. (infinity)
+    * Alternative Rate Limits
+      * Upload
+        * Select
+          * i.e. 10 KiB/s
+      * Download
+        * Select
+          * i.e. (infinity)
+    * Rate Limits Setting
+      * Check
+        * Apply rate limit to muTP protocol
+        * Apply rate limit to peers on LAN
+  * BitTorrent
+    * Privacy
+      * Check
+        * Enable DHT (decentralized network) to find more peers
+        * Enable peer exchange (PeX) to find more peers
+        * Encryption Mode
+          * Select
+            * Require encryption
+        * Enable anomymous mode
+    * Maximum Active Checking Torrents
+      * Select
+        * i.e. 1
+        * **Note** If you set this value higher than your connection speed may vary
+    * Torrent Queueing
+      * Maximum Active Downloads
+        * Choose number in queue
+         * i.e. (Infinity)
+         * **Note** Your connection speed may vary
+      * Maximum Active Uploads
+       * Choose number in queue
+        * i.e. 1
+        * **Note** If you set this value higher than your connection speed may vary
+      * Maximum Active Torrents
+        * Choose number in queue
+         * i.e. (Infinity)
+         * **Note** Your connection speed may vary
+      * Check
+        * Do not count slow torrents in these limits
+    * Seeding Limits
+  * RSS
+  * Web UI
+  * Advanced
+    
