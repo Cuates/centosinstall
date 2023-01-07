@@ -249,9 +249,9 @@
       * i.e. 40
     * Outstanding memory when checking torrents
       * i.e. 32 MiB
-    * Disk Cache
+    * Disk Cache **NOTE** Not on new version
       * i.e. -1 (auto)
-    * Dish Cache Expiry Interval
+    * Dish Cache Expiry Interval **NOTE** Not on new version
       * i.e. 60 s
     * Disk Queue Size
       * i.e. 1024 KiB
@@ -261,7 +261,7 @@
       * i.e. 30
     * Outgoing Ports (min) [0: disable]
       * i.e. 0
-    * * Outgoing Ports (max) [0: disable]
+    * Outgoing Ports (max) [0: disable]
       * i.e. 0
     * Type of Service (ToS) for connections to peers
       * i.e. 4
