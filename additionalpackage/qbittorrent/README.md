@@ -208,11 +208,11 @@
           * **Note** Your connection speed may vary
     * Seeding Limits
       * Check
-        *  When ratio reaches
-        *  Choose
-          * i.e. 1.00
-          * Then choose
-            * Pause torrent
+        * When ratio reaches
+          * Choose
+            * i.e. 1.00
+            * Then choose
+              * Pause torrent
   * RSS
     * Leave as default
   * Web UI
