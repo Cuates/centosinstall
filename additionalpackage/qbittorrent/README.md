@@ -213,6 +213,7 @@
   * RSS
     * Leave as default
   * Web UI
+    * Only configure if you are going to use the UI
     * Check
       * Web user interface (Remote control)
         * IP Address
