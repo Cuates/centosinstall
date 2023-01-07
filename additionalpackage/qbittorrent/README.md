@@ -196,8 +196,8 @@
         * Do not count slow torrents in these limits
       * Download rate threshold
         * Choose number
-         * i.e. 10 KiB/s
-         * **Note** Your connection speed may vary
+          * i.e. 10 KiB/s
+          * **Note** Your connection speed may vary
       * Upload rate threshold
         * Choose number
           * i.e. 10 KiB/s
