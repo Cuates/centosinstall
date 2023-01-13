@@ -1,4 +1,5 @@
 [Install postgresql and pgadmin rhel 9](https://www.tecmint.com/install-postgresql-and-pgadmin-rhel-9/)<br />
+[pgadmin 4 rpm](https://www.pgadmin.org/download/pgadmin-4-rpm/)<br />
 [Pgadmin4 Installation - Craines](https://gist.github.com/craines/ba6fe9ba416df841d8e5ac5da6128ea7)<br />
 [Install Pgadmin4](https://gist.github.com/rubinhozzz/368176fec80edcf449a76e15164ff728)<br />
 [Nginx Pgadmin](https://github.com/rbernardes/nginx-pgadmin)<br />
