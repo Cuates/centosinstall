@@ -52,13 +52,15 @@
     * PASSWORD_HERE
   * `exit`
 * `exit`
-* `sudo vim /var/lib/pgsql/data/postgresql.conf`
+* `sudo vim /var/lib/pgsql/15/data/postgresql.conf`
+  * Below is the old path
+    * `sudo vim /var/lib/pgsql/data/postgresql.conf`
   * WAS
     * listen_addresses = 'localhost'
   * IS
     * listen_addresses = '*'
   * Save and Quit
-* `sudo systemctl restart postgresql`
+* `sudo systemctl restart postgresql-15`
 * `sudo netstat -antup | grep 5432`
 * `sudo vim /var/lib/pgsql/data/pg_hba.conf`
   * WAS
