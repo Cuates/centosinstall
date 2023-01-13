@@ -9,7 +9,7 @@
 
 * Add the Microsoft SQL Server 2022 repository
   * `sudo curl https://packages.microsoft.com/config/rhel/9.0/mssql-server-2022.repo -o /etc/yum.repos.d/mssql-server-2022.repo`
-  * `sudo curl https://packages.microsoft.com/config/rhel/8/prod.repo -o /etc/yum.repos.d/msprod.repo`
+  * `sudo curl https://packages.microsoft.com/config/rhel/9.0/prod.repo -o /etc/yum.repos.d/msprod.repo`
 
 * Add the Microsoft SQL Server 2019 repository (Old version)
   * `sudo curl https://packages.microsoft.com/config/rhel/8/mssql-server-2019.repo -o /etc/yum.repos.d/mssql-server-2019.repo`
