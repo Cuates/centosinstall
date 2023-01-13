@@ -11,6 +11,11 @@
 [Backup and restore a postgresql database](https://axiomq.com/blog/backup-and-restore-a-postgresql-database/)<br />
 
 [PostgreSQL Download](https://www.postgresql.org/download/linux/redhat/)
+* Install the repository RPM:
+  * Make sure to get the latest version link (as of now it is 15)
+  * `sudo dnf install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-9-x86_64/pgdg-redhat-repo-latest.noarch.rpm`
+    * Importing GPG key
+    * Is this okay [y/N]: y
 * `sudo dnf module list postgresql`
 * `sudo dnf module -y enable postgresql:13`
 * `sudo dnf install -y postgresql-server postgresql-contrib postgresql postgresql-devel  postgresql-odbc`
