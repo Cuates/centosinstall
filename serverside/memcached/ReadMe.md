@@ -1,6 +1,6 @@
 [Install PHP 73 fpm Remirepo On CentOS](https://blog.kerus.net/1014/install-php-7-3-fpm-remirepo-on-centos)<br />
 [Install Memcached En PHP Memcache](https://www.unixmen.com/install-memcached-en-php-memcache/)
-* `sudo dnf install -y memcached`
+* `sudo dnf install -y memcached chkconfig`
 * `sudo vim /etc/sysconfig/memcached`
   * WAS
     * <pre>
