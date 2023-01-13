@@ -14,7 +14,7 @@
 [Install pgadmin rocky linux almalinux](https://www.tecmint.com/install-pgadmin-rocky-linux-almalinux/)<br />
 
 * **IMPORTANT NOTE Make sure to be root user**
-* **The following was executed with `python3.10` and `pip3.10`**
+* **The following was executed with `python3.11` and `pip3.11`**
 
 * Download wheel (last version)
   * Note will need to get the latest one from the web site
