@@ -7,7 +7,11 @@
 [How to import .bak file to a database in SQL server](https://www.youtube.com/watch?v=dCSkov0OfHM)<br />
 [](https://blog.sqlauthority.com/2011/12/26/sql-server-fix-error-15138-the-database-principal-owns-a-schema-in-the-database-and-cannot-be-dropped/)<br />
 
-* Add the Microsoft SQL Server 2019 repository
+* Add the Microsoft SQL Server 2022 repository
+  * `sudo curl https://packages.microsoft.com/config/rhel/9.0/mssql-server-2022.repo -o /etc/yum.repos.d/mssql-server-2022.repo`
+  * `sudo curl https://packages.microsoft.com/config/rhel/8/prod.repo -o /etc/yum.repos.d/msprod.repo`
+
+* Add the Microsoft SQL Server 2019 repository (Old version)
   * `sudo curl https://packages.microsoft.com/config/rhel/8/mssql-server-2019.repo -o /etc/yum.repos.d/mssql-server-2019.repo`
   * `sudo curl https://packages.microsoft.com/config/rhel/8/prod.repo -o /etc/yum.repos.d/msprod.repo`
 
