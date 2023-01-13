@@ -22,7 +22,7 @@
   * <pre>
     [mariadb]
     name = MariaDB
-    baseurl = http://sfo1.mirrors.digitalocean.com/mariadb/yum/10.8.2/rhel8-amd64/
+    baseurl = http://sfo1.mirrors.digitalocean.com/mariadb/yum/10.9.4/rhel9-amd64/
     module_hotfixes=1
     gpgkey=http://sfo1.mirrors.digitalocean.com/mariadb/yum/RPM-GPG-KEY-MariaDB
     gpgcheck=1
