@@ -83,7 +83,7 @@
       User=root
       Group=root
       Environment="PATH=/opt/pgadmin4/bin"
-      ExecStart=/opt/pgadmin4/bin/gunicorn --bind 127.0.0.1:5050 --workers=1 --threads=25 --chdir /opt/pgadmin4/lib/python3.10/site-packages/pgadmin4 pgAdmin4:app
+      ExecStart=/opt/pgadmin4/bin/gunicorn --bind 127.0.0.1:5050 --workers=1 --threads=25 --chdir /opt/pgadmin4/lib/python3.11/site-packages/pgadmin4 pgAdmin4:app
 
       [Install]
       WantedBy=multi-user.target
