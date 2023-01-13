@@ -19,7 +19,7 @@
 * Download wheel (last version)
   * Note will need to get the latest one from the web site
     * `cd ~`
-    * `wget https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v6.8/pip/pgadmin4-6.8-py3-none-any.whl`
+    * `wget [https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v6.8/pip/pgadmin4-6.8-py3-none-any.whl](https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v6.18/pip/pgadmin4-6.18-py3-none-any.whl)`
 * Create /opt/pgadmin4 folder
   * `sudo mkdir /opt/pgadmin4`
 * Create and activate virtual environment
@@ -31,6 +31,7 @@
   * `cp ~/pgadmin4-6.8-py3-none-any.whl /opt/pgadmin4/`
   * `pip3.10 install pgadmin4-X.X-py2.py3-none-any.whl`
     * NOTE X.X is the latest version number
+    * * WAIT FOR THIS TO FINISH
 * Create data directory
   * `mkdir data`
 * Create a config_local.py file inside the following directory
