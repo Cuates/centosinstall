@@ -18,7 +18,7 @@
     * <pre>
       OPTIONS=""
       </pre>
-* `sudo chkconfig --levels 235 memcached on`
+* `chkconfig --levels 235 memcached on`
 * `sudo systemctl start memcached`
 * `sudo systemctl enable memcached`
 * `sudo systemctl status memcached`
