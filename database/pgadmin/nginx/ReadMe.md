@@ -1,4 +1,5 @@
 [Pgadmin4 Installation - Craines](https://gist.github.com/craines/ba6fe9ba416df841d8e5ac5da6128ea7)<br />
+[Install postgresql and pgadmin rhel 9](https://www.tecmint.com/install-postgresql-and-pgadmin-rhel-9/)<br />
 [Install Pgadmin4](https://gist.github.com/rubinhozzz/368176fec80edcf449a76e15164ff728)<br />
 [Nginx Pgadmin](https://github.com/rbernardes/nginx-pgadmin)<br />
 [Pgadmin4 4.28 Py3 None Any Wheel](https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v4.28/pip/pgadmin4-4.28-py3-none-any.whl)<br />
