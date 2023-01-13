@@ -1,3 +1,4 @@
+[Quickstart Install Connect Red Hat](https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-red-hat)<br />
 [How To Install Microsoft SQL Server On RHEL CentOS](https://computingforgeeks.com/how-to-install-microsoft-sql-server-on-rhel-centos/)<br />
 [How To Install Microsoft SQL Server 2019 In CentOS 8](https://developpaper.com/how-to-install-sql-server-2019-in-centos8/)<br />
 [How To Setup A Firewall With Firewalld On CentOS 7](https://linuxize.com/post/how-to-setup-a-firewall-with-firewalld-on-centos-7/
