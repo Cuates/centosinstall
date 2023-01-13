@@ -24,19 +24,19 @@
   * `sudo mkdir /opt/pgadmin4`
 * Create and activate virtual environment
   * `cd /opt`
-  * `python3.10 -m venv /opt/pgadmin4`
+  * `python3.11 -m venv /opt/pgadmin4`
   * `cd /opt/pgadmin4`
   * `source bin/activate`
 * Copy the downloaded .wheel to /opt/pgadmin4 and install
-  * `cp ~/pgadmin4-6.8-py3-none-any.whl /opt/pgadmin4/`
-  * `pip3.10 install pgadmin4-X.X-py2.py3-none-any.whl`
+  * `cp ~/pgadmin4-6.18-py3-none-any.whl /opt/pgadmin4/`
+  * `pip3.11 install pgadmin4-X.X-py2.py3-none-any.whl`
     * NOTE X.X is the latest version number
     * * WAIT FOR THIS TO FINISH
 * Create data directory
   * `mkdir data`
 * Create a config_local.py file inside the following directory
-  * `cd /opt/pgadmin4/lib/python3.10/site-packages/pgadmin4`
-  * `sudo vim /opt/pgadmin4/lib/python3.10/site-packages/pgadmin4/config_local.py`
+  * `cd /opt/pgadmin4/lib/python3.11/site-packages/pgadmin4`
+  * `sudo vim /opt/pgadmin4/lib/python3.11/site-packages/pgadmin4/config_local.py`
     * Paste the following into the file
       <pre>
       import os
@@ -50,7 +50,7 @@
     * Save and exit
 * Run setup to install pgadmin4
   * Note: Initial setup will ask for e-mail and password.
-  * `python3.10 /opt/pgadmin4/lib/python3.10/site-packages/pgadmin4/pgAdmin4.py`
+  * `python3.11 /opt/pgadmin4/lib/python3.11/site-packages/pgadmin4/pgAdmin4.py`
     * Following output was displayed
       <pre>
       pgAdmin 4 - Application Initialisation
