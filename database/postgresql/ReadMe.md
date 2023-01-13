@@ -17,9 +17,21 @@
     * Importing GPG key
     * Is this okay [y/N]: y
       * Repeat this step for all version of postgresql
+* Disable the built-in PostgreSQL module:
+  * This step may not be needed
+  * `sudo dnf -qy module disable postgresql` 
+* Install PostgreSQL:
+  * `sudo dnf install -y postgresql15-server`
+* Optionally initialize the database and enable automatic start:
+  * `sudo /usr/pgsql-15/bin/postgresql-15-setup initdb`
+  * `sudo systemctl start postgresql-15`
+  * `sudo systemctl enable postgresql-15`
+  * `sudo systemctl status postgresql-15`
+
+* Old way of installing postgresql
 * `sudo dnf module list postgresql`
 * `sudo dnf module -y enable postgresql:13`
-* `sudo dnf install -y postgresql-server postgresql-contrib postgresql postgresql-devel  postgresql-odbc`
+* `sudo dnf install -y postgresql-server postgresql-contrib postgresql postgresql-devel postgresql-odbc`
 * `sudo postgresql-setup --initdb`
 * `sudo systemctl start postgresql`
 * `sudo systemctl enable postgresql`
