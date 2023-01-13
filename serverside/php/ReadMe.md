@@ -7,10 +7,15 @@
 [How To Install PHP 8 On CentOS Linux](https://computingforgeeks.com/how-to-install-php-8-on-centos-linux/)<br />
 [PHP installation error it is not possible to switch enabled streams of a modul](https://stackoverflow.com/questions/63080021/php-installation-error-it-is-not-possible-to-switch-enabled-streams-of-a-modul)
 
-* If upgrading to a new version of PHP, then perform the upgrading portion below before proceeding with the following commnad.
-  * List Module
-    * `sudo dnf module list php`
+* List Module
+  * `sudo dnf module list php`
+* Enable PHP 8.2
   * `sudo dnf module -y enable php:remi-8.2`
+  * Install
+    * `sudo dnf install -y php php-cli php-common php-curl php-fpm php-mysqlnd php-opcache php-gd php-xml php-mbstring php-pdo php-pdo-dblib php-pgsql php-odbc php-memcached php-pecl-memcached php-bcmath php-dba php-devel php-embedded php-imap php-intl php-ldap php-mcrypt php-pear php-tidy php-xmlrpc php-pecl-zip php-devel php-pecl-imagick php-pecl-imagick-devel`
+
+* If upgrading to a new version of PHP, then perform the upgrading portion below before proceeding with the following commnad.
+  * `sudo dnf module -y enable php:remi-7.1`
     * NOTE: The version number above will be the version number you have install on your machine
   * `sudo dnf install -y php php-cli php-common php-curl php-fpm php-mysql php-mysqlnd php-opcache php-gd php-xml php-mbstring php-pdo php-pdo-dblib php-pgsql php-pecl-rar php-odbc php-memcached php-pecl-memcache php-bcmath php-dba php-devel php-embedded php-imap php-intl php-ldap php-mcrypt php-pear php-recode php-pspell php-tidy php-xmlrpc`
   * `sudo systemctl start php-fpm`
@@ -24,6 +29,7 @@
     * Visit website localhost/info.php
     * `sudo rm /var/www/html/info.php` (for security reasons)
   * `sudo vim /etc/php.ini`
+    * Add and or modify where needed
     * <pre>
       serialize_precision = -1
       max_execution_time = 240
@@ -62,7 +68,3 @@
   * Install
     * `sudo dnf install -y php php-cli php-common php-curl php-fpm php-mysqlnd php-opcache php-gd php-xml php-mbstring php-pdo php-pdo-dblib php-pgsql php-odbc php-memcached php-pecl-memcached php-bcmath php-dba php-devel php-embedded php-imap php-intl php-ldap php-mcrypt php-pear php-pspell php-tidy php-xmlrpc php-pecl-zip php-devel php-pecl-imagick php-pecl-imagick-devel`
   * After upgrade to PHP 8.1 then re-run the above commands
-  * Enable PHP 8.2
-    * `sudo dnf module -y enable php:remi-8.2`
-  * Install
-    * `sudo dnf install -y php php-cli php-common php-curl php-fpm php-mysqlnd php-opcache php-gd php-xml php-mbstring php-pdo php-pdo-dblib php-pgsql php-odbc php-memcached php-pecl-memcached php-bcmath php-dba php-devel php-embedded php-imap php-intl php-ldap php-mcrypt php-pear php-tidy php-xmlrpc php-pecl-zip php-devel php-pecl-imagick php-pecl-imagick-devel`
