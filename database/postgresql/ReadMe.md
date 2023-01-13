@@ -16,6 +16,7 @@
   * `sudo dnf install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-9-x86_64/pgdg-redhat-repo-latest.noarch.rpm`
     * Importing GPG key
     * Is this okay [y/N]: y
+      * Repeat this step for all version of postgresql
 * `sudo dnf module list postgresql`
 * `sudo dnf module -y enable postgresql:13`
 * `sudo dnf install -y postgresql-server postgresql-contrib postgresql postgresql-devel  postgresql-odbc`
