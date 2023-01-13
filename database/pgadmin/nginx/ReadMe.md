@@ -67,7 +67,7 @@
     * CRTL+C to quit from the pgadmin installation
 * Install gunicorn
   * `cd /opt/pgadmin4`
-  * `pip3.10 install gunicorn`
+  * `pip3.11 install gunicorn`
   * `deactivate`
 * Create and run pgadmin4.service for systemd
   * `cd /etc/systemd/system/`
