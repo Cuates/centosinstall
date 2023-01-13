@@ -16,7 +16,7 @@
   * `sudo dnf install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-9-x86_64/pgdg-redhat-repo-latest.noarch.rpm`
     * Importing GPG key
     * Is this okay [y/N]: y
-      * Repeat this step for all version of postgresql
+      * Repeat this step for all versions of postgresql
 * Disable the built-in PostgreSQL module:
   * This step may not be needed
   * `sudo dnf -qy module disable postgresql` 
