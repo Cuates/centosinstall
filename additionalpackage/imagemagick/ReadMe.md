@@ -4,6 +4,7 @@
 
 * `sudo dnf install -y epel-release`
 * `sudo dnf config-manager --set-enabled powertools`
+  * **NOTE** Do not need this command any more
 * `sudo dnf repolist`
 * `sudo dnf install -y ImageMagick ImageMagick-devel`
 * `sudo dnf install -y php php-devel php-pear make`
