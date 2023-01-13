@@ -62,7 +62,7 @@
   * Save and Quit
 * `sudo systemctl restart postgresql-15`
 * `sudo netstat -antup | grep 5432`
-* `sudo vim /var/lib/pgsql/data/pg_hba.conf`
+* `sudo vim /var/lib/pgsql/15/data/pg_hba.conf`
   * WAS
     <pre>
     host    all             all             127.0.0.1/32            ident
@@ -70,9 +70,9 @@
     </pre>
   * IS
     <pre>
-    host    all             all             127.0.0.1/32            md5
-    host    all             all             0.0.0.0/0               md5
-    host    all             all             ::1/128                 md5
+    host    all             all             127.0.0.1/32            scram-sha-256
+    host    all             all             0.0.0.0/0               scram-sha-256
+    host    all             all             ::1/128                 scram-sha-256
     </pre>
   * Save and Quit **NOTE make sure to tab each column to match the existing column**
 * `sudo systemctl restart postgresql`
