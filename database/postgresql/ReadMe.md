@@ -21,7 +21,7 @@
   * This step may not be needed
   * `sudo dnf -qy module disable postgresql` 
 * Install PostgreSQL:
-  * `sudo dnf install -y postgresql15-server`
+  * `sudo dnf install -y postgresql15-server postgresql15-contrib postgresql15 postgresql15-devel postgresql15-odbc`
 * Optionally initialize the database and enable automatic start:
   * `sudo /usr/pgsql-15/bin/postgresql-15-setup initdb`
   * `sudo systemctl start postgresql-15`
