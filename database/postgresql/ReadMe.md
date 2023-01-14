@@ -264,7 +264,7 @@
   * `alter default privileges grant all on tables to <username>;`
 
 * Sequence Create **NOTE This is for auto_increment**
-  * `create sequence <tablename>_<tableID)_seq;`
+  * `create sequence <tablename>_<tableID>_seq;`
 
 * Table Create
   * `create table if not exists <tablename>(`<br />
