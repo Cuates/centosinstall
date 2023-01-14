@@ -18,3 +18,5 @@
       * **WAIT FOR THIS TO FINISH**
 * `rvm use 3.1.1 --default`
 * `ruby --version`
+* Remove rvm
+ * `rvm implode`
