@@ -4,8 +4,5 @@
 * `sudo dnf install -y https://forensics.cert.org/cert-forensics-tools-release-el9.rpm`
   * **NOTE** https://forensics.cert.org/ is no longer maintained
     * Look for an alternative or stop using this repository
-  * Install cert-forensics-tools-release-el9 rpm:
-    * `rpm -Uvh cert-forensics-tools-release*rpm`
-* `sudo dnf update cert-forensics-tools-release`
 * `sudo dnf --enablerepo=forensics install -y rar`
 * `sudo dnf --enablerepo=forensics install -y unrar`
