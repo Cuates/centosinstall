@@ -1,3 +1,4 @@
+[install ruby on rails on rocky almalinux 9](https://computingforgeeks.com/install-ruby-on-rails-on-rocky-almalinux/)<br />
 [Install Ruby CentOS 8](https://www.osradar.com/install-ruby-centos-8/)
 * **IMPORTANT NOTE**
   * Login into the root user first
