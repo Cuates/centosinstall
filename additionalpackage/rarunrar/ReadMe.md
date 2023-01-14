@@ -8,3 +8,5 @@
 * `sudo dnf update cert-forensics-tools-release`
 * `sudo dnf --enablerepo=forensics install -y rar`
 * `sudo dnf --enablerepo=forensics install -y unrar`
+
+`https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-9.noarch.rpm`
