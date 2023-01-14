@@ -19,4 +19,8 @@
 * `rvm use 3.1.1 --default`
 * `ruby --version`
 * Remove rvm
- * `rvm implode`
+  * `rvm implode`
+    * Are you SURE you wish for rvm to implode? yes
+    * If the files still exist, manually remove
+      * `/etc/rvmrc`
+      * `~/.rvmrc`
