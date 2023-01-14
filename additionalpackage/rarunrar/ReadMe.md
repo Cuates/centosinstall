@@ -1,3 +1,4 @@
+[2 ways to install unrar on rocky linux almalinux 8](https://www.how2shout.com/linux/2-wyas-to-install-unrar-on-rocky-linux-almalinux-8/)<br />
 [Rar UnRar](https://centos.pkgs.org/8/forensics-x86_64/rar-5.4.0-1.el8.x86_64.rpm.html)<br />
 [Forensics](https://forensics.cert.org/)
 
