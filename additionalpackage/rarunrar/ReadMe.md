@@ -5,5 +5,6 @@
 * **NOTE** https://forensics.cert.org/ is no longer maintained
   * Look for an alternative or stop using this repository
 * `sudo dnf update cert-forensics-tools-release`
+*  `sudo dnf -y update epel-release`
 * `sudo dnf --enablerepo=forensics install -y rar`
 * `sudo dnf --enablerepo=forensics install -y unrar`
