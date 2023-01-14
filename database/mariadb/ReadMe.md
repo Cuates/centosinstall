@@ -331,6 +331,7 @@
       * username is the username you can log in to the database with
       * newdatabase is the name of the freshly created database
       * data-dump.sql is the data dump file to be imported, located in the current directory
+      * NOTE: make sure to look at your user table as this may have updated with the contents of the dump
   * Third open the dump in a mariadb client (GUI version using dump file)
     * The dump will consist of various select, insert, delete, and so on statements
     * Make sure to include the following command at the top of the dump; this will make sure you are using the correct database
