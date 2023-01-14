@@ -9,7 +9,7 @@
 [](https://blog.sqlauthority.com/2011/12/26/sql-server-fix-error-15138-the-database-principal-owns-a-schema-in-the-database-and-cannot-be-dropped/)<br />
 
 * Add the Microsoft SQL Server 2022 repository
-  * `sudo curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/8/mssql-server-2022.repo`
+  * `sudo curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/9.0/mssql-server-2022.repo`
   * `sudo curl -o /etc/yum.repos.d/msprod.repo https://packages.microsoft.com/config/rhel/9.0/prod.repo`
 
 * Add the Microsoft SQL Server 2019 repository (Old version)
