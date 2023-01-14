@@ -8,6 +8,7 @@
 * `usermod -a -G rvm <username_on_system>`
   * **IMPORTANT NOTE**
     * Exit out of the terminal and reopen a new terminal
+    * Logout and log back into the system
 * `source /etc/profile.d/rvm.sh`
 * `rvm requirements`
 * `rvm list known`
