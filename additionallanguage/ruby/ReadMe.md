@@ -13,12 +13,13 @@
 * `source /etc/profile.d/rvm.sh`
 * `rvm requirements`
 * `rvm list known`
-* `rvm install 3.1.1` **Pick the latest MRI Rubies version**
+* `rvm install 3.1.3` **Pick the latest MRI Rubies version**
   * **WAIT FOR THIS TO FINISH**
   * If built without documentation message is presented (OPTIONAL STEP)
     * `rvm docs generate-ri`
       * **WAIT FOR THIS TO FINISH**
-* `rvm use 3.1.1 --default`
+* `rvm use 3.1.3 --default`
+  * As of this time 3.2.0+ is not ready for AlmaLinux
 * `ruby --version`
 * Remove rvm
   * `rvm implode`
