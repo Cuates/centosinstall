@@ -414,6 +414,10 @@
      * `chown postgres:postgres filename.gz`
    * Login as the postgresql user
      * `sudo -i -u postgres`
+     * Database Create
+       * `create database <databasename>;` **NOTE Does not have 'if exists' when creating databases**
+     * Create user with password
+       * `fdasfd`
    * Use compressed dumps of choice to import everything from your old database to your new database
      * The following command will be for gz file; yours will vary depending on what compression you chose
        * `gunzip -c filename.gz | psql <database_name>`
