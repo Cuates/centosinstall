@@ -1,3 +1,4 @@
+[Backup and or Import](https://www.digitalocean.com/community/tutorials/how-to-import-and-export-databases-in-mysql-or-mariadb#step-2-mdash-importing-a-mysql-or-mariadb-database)<br >
 [How To Install MariaDB On CentOS 8](https://www.linode.com/docs/databases/mariadb/how-to-install-mariadb-on-centos-8/)<br />
 [MariaDB Install](https://www.server-world.info/en/note?os=CentOS_8&p=mariadb&f=1)<br />
 [MySQL Remote Access](https://linuxize.com/post/mysql-remote-access/)<br />
@@ -325,7 +326,12 @@
     * NOTE: The following command can be inserted at the top of the dump file, you will be able to execute everything at once instead of multiple executions
       * ````create database if not exists `<database_instance>` default character set utf8mb4 collate utf8mb4_unicode_520_ci;````
   * Second create users that will access the database
-  * Third open the dump in a mariadb client
+  * Third open terminal
+    * `mysql -u username -p new_database < data-dump.sql`
+      * username is the username you can log in to the database with
+      * newdatabase is the name of the freshly created database
+      * data-dump.sql is the data dump file to be imported, located in the current directory
+  * Third open the dump in a mariadb client (GUI version using dump file)
     * The dump will consist of various select, insert, delete, and so on statements
     * Make sure to include the following command at the top of the dump; this will make sure you are using the correct database
     * NOTE: If the create database is inserted at the top of the dump file then this will go below the create database command
