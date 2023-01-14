@@ -22,7 +22,7 @@
       * Download the SHA256 hash for phpMyAdmin-5.2.0-all-languages.tar.gz
         * `sudo wget https://files.phpmyadmin.net/phpMyAdmin/5.2.0/phpMyAdmin-5.2.0-all-languages.tar.gz.sha256`
           * Calculate the SHA256 hash for downloaded file
-            * `sha256sum /phpMyAdmin-5.2.0-all-languages.tar.gz`
+            * `sha256sum phpMyAdmin-5.2.0-all-languages.tar.gz`
           * Compare the calculated hash with the downloaded hash
             * `cat phpMyAdmin-5.2.0-all-languages.tar.gz.sha256`
       * If all is well, you are good to proceed
