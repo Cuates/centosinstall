@@ -73,7 +73,7 @@
     * database_name means only to a certain database and no other on the system
     * "WITH GRANT OPTION" is optional
   * Drop User
-    * DROP USER user_name@'ip_address';
+    * `DROP USER user_name@'ip_address';`
   * `exit;`
 * `mariadb --version`
 
