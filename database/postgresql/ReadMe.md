@@ -420,10 +420,9 @@
        * `create database <databasename>;` **NOTE Does not have 'if exists' when creating databases**
      * Database Grant Privileges
        * `grant all privileges on database <databasename> to <username>;`
+   * Table Alter Owner To Role
      * Database Alter Owner To Role
        * `alter database <databasename> owner to <username>;`
-* Table Alter Owner To Role
-  * `alter table <tablename> owner to <username>`
    * Use compressed dumps of choice to import everything from your old database to your new database
      * The following command will be for gz file; yours will vary depending on what compression you chose
        * `gunzip -c filename.gz | psql <database_name>`
