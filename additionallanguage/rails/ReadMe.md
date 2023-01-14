@@ -1,4 +1,5 @@
-[Install Ruby On Rails CentOS 8](https://www.osradar.com/install-ruby-on-rails-centos-8/)
+[Rails Versions](https://rubygems.org/gems/rails/versions)<br />
+[Install Ruby On Rails CentOS 8](https://www.osradar.com/install-ruby-on-rails-centos-8/)<br />
 
 * **IMPORTANT NOTE**
   * Login into the root user first
