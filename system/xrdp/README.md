@@ -1,7 +1,8 @@
 [How To Install Xrdp On Centos 8](https://linuxize.com/post/how-to-install-xrdp-on-centos-8/)<br />
 [centos-desktop-rdp-xrdp](https://vitux.com/centos-desktop-rdp-xrdp/)<br />
 [How To Install Xrdp Remote Desktop On Centos 8 How To Use Windows To Remote Control Centos 8](https://dannyda.com/2020/02/09/how-to-install-xrdp-remote-desktop-on-centos-8-how-to-use-windows-to-remote-control-centos-8/)<br />
-[How To Install Xrdp Server Remote Desktop On Centos 8](https://www.mstvlife.com/how-to-install-xrdp-server-remote-desktop-on-centos-8/)
+[How To Install Xrdp Server Remote Desktop On Centos 8](https://www.mstvlife.com/how-to-install-xrdp-server-remote-desktop-on-centos-8/)<br />
+[Remove Firewall Port](https://access.redhat.com/solutions/4902991)<br />
 
 * Installing Desktop Environment (Optional)
   * Generally, Linux servers don’t have a desktop environment installed. If the machine you want to connect to doesn’t have GUI, the first step is to install it. Otherwise, skip this step.
@@ -48,6 +49,9 @@
     * `sudo firewall-cmd --reload`
     * `sudo firewall-cmd --list-ports`
     * `sudo firewall-cmd --list-all`
+    * Remove port (if needed)
+      * `sudo firewall-cmd --zone=public --permanent --remove-port=3389/tcp`
+      * `sudo firewall-cmd --reload`
   * Typically you would want to allow access to the Xrdp server only from a specific IP address or IP range. For example, to allow connections only from the 192.168.1.0/24 range, enter the following command **OPTIONAL**
     * `sudo firewall-cmd --get-services`
     * `sudo firewall-cmd --new-zone=xrdp --permanent`
