@@ -33,4 +33,4 @@
 * [CentOS 8](https://github.com/Cuates/centosinstall/tree/master/system/terminal)
 
 ### Podman-Compose
-* [1](https://github.com/Cuates/centosinstall/tree/master/system/podmancompose)
+* [1.0.3-3.el9](https://github.com/Cuates/centosinstall/tree/master/system/podmancompose)
