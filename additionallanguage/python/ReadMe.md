@@ -4,6 +4,7 @@
 [Database_Drivers](https://crateanon.readthedocs.io/en/latest/installation/database_drivers.html)<br />
 [Pythons mysqldb Cant Find libmysqlclient dylib With Homebrewed MySQL](https://stackoverflow.com/questions/34536914/pythons-mysqldb-can-t-find-libmysqlclient-dylib-with-homebrewed-mysql)<br />
 [Python3 wheel installed still using legacy setup py when installing dlib](https://stackoverflow.com/questions/66958482/python3-wheel-installed-still-using-legacy-setup-py-when-installing-dlib)<br />
+[Install Podman Compose Almalinux Keep Docker Compose](https://www.techrepublic.com/article/install-podman-compose-almalinux-keep-docker-compose)<br />
 
 * `sudo dnf groupinstall -y 'development tools'`
 * Version 8
@@ -52,6 +53,13 @@
           * If "NameError: name '\_mysql' is not defined", then proceed with the following instead
             * `pip3.10 uninstall mysqlclient`
             * `pip3.10 install --no-binary mysqlclient mysqlclient`
-              * Note: The first occurrence is the name of the package to apply the no-binary option to, the second specifies the package to install
-  * [Gunicorn](https://pypi.org/project/gunicorn/)
-    * `pip3.10 install gunicorn`
+              * Note: The first occurrence is the name of the package to apply the no-binary option to, the second specifies the package to Install Gunicorn
+* [Gunicorn](https://pypi.org/project/gunicorn/)
+  * `pip3.10 install gunicorn`
+
+Install Podman Compose
+* `pip3.11 install python-dotenv`
+* `pip3.11 install pyyaml`
+* `pip3.11 install podman-compose`
+* Help Display
+  * `podman-compose -h`
