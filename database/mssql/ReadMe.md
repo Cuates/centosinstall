@@ -7,6 +7,12 @@
 [SQL Server Linux Faq](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-faq?view=sql-server-2017#general-questions)<br />
 [How to import .bak file to a database in SQL server](https://www.youtube.com/watch?v=dCSkov0OfHM)<br />
 [](https://blog.sqlauthority.com/2011/12/26/sql-server-fix-error-15138-the-database-principal-owns-a-schema-in-the-database-and-cannot-be-dropped/)<br />
+[Working with the SQL Server command line sqlcmd](https://www.sqlshack.com/working-sql-server-command-line-sqlcmd/)<br />
+[How to read the SQL Server Database Transaction Log](https://www.mssqltips.com/sqlservertip/3076/how-to-read-the-sql-server-database-transaction-log/)<br />
+[How to Restore SQL Server Database from Command Line](https://www.stellarinfo.com/blog/restore-sql-server-database-from-command-line/?subid1=20230304-0848-052e-a8e3-29d49c8d283f)<br />
+[Create a Full Database Backup](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server?view=sql-server-ver16)<br />
+[Restore a Backup from a Device SQL Server](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-backup-from-a-device-sql-server?view=sql-server-ver16)<br />
+[Create a database using T SQL on a specified location](https://stackoverflow.com/questions/120917/create-a-database-using-t-sql-on-a-specified-location)<br />
 
 * Add the Microsoft SQL Server 2022 repository
   * `sudo curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/8/mssql-server-2022.repo`
@@ -210,3 +216,10 @@
           ALTER AUTHORIZATION ON SCHEMA::db_datareader TO dbo;
           ALTER AUTHORIZATION ON SCHEMA::db_datawriter TO dbo;
         </pre>
+* Docker
+  * Create Command Line
+    * `/opt/mssql-tools/bin/sqlcmd -S <hostname/ip_address> -U SA -P '<sa_password>' -q "USE [master] CREATE DATABASE [database_instance] ON PRIMARY (NAME = N'database_instance_data', FILENAME = N'/path/to/database_instance_data.mdf', SIZE = 167872KB, MAXSIZE = UNLIMITED, FILEGROWTH = 16384KB) LOG ON (NAME = N'database_instance_log', FILENAME = N'/path/to/database_instance_log.ldf', SIZE = 2048KB, MAXSIZE = 2048GB, FILEGROWTH = 16384KB)"`
+  * Restore Command Line
+    * `/opt/mssql-tools/bin/sqlcmd -S <hostname/ip_address> -U SA -P '<sa_password>' -q "USE [master] RESTORE DATABASE [database_instance] FROM DISK = N'/path/to/database_instance_mssql_dump_date.bak' WITH MOVE 'database_instance' TO '/path/to/database_instance_data.mdf', MOVE 'database_instance_log' TO '/path/to/database_instance_log.ldf', RECOVERY, REPLACE, STATS = 10"`
+  * Backup Command Line
+    * `/opt/mssql-tools/bin/sqlcmd -S <hostname/ip_address> -U SA -P '<sa_password>' -q "USE [master] BACKUP DATABASE [database_instance] TO DISK = N'/path/to/database_instance_mssql_dump_date.bak' WITH FORMAT, MEDIANAME = 'Fulldatabase_instanceBackup', NAME = 'Full Backup of database_instance'"`
