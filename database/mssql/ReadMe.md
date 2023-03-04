@@ -1,12 +1,11 @@
 [Quickstart Install Connect Red Hat](https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-red-hat)<br />
 [How To Install Microsoft SQL Server On RHEL CentOS](https://computingforgeeks.com/how-to-install-microsoft-sql-server-on-rhel-centos/)<br />
 [How To Install Microsoft SQL Server 2019 In CentOS 8](https://developpaper.com/how-to-install-sql-server-2019-in-centos8/)<br />
-[How To Setup A Firewall With Firewalld On CentOS 7](https://linuxize.com/post/how-to-setup-a-firewall-with-firewalld-on-centos-7/
-)<br />
+[How To Setup A Firewall With Firewalld On CentOS 7](https://linuxize.com/post/how-to-setup-a-firewall-with-firewalld-on-centos-7/)<br />
 [Polybase Linux Setup](https://docs.microsoft.com/en-us/sql/relational-databases/polybase/polybase-linux-setup?view=sql-server-ver15)<br />
 [SQL Server Linux Faq](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-faq?view=sql-server-2017#general-questions)<br />
 [How to import .bak file to a database in SQL server](https://www.youtube.com/watch?v=dCSkov0OfHM)<br />
-[](https://blog.sqlauthority.com/2011/12/26/sql-server-fix-error-15138-the-database-principal-owns-a-schema-in-the-database-and-cannot-be-dropped/)<br />
+[SQL SERVER Fix Error 15138 The database principal owns a schema in the database and cannot be dropped](https://blog.sqlauthority.com/2011/12/26/sql-server-fix-error-15138-the-database-principal-owns-a-schema-in-the-database-and-cannot-be-dropped/)<br />
 [Working with the SQL Server command line sqlcmd](https://www.sqlshack.com/working-sql-server-command-line-sqlcmd/)<br />
 [How to read the SQL Server Database Transaction Log](https://www.mssqltips.com/sqlservertip/3076/how-to-read-the-sql-server-database-transaction-log/)<br />
 [How to Restore SQL Server Database from Command Line](https://www.stellarinfo.com/blog/restore-sql-server-database-from-command-line/?subid1=20230304-0848-052e-a8e3-29d49c8d283f)<br />
